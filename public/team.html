@@ -52,24 +52,55 @@ body {font-size:16px;}
   <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
     <!-- Header -->
-    <!-- Servicios -->
-    <div class="w3-container" style="margin-top:80px" id="showcase">
-      <h1 class="w3-jumbo"><b>Lost in Madrid</b></h1>
-      <h1 class="w3-xxxlarge w3-text-green"><b>Servicios.</b></h1>
+    <!-- Team -->
+    <div class="w3-container" id="team" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-green"><b>Equipo.</b></h1>
       <hr style="width:50px;border:5px solid green" class="w3-round">
-      <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-      <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+      <p>The best team in the world.</p>
+      <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
         elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat.
+        incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
+      <p><b>Our team is thoughtfully chosen</b>:</p>
     </div>
 
-    <div id="servicesMap" style="width:100%;height:800px;"></div>
+    <!-- The Team -->
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./w3images/team2.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>María</h3>
+            <p class="w3-opacity">CEO & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./w3images/team1.jpg" alt="Jane" style="width:100%">
+          <div class="w3-container">
+            <h3>Berta</h3>
+            <p class="w3-opacity">Designer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./w3images/team3.jpg" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>Miguel</h3>
+            <p class="w3-opacity">Architect</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- End page content -->
   </div>
@@ -100,76 +131,7 @@ body {font-size:16px;}
       captionText.innerHTML = element.alt;
     }
 
-    // Read instructions here: https://codepen.io/KryptoniteDove/post/load-json-file-locally-using-pure-javascript
-    function loadJSON(callback) {
-      var xobj = new XMLHttpRequest();
-      xobj.overrideMimeType("application/json");
-      xobj.open('GET', './data/lostinmadrid_data.json', true); // Replace 'my_data' with the path to your file
-      xobj.onreadystatechange = function () {
-        if (xobj.readyState == 4 && xobj.status == "200") {
-          // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-          callback(xobj.responseText);
-        }
-      };
-      xobj.send(null);
-    }
-
-    var geocoder;
-    var map;
-
-    // Function to Show Map of Services
-    function loadMap() {
-
-      // initialize elements
-      geocoder = new google.maps.Geocoder();
-
-      var mapCanvas = document.getElementById("servicesMap");
-      // mapPosition centered in 'Madrid'
-      var mapPosition = { lat: 40.416775, lng: -3.703790 };
-      var mapOptions = {
-        // create map centered in mapPosition
-        center: mapPosition,
-        zoom: 11
-      };
-
-      map = new google.maps.Map(mapCanvas, mapOptions);
-      map.setCenter({ lat: 40.416775, lng: -3.703790 });
-
-      // we call loadJSON parsing the code to display the map as an asynchronous callback
-      loadJSON(function (response) {
-        // load the markers in the json file
-        var markersData = JSON.parse(response);
-        var i;
-        for (i = 0; i < markersData.length; i++) {
-          // add the markers to the map
-          addMarker(markersData[i])
-        }
-      });
-    }
-
-    // Adds a marker to a map.
-    function addMarker(markerData) {
-      var address = markerData.Address;
-      var sublocality = markerData.District;
-      var markerTitle = markerData.OrgName;
-      geocoder.geocode({ 'address': address}, function (results, status) {
-        if (status == 'OK') {
-          map.setCenter(results[0].geometry.location);
-          // add the marker to the map
-          var marker = new google.maps.Marker({
-            map: map,
-            position: results[0].geometry.location,
-            title: markerTitle
-          });
-        } else {
-          console.log('Geocode was not successful for the following reason: ' + status);
-        }
-      });
-    }
-
   </script>
-
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-cYGCy5xyn4C5hH0rv7iWbw4nNGqcU0E&callback=loadMap"></script>
 
 </body>
 
