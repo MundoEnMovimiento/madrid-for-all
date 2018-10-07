@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
   crossorigin="anonymous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 <style>
   body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
@@ -16,45 +17,20 @@ body {font-size:16px;}
 
 <body>
 
-  <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
-    id="mySidebar"><br>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close
-      Menu</a>
-    <div class="w3-container">
-      <!-- <a href="#" class="w3-button w3-hover-white w3-padding-64"><i class="fas fa-hands-helping"></i></a> -->
-      <h3 class="w3-padding-64"><b>Logo LiM</h3>
-    </div>
-    <div class="w3-bar-block">
-      <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-      <a href="./projects.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projectos</a>
-      <a href="./team.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Equipo</a>
-      <a href="./contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contacto</a>
-      <a href="./blog.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Blog</a>
-    </div>
-    <div class="w3-bar w3-bottom">
-      <a href="#" class="w3-bar-item w3-button w3-hover-white"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-white"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-white"><i class="fab fa-twitter"></i></a>
-    </div>
-  </nav>
+  <!-- Include sidebar / menu in small screens -->
+  <div w3-include-html="./menu.html"></div>
 
-  <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
-    <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">&#9776;</a>
-    <span>Lost In Madrid</span>
-  </header>
-
-  <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  <script>
+    w3.includeHTML();
+  </script>
 
   <!-- !PAGE CONTENT! -->
   <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
     <!-- Header -->
-    <!-- Projectos -->
+    <!-- Proyectos -->
     <div class="w3-container" id="services" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-green"><b>Projectos.</b></h1>
+      <h1 class="w3-xxxlarge w3-text-green"><b>Proyectos.</b></h1>
       <hr style="width:50px;border:5px solid green" class="w3-round">
     </div>
 
