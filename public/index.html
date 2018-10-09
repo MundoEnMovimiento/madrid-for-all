@@ -133,17 +133,16 @@
       // we call loadJSON parsing the code to display the map as an asynchronous callback
       loadJSON(function (response) {
         // load the markers in the json file
-        var markersData = JSON.parse(response);
-        var i;
-        for (i = 0; i < markersData.length; i++) {
-          // add the markers to the map
-          addMarker(markersData[i])
-        }
+        var listOfMarkers = JSON.parse(response);
+        // add the markers to the map
+        listOfMarkers.forEach(marker => {
+          addMarkerToMap(marker);
+        });
       });
     }
 
-    // Adds a marker to a map.
-    function addMarker(markerData) {
+    // adds a marker to the map.
+    function addMarkerToMap(markerData) {
       var address = markerData.Address;
       var sublocality = markerData.District;
       var markerTitle = markerData.OrgName;
@@ -154,8 +153,19 @@
           var marker = new google.maps.Marker({
             map: map,
             position: results[0].geometry.location,
-            title: markerTitle
+            title: 'Click here for more details'
           });
+
+          // create an infoWindow to be linked to the marker
+          var infowindow = new google.maps.InfoWindow({
+            content: "<strong>" + markerData.OrgName + "</strong><br><em>" + markerData.Address + "</em><br><a href=\"" + markerData.OrgWeb + "\">" + markerData.OrgWeb + "</a>" // HTML contents of the InfoWindow
+          });
+
+          // add a Click Listener to our marker
+          google.maps.event.addListener(marker, 'click', function () { 
+            infowindow.open(map, marker); // Open our InfoWindow
+          });
+
         } else {
           console.log('Geocode was not successful for the following reason: ' + status);
         }
