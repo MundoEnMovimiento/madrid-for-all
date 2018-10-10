@@ -55,16 +55,31 @@
       <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
       <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-        elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat.
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
       </p>
     </div>
 
-    <div id="servicesMap" style="width:100%;height:800px;"></div>
+
+    <div class="w3-container">
+      <table id="resultTable" class="w3-table w3-striped w3-bordered">
+        <thead>
+          <tr class="w3-green">
+            <th>Name</th>
+            <th>Distrito</th>
+            <th>Código Postal</th>
+          </tr>
+        </thead>
+        <tr w3-repeat="records" class="w3-hover-orange">
+          <td>{{OrgName}}</td>
+          <td>{{District}}</td>
+          <td>{{PostalCode}}</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="w3-container">
+      <div id="servicesMap" style="width:100%;height:800px;"></div>
+    </div>
 
     <!-- End page content -->
   </div>
@@ -95,22 +110,9 @@
       captionText.innerHTML = element.alt;
     }
 
-    // Read instructions here: https://codepen.io/KryptoniteDove/post/load-json-file-locally-using-pure-javascript
-    function loadJSON(callback) {
-      var xobj = new XMLHttpRequest();
-      xobj.overrideMimeType("application/json");
-      xobj.open('GET', './data/lostinmadrid_data.json', true); // Replace 'my_data' with the path to your file
-      xobj.onreadystatechange = function () {
-        if (xobj.readyState == 4 && xobj.status == "200") {
-          // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-          callback(xobj.responseText);
-        }
-      };
-      xobj.send(null);
-    }
-
     var geocoder;
     var map;
+    var listOfMarkers;
 
     // Function to Show Map of Services
     function loadMap() {
@@ -130,14 +132,16 @@
       map = new google.maps.Map(mapCanvas, mapOptions);
       map.setCenter({ lat: 40.416775, lng: -3.703790 });
 
-      // we call loadJSON parsing the code to display the map as an asynchronous callback
-      loadJSON(function (response) {
-        // load the markers in the json file
-        var listOfMarkers = JSON.parse(response);
-        // add the markers to the map
-        listOfMarkers.forEach(marker => {
-          addMarkerToMap(marker);
-        });
+      w3.getHttpObject("./data/lostinmadrid_data_json.js", displayMarkers);
+    }
+
+    function displayMarkers(myObject) {
+      listOfMarkers = myObject;
+      // TODO
+      w3.displayObject("resultTable", listOfMarkers);
+      // add the markers to the map
+      listOfMarkers.forEach(markerData => {
+        addMarkerToMap(markerData);
       });
     }
 
@@ -155,14 +159,12 @@
             position: results[0].geometry.location,
             title: 'Click here for more details'
           });
-
           // create an infoWindow to be linked to the marker
           var infowindow = new google.maps.InfoWindow({
             content: "<strong>" + markerData.OrgName + "</strong><br><em>" + markerData.Address + "</em><br><a href=\"" + markerData.OrgWeb + "\">" + markerData.OrgWeb + "</a>" // HTML contents of the InfoWindow
           });
-
           // add a Click Listener to our marker
-          google.maps.event.addListener(marker, 'click', function () { 
+          google.maps.event.addListener(marker, 'click', function () {
             infowindow.open(map, marker); // Open our InfoWindow
           });
 
