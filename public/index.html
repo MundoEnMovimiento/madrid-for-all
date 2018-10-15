@@ -64,9 +64,9 @@
       <table id="resultTable" class="w3-table w3-striped w3-bordered">
         <thead>
           <tr class="w3-green">
-            <th>Nombre</th>
-            <th>Distrito</th>
-            <th>Código Postal</th>
+            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(1)')">Nombre</th>
+            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Distrito</th>
+            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(3)')">Código Postal</th>
           </tr>
         </thead>
         <tr w3-repeat="records" class="w3-hover-orange item">
@@ -76,6 +76,8 @@
         </tr>
       </table>
     </div>
+
+    <!-- Pagination 
     <div class="w3-center">
       <div class="w3-bar">
         <a href="#" class="w3-bar-item w3-button">&laquo;</a>
@@ -86,6 +88,7 @@
         <a href="#" class="w3-button">&raquo;</a>
       </div>
     </div>
+    -->
 
     <!-- End page content -->
   </div>
@@ -154,10 +157,11 @@
 
     // adds a marker to the map.
     function addMarkerToMap(markerData) {
-      var address = markerData.Address;
+      // TODO: Replace Madrid by a variable
+      var address = markerData.Address + " " + markerData.PostalCode + ", Madrid";
       var sublocality = markerData.District;
       var markerTitle = markerData.OrgName;
-      geocoder.geocode({ 'address': address }, function (results, status) {
+      geocoder.geocode({ 'address': address,  }, function (results, status) {
         if (status == 'OK') {
           map.setCenter(results[0].geometry.location);
           // add the marker to the map
@@ -188,9 +192,12 @@
 
   </script>
 
-  <!-- Script to load the "included" HTML code-->
+  <!-- Post DOM loaded actions -->
   <script>
+    // include the HTML in separated files
     w3.includeHTML();
+    // sort results table by column #1
+    w3.sortHTML('#resultTable','.item', 'td:nth-child(1)')
   </script>
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-cYGCy5xyn4C5hH0rv7iWbw4nNGqcU0E&callback=loadMap"></script>
