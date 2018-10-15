@@ -20,10 +20,6 @@ body {font-size:16px;}
   <!-- Include sidebar / menu in small screens -->
   <div w3-include-html="./menu.html"></div>
 
-  <script>
-    w3.includeHTML();
-  </script>
-
   <!-- !PAGE CONTENT! -->
   <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
@@ -53,33 +49,38 @@ body {font-size:16px;}
     <!-- End page content -->
   </div>
 
- <!-- Footer -->
- <div class="w3-container w3-light-grey w3-padding-32" style="margin-top:75px;padding-right:58px">
-  <p class="w3-right">Powegreen by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-      class="w3-hover-opacity">w3.css</a></p>
-</div>
+  <!-- Footer -->
+  <div class="w3-container w3-light-grey w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <p class="w3-right">Powegreen by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+        class="w3-hover-opacity">w3.css</a></p>
+  </div>
 
-<script>
-  // Script to open and close sidebar
-  function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-  }
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
 
-  function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-  }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
 
-  // Modal Image Gallery
-  function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-    var captionText = document.getElementById("caption");
-    captionText.innerHTML = element.alt;
-  }
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
 
-</script>
+  </script>
+
+  <script>
+    w3.includeHTML();
+  </script>
+
 
 </body>
 
