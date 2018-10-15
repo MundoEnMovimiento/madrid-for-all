@@ -1,4 +1,4 @@
-[
+{ "records" : [
   {
     "OrgName": "Alternativa en Marcha",
     "OrgPhone": 914049118,
@@ -50,24 +50,6 @@
     "Languages": "Castellano",
     "AdditionalInfo": "Entrada libre",
     "ContactPerson": "Ángeles ó Marta",
-    "ContactPhone": 915220070,
-    "ContactEmail": "hermandad@refugio.e.telefonica.net"
-  },
-  {
-    "OrgName": "HERMANDAD DEL REFUGIO DE MADRID",
-    "OrgPhone": 915220070,
-    "OrgEmail": "hermandad@refugio.e.telefonica.net",
-    "OrgWeb": "www.realhermandaddelrefugio.org",
-    "Address": "Corredera Baja de San Pablo 16",
-    "PostalCode": 28004,
-    "District": "Centro",
-    "TimeTable": "miercoles recoger número, lunes siguiente entrega de ropa",
-    "PriorAppointment": "Sí",
-    "WayOfContact": "Visitando nuestra sede, miercoles de 10,30 a 11,30",
-    "Services": "Ropa",
-    "Languages": "Castellano",
-    "AdditionalInfo": "Miércoles se recoge número de orden y la semana siguiente el lunes se entrega la ropa. Meses de verano julio y agosto cerramos también fiestas no atienden.",
-    "ContactPerson": "Ángeles o Marta",
     "ContactPhone": 915220070,
     "ContactEmail": "hermandad@refugio.e.telefonica.net"
   },
@@ -449,4 +431,4 @@
     "ContactPhone": 911684483,
     "ContactEmail": "casaplaza@valponasca.org"
   }
-]
+]}
