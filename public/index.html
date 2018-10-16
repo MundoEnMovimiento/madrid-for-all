@@ -64,12 +64,14 @@
       <table id="resultTable" class="w3-table w3-striped w3-bordered">
         <thead>
           <tr class="w3-green">
-            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(1)')">Nombre</th>
-            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Distrito</th>
-            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(3)')">Código Postal</th>
+            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(1)')">ID</th>
+            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Nombre</th>
+            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(3)')">Distrito</th>
+            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(4)')">Código Postal</th>
           </tr>
         </thead>
         <tr w3-repeat="records" class="w3-hover-orange item">
+            <td>{{ID}}</td>
           <td>{{OrgName}}</td>
           <td>{{District}}</td>
           <td>{{PostalCode}}</td>
@@ -143,7 +145,7 @@
           // create new map and center it in Madrid
           map = new google.maps.Map(mapCanvas, mapOptions);
           // load file with the markers
-          w3.getHttpObject("./data/lostinmadrid_data_json.js", displayMarkers);
+          w3.getHttpObject("./data/data.js", displayMarkers);
         } else {
           console.log('Geocode of mainCity was not successful for the following reason: ' + status);
         }
@@ -163,7 +165,7 @@
     // adds a marker to the map.
     function addMarkerToMap(markerData) {
       // TODO: Replace Madrid by a variable
-      var address = markerData.Address + " " + markerData.PostalCode + ", " + mainCity;
+      var address = markerData.Address + " " + markerData.PostalCode;
       var sublocality = markerData.District;
       var markerTitle = markerData.OrgName;
       geocoder.geocode({ 'address': address }, function (results, status) {
@@ -184,7 +186,7 @@
           });
 
         } else {
-          console.log('Geocode was not successful for the following reason: ' + status);
+          console.log("Geocode for " + markerData.ID + " was not successful for the following reason: " + status);
         }
       });
     }
