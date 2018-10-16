@@ -138,7 +138,7 @@
     "OrgPhone": 635736573,
     "OrgEmail": "jsanzlan@ucm.es",
     "OrgWeb": "",
-    "Address": "BETANZOS 37 (ESQ. MELCHOR FERNÁNDEZ ALMAGRO) ",
+    "Address": "BETANZOS 37 ",
     "PostalCode": 28029,
     "District": "FUENCARRAL / EL PARDO",
     "TimeTable": "LUNES Y MIERCOLES (10:30-12:00 Y 19:30-21:00) Y MARTES (19:30-20:30)",

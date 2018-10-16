@@ -71,7 +71,7 @@
           </tr>
         </thead>
         <tr w3-repeat="records" class="w3-hover-orange item">
-            <td>{{ID}}</td>
+          <td>{{ID}}</td>
           <td>{{OrgName}}</td>
           <td>{{District}}</td>
           <td>{{PostalCode}}</td>
@@ -185,6 +185,10 @@
             infowindow.open(map, marker); // Open our InfoWindow
           });
 
+        } else if (status === google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
+          setTimeout(function () {
+            addMarkerToMap(markerData);
+          }, 250);
         } else {
           console.log("Geocode for " + markerData.ID + " was not successful for the following reason: " + status);
         }
