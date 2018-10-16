@@ -122,6 +122,7 @@
     var geocoder;
     var map;
     var listOfMarkers;
+    var mainCity = 'Madrid';
 
     // Function to Show Map of Services
     function loadMap() {
@@ -129,20 +130,24 @@
       // initialize elements
       geocoder = new google.maps.Geocoder();
 
-      var mapCanvas = document.getElementById("servicesMap");
-      // mapPosition centered in 'Madrid'
-      var mapPosition = { lat: 40.416775, lng: -3.703790 };
-      var mapOptions = {
-        // create map centered in mapPosition
-        center: mapPosition,
-        zoom: 11
-      };
-      // create new map and center it in Madrid
-      // TODO: Replace hard coded location of Madrid by something more user friendly
-      map = new google.maps.Map(mapCanvas, mapOptions);
-      map.setCenter({ lat: 40.416775, lng: -3.703790 });
-      // load file with the markers
-      w3.getHttpObject("./data/lostinmadrid_data_json.js", displayMarkers);
+      // mapPosition centered in 'mainCity'
+      geocoder.geocode({ 'address': mainCity }, function (results, status) {
+        if (status == 'OK') {
+          var mapPosition = results[0].geometry.location;
+          var mapCanvas = document.getElementById("servicesMap");
+          var mapOptions = {
+            // create map centered in 'mainCity'
+            center: mapPosition,
+            zoom: 11
+          };
+          // create new map and center it in Madrid
+          map = new google.maps.Map(mapCanvas, mapOptions);
+          // load file with the markers
+          w3.getHttpObject("./data/lostinmadrid_data_json.js", displayMarkers);
+        } else {
+          console.log('Geocode of mainCity was not successful for the following reason: ' + status);
+        }
+      });
     }
 
     function displayMarkers(myObject) {
@@ -158,12 +163,11 @@
     // adds a marker to the map.
     function addMarkerToMap(markerData) {
       // TODO: Replace Madrid by a variable
-      var address = markerData.Address + " " + markerData.PostalCode + ", Madrid";
+      var address = markerData.Address + " " + markerData.PostalCode + ", " + mainCity;
       var sublocality = markerData.District;
       var markerTitle = markerData.OrgName;
-      geocoder.geocode({ 'address': address,  }, function (results, status) {
+      geocoder.geocode({ 'address': address }, function (results, status) {
         if (status == 'OK') {
-          map.setCenter(results[0].geometry.location);
           // add the marker to the map
           var marker = new google.maps.Marker({
             map: map,
@@ -197,7 +201,7 @@
     // include the HTML in separated files
     w3.includeHTML();
     // sort results table by column #1
-    w3.sortHTML('#resultTable','.item', 'td:nth-child(1)')
+    w3.sortHTML('#resultTable', '.item', 'td:nth-child(1)')
   </script>
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-cYGCy5xyn4C5hH0rv7iWbw4nNGqcU0E&callback=loadMap"></script>
