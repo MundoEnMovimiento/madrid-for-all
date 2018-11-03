@@ -8,6 +8,10 @@
   crossorigin="anonymous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="//cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.min.js"></script>
+<script>
+  var db = new PouchDB('madrid4all.db');
+</script>
 <style>
   body,  h1,  h2,  h3,  h4,  h5 {
     font-family: "Poppins", sans-serif
@@ -64,17 +68,13 @@
       <table id="resultTable" class="w3-table w3-striped w3-bordered">
         <thead>
           <tr class="w3-green">
-            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(1)')">ID</th>
             <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Nombre</th>
             <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(3)')">Distrito</th>
-            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(4)')">Código Postal</th>
           </tr>
         </thead>
-        <tr w3-repeat="records" class="w3-hover-orange item">
-          <td>{{ID}}</td>
+        <tr onclick="onRowClick({{_id}})" w3-repeat="records" class="w3-hover-orange item">
           <td>{{OrgName}}</td>
           <td>{{District}}</td>
-          <td>{{PostalCode}}</td>
         </tr>
       </table>
     </div>
@@ -145,21 +145,26 @@
           // create new map and center it in Madrid
           map = new google.maps.Map(mapCanvas, mapOptions);
           // load file with the markers
-          w3.getHttpObject("./data/data.js", displayMarkers);
+          w3.getHttpObject("./data/data.js", initPageContent);
         } else {
           console.log('Geocode of mainCity was not successful for the following reason: ' + status);
         }
       });
     }
 
-    function displayMarkers(myObject) {
-      arrayOfMarkers = myObject["records"];
+    function initPageContent(arrayOfMarkers) {
+      // add records to DB
+      db.bulkDocs(arrayOfMarkers).then(function (result) {
+        console.log("Markers added successfully to DB. " + result)
+      }).catch(function (err) {
+        console.log("Error while adding markers to DB: " + err);
+      });
       // add the markers to the map
       arrayOfMarkers.forEach(markerData => {
         addMarkerToMap(markerData);
       });
       // show table with the markers
-      w3.displayObject("resultTable", myObject);
+      w3.displayObject("resultTable", { "records": arrayOfMarkers });
     }
 
     // adds a marker to the map.
@@ -198,6 +203,21 @@
     // callback for the search by text
     function onTextSearchInput(inputValue) {
       w3.filterHTML('#resultTable', '.item', inputValue);
+    }
+
+    // callback for the search by text
+    function onCategorySelected(selectedCategory) {
+      w3.filterHTML('#resultTable', '.item', selectedCategory);
+    }
+
+    // callback for the clock on a row of the result table
+    function onRowClick(markerId) {
+      console.log("Clicked row of marker with id: " + markerId);
+      db.get(markerId + "").then(function (doc) {
+        console.log("Fetched marker with id '" + doc["_id"] + "' and name '" + doc["OrgName"] + "'-");
+      }).catch(function (err) {
+        console.log(err);
+      });
     }
 
   </script>
