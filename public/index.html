@@ -4,14 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
   crossorigin="anonymous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <script src="//cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.min.js"></script>
-<script>
-  var db = new PouchDB('madrid4all.db');
-</script>
+<script src="//cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.find.min.js"></script>
 <style>
   body,  h1,  h2,  h3,  h4,  h5 {
     font-family: "Poppins", sans-serif
@@ -60,26 +58,34 @@
 
     <br>
 
-
-    <div class="w3-container">
-      <h3>Buscador</h3>
-      <input class="w3-input" type="text" oninput="onTextSearchInput(this.value)" placeholder="Escribe un termino de búsqueda...">
-      <br>
-      <table id="resultTable" class="w3-table w3-striped w3-bordered">
-        <thead>
-          <tr class="w3-green">
-            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Nombre</th>
-            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(3)')">Distrito</th>
-          </tr>
-        </thead>
-        <tr onclick="onRowClick({{_id}})" w3-repeat="records" class="w3-hover-orange item">
-          <td>{{OrgName}}</td>
-          <td>{{District}}</td>
+    <h3>Buscador</h3>
+    <h4>Categorias</h4>
+    <table id="listOfCategories" class="w3-table">
+      <tr>
+        <td id="Category1" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-handshake"></i>&nbspCategoria 1</td>
+        <td id="Category2" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-dove"></i>&nbspCategoria 2</td>
+        <td id="Category3" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-ribbon"></i>&nbspCategoria 3</td>
+      </tr>
+    </table>
+    <br>
+    <h4>Filtrar por texto</h4>
+    <input class="w3-input" type="text" oninput="onTextSearchInput(this.value)" placeholder="Escribe un termino de búsqueda...">
+    <br>
+    <table id="resultTable" class="w3-table w3-striped w3-bordered">
+      <thead>
+        <tr class="w3-green">
+          <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(1')">Nombre</th>
+          <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Distrito</th>
         </tr>
-      </table>
-    </div>
+      </thead>
+      <tr onclick="onRowClick({{_orgName}})" w3-repeat="records" class="w3-hover-orange item">
+        <td>{{orgName}}</td>
+        <td>{{district}}</td>
+      </tr>
+    </table>
+  </div>
 
-    <!-- Pagination 
+  <!-- Pagination 
     <div class="w3-center">
       <div class="w3-bar">
         <a href="#" class="w3-bar-item w3-button">&laquo;</a>
@@ -92,7 +98,7 @@
     </div>
     -->
 
-    <!-- End page content -->
+  <!-- End page content -->
   </div>
 
   <!-- Footer -->
@@ -102,7 +108,159 @@
   </div>
 
   <script>
-    // Script to open and close sidebar
+
+    // global variables
+    var dbName = 'madrid4all.db';
+    var db = new PouchDB(dbName);
+    var mainCity = 'Madrid';
+    var geocoder;
+    var map;
+    var listOfMarkers;
+
+    // detroy DB in order to recreate it from scratch
+    db.destroy().then(
+      function () {
+        // Once we destroy the database, we have to create a new one otherwise we'll get an error, "Error: database is destroyed".
+        db = new PouchDB(dbName);
+        // initialize page content by loading its associated 'data.js'
+        w3.getHttpObject("./data/data.js", initPageContent);
+      }
+    )
+
+    /// callback to load the page content
+    function initPageContent(arrayOfMarkers) {
+      // check if the db is empty. In that case, load the content of data.js file
+      db.info().then(function (result) {
+        if (result.doc_count === 0) {
+          console.log('DB empty! Lets add data.js into it...');
+          db.bulkDocs(arrayOfMarkers).then(function (result) {
+            console.log("Markers added successfully to DB. " + result)
+            createDBIndexes();
+          }).catch(function (err) {
+            console.log("Error while adding markers to DB: " + err);
+          });
+        } else {
+          console.log('DB not empty. It contains already ' + result.doc_count + ' records. No extra content is loaded from data.js.')
+        }
+        // add the markers to the map
+        arrayOfMarkers.forEach(markerData => {
+          console.log("Adding marker " + markerData.orgName + ", " + markerData.address + " to the map...");
+          addMarkerToMap(markerData);
+        });
+        // show table with the markers
+        updateResultTable(arrayOfMarkers);
+      });
+    }
+
+    function createDBIndexes() {
+      // create the necessary db indexes
+      db.createIndex({
+        index: {
+          fields: ['orgName']
+        }
+      }).then(function (result) {
+        console.log("Successfully created index on the categories: " + result);
+      }).catch(function (err) {
+        console.log("Error creating index on the categories: " + err);
+      });
+    }
+
+    // function to update the resultTable
+    function updateResultTable(arrayOfMarkers) {
+      w3.displayObject("resultTable", { "records": arrayOfMarkers });
+    }
+
+    // Function to Show Map of Services
+    function loadMap() {
+      if (!geocoder) {
+        geocoder = new google.maps.Geocoder();
+      }
+      // mapPosition centered in 'mainCity'
+      geocoder.geocode({ 'address': mainCity }, function (results, status) {
+        if (status == 'OK') {
+          var mapPosition = results[0].geometry.location;
+          var mapCanvas = document.getElementById("servicesMap");
+          var mapOptions = {
+            // create map centered in 'mainCity'
+            center: mapPosition,
+            zoom: 11
+          };
+          // create new map and center it in Madrid
+          map = new google.maps.Map(mapCanvas, mapOptions);
+        } else {
+          console.log('Geocode of mainCity was not successful for the following reason: ' + status);
+        }
+      });
+    }
+
+    // adds a marker to the map.
+    function addMarkerToMap(markerData) {
+      // initialize variables
+      if (!geocoder) {
+        geocoder = new google.maps.Geocoder();
+      }
+      var address = markerData.address + " " + markerData.postalCode;
+      var sublocality = markerData.district;
+      var markerTitle = markerData.orgName;
+      geocoder.geocode({ 'address': address }, function (results, status) {
+        if (status == 'OK') {
+          // add the marker to the map
+          var marker = new google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location,
+            title: 'Click here for more details'
+          });
+          // create an infoWindow to be linked to the marker
+          var infowindow = new google.maps.InfoWindow({
+            content: "<strong>" + markerData.orgName + "</strong><br><em>" + markerData.address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a>" // HTML contents of the InfoWindow
+          });
+          // add a Click Listener to our marker
+          google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker); // Open our InfoWindow
+          });
+        } else if (status === google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
+          setTimeout(function () {
+            addMarkerToMap(markerData);
+          }, 250);
+        } else {
+          console.log("Geocoding for marker " + markerData._id + " was not successful for the following reason: " + status);
+        }
+      });
+    }
+
+    // callback for the search by text
+    function onTextSearchInput(inputValue) {
+      w3.filterHTML('#resultTable', '.item', inputValue);
+    }
+
+    // callback for the search by text
+    function onCategorySelected(selectedCategory) {
+      console.log("Selected category " + selectedCategory);
+      db.find({
+        selector: { orgName : 'LA VILLANA'},
+        fields: ['_id', 'orgName', 'district']
+      }).then(function (result) {
+        var arrayOfMarkers = result["docs"];
+        console.log(arrayOfMarkers.length + " markers found for category '" + selectedCategory + "'.");
+        // show table with the markers
+        updateResultTable(arrayOfMarkers);
+      }).catch(function (err) {
+        console.log(err);
+      });
+      //w3.filterHTML('#resultTable', '.item', selectedCategory);
+    }
+
+    // callback for the clock on a row of the result table
+    function onRowClick(markerId) {
+      console.log("Clicked row of marker with id: " + markerId);
+      db.get(markerId + "").then(function (doc) {
+        console.log("Fetched marker with id '" + doc["_id"] + "' and name '" + doc["orgName"] + "'-");
+      }).catch(function (err) {
+        console.log(err);
+      });
+    }
+
+    // script to open and close sidebar
     function w3_open() {
       document.getElementById("mySidebar").style.display = "block";
       document.getElementById("myOverlay").style.display = "block";
@@ -119,105 +277,6 @@
       document.getElementById("modal01").style.display = "block";
       var captionText = document.getElementById("caption");
       captionText.innerHTML = element.alt;
-    }
-
-    var geocoder;
-    var map;
-    var listOfMarkers;
-    var mainCity = 'Madrid';
-
-    // Function to Show Map of Services
-    function loadMap() {
-
-      // initialize elements
-      geocoder = new google.maps.Geocoder();
-
-      // mapPosition centered in 'mainCity'
-      geocoder.geocode({ 'address': mainCity }, function (results, status) {
-        if (status == 'OK') {
-          var mapPosition = results[0].geometry.location;
-          var mapCanvas = document.getElementById("servicesMap");
-          var mapOptions = {
-            // create map centered in 'mainCity'
-            center: mapPosition,
-            zoom: 11
-          };
-          // create new map and center it in Madrid
-          map = new google.maps.Map(mapCanvas, mapOptions);
-          // load file with the markers
-          w3.getHttpObject("./data/data.js", initPageContent);
-        } else {
-          console.log('Geocode of mainCity was not successful for the following reason: ' + status);
-        }
-      });
-    }
-
-    function initPageContent(arrayOfMarkers) {
-      // add records to DB
-      db.bulkDocs(arrayOfMarkers).then(function (result) {
-        console.log("Markers added successfully to DB. " + result)
-      }).catch(function (err) {
-        console.log("Error while adding markers to DB: " + err);
-      });
-      // add the markers to the map
-      arrayOfMarkers.forEach(markerData => {
-        addMarkerToMap(markerData);
-      });
-      // show table with the markers
-      w3.displayObject("resultTable", { "records": arrayOfMarkers });
-    }
-
-    // adds a marker to the map.
-    function addMarkerToMap(markerData) {
-      // TODO: Replace Madrid by a variable
-      var address = markerData.Address + " " + markerData.PostalCode;
-      var sublocality = markerData.District;
-      var markerTitle = markerData.OrgName;
-      geocoder.geocode({ 'address': address }, function (results, status) {
-        if (status == 'OK') {
-          // add the marker to the map
-          var marker = new google.maps.Marker({
-            map: map,
-            position: results[0].geometry.location,
-            title: 'Click here for more details'
-          });
-          // create an infoWindow to be linked to the marker
-          var infowindow = new google.maps.InfoWindow({
-            content: "<strong>" + markerData.OrgName + "</strong><br><em>" + markerData.Address + "</em><br><a href=\"" + markerData.OrgWeb + "\">" + markerData.OrgWeb + "</a>" // HTML contents of the InfoWindow
-          });
-          // add a Click Listener to our marker
-          google.maps.event.addListener(marker, 'click', function () {
-            infowindow.open(map, marker); // Open our InfoWindow
-          });
-
-        } else if (status === google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
-          setTimeout(function () {
-            addMarkerToMap(markerData);
-          }, 250);
-        } else {
-          console.log("Geocode for " + markerData.ID + " was not successful for the following reason: " + status);
-        }
-      });
-    }
-
-    // callback for the search by text
-    function onTextSearchInput(inputValue) {
-      w3.filterHTML('#resultTable', '.item', inputValue);
-    }
-
-    // callback for the search by text
-    function onCategorySelected(selectedCategory) {
-      w3.filterHTML('#resultTable', '.item', selectedCategory);
-    }
-
-    // callback for the clock on a row of the result table
-    function onRowClick(markerId) {
-      console.log("Clicked row of marker with id: " + markerId);
-      db.get(markerId + "").then(function (doc) {
-        console.log("Fetched marker with id '" + doc["_id"] + "' and name '" + doc["OrgName"] + "'-");
-      }).catch(function (err) {
-        console.log(err);
-      });
     }
 
   </script>
