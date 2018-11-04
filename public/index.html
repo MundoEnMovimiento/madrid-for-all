@@ -156,7 +156,7 @@
       // create the necessary db indexes
       db.createIndex({
         index: {
-          fields: ['orgName']
+          fields: ['categories', 'orgName']
         }
       }).then(function (result) {
         console.log("Successfully created index on the categories: " + result);
@@ -237,7 +237,7 @@
     function onCategorySelected(selectedCategory) {
       console.log("Selected category " + selectedCategory);
       db.find({
-        selector: { orgName : 'LA VILLANA'},
+        selector: { categories : { $elemMatch : { $eq : selectedCategory }}},
         fields: ['_id', 'orgName', 'district']
       }).then(function (result) {
         var arrayOfMarkers = result["docs"];
