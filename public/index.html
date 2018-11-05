@@ -62,9 +62,12 @@
     <h4>Categorias</h4>
     <table id="listOfCategories" class="w3-table">
       <tr>
-        <td id="Category1" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-handshake"></i>&nbspCategoria 1</td>
-        <td id="Category2" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-dove"></i>&nbspCategoria 2</td>
-        <td id="Category3" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-ribbon"></i>&nbspCategoria 3</td>
+        <td id="Category1" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-handshake"></i>&nbspCategoria
+          1</td>
+        <td id="Category2" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-dove"></i>&nbspCategoria
+          2</td>
+        <td id="Category3" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-ribbon"></i>&nbspCategoria
+          3</td>
       </tr>
     </table>
     <br>
@@ -78,9 +81,15 @@
           <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Distrito</th>
         </tr>
       </thead>
-      <tr onclick="onRowClick({{_orgName}})" w3-repeat="records" class="w3-hover-orange item">
-        <td>{{orgName}}</td>
-        <td>{{district}}</td>
+      <tr onclick="onRowClick({{orgName}})" w3-repeat="records" class="w3-padding-8 w3-hover-orange item">
+        <td>
+          <p>{{orgName}}</p>
+          <p class="w3-small">{{languages}}</p>
+        </td>
+        <td>
+          <p>{{district}}</p>
+          <p class="w3-small">{{postalCode}}</p>
+        </td>
       </tr>
     </table>
   </div>
@@ -168,6 +177,7 @@
     // function to update the resultTable
     function updateResultTable(arrayOfMarkers) {
       w3.displayObject("resultTable", { "records": arrayOfMarkers });
+      w3.sortHTML('#resultTable', '.item', 'td:nth-child(1')
     }
 
     // Function to Show Map of Services
@@ -237,8 +247,8 @@
     function onCategorySelected(selectedCategory) {
       console.log("Selected category " + selectedCategory);
       db.find({
-        selector: { categories : { $elemMatch : { $eq : selectedCategory }}},
-        fields: ['_id', 'orgName', 'district']
+        selector: { categories: { $elemMatch: { $eq: selectedCategory } } },
+        fields: ['_id', 'orgName', 'district', 'postalCode', 'languages'],
       }).then(function (result) {
         var arrayOfMarkers = result["docs"];
         console.log(arrayOfMarkers.length + " markers found for category '" + selectedCategory + "'.");
