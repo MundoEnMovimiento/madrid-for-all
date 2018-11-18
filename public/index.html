@@ -62,9 +62,12 @@
     <h4>Categorias</h4>
     <table id="listOfCategories" class="w3-table">
       <tr>
-        <td id="Category1" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-handshake"></i>&nbspCategoria 1</td>
-        <td id="Category2" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-dove"></i>&nbspCategoria 2</td>
-        <td id="Category3" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-ribbon"></i>&nbspCategoria 3</td>
+        <td id="Category1" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-handshake"></i>&nbspCategoria
+          1</td>
+        <td id="Category2" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-dove"></i>&nbspCategoria
+          2</td>
+        <td id="Category3" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-ribbon"></i>&nbspCategoria
+          3</td>
       </tr>
     </table>
     <br>
@@ -78,9 +81,15 @@
           <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Distrito</th>
         </tr>
       </thead>
-      <tr onclick="onRowClick({{_orgName}})" w3-repeat="records" class="w3-hover-orange item">
-        <td>{{orgName}}</td>
-        <td>{{district}}</td>
+      <tr onclick="onRowClick({{orgName}})" w3-repeat="records" class="w3-padding-8 w3-hover-orange item">
+        <td>
+          <p>{{orgName}}</p>
+          <p class="w3-small">{{languages}}</p>
+        </td>
+        <td>
+          <p>{{district}}</p>
+          <p class="w3-small">{{postalCode}}</p>
+        </td>
       </tr>
     </table>
   </div>
@@ -112,10 +121,10 @@
     // global variables
     var dbName = 'madrid4all.db';
     var db = new PouchDB(dbName);
-    var mainCity = 'Madrid';
-    var geocoder;
     var map;
     var listOfMarkers;
+    var listOfSelectedCategories = [];
+    var mainCity = 'Madrid, ES';
 
     // detroy DB in order to recreate it from scratch
     db.destroy().then(
@@ -168,13 +177,12 @@
     // function to update the resultTable
     function updateResultTable(arrayOfMarkers) {
       w3.displayObject("resultTable", { "records": arrayOfMarkers });
+      w3.sortHTML('#resultTable', '.item', 'td:nth-child(1')
     }
 
     // Function to Show Map of Services
     function loadMap() {
-      if (!geocoder) {
-        geocoder = new google.maps.Geocoder();
-      }
+      var geocoder = new google.maps.Geocoder();
       // mapPosition centered in 'mainCity'
       geocoder.geocode({ 'address': mainCity }, function (results, status) {
         if (status == 'OK') {
@@ -196,35 +204,21 @@
     // adds a marker to the map.
     function addMarkerToMap(markerData) {
       // initialize variables
-      if (!geocoder) {
-        geocoder = new google.maps.Geocoder();
-      }
       var address = markerData.address + " " + markerData.postalCode;
-      var sublocality = markerData.district;
       var markerTitle = markerData.orgName;
-      geocoder.geocode({ 'address': address }, function (results, status) {
-        if (status == 'OK') {
-          // add the marker to the map
-          var marker = new google.maps.Marker({
-            map: map,
-            position: results[0].geometry.location,
-            title: 'Click here for more details'
-          });
-          // create an infoWindow to be linked to the marker
-          var infowindow = new google.maps.InfoWindow({
-            content: "<strong>" + markerData.orgName + "</strong><br><em>" + markerData.address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a>" // HTML contents of the InfoWindow
-          });
-          // add a Click Listener to our marker
-          google.maps.event.addListener(marker, 'click', function () {
-            infowindow.open(map, marker); // Open our InfoWindow
-          });
-        } else if (status === google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
-          setTimeout(function () {
-            addMarkerToMap(markerData);
-          }, 250);
-        } else {
-          console.log("Geocoding for marker " + markerData._id + " was not successful for the following reason: " + status);
-        }
+      var markerPosition = markerData.geocode;
+      var marker = new google.maps.Marker({
+        map: map,
+        position: markerData.geocode,
+        title: 'Click here for more details'
+      });
+      // create an infoWindow to be linked to the marker
+      var infowindow = new google.maps.InfoWindow({
+        content: "<strong>" + markerData.orgName + "</strong><br><em>" + address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a>" // HTML contents of the InfoWindow
+      });
+      // add a Click Listener to our marker
+      google.maps.event.addListener(marker, 'click', function () {
+        infowindow.open(map, marker); // Open our InfoWindow
       });
     }
 
@@ -236,9 +230,11 @@
     // callback for the search by text
     function onCategorySelected(selectedCategory) {
       console.log("Selected category " + selectedCategory);
+      listOfSelectedCategories.push(selectedCategory);
+      console.log("listOfSelectedCategories : " + listOfSelectedCategories.toString())
       db.find({
-        selector: { categories : { $elemMatch : { $eq : selectedCategory }}},
-        fields: ['_id', 'orgName', 'district']
+        selector: { categories: { $elemMatch: { $in: listOfSelectedCategories } } },
+        fields: ['_id', 'orgName', 'district', 'postalCode', 'languages'],
       }).then(function (result) {
         var arrayOfMarkers = result["docs"];
         console.log(arrayOfMarkers.length + " markers found for category '" + selectedCategory + "'.");
