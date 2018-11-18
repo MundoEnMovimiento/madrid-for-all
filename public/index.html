@@ -69,7 +69,7 @@
     </table>
     <br>
     <h4>Filtrar por texto</h4>
-    <input class="w3-input" type="text" oninput="onTextSearchInput(this.value)" placeholder="Escribe un termino de búsqueda...">
+    <input class="w3-input" type="text" oninput="onTextSearchInput(this.value)" placeholder="Escribe un termino de bï¿½squeda...">
     <br>
     <table id="resultTable" class="w3-table w3-striped w3-bordered">
       <thead>
@@ -194,13 +194,12 @@
     // adds a marker to the map.
     function addMarkerToMap(markerData) {
       // initialize variables
-      var address = markerData.address + " " + markerData.postalCode;
-      var markerTitle = markerData.orgName;
-      var markerPosition = markerData.geocode;
+      var address = markerData.fullAddress;
+      var markerPosition = new google.maps.LatLng(markerData.latLng);
       var marker = new google.maps.Marker({
         map: map,
-        position: markerData.geocode,
-        title: 'Click here for more details'
+        position: markerPosition,
+        title: markerData.orgName + ". Click for more details"
       });
       // create an infoWindow to be linked to the marker
       var infowindow = new google.maps.InfoWindow({
