@@ -1,3 +1,4 @@
 firebase.json
 .firebase
 .firebaserc
+excel-to-json/node_modules/*
