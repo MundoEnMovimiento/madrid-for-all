@@ -19,7 +19,7 @@
     "contactPhone": 914049118,
     "contactEmail": "coordinador@alternativaenmarcha.org",
     "fullAddress": "BLAS DE OTERO, 66, 28017, Madrid",
-    "geocode": "40.4236238,-3.6508187"
+    "latLng": { "lat": 40.4236238, "lng": -3.6508187 }
   },
   {
     "ID": 2,
@@ -41,7 +41,7 @@
     "contactPhone": 915220070,
     "contactEmail": "hermandad@refugio.e.telefonica.net",
     "fullAddress": "CORREDERA BAJA DE SAN PABLO 16, 28004, Madrid",
-    "geocode": "40.4226654,-3.7034987"
+    "latLng": { "lat": 40.4226654, "lng": -3.7034987 }
   },
   {
     "ID": 3,
@@ -63,7 +63,7 @@
     "contactPhone": 915930540,
     "contactEmail": "jorge.alamo@fundaciontriangulo.es",
     "fullAddress": "MELENDEZ VALDES, 52, 28015, Madrid",
-    "geocode": "40.4331491,-3.7149378"
+    "latLng": { "lat": 40.4331491, "lng": -3.7149378 }
   },
   {
     "ID": 4,
@@ -85,7 +85,7 @@
     "contactPhone": 650010300,
     "contactEmail": "roenred@asociacionapoyo.org",
     "fullAddress": "CORREGIDOR DIEGO DE VALDERRABANO 45, 28030, Madrid",
-    "geocode": "40.4131224,-3.6599634"
+    "latLng": { "lat": 40.4131224, "lng": -3.6599634 }
   },
   {
     "ID": 5,
@@ -107,7 +107,7 @@
     "contactPhone": 644882198,
     "contactEmail": "info@lavillana.org",
     "fullAddress": "MONTSENY, 35 , 28038, Madrid",
-    "geocode": "40.4005434,-3.6624328"
+    "latLng": { "lat": 40.4005434, "lng": -3.6624328 }
   },
   {
     "ID": 6,
@@ -129,7 +129,7 @@
     "contactPhone": 660528316,
     "contactEmail": "karlossanpedro@lamercedmigraciones.org",
     "fullAddress": "BOCANGEL, 2, 28028, Madrid",
-    "geocode": "40.4298802,-3.6643317"
+    "latLng": { "lat": 40.4298802, "lng": -3.6643317 }
   },
   {
     "ID": 7,
@@ -151,7 +151,7 @@
     "contactPhone": 635736573,
     "contactEmail": "jsanzlan@ucm.es",
     "fullAddress": "BETANZOS 37, 28029, Madrid",
-    "geocode": "40.4747973,-3.7114655"
+    "latLng": { "lat": 40.4747973, "lng": -3.7114655 }
   },
   {
     "ID": 8,
@@ -173,7 +173,7 @@
     "contactPhone": 914672626,
     "contactEmail": "comunicacion@asociacionrealidades.org",
     "fullAddress": "CACERES, 10, 28045, Madrid",
-    "geocode": "40.3987635,-3.6956464"
+    "latLng": { "lat": 40.3987635, "lng": -3.6956464 }
   },
   {
     "ID": 9,
@@ -195,7 +195,7 @@
     "contactPhone": 917772822,
     "contactEmail": "asociacion@lakalle.org",
     "fullAddress": "JAVIER DE MIGUEL, 92, 28018, Madrid",
-    "geocode": "40.3852155,-3.6564745"
+    "latLng": { "lat": 40.3852155, "lng": -3.6564745 }
   },
   {
     "ID": 10,
@@ -217,7 +217,7 @@
     "contactPhone": "",
     "contactEmail": " bienvenida@ingobernable.net",
     "fullAddress": "GOBERNADOR 39, 28014, Madrid",
-    "geocode": "40.4115124,-3.6933957"
+    "latLng": { "lat": 40.4115124, "lng": -3.6933957 }
   },
   {
     "ID": 11,
@@ -239,7 +239,7 @@
     "contactPhone": 913721506,
     "contactEmail": "nortejoven@nortejoven.org",
     "fullAddress": "RIVADAVIA, 20, 28029, Madrid",
-    "geocode": "40.4724723,-3.7049219"
+    "latLng": { "lat": 40.4724723, "lng": -3.7049219 }
   },
   {
     "ID": 12,
@@ -261,7 +261,7 @@
     "contactPhone": "",
     "contactEmail": "enredadera@riseup.net",
     "fullAddress": "ANASTASIO HERRERO 10, 28020, Madrid",
-    "geocode": "40.4566109,-3.7009844"
+    "latLng": { "lat": 40.4566109, "lng": -3.7009844 }
   },
   {
     "ID": 13,
@@ -283,7 +283,7 @@
     "contactPhone": 914299756,
     "contactEmail": "terapiasinfronteras@gmail.com",
     "fullAddress": "SAN AGUSTIN, 7, 28014, Madrid",
-    "geocode": "40.4148312,-3.6967330"
+    "latLng": { "lat": 40.4148312, "lng": -3.6967330 }
   },
   {
     "ID": 14,
@@ -305,7 +305,7 @@
     "contactPhone": 913806604,
     "contactEmail": "gandalflf@hotmail.com",
     "fullAddress": "RAFAEL FERNANDEZ HIJICOS, 2, 28038, Madrid",
-    "geocode": "40.3924062,-3.6368758"
+    "latLng": { "lat": 40.3924062, "lng": -3.6368758 }
   },
   {
     "ID": 15,
@@ -327,7 +327,7 @@
     "contactPhone": 918286978,
     "contactEmail": "coordinacioncepi@larueca.info",
     "fullAddress": "ARQUITECTURA 15 DUPLICADO, 28005, Madrid",
-    "geocode": "40.3991255,-3.7017506"
+    "latLng": { "lat": 40.3991255, "lng": -3.7017506 }
   },
   {
     "ID": 16,
@@ -349,7 +349,7 @@
     "contactPhone": 915211174,
     "contactEmail": "administracion@kifkif.info",
     "fullAddress": "ESPARTEROS 1, 28012, Madrid",
-    "geocode": "40.4163611,-3.7049219"
+    "latLng": { "lat": 40.4163611, "lng": -3.7049219 }
   },
   {
     "ID": 17,
@@ -371,7 +371,7 @@
     "contactPhone": 699684246,
     "contactEmail": "mcruzrubio@hotmail.com",
     "fullAddress": "GENERAL ARANDA 30, 28029, Madrid",
-    "geocode": "40.4731095,-3.6938230"
+    "latLng": { "lat": 40.4731095, "lng": -3.6938230 }
   },
   {
     "ID": 18,
@@ -393,7 +393,7 @@
     "contactPhone": 917779661,
     "contactEmail": "cepa.infancia@gmail.com",
     "fullAddress": "MARISMAS 37, 28038, Madrid",
-    "geocode": "40.4023568,-3.6540105"
+    "latLng": { "lat": 40.4023568, "lng": -3.6540105 }
   },
   {
     "ID": 19,
@@ -415,7 +415,7 @@
     "contactPhone": "",
     "contactEmail": "matteo.ryu@orbitadiversa.org",
     "fullAddress": "ALTAMIRANO, 37, 28012, Madrid",
-    "geocode": "40.4296027,-3.7215548"
+    "latLng": { "lat": 40.4296027, "lng": -3.7215548 }
   },
   {
     "ID": 20,
@@ -437,7 +437,7 @@
     "contactPhone": 915592906,
     "contactEmail": "oid@sosracismomadrid.es",
     "fullAddress": "LAVAPIES, 13, 28012, Madrid",
-    "geocode": "40.4110726,-3.7027240"
+    "latLng": { "lat": 40.4110726, "lng": -3.7027240 }
   },
   {
     "ID": 21,
@@ -459,7 +459,7 @@
     "contactPhone": 912244837,
     "contactEmail": "avpalomadehesa@gmail.com",
     "fullAddress": "AGUILAR DE CAMPOO, 13, 28039, Madrid",
-    "geocode": "40.4635373,-3.7188877"
+    "latLng": { "lat": 40.4635373, "lng": -3.7188877 }
   },
   {
     "ID": 22,
@@ -481,6 +481,6 @@
     "contactPhone": 911684483,
     "contactEmail": "casaplaza@valponasca.org",
     "fullAddress": "SAN AQUILINO 27, 28029, Madrid",
-    "geocode": "40.4718394,-3.6891843"
+    "latLng": { "lat": 40.4718394, "lng": -3.6891843 }
   }
 ]
