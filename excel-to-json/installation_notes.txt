@@ -1,0 +1,18 @@
+0.- Install NodeJS so the npm is installed
+
+1.- Open PowerShell or cmd.exe in Administrative mode
+
+2.- Change directory to this folder
+
+3.- Install Windows Build Tools for NodeJS (See https://github.com/felixrieseberg/windows-build-tools/issues/56 for more info), including python executable in the path
+
+npm --add-python-to-path='true' --debug install --global windows-build-tools
+
+4.- Install latest version of Libxmljs library
+
+npm i libxmljs
+
+5.- Install excel-as-json library
+
+npm install excel-as-json --save-dev
+

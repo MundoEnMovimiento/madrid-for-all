@@ -8,8 +8,8 @@
   crossorigin="anonymous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <script src="https://www.w3schools.com/lib/w3.js"></script>
-<script src="//cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.find.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.find.min.js"></script>
 <style>
   body,  h1,  h2,  h3,  h4,  h5 {
     font-family: "Poppins", sans-serif
@@ -127,7 +127,7 @@
         // Once we destroy the database, we have to create a new one otherwise we'll get an error, "Error: database is destroyed".
         db = new PouchDB(dbName);
         // initialize page content by loading its associated 'data.js'
-        w3.getHttpObject("./data/data.js", initPageContent);
+        w3.getHttpObject("./data/data.json", initPageContent);
       }
     )
     /// callback to load the page content
@@ -195,7 +195,8 @@
     function addMarkerToMap(markerData) {
       // initialize variables
       var address = markerData.fullAddress;
-      var markerPosition = new google.maps.LatLng(markerData.latLng);
+      console.log("markerData.geocode = " + markerData.geocode);
+      var markerPosition = new google.maps.LatLng(markerData.geocode);
       var marker = new google.maps.Marker({
         map: map,
         position: markerPosition,

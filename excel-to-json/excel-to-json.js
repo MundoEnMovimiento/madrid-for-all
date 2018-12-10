@@ -1,3 +1,7 @@
+console.log("Processing lostinmadrid_data.xlsx...");
+
 convertExcel = require('excel-as-json').processFile;
-convertExcel ('lostinmadrid_data.xlsx', 'lostinmadrid_data.json', false, null);
+
+convertExcel("data.xlsx", "data.json", false, null);
+
 console.log("Finished!");
