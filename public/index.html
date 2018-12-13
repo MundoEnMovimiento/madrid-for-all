@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Lost In Madrid</title>
+<title>Madrid For All</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -11,18 +11,26 @@
 <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.find.min.js"></script>
 <style>
-  body,  h1,  h2,  h3,  h4,  h5 {
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-family: "Poppins", sans-serif
   }
+
   body {
     font-size: 16px;
   }
+
   .w3-half img {
     margin-bottom: -6px;
     margin-top: 16px;
     opacity: 0.8;
     cursor: pointer
   }
+
   .w3-half img:hover {
     opacity: 1
   }
@@ -30,68 +38,109 @@
 
 <body>
 
-  <!-- Include sidebar / menu in small screens -->
   <div w3-include-html="./menu.html"></div>
 
   <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <div class="w3-main" style="margin-left:40px;margin-right:40px">
 
     <!-- Header -->
     <!-- Servicios -->
-    <div class="w3-container" style="margin-top:80px" id="showcase">
-      <h1 class="w3-jumbo"><b>Lost in Madrid</b></h1>
-      <h1 class="w3-xxxlarge w3-text-green"><b>Servicios.</b></h1>
-      <hr style="width:50px;border:5px solid green" class="w3-round">
-      <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-      <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <div class="w3-container" style="margin-top:20px" id="showcase">
+      <h1 class="w3-jumbo"><b>Madrid For All</b></h1>
+      <hr style="width:100px;border:5px solid gray" class="w3-round">
+      <p>Selecciona una categoría y un servicio
+        para ver dónde está y cómo puedes acceder
       </p>
     </div>
 
-    <div class="w3-container">
-      <div id="servicesMap" style="width:100%;height:800px;"></div>
+    <div class="w3-row w3-row-padding">
+      <div class="w3-col m4 l2 w3-green">
+        <div class="w3-cell">
+          <p id="CAT1" onclick="onCategorySelected(this.id)">Servicios básicos</p>
+        </div>
+      </div>
+      <div class="w3-col m4 l2 w3-green">
+        <div class="w3-cell">
+          <p id="CAT1" onclick="onCategorySelected(this.id)">Salud</p>
+        </div>
+      </div>
+      <div class="w3-col m4 l2">
+        <div class="w3-cell">
+          <p id="CAT1" onclick="onCategorySelected(this.id)">Educación</p>
+        </div>
+      </div>
+      <div class="w3-col m4 l2">
+        <div class="w3-cell">
+          <p id="CAT1" onclick="onCategorySelected(this.id)">Ocio</p>
+        </div>
+      </div>
+      <div class="w3-col m4 l2">
+        <div class="w3-cell">
+          <p id="CAT1" onclick="onCategorySelected(this.id)">Información legal y asistencia jurídica</p>
+        </div>
+      </div>
+      <div class="w3-col m4 l2">
+        <div class="w3-cell">
+          <p id="CAT1" onclick="onCategorySelected(this.id)">Información y orientación laboral</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-row w3-row-padding">
+      <div class="w3-col m4 l2">
+        <div class="w3-cell">
+          <p id="CAT1" onclick="onCategorySelected(this.id)">Mujer</p>
+        </div>
+      </div>
+      <div class="w3-col m4 l2">
+        <div class="w3-cell">
+          <p id="CAT1" onclick="onCategorySelected(this.id)">Infancia y jóvenes</p>
+        </div>
+      </div>
+      <div class="w3-col m4 l2">
+        <div class="w3-cell">
+          <p id="CAT1" onclick="onCategorySelected(this.id)">Familia</p>
+        </div>
+      </div>
+      <div class="w3-col m4 l2">
+        <div class="w3-cell">
+          <p id="CAT1" onclick="onCategorySelected(this.id)">LGTBIQ+</p>
+        </div>
+      </div>
+      <div class="w3-col m4 l2">
+        <div class="w3-cell">
+          <p id="CAT1" onclick="onCategorySelected(this.id)">Diversidad funcional</p>
+        </div>
+      </div>
     </div>
 
     <br>
 
-    <h3>Buscador</h3>
-    <h4>Categorias</h4>
-    <table id="listOfCategories" class="w3-table">
-      <tr>
-        <td id="Category1" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-handshake"></i>&nbspCategoria
-          1</td>
-        <td id="Category2" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-dove"></i>&nbspCategoria
-          2</td>
-        <td id="Category3" class="w3-hover-orange" onclick="onCategorySelected(this.id)"><i class="fas fa-ribbon"></i>&nbspCategoria
-          3</td>
-      </tr>
-    </table>
-    <br>
-    <h4>Filtrar por texto</h4>
-    <input class="w3-input" type="text" oninput="onTextSearchInput(this.value)" placeholder="Escribe un termino de b�squeda...">
-    <br>
-    <table id="resultTable" class="w3-table w3-striped w3-bordered">
-      <thead>
-        <tr class="w3-green">
-          <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(1')">Nombre</th>
-          <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Distrito</th>
-        </tr>
-      </thead>
-      <tr onclick="onRowClick({{orgName}})" w3-repeat="records" class="w3-padding-8 w3-hover-orange item">
-        <td>
-          <p>{{orgName}}</p>
-          <p class="w3-small">{{languages}}</p>
-        </td>
-        <td>
-          <p>{{district}}</p>
-          <p class="w3-small">{{postalCode}}</p>
-        </td>
-      </tr>
-    </table>
-  </div>
+    <div class="w3-container">
+      <div id="servicesMap" style="width:100%;height:800px;"></div>
 
-  <!-- Pagination 
+      <br>
+      
+      <table id="resultTable" class="w3-table w3-striped w3-bordered">
+        <thead>
+          <tr class="w3-green">
+            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(1')">Nombre</th>
+            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Distrito</th>
+          </tr>
+        </thead>
+        <tr onclick="onRowClick({{orgName}})" w3-repeat="records" class="w3-padding-8 w3-hover-orange item">
+          <td>
+            <p>{{orgName}}</p>
+            <p class="w3-small">{{languages}}</p>
+          </td>
+          <td>
+            <p>{{district}}</p>
+            <p class="w3-small">{{postalCode}}</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Pagination 
     <div class="w3-center">
       <div class="w3-bar">
         <a href="#" class="w3-bar-item w3-button">&laquo;</a>
@@ -103,14 +152,17 @@
       </div>
     </div>
     -->
-
-  <!-- End page content -->
   </div>
+  <!-- End page content / w3-main -->
+
 
   <!-- Footer -->
   <div class="w3-container w3-light-grey w3-padding-32" style="margin-top:75px;padding-right:58px">
-    <p class="w3-right">Powegreen by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-        class="w3-hover-opacity">w3.css</a></p>
+    <!-- TODO: fill in correct link in href -->
+    <p>Si quieres que tus servicios aparezcan en Madrid For All, rellena <a href="http://www.mundoenmovimiento.org">este formulario</a></p>
+    <p>Puedes contactar con nosotros a través del correo info@mundoenmovimiento.org o de nuestra web www.mundoenmovimiento.org</p>
+    <p class="w3-right">Powered by <a href="https://www.mundoenmovimiento.org" title="mundoenmovimiento" target="_blank"
+        class="w3-hover-opacity">Mundo en Movimiento</a></p>
   </div>
 
   <script>
@@ -135,9 +187,9 @@
       // check if the db is empty. In that case, load the content of data.js file
       db.info().then(function (result) {
         if (result.doc_count === 0) {
-          console.log('DB empty! Lets add data.js into it...');
+          console.log('DB empty! Lets add data.json into it...');
           db.bulkDocs(arrayOfMarkers).then(function (result) {
-            console.log("Markers added successfully to DB. " + result)
+            console.log("Markers added successfully to DB. ");
             createDBIndexes();
           }).catch(function (err) {
             console.log("Error while adding markers to DB: " + err);
@@ -147,7 +199,7 @@
         }
         // add the markers to the map
         arrayOfMarkers.forEach(markerData => {
-          console.log("Adding marker " + markerData.orgName + ", " + markerData.address + " to the map...");
+          // console.log("Adding marker " + markerData.orgName + ", " + markerData.address + " to the map...");
           addMarkerToMap(markerData);
         });
         // show table with the markers
@@ -161,7 +213,7 @@
           fields: ['categories', 'orgName']
         }
       }).then(function (result) {
-        console.log("Successfully created index on the categories: " + result);
+        console.log("Successfully created index over the categories");
       }).catch(function (err) {
         console.log("Error creating index on the categories: " + err);
       });
@@ -182,9 +234,9 @@
           var mapOptions = {
             // create map centered in 'mainCity'
             center: mapPosition,
-            zoom: 11
+            zoom: 12 // bigger number = closer map
           };
-          // create new map and center it in Madrid
+          // create new map and center it in 'mainCity'
           map = new google.maps.Map(mapCanvas, mapOptions);
         } else {
           console.log('Geocode of mainCity was not successful for the following reason: ' + status);
@@ -195,7 +247,6 @@
     function addMarkerToMap(markerData) {
       // initialize variables
       var address = markerData.fullAddress;
-      console.log("markerData.geocode = " + markerData.geocode);
       var markerPosition = new google.maps.LatLng(markerData.geocode);
       var marker = new google.maps.Marker({
         map: map,
