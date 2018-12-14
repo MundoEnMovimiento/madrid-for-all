@@ -56,59 +56,59 @@
     <div class="w3-row w3-row-padding">
       <div class="w3-col m4 l2 w3-green">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategorySelected(this.id)">Servicios básicos</p>
+          <p id="CAT1" onclick="onCategoryClick(this.id)">Servicios básicos</p>
         </div>
       </div>
       <div class="w3-col m4 l2 w3-green">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategorySelected(this.id)">Salud</p>
+          <p id="CAT1" onclick="onCategoryClick(this.id)">Salud</p>
         </div>
       </div>
       <div class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategorySelected(this.id)">Educación</p>
+          <p id="CAT1" onclick="onCategoryClick(this.id)">Educación</p>
         </div>
       </div>
       <div class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategorySelected(this.id)">Ocio</p>
+          <p id="CAT1" onclick="onCategoryClick(this.id)">Ocio</p>
         </div>
       </div>
       <div class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategorySelected(this.id)">Información legal y asistencia jurídica</p>
+          <p id="CAT1" onclick="onCategoryClick(this.id)">Información legal y asistencia jurídica</p>
         </div>
       </div>
       <div class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategorySelected(this.id)">Información y orientación laboral</p>
+          <p id="CAT1" onclick="onCategoryClick(this.id)">Información y orientación laboral</p>
         </div>
       </div>
     </div>
     <div class="w3-row w3-row-padding">
       <div class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategorySelected(this.id)">Mujer</p>
+          <p id="CAT1" onclick="onCategoryClick(this.id)">Mujer</p>
         </div>
       </div>
       <div class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategorySelected(this.id)">Infancia y jóvenes</p>
+          <p id="CAT1" onclick="onCategoryClick(this.id)">Infancia y jóvenes</p>
         </div>
       </div>
       <div class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategorySelected(this.id)">Familia</p>
+          <p id="CAT1" onclick="onCategoryClick(this.id)">Familia</p>
         </div>
       </div>
       <div class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategorySelected(this.id)">LGTBIQ+</p>
+          <p id="CAT1" onclick="onCategoryClick(this.id)">LGTBIQ+</p>
         </div>
       </div>
       <div class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategorySelected(this.id)">Diversidad funcional</p>
+          <p id="CAT1" onclick="onCategoryClick(this.id)">Diversidad funcional</p>
         </div>
       </div>
     </div>
@@ -267,7 +267,7 @@
       w3.filterHTML('#resultTable', '.item', inputValue);
     }
     // callback for the search by text
-    function onCategorySelected(selectedCategory) {
+    function onCategoryClick(selectedCategory) {
       console.log("Selected category " + selectedCategory);
       listOfSelectedCategories.push(selectedCategory);
       console.log("listOfSelectedCategories : " + listOfSelectedCategories.toString())
