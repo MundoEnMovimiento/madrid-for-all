@@ -54,61 +54,61 @@
     </div>
 
     <div class="w3-row w3-row-padding">
-      <div class="w3-col m4 l2 w3-green">
+      <div id="CAT1" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategoryClick(this.id)">Servicios básicos</p>
+          <p>Servicios básicos</p>
         </div>
       </div>
-      <div class="w3-col m4 l2 w3-green">
+      <div id="CAT2" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategoryClick(this.id)">Salud</p>
+          <p>Salud</p>
         </div>
       </div>
-      <div class="w3-col m4 l2">
+      <div  id="CAT3" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategoryClick(this.id)">Educación</p>
+          <p>Educación</p>
         </div>
       </div>
-      <div class="w3-col m4 l2">
+      <div  id="CAT4" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategoryClick(this.id)">Ocio</p>
+          <p>Ocio</p>
         </div>
       </div>
-      <div class="w3-col m4 l2">
+      <div  id="CAT5" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategoryClick(this.id)">Información legal y asistencia jurídica</p>
+          <p>Información legal y asistencia jurídica</p>
         </div>
       </div>
-      <div class="w3-col m4 l2">
+      <div  id="CAT6" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategoryClick(this.id)">Información y orientación laboral</p>
+          <p>Información y orientación laboral</p>
         </div>
       </div>
     </div>
     <div class="w3-row w3-row-padding">
-      <div class="w3-col m4 l2">
+      <div  id="CAT7" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategoryClick(this.id)">Mujer</p>
+          <p>Mujer</p>
         </div>
       </div>
-      <div class="w3-col m4 l2">
+      <div  id="CAT8" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategoryClick(this.id)">Infancia y jóvenes</p>
+          <p>Infancia y jóvenes</p>
         </div>
       </div>
-      <div class="w3-col m4 l2">
+      <div  id="CAT9" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategoryClick(this.id)">Familia</p>
+          <p>Familia</p>
         </div>
       </div>
-      <div class="w3-col m4 l2">
+      <div  id="CAT10" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategoryClick(this.id)">LGTBIQ+</p>
+          <p>LGTBIQ+</p>
         </div>
       </div>
-      <div class="w3-col m4 l2">
+      <div  id="CAT11" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
         <div class="w3-cell">
-          <p id="CAT1" onclick="onCategoryClick(this.id)">Diversidad funcional</p>
+          <p>Diversidad funcional</p>
         </div>
       </div>
     </div>
@@ -119,11 +119,11 @@
       <div id="servicesMap" style="width:100%;height:800px;"></div>
 
       <br>
-      
+
       <table id="resultTable" class="w3-table w3-striped w3-bordered">
         <thead>
           <tr class="w3-green">
-            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(1')">Nombre</th>
+            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(1)')">Nombre</th>
             <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Distrito</th>
           </tr>
         </thead>
@@ -159,8 +159,10 @@
   <!-- Footer -->
   <div class="w3-container w3-light-grey w3-padding-32" style="margin-top:75px;padding-right:58px">
     <!-- TODO: fill in correct link in href -->
-    <p>Si quieres que tus servicios aparezcan en Madrid For All, rellena <a href="http://www.mundoenmovimiento.org">este formulario</a></p>
-    <p>Puedes contactar con nosotros a través del correo info@mundoenmovimiento.org o de nuestra web www.mundoenmovimiento.org</p>
+    <p>Si quieres que tus servicios aparezcan en Madrid For All, rellena <a href="http://www.mundoenmovimiento.org">este
+        formulario</a></p>
+    <p>Puedes contactar con nosotros a través del correo info@mundoenmovimiento.org o de nuestra web
+      www.mundoenmovimiento.org</p>
     <p class="w3-right">Powered by <a href="https://www.mundoenmovimiento.org" title="mundoenmovimiento" target="_blank"
         class="w3-hover-opacity">Mundo en Movimiento</a></p>
   </div>
@@ -268,21 +270,34 @@
     }
     // callback for the search by text
     function onCategoryClick(selectedCategory) {
-      console.log("Selected category " + selectedCategory);
-      listOfSelectedCategories.push(selectedCategory);
-      console.log("listOfSelectedCategories : " + listOfSelectedCategories.toString())
+      console.log("Clicked on category " + selectedCategory);
+      if (listOfSelectedCategories.includes(selectedCategory)) {
+        // unselect category and search again
+        listOfSelectedCategories.pop(selectedCategory);
+        var element = document.getElementById(selectedCategory);
+        element.classList.remove("w3-green");
+        findMarkersInDatabase();
+      } else {
+        // select category and search again
+        listOfSelectedCategories.push(selectedCategory);
+        var element = document.getElementById(selectedCategory);
+        element.classList.add("w3-green");
+        findMarkersInDatabase();
+      }
+    }
+    // function to update the list of results after a change in the search form
+    function findMarkersInDatabase() {
       db.find({
         selector: { categories: { $elemMatch: { $in: listOfSelectedCategories } } },
         fields: ['_id', 'orgName', 'district', 'postalCode', 'languages'],
       }).then(function (result) {
         var arrayOfMarkers = result["docs"];
-        console.log(arrayOfMarkers.length + " markers found for category '" + selectedCategory + "'.");
+        console.log(arrayOfMarkers.length + " markers found for category '" + listOfSelectedCategories.toString() + "'.");
         // show table with the markers
         updateResultTable(arrayOfMarkers);
       }).catch(function (err) {
         console.log(err);
       });
-      //w3.filterHTML('#resultTable', '.item', selectedCategory);
     }
     // callback for the clock on a row of the result table
     function onRowClick(markerId) {
