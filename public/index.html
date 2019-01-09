@@ -41,76 +41,16 @@
   <div w3-include-html="./menu.html"></div>
 
   <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:40px;margin-right:40px">
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
     <!-- Header -->
     <!-- Servicios -->
-    <div class="w3-container" style="margin-top:20px" id="showcase">
-      <h1 class="w3-jumbo"><b>Madrid For All</b></h1>
-      <hr style="width:100px;border:5px solid gray" class="w3-round">
+    <div class="w3-container" style="margin-top:20px">
+      <h1><b>Madrid For All</b></h1>
+      <hr style="width:500px;border:3px solid gray" class="w3-round">
       <p>Selecciona una categoría y un servicio
         para ver dónde está y cómo puedes acceder
       </p>
-    </div>
-
-    <div class="w3-row w3-row-padding">
-      <div id="CAT1" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
-        <div class="w3-cell">
-          <p>Servicios básicos</p>
-        </div>
-      </div>
-      <div id="CAT2" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
-        <div class="w3-cell">
-          <p>Salud</p>
-        </div>
-      </div>
-      <div  id="CAT3" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
-        <div class="w3-cell">
-          <p>Educación</p>
-        </div>
-      </div>
-      <div  id="CAT4" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
-        <div class="w3-cell">
-          <p>Ocio</p>
-        </div>
-      </div>
-      <div  id="CAT5" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
-        <div class="w3-cell">
-          <p>Información legal y asistencia jurídica</p>
-        </div>
-      </div>
-      <div  id="CAT6" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
-        <div class="w3-cell">
-          <p>Información y orientación laboral</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-row w3-row-padding">
-      <div  id="CAT7" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
-        <div class="w3-cell">
-          <p>Mujer</p>
-        </div>
-      </div>
-      <div  id="CAT8" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
-        <div class="w3-cell">
-          <p>Infancia y jóvenes</p>
-        </div>
-      </div>
-      <div  id="CAT9" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
-        <div class="w3-cell">
-          <p>Familia</p>
-        </div>
-      </div>
-      <div  id="CAT10" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
-        <div class="w3-cell">
-          <p>LGTBIQ+</p>
-        </div>
-      </div>
-      <div  id="CAT11" onclick="onCategoryClick(this.id)" class="w3-col m4 l2">
-        <div class="w3-cell">
-          <p>Diversidad funcional</p>
-        </div>
-      </div>
     </div>
 
     <br>
@@ -158,6 +98,7 @@
 
   <!-- Footer -->
   <div class="w3-container w3-light-grey w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <div class="w3-right">
     <!-- TODO: fill in correct link in href -->
     <p>Si quieres que tus servicios aparezcan en Madrid For All, rellena <a href="http://www.mundoenmovimiento.org">este
         formulario</a></p>
@@ -165,6 +106,7 @@
       www.mundoenmovimiento.org</p>
     <p class="w3-right">Powered by <a href="https://www.mundoenmovimiento.org" title="mundoenmovimiento" target="_blank"
         class="w3-hover-opacity">Mundo en Movimiento</a></p>
+      </div>
   </div>
 
   <script>
@@ -317,12 +259,18 @@
       document.getElementById("mySidebar").style.display = "none";
       document.getElementById("myOverlay").style.display = "none";
     }
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
+    // script to open or close an accordion in the left menu
+    function toggleAccordionSection(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className =
+          x.previousElementSibling.className.replace("w3-green", "w3-orange");
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className =
+          x.previousElementSibling.className.replace("w3-orange", "w3-green");
+      }
     }
   </script>
 

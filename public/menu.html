@@ -1,28 +1,78 @@
 <!-- Sidebar/menu -->
-<div class="w3-hide-large">
-    <nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
-        id="mySidebar"><br>
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close
-            Menu</a>
-        <div class="w3-container">
-            <h3 class="w3-padding-64"><b>Madrid For All</h3>
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+    id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close
+        Menu</a>
+    <input class="w3-input w3-margin-bottom" type="text" oninput="onTextSearchInput(this.value)" placeholder="Search...">
+    <!-- Servicios -->
+    <div class="w3-bar-block">
+        <button onclick="toggleAccordionSection('CAT1')" class="w3-button w3-block w3-green w3-left-align">Servicios
+            básicos</button>
+        <div id="CAT1" class="w3-hide">
+            <a href="#" id="CAT1.1" onclick="onCategoryClick(this.id)" class="w3-bar-item w3-button w3-hover-white">Subsection
+                1.1</a>
+            <a href="#" id="CAT1.2" onclick="onCategoryClick(this.id)" class="w3-bar-item w3-button w3-hover-white">Subsection
+                1.2</a>
         </div>
-        <div class="w3-container">
-            <input class="w3-input" type="text" oninput="onTextSearchInput(this.value)" placeholder="Búsqueda...">
+        <button onclick="toggleAccordionSection('CAT2')" class="w3-button w3-block w3-green w3-left-align">Salud</button>
+        <div id="CAT2" class="w3-hide">
+            <a href="#" id="CAT2.1" onclick="onCategoryClick(this.id)" class="w3-bar-item w3-button w3-hover-white">Subsection 2.1</a>
         </div>
-        <div class="w3-bar w3-bottom">
-            <a href="#" class="w3-bar-item w3-button w3-hover-white"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-white"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-white"><i class="fab fa-twitter"></i></a>
+        <button onclick="toggleAccordionSection('CAT3')" class="w3-button w3-block w3-green w3-left-align">Educación</button>
+        <div id="CAT3" class="w3-hide">
+            <a href="#" id="CAT3.1" onclick="onCategoryClick(this.id)" class="w3-bar-item w3-button w3-hover-white">Subsection 3.1</a>
         </div>
-    </nav>
-</div>
+        <button onclick="toggleAccordionSection('CAT4')" class="w3-button w3-block w3-green w3-left-align">Ocio</button>
+        <div id="CAT4" class="w3-hide">
+            <a href="#" id="CAT4.1" onclick="onCategoryClick(this.id)" class="w3-bar-item w3-button w3-hover-white">Subsection 4.1</a>
+        </div>
+        <button onclick="toggleAccordionSection('CAT5')" class="w3-button w3-block w3-green w3-left-align">Información
+            legal y asistencia jurídica</button>
+        <div id="CAT5" class="w3-hide">
+            <a href="#" id="CAT5.1" onclick="onCategoryClick(this.id)" class="w3-bar-item w3-button w3-hover-white">Subsection 5.1</a>
+        </div>
+        <button onclick="toggleAccordionSection('CAT6')" class="w3-button w3-block w3-green w3-left-align">Información
+            y orientación laboral</button>
+        <div id="CAT6" class="w3-hide">
+            <a href="#" id="CAT6.1" onclick="onCategoryClick(this.id)" class="w3-bar-item w3-button w3-hover-white">Subsection 6.1</a>
+        </div>
+        <button onclick="toggleAccordionSection('CAT7')" class="w3-button w3-block w3-green w3-left-align">Mujer</button>
+        <div id="CAT7" class="w3-hide">
+            <a href="#" id="CAT7.1" onclick="onCategoryClick(this.id)" class="w3-bar-item w3-button w3-hover-white">Subsection 7.1</a>
+        </div>
+        <button onclick="toggleAccordionSection('CAT8')" class="w3-button w3-block w3-green w3-left-align">Infancia y
+            jóvenes</button>
+        <div id="CAT8" class="w3-hide">
+            <a href="#" id="CAT8.1" onclick="onCategoryClick(this.id)" class="w3-bar-item w3-button w3-hover-white">Subsection 8.1</a>
+        </div>
+        <button onclick="toggleAccordionSection('CAT9')" class="w3-button w3-block w3-green w3-left-align">Familia</button>
+        <div id="CAT9" class="w3-hide">
+            <a href="#" id="CAT9.1" onclick="onCategoryClick(this.id)" class="w3-bar-item w3-button w3-hover-white">Subsection 9.1</a>
+        </div>
+        <button onclick="toggleAccordionSection('CAT10')" class="w3-button w3-block w3-green w3-left-align">LGTBIQ+</button>
+        <div id="CAT10" class="w3-hide">
+            <a href="#" id="CAT10.1" onclick="onCategoryClick(this.id)" class="w3-bar-item w3-button w3-hover-white">Subsection 10.1</a>
+        </div>
+        <button onclick="toggleAccordionSection('CAT11')" class="w3-button w3-block w3-green w3-left-align">Diversidad
+            funcional</button>
+        <div id="CAT11" class="w3-hide">
+            <a href="#" id="CAT11.1" onclick="onCategoryClick(this.id)" class="w3-bar-item w3-button w3-hover-white">Subsection 11.1</a>
+        </div>
+    </div>
+
+    <div class="w3-bar w3-bottom">
+        <a href="#" class="w3-bar-item w3-button w3-hover-white"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-white"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-white"><i class="fab fa-twitter"></i></a>
+    </div>
+</nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
     <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">&#9776;</a>
     <span>Madrid For All</span>
 </header>
+
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
