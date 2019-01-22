@@ -62,7 +62,7 @@
 
       <table id="resultTable" class="w3-table w3-striped w3-bordered">
         <thead>
-          <tr class="w3-green">
+          <tr class="w3-light-grey">
             <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(1)')">Nombre</th>
             <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Distrito</th>
           </tr>
@@ -99,14 +99,14 @@
   <!-- Footer -->
   <div class="w3-container w3-light-grey w3-padding-32" style="margin-top:75px;padding-right:58px">
     <div class="w3-right">
-    <!-- TODO: fill in correct link in href -->
-    <p>Si quieres que tus servicios aparezcan en Madrid For All, rellena <a href="http://www.mundoenmovimiento.org">este
-        formulario</a></p>
-    <p>Puedes contactar con nosotros a través del correo info@mundoenmovimiento.org o de nuestra web
-      www.mundoenmovimiento.org</p>
-    <p class="w3-right">Powered by <a href="https://www.mundoenmovimiento.org" title="mundoenmovimiento" target="_blank"
-        class="w3-hover-opacity">Mundo en Movimiento</a></p>
-      </div>
+      <!-- TODO: fill in correct link in href -->
+      <p>Si quieres que tus servicios aparezcan en Madrid For All, rellena <a href="http://www.mundoenmovimiento.org">este
+          formulario</a></p>
+      <p>Puedes contactar con nosotros a través del correo info@mundoenmovimiento.org o de nuestra web
+        www.mundoenmovimiento.org</p>
+      <p class="w3-right">Powered by <a href="https://www.mundoenmovimiento.org" title="mundoenmovimiento" target="_blank"
+          class="w3-hover-opacity">Mundo en Movimiento</a></p>
+    </div>
   </div>
 
   <script>
@@ -150,23 +150,6 @@
         updateResultTable(arrayOfMarkers);
       });
     }
-    function createDBIndexes() {
-      // create the necessary db indexes
-      db.createIndex({
-        index: {
-          fields: ['categories', 'orgName']
-        }
-      }).then(function (result) {
-        console.log("Successfully created index over the categories");
-      }).catch(function (err) {
-        console.log("Error creating index on the categories: " + err);
-      });
-    }
-    // function to update the resultTable
-    function updateResultTable(arrayOfMarkers) {
-      w3.displayObject("resultTable", { "records": arrayOfMarkers });
-      w3.sortHTML('#resultTable', '.item', 'td:nth-child(1')
-    }
     // Function to Show Map of Services
     function loadMap() {
       var geocoder = new google.maps.Geocoder();
@@ -186,94 +169,8 @@
           console.log('Geocode of mainCity was not successful for the following reason: ' + status);
         }
       });
-    }
-    // adds a marker to the map.
-    function addMarkerToMap(markerData) {
-      // initialize variables
-      var address = markerData.fullAddress;
-      var markerPosition = new google.maps.LatLng(markerData.geocode);
-      var marker = new google.maps.Marker({
-        map: map,
-        position: markerPosition,
-        title: markerData.orgName + ". Click for more details"
-      });
-      // create an infoWindow to be linked to the marker
-      var infowindow = new google.maps.InfoWindow({
-        content: "<strong>" + markerData.orgName + "</strong><br><em>" + address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a>" // HTML contents of the InfoWindow
-      });
-      // add a Click Listener to our marker
-      google.maps.event.addListener(marker, 'click', function () {
-        infowindow.open(map, marker); // Open our InfoWindow
-      });
-    }
-    // callback for the search by text
-    function onTextSearchInput(inputValue) {
-      w3.filterHTML('#resultTable', '.item', inputValue);
-    }
-    // callback for the search by text
-    function onCategoryClick(selectedCategory) {
-      console.log("Clicked on category " + selectedCategory);
-      if (listOfSelectedCategories.includes(selectedCategory)) {
-        // unselect category and search again
-        listOfSelectedCategories.pop(selectedCategory);
-        var element = document.getElementById(selectedCategory);
-        element.classList.remove("w3-green");
-        findMarkersInDatabase();
-      } else {
-        // select category and search again
-        listOfSelectedCategories.push(selectedCategory);
-        var element = document.getElementById(selectedCategory);
-        element.classList.add("w3-green");
-        findMarkersInDatabase();
-      }
-    }
-    // function to update the list of results after a change in the search form
-    function findMarkersInDatabase() {
-      db.find({
-        selector: { categories: { $elemMatch: { $in: listOfSelectedCategories } } },
-        fields: ['_id', 'orgName', 'district', 'postalCode', 'languages'],
-      }).then(function (result) {
-        var arrayOfMarkers = result["docs"];
-        console.log(arrayOfMarkers.length + " markers found for category '" + listOfSelectedCategories.toString() + "'.");
-        // show table with the markers
-        updateResultTable(arrayOfMarkers);
-      }).catch(function (err) {
-        console.log(err);
-      });
-    }
-    // callback for the clock on a row of the result table
-    function onRowClick(markerId) {
-      console.log("Clicked row of marker with id: " + markerId);
-      db.get(markerId + "").then(function (doc) {
-        console.log("Fetched marker with id '" + doc["_id"] + "' and name '" + doc["orgName"] + "'-");
-      }).catch(function (err) {
-        console.log(err);
-      });
-    }
-    // script to open and close sidebar
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-      document.getElementById("myOverlay").style.display = "block";
-    }
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-      document.getElementById("myOverlay").style.display = "none";
-    }
-    // script to open or close an accordion in the left menu
-    function toggleAccordionSection(id) {
-      var x = document.getElementById(id);
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className =
-          x.previousElementSibling.className.replace("w3-green", "w3-orange");
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-        x.previousElementSibling.className =
-          x.previousElementSibling.className.replace("w3-orange", "w3-green");
-      }
-    }
+    } 
   </script>
-
   <!-- Post DOM loaded actions -->
   <script>
     // include the HTML in separated files
@@ -281,7 +178,8 @@
     // sort results table by column #1
     w3.sortHTML('#resultTable', '.item', 'td:nth-child(1)')
   </script>
-
+  <!-- async load / call external js scripts -->
+  <script async defer src="./js/madrid4all.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-cYGCy5xyn4C5hH0rv7iWbw4nNGqcU0E&callback=loadMap"></script>
 
 </body>
