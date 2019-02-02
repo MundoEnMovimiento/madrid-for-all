@@ -10,6 +10,7 @@
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.find.min.js"></script>
+<script src="./js/madrid4all.js"></script>
 <style>
   body,
   h1,
@@ -94,8 +95,6 @@
     -->
   </div>
   <!-- End page content / w3-main -->
-
-
   <!-- Footer -->
   <div class="w3-container w3-light-grey w3-padding-32" style="margin-top:75px;padding-right:58px">
     <div class="w3-right">
@@ -108,16 +107,8 @@
           class="w3-hover-opacity">Mundo en Movimiento</a></p>
     </div>
   </div>
-
   <script>
-    // global variables
-    var dbName = 'madrid4all.db';
-    var db = new PouchDB(dbName);
-    var map;
-    var listOfMarkers;
-    var listOfSelectedCategories = [];
-    var mainCity = 'Madrid, ES';
-    // detroy DB in order to recreate it from scratch
+    // destroy DB in order to recreate it from scratch
     db.destroy().then(
       function () {
         // Once we destroy the database, we have to create a new one otherwise we'll get an error, "Error: database is destroyed".
@@ -126,60 +117,13 @@
         w3.getHttpObject("./data/data.json", initPageContent);
       }
     )
-    /// callback to load the page content
-    function initPageContent(arrayOfMarkers) {
-      // check if the db is empty. In that case, load the content of data.js file
-      db.info().then(function (result) {
-        if (result.doc_count === 0) {
-          console.log('DB empty! Lets add data.json into it...');
-          db.bulkDocs(arrayOfMarkers).then(function (result) {
-            console.log("Markers added successfully to DB. ");
-            createDBIndexes();
-          }).catch(function (err) {
-            console.log("Error while adding markers to DB: " + err);
-          });
-        } else {
-          console.log('DB not empty. It contains already ' + result.doc_count + ' records. No extra content is loaded from data.js.')
-        }
-        // add the markers to the map
-        arrayOfMarkers.forEach(markerData => {
-          // console.log("Adding marker " + markerData.orgName + ", " + markerData.address + " to the map...");
-          addMarkerToMap(markerData);
-        });
-        // show table with the markers
-        updateResultTable(arrayOfMarkers);
-      });
-    }
-    // Function to Show Map of Services
-    function loadMap() {
-      var geocoder = new google.maps.Geocoder();
-      // mapPosition centered in 'mainCity'
-      geocoder.geocode({ 'address': mainCity }, function (results, status) {
-        if (status == 'OK') {
-          var mapPosition = results[0].geometry.location;
-          var mapCanvas = document.getElementById("servicesMap");
-          var mapOptions = {
-            // create map centered in 'mainCity'
-            center: mapPosition,
-            zoom: 12 // bigger number = closer map
-          };
-          // create new map and center it in 'mainCity'
-          map = new google.maps.Map(mapCanvas, mapOptions);
-        } else {
-          console.log('Geocode of mainCity was not successful for the following reason: ' + status);
-        }
-      });
-    } 
-  </script>
-  <!-- Post DOM loaded actions -->
-  <script>
+    // Post DOM loaded actions
     // include the HTML in separated files
     w3.includeHTML();
     // sort results table by column #1
     w3.sortHTML('#resultTable', '.item', 'td:nth-child(1)')
   </script>
   <!-- async load / call external js scripts -->
-  <script async defer src="./js/madrid4all.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-cYGCy5xyn4C5hH0rv7iWbw4nNGqcU0E&callback=loadMap"></script>
 
 </body>
