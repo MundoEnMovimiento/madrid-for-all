@@ -13,7 +13,7 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "CAT1"
+      "cat1"
     ],
     "services": "CLASES DE CASTELLANO, ORIENTACIÓN LABORAL, OCIO Y TIEMPO LIBRE",
     "languages": [
@@ -44,9 +44,9 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "VISITANDO NUESTRA SEDE, MIERCOLES DE 10,30 A 11,30",
     "categories": [
-      "CAT2",
-      "CAT5",
-      "CAT11"
+      "cat2",
+      "cat5",
+      "cat11"
     ],
     "services": "ROPA",
     "languages": [
@@ -76,7 +76,7 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, VISITANDO NUESTRA SEDE",
     "categories": [
-      "CAT3"
+      "cat3"
     ],
     "services": "VIH/SIDA, MATERIAL PREVENTIVO ITS (LUBRICANTES Y CONDONES MASCULINOS/FEMENINOS",
     "languages": [
@@ -107,7 +107,7 @@
     "priorAppointment": "NO",
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "CAT4"
+      "cat4"
     ],
     "services": "ORIENTACIÓN LABORAL, SERVICIO LEGAL, ATENCIÓN PSICOLÓGICA, ATENCIÓN A LA INFANCIA, ATENCIÓN A FAMILIAS",
     "languages": [
@@ -137,8 +137,8 @@
     "priorAppointment": "NO",
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "CAT5",
-      "CAT6"
+      "cat5",
+      "cat6"
     ],
     "services": "ROPA, CLASES DE CASTELLANO, APOYO ESCOLAR, OCIO Y TIEMPO LIBRE",
     "languages": [
@@ -168,7 +168,7 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, VISITANDO NUESTRA SEDE",
     "categories": [
-      "CAT6"
+      "cat6"
     ],
     "services": "CLASES DE CASTELLANO, CLASES DE INFORMÁTICA, OTRAS FORMACIONES, ORIENTACIÓN LABORAL, SERVICIO LEGAL, ATENCIÓN A LA MUJER, JÓVENES",
     "languages": [
@@ -199,7 +199,7 @@
     "priorAppointment": "NO",
     "wayOfContact": "VISITANDO NUESTRA SEDE",
     "categories": [
-      "CAT7"
+      "cat7"
     ],
     "services": "CLASES DE CASTELLANO, CLASES DE INFORMÁTICA, SERVICIO LEGAL",
     "languages": [
@@ -229,7 +229,7 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL",
     "categories": [
-      "CAT8"
+      "cat8"
     ],
     "services": "ALOJAMIENTO, ORIENTACIÓN LABORAL, ACOMPAÑAMIENTO SOCIAL, TRAMITACIÒN DE RENTAS MÍNIMAS, ATENCIÓN A PERSONAS SIN HOGAR",
     "languages": [
@@ -259,8 +259,8 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL",
     "categories": [
-      "CAT9",
-      "CAT10"
+      "cat9",
+      "cat10"
     ],
     "services": "APOYO ESCOLAR, FORMACIÓN PROFESIONAL, ORIENTACIÓN LABORAL, JÓVENES, OCIO Y TIEMPO LIBRE",
     "languages": [
@@ -290,7 +290,7 @@
     "priorAppointment": "NO",
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "CAT10"
+      "cat10"
     ],
     "services": "ENSEÑANZA DE IDIOMAS, CLASES DE INFORMÁTICA, OTRAS FORMACIONES, ATENCIÓN A LA MUJER, OCIO Y TIEMPO LIBRE, DEPORTE, ACCESO A LA CULTURA, TALLER REPARACION DE BICIS",
     "languages": [
@@ -320,7 +320,7 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL",
     "categories": [
-      "CAT11"
+      "cat11"
     ],
     "services": "CLASES DE CASTELLANO, APOYO ESCOLAR, FORMACIÓN PROFESIONAL, CLASES DE INFORMÁTICA, ORIENTACIÓN LABORAL, JÓVENES, ATENCIÓN A LA INFANCIA, FORMACIÓN EN OFICIOS",
     "languages": [
@@ -350,7 +350,7 @@
     "priorAppointment": "NO",
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "CAT1"
+      "cat1"
     ],
     "services": "COMIDA (CESTAS, PACKS ETC.), ROPA, ENSEÑANZA DE IDIOMAS, OCIO Y TIEMPO LIBRE, DEPORTE, ACCESO A LA CULTURA",
     "languages": [
@@ -380,7 +380,7 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, A TRAVÉS DE LA WEB, VISITANDO NUESTRA SEDE",
     "categories": [
-      "CAT2"
+      "cat2"
     ],
     "services": "FORMACIÓN PROFESIONAL, ATENCIÓN PSICOLÓGICA, ATENCIÓN PSIQUIÁTRICA, ATENCIÓN A FAMILIAS",
     "languages": [
@@ -410,9 +410,9 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL",
     "categories": [
-      "CAT3",
-      "CAT7",
-      "CAT10"
+      "cat3",
+      "cat7",
+      "cat10"
     ],
     "services": "CLASES DE CASTELLANO, ENSEÑANZA DE IDIOMAS, APOYO ESCOLAR, CLASES DE INFORMÁTICA, OCIO Y TIEMPO LIBRE, ACCESO A LA CULTURA",
     "languages": [
@@ -445,7 +445,7 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "CAT4"
+      "cat4"
     ],
     "services": "CLASES DE CASTELLANO, APOYO ESCOLAR, CLASES DE INFORMÁTICA, OTRAS FORMACIONES, ORIENTACIÓN LABORAL, SERVICIO LEGAL, ATENCIÓN PSICOLÓGICA, ATENCIÓN A LA MUJER, ATENCIÓN A LA INFANCIA, ATENCIÓN A FAMILIAS",
     "languages": [
@@ -475,7 +475,7 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "A TRAVÉS DE LA WEB",
     "categories": [
-      "CAT5"
+      "cat5"
     ],
     "services": "CLASES DE CASTELLANO, SERVICIO LEGAL, VIH/SIDA, ADICCIONES, ATENCIÓN PSICOLÓGICA, JÓVENES, ATENCIÓN SOCIAL, ACTIVIDADES DE SOCIALIZACIÓN, ATENCIÓN EN TEMAS DE ASILO Y REFUGIO, EXTRANJERÍA, ETC.",
     "languages": [
@@ -508,7 +508,7 @@
     "priorAppointment": "NO",
     "wayOfContact": "ENVIANDO UN E-MAIL",
     "categories": [
-      "CAT6"
+      "cat6"
     ],
     "services": "CLASES DE CASTELLANO, ENSEÑANZA DE IDIOMAS",
     "languages": [
@@ -538,8 +538,8 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "CAT7",
-      "CAT2"
+      "cat7",
+      "cat2"
     ],
     "services": "APOYO ESCOLAR, ATENCIÓN A LA INFANCIA, ATENCIÓN A FAMILIAS, OCIO Y TIEMPO LIBRE",
     "languages": [
@@ -569,7 +569,7 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "ENVIANDO UN E-MAIL",
     "categories": [
-      "CAT8"
+      "cat8"
     ],
     "services": "ENSEÑANZA DE IDIOMAS, OTRAS FORMACIONES, ATENCIÓN A LA MUJER, OCIO Y TIEMPO LIBRE",
     "languages": [
@@ -600,7 +600,7 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, EN MAÑANAS, TARDES MARTES 19:30 A 21 NO CITA PREVIA.",
     "categories": [
-      "CAT9"
+      "cat9"
     ],
     "services": "SERVICIO LEGAL, ASESORAMIENTO LEGAL Y ACOMPAÑAMIENTO CASOS RACISMO Y XENOFOBIA, Y EXTRANJERÍA. VISITAS CIE ALUCHE. ESPACIO EMPODERAMIENTO PERSONAS NO BLANCAS GRUPO PSICOSOCIAL.",
     "languages": [
@@ -632,7 +632,7 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, VISITANDO NUESTRA SEDE",
     "categories": [
-      "CAT10"
+      "cat10"
     ],
     "services": "CLASES DE CASTELLANO, ENSEÑANZA DE IDIOMAS, FORMACIÓN PROFESIONAL, CLASES DE INFORMÁTICA, OTRAS FORMACIONES, SERVICIO LEGAL, ATENCIÓN A FAMILIAS, OCIO Y TIEMPO LIBRE, ACCESO A LA CULTURA",
     "languages": [
@@ -662,7 +662,7 @@
     "priorAppointment": "SÍ",
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "CAT11"
+      "cat11"
     ],
     "services": "APOYO ESCOLAR, ATENCIÓN PSICOLÓGICA, JÓVENES, ATENCIÓN A LA INFANCIA, ATENCIÓN A FAMILIAS, OCIO Y TIEMPO LIBRE",
     "languages": [

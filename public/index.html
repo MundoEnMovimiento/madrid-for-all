@@ -115,6 +115,7 @@
         db = new PouchDB(dbName);
         // initialize page content by loading its associated 'data.js'
         w3.getHttpObject("./data/data.json", initPageContent);
+        w3.getHttpObject("./data/categories.json", initMenuContent);
       }
     )
     // Post DOM loaded actions

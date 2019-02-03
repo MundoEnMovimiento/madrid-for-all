@@ -26,6 +26,7 @@ function loadMap() {
 }
 /// callback to load the page content
 function initPageContent(loadedLocations) {
+  console.log("initPageContent...")
   originalArrayOfLocations = loadedLocations;
   arrayOfLocations = originalArrayOfLocations;
   // check if the db is empty. In that case, load the content of data.js file
@@ -44,6 +45,27 @@ function initPageContent(loadedLocations) {
     addLocationsToMap(arrayOfLocations);
   });
 }
+// callback to load menu content: categories, services, etc.
+function initMenuContent(loadedCategories) {
+  console.log("initMenuContent...");
+  var innerHtmlCode = "";
+  // load categories and services
+  for (var i = 0; i < loadedCategories.length; i++) {
+    var arrayOfServices = loadedCategories[i].services;
+    // TODO: replace second call to originalArrayOfLocations[i].categories by originalArrayOfLocations[i].categories.getLabel(language);
+    innerHtmlCode += "<button onclick=\"toggleAccordionSection('" + loadedCategories[i].key + "')\" class=\"w3-button w3-block w3-light-grey w3-left-align w3-medium\">" + loadedCategories[i].ES + "</button>";
+    if (loadedCategories[i].services.length > 0) {
+      innerHtmlCode += "<div id=\"" + loadedCategories[i].key + "\" class=\"w3-hide\">";
+      arrayOfServices.forEach(function (service) {
+        console.log("category: " + loadedCategories[i].key + ", service: " + service.key);
+        innerHtmlCode += "<a href=\"javascript:void(0)\" id=\"" + service.key + "\" onclick=\"onCategoryClick(this.id)\" class=\"w3-bar-item w3-button w3-hover-white w3-small\">" + service.ES + "</a>";
+      });
+      innerHtmlCode += "</div>";
+    }
+  }
+  // add the generated code to div = 'categories'
+  document.getElementById('categories').innerHTML = innerHtmlCode;
+}
 // function to creat search indexed on the database
 function createDBIndexes() {
   // create the necessary db indexes
@@ -58,10 +80,10 @@ function createDBIndexes() {
   });
 }
 // display array of markers on the map
-function addLocationsToMap(arrayOfLocations){
+function addLocationsToMap(arrayOfLocations) {
   // add the markers to the map
   arrayOfLocations.forEach(markerData => {
-    console.log("Adding marker " + markerData.orgName + ", " + markerData.address + " to the map...");
+    //console.log("Adding marker " + markerData.orgName + ", " + markerData.address + " to the map...");
     addSingleLocationToMap(markerData);
   });
   // show table with the markers
@@ -155,11 +177,12 @@ function onRowClick(markerId) {
     console.log(err);
   });
 }
+// function to reset the search results
 function onResetClick() {
-  console.log("Clicked on reset.")
+  console.log("Clicked on reset.");
   //document.getElementById("searchText").textContent = "";
-  w3.toggleClass('.w3-grey', 'w3-grey', 'w3-light-grey')
-  w3.toggleClass('.w3-show', 'w3-show', 'w3-hide')
+  w3.toggleClass('.w3-grey', 'w3-grey', 'w3-light-grey');
+  w3.toggleClass('.w3-show', 'w3-show', 'w3-hide');
   // clear previous results
   clearPreviousResults();
   initPageContent(originalArrayOfLocations);
