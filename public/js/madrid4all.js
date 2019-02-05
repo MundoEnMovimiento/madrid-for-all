@@ -8,8 +8,8 @@ var markersOnMap = [];
 var selectedCategories = [];
 // lat and lng of the "main" city used to center the map
 var mainCityGeoCode = {
-  "lat": 40.4226654,
-  "lng": -3.7034987
+  "lat": 40.4168,
+  "lng": -3.7038
 }
 // list of functions
 // Function to Show Map of Services
@@ -105,8 +105,12 @@ function addSingleLocationToMap(markerData) {
     title: markerData.orgName + ". Click for more details"
   });
   // create an infoWindow to be linked to the marker
+  var infoWindowCode = "<strong>" + markerData.orgName + "</strong><br>";
+  infoWindowCode += "<em>" + address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a><br>";
+  infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails('cat-details-" + markerData.ID + "')\">Show more details</a><br>";
+  console.log("infoWindowCode: " + infoWindowCode); 
   var infowindow = new google.maps.InfoWindow({
-    content: "<strong>" + markerData.orgName + "</strong><br><em>" + address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a>" // HTML contents of the InfoWindow
+    content: infoWindowCode
   });
   // add a Click Listener to our marker
   google.maps.event.addListener(marker, 'click', function () {
@@ -114,6 +118,12 @@ function addSingleLocationToMap(markerData) {
   });
   // update the list of displayed markers
   markersOnMap.push(marker);
+}
+// show location details
+function showLocationDetails(locationId){
+  console.log("showLocationDetails: " + locationId);
+  document.getElementById(locationId).scrollIntoView();
+  document.getElementById(locationId).focus();
 }
 // callback for the search by text
 function onTextSearchInput(inputValue) {
@@ -150,9 +160,10 @@ function clearPreviousResults() {
 }
 // function to update the list of results after a change in the search form
 function findLocationsInDatabase() {
+  // TODO: Rename ID in the Json and Excel file to key or something less similar to _id
   db.find({
     selector: { categories: { $elemMatch: { $in: selectedCategories } } },
-    fields: ['_id', 'orgName', 'district', 'postalCode', 'languages', 'fullAddress', 'geocode'],
+    fields: ['_id', 'ID', 'orgName', 'district', 'postalCode', 'languages', 'fullAddress', 'geocode', 'orgWeb'],
   }).then(function (result) {
     // clear previous results
     clearPreviousResults();

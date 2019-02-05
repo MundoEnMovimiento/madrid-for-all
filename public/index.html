@@ -49,15 +49,13 @@
     <div class="w3-container" style="margin-top:20px">
       <h1><b>Madrid For All</b></h1>
       <hr style="width:500px;border:3px solid gray" class="w3-round">
-      <p>Selecciona una categoría y un servicio
-        para ver dónde está y cómo puedes acceder
-      </p>
+      <p>Selecciona una categoría y un servicio para ver dónde está y cómo puedes acceder</p>
     </div>
 
     <br>
 
     <div class="w3-container">
-      <div id="servicesMap" style="width:100%;height:800px;"></div>
+      <div id="servicesMap" style="width:100%;height:600px;"></div>
 
       <br>
 
@@ -68,7 +66,7 @@
             <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Distrito</th>
           </tr>
         </thead>
-        <tr onclick="onRowClick({{orgName}})" w3-repeat="records" class="w3-padding-8 w3-hover-orange item">
+        <tr id="cat-details-{{ID}}" onclick="onRowClick({{orgName}})" w3-repeat="records" class="w3-padding-8 item">
           <td>
             <p>{{orgName}}</p>
             <p class="w3-small">{{languages}}</p>
