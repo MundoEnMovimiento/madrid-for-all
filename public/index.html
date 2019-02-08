@@ -66,7 +66,7 @@
             <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Distrito</th>
           </tr>
         </thead>
-        <tr id="cat-details-{{ID}}" onclick="onRowClick({{orgName}})" w3-repeat="records" class="w3-padding-8 item">
+        <tr id="loc-details-{{ID}}" onclick="onRowClick({{orgName}})" w3-repeat="records" class="w3-padding-8 item">
           <td>
             <p>{{orgName}}</p>
             <p class="w3-small">{{languages}}</p>
@@ -74,6 +74,7 @@
           <td>
             <p>{{district}}</p>
             <p class="w3-small">{{postalCode}}</p>
+            <a href="javascript:void(0)" onClick="showLocationMarker('loc-marker-{{ID}}')">Show in map</a><br>
           </td>
         </tr>
       </table>

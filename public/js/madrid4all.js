@@ -101,20 +101,22 @@ function addSingleLocationToMap(markerData) {
   var markerPosition = new google.maps.LatLng(markerData.geocode);
   var marker = new google.maps.Marker({
     map: map,
+    id: 'loc-marker-' + markerData.ID,
     position: markerPosition,
     title: markerData.orgName + ". Click for more details"
   });
   // create an infoWindow to be linked to the marker
   var infoWindowCode = "<strong>" + markerData.orgName + "</strong><br>";
   infoWindowCode += "<em>" + address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a><br>";
-  infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails('cat-details-" + markerData.ID + "')\">Show more details</a><br>";
+  infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails('loc-details-" + markerData.ID + "')\">Show more details</a><br>";
   console.log("infoWindowCode: " + infoWindowCode); 
   var infowindow = new google.maps.InfoWindow({
     content: infoWindowCode
   });
-  // add a Click Listener to our marker
+  // add a click listener to our marker
   google.maps.event.addListener(marker, 'click', function () {
     infowindow.open(map, marker); // Open our InfoWindow
+    this.setAnimation(null);
   });
   // update the list of displayed markers
   markersOnMap.push(marker);
@@ -124,6 +126,20 @@ function showLocationDetails(locationId){
   console.log("showLocationDetails: " + locationId);
   document.getElementById(locationId).scrollIntoView();
   document.getElementById(locationId).focus();
+}
+// highlight marker in map
+function showLocationMarker(locationId){
+  console.log("showLocationMarker: " + locationId);
+  for (var i=0; i < markersOnMap.length; i++) 
+  {
+      var currMarker = markersOnMap[i];
+      if(currMarker.get('id') == locationId){
+        currMarker.setAnimation(google.maps.Animation.BOUNCE);
+      } else {
+        currMarker.setAnimation(null);
+      }
+  }
+  document.getElementById('servicesMap').scrollIntoView();
 }
 // callback for the search by text
 function onTextSearchInput(inputValue) {
