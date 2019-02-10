@@ -15,10 +15,18 @@
     "categories": [
       "cat1"
     ],
-    "services": "CLASES DE CASTELLANO, ORIENTACIÓN LABORAL, OCIO Y TIEMPO LIBRE",
+    "services": [
+      "srv11",
+      "srv15"
+    ],
     "languages": [
       "ES",
       "AR"
+    ],
+    "targettedChild": 1,
+    "targettedWomen": 1,
+    "targettedOrigins": [
+      "PE"
     ],
     "contactPerson": "ÁLVARO JUNQUERA",
     "contactPhone": 914049118,
@@ -47,9 +55,14 @@
       "cat5",
       "cat11"
     ],
-    "services": "ROPA",
+    "services": [
+      "srv21"
+    ],
     "languages": [
       "ES"
+    ],
+    "targettedOrigins": [
+      "VN"
     ],
     "additionalInfo": "MIÉRCOLES SE RECOGE NÚMERO DE ORDEN Y LA SEMANA SIGUIENTE EL LUNES SE ENTREGA LA ROPA. MESES DE VERANO JULIO Y AGOSTO CERRAMOS TAMBIÉN FIESTAS NO ATIENDEN.",
     "contactPerson": "ÁNGELES O MARTA",
@@ -77,7 +90,9 @@
     "categories": [
       "cat3"
     ],
-    "services": "VIH/SIDA, MATERIAL PREVENTIVO ITS (LUBRICANTES Y CONDONES MASCULINOS/FEMENINOS",
+    "services": [
+      "srv31"
+    ],
     "languages": [
       "ES",
       "EN"
@@ -107,10 +122,13 @@
     "categories": [
       "cat4"
     ],
-    "services": "ORIENTACIÓN LABORAL, SERVICIO LEGAL, ATENCIÓN PSICOLÓGICA, ATENCIÓN A LA INFANCIA, ATENCIÓN A FAMILIAS",
+    "services": [
+      "srv41"
+    ],
     "languages": [
       "ES"
     ],
+    "targettedChild": 1,
     "contactPerson": "ROBERTO",
     "contactPhone": 650010300,
     "contactEmail": "roenred@asociacionapoyo.org",
@@ -137,10 +155,10 @@
       "cat5",
       "cat6"
     ],
-    "services": "ROPA, CLASES DE CASTELLANO, APOYO ESCOLAR, OCIO Y TIEMPO LIBRE",
     "languages": [
       "ES"
     ],
+    "targettedWomen": 1,
     "additionalInfo": "HORARIOS DE LAS ACTIVIDADES: HTTP://WWW.LAVILLANA.ORG/AGENDA/",
     "contactPerson": "LA VILLANA",
     "contactPhone": 644882198,
@@ -167,7 +185,6 @@
     "categories": [
       "cat6"
     ],
-    "services": "CLASES DE CASTELLANO, CLASES DE INFORMÁTICA, OTRAS FORMACIONES, ORIENTACIÓN LABORAL, SERVICIO LEGAL, ATENCIÓN A LA MUJER, JÓVENES",
     "languages": [
       "ES",
       "AR"
@@ -196,10 +213,10 @@
     "categories": [
       "cat7"
     ],
-    "services": "CLASES DE CASTELLANO, CLASES DE INFORMÁTICA, SERVICIO LEGAL",
     "languages": [
       "ES"
     ],
+    "targettedChild": 1,
     "contactPerson": "JON SANZ LANDALUZE",
     "contactPhone": 635736573,
     "contactEmail": "jsanzlan@ucm.es",
@@ -225,9 +242,11 @@
     "categories": [
       "cat8"
     ],
-    "services": "ALOJAMIENTO, ORIENTACIÓN LABORAL, ACOMPAÑAMIENTO SOCIAL, TRAMITACIÒN DE RENTAS MÍNIMAS, ATENCIÓN A PERSONAS SIN HOGAR",
     "languages": [
       "ES"
+    ],
+    "targettedOrigins": [
+      "CM"
     ],
     "contactPerson": "BEATRIZ ORTIZ",
     "contactPhone": 914672626,
@@ -255,7 +274,6 @@
       "cat9",
       "cat10"
     ],
-    "services": "APOYO ESCOLAR, FORMACIÓN PROFESIONAL, ORIENTACIÓN LABORAL, JÓVENES, OCIO Y TIEMPO LIBRE",
     "languages": [
       "ES"
     ],
@@ -283,10 +301,10 @@
     "categories": [
       "cat10"
     ],
-    "services": "ENSEÑANZA DE IDIOMAS, CLASES DE INFORMÁTICA, OTRAS FORMACIONES, ATENCIÓN A LA MUJER, OCIO Y TIEMPO LIBRE, DEPORTE, ACCESO A LA CULTURA, TALLER REPARACION DE BICIS",
     "languages": [
       "ES"
     ],
+    "targettedWomen": 1,
     "contactPerson": "LA INGOBERNABLE",
     "contactEmail": " bienvenida@ingobernable.net",
     "fullAddress": "GOBERNADOR 39 28014, Madrid",
@@ -311,10 +329,10 @@
     "categories": [
       "cat11"
     ],
-    "services": "CLASES DE CASTELLANO, APOYO ESCOLAR, FORMACIÓN PROFESIONAL, CLASES DE INFORMÁTICA, ORIENTACIÓN LABORAL, JÓVENES, ATENCIÓN A LA INFANCIA, FORMACIÓN EN OFICIOS",
     "languages": [
       "ES"
     ],
+    "targettedChild": 1,
     "contactPerson": "EVA JUAREZ",
     "contactPhone": 913721506,
     "contactEmail": "nortejoven@nortejoven.org",
@@ -339,7 +357,10 @@
     "categories": [
       "cat1"
     ],
-    "services": "COMIDA (CESTAS, PACKS ETC.), ROPA, ENSEÑANZA DE IDIOMAS, OCIO Y TIEMPO LIBRE, DEPORTE, ACCESO A LA CULTURA",
+    "services": [
+      "srv13",
+      "srv14"
+    ],
     "languages": [
       "ES"
     ],
@@ -367,10 +388,13 @@
     "categories": [
       "cat2"
     ],
-    "services": "FORMACIÓN PROFESIONAL, ATENCIÓN PSICOLÓGICA, ATENCIÓN PSIQUIÁTRICA, ATENCIÓN A FAMILIAS",
+    "services": [
+      "srv22"
+    ],
     "languages": [
       "ES"
     ],
+    "targettedWomen": 1,
     "contactPerson": "EDUARDO BRIK",
     "contactPhone": 914299756,
     "contactEmail": "terapiasinfronteras@gmail.com",
@@ -398,12 +422,18 @@
       "cat7",
       "cat10"
     ],
-    "services": "CLASES DE CASTELLANO, ENSEÑANZA DE IDIOMAS, APOYO ESCOLAR, CLASES DE INFORMÁTICA, OCIO Y TIEMPO LIBRE, ACCESO A LA CULTURA",
+    "services": [
+      "srv31",
+      "srv33"
+    ],
     "languages": [
       "ES",
       "EN",
       "FR",
       "AR"
+    ],
+    "targettedOrigins": [
+      "ES"
     ],
     "contactPerson": "ROSA",
     "contactPhone": 913806604,
@@ -430,7 +460,9 @@
     "categories": [
       "cat4"
     ],
-    "services": "CLASES DE CASTELLANO, APOYO ESCOLAR, CLASES DE INFORMÁTICA, OTRAS FORMACIONES, ORIENTACIÓN LABORAL, SERVICIO LEGAL, ATENCIÓN PSICOLÓGICA, ATENCIÓN A LA MUJER, ATENCIÓN A LA INFANCIA, ATENCIÓN A FAMILIAS",
+    "services": [
+      "srv42"
+    ],
     "languages": [
       "ES"
     ],
@@ -459,7 +491,6 @@
     "categories": [
       "cat5"
     ],
-    "services": "CLASES DE CASTELLANO, SERVICIO LEGAL, VIH/SIDA, ADICCIONES, ATENCIÓN PSICOLÓGICA, JÓVENES, ATENCIÓN SOCIAL, ACTIVIDADES DE SOCIALIZACIÓN, ATENCIÓN EN TEMAS DE ASILO Y REFUGIO, EXTRANJERÍA, ETC.",
     "languages": [
       "ES",
       "EN",
@@ -491,7 +522,6 @@
     "categories": [
       "cat6"
     ],
-    "services": "CLASES DE CASTELLANO, ENSEÑANZA DE IDIOMAS",
     "languages": [
       "ES"
     ],
@@ -520,10 +550,14 @@
       "cat7",
       "cat2"
     ],
-    "services": "APOYO ESCOLAR, ATENCIÓN A LA INFANCIA, ATENCIÓN A FAMILIAS, OCIO Y TIEMPO LIBRE",
+    "services": [
+      "srv23"
+    ],
     "languages": [
       "ES"
     ],
+    "targettedChild": 1,
+    "targettedWomen": 1,
     "additionalInfo": "PERSONAS EN SITUACIÓN Y/O RIESGO DE EXCLUSIÓN SOCIAL",
     "contactPerson": "BELÉN CAÑERO",
     "contactPhone": 917779661,
@@ -549,7 +583,6 @@
     "categories": [
       "cat8"
     ],
-    "services": "ENSEÑANZA DE IDIOMAS, OTRAS FORMACIONES, ATENCIÓN A LA MUJER, OCIO Y TIEMPO LIBRE",
     "languages": [
       "ES",
       "EN"
@@ -578,7 +611,6 @@
     "categories": [
       "cat9"
     ],
-    "services": "SERVICIO LEGAL, ASESORAMIENTO LEGAL Y ACOMPAÑAMIENTO CASOS RACISMO Y XENOFOBIA, Y EXTRANJERÍA. VISITAS CIE ALUCHE. ESPACIO EMPODERAMIENTO PERSONAS NO BLANCAS GRUPO PSICOSOCIAL.",
     "languages": [
       "ES",
       "EN",
@@ -609,10 +641,10 @@
     "categories": [
       "cat10"
     ],
-    "services": "CLASES DE CASTELLANO, ENSEÑANZA DE IDIOMAS, FORMACIÓN PROFESIONAL, CLASES DE INFORMÁTICA, OTRAS FORMACIONES, SERVICIO LEGAL, ATENCIÓN A FAMILIAS, OCIO Y TIEMPO LIBRE, ACCESO A LA CULTURA",
     "languages": [
       "ES"
     ],
+    "targettedChild": 1,
     "contactPerson": "JOSÉ MARÍA",
     "contactPhone": 912244837,
     "contactEmail": "avpalomadehesa@gmail.com",
@@ -638,7 +670,6 @@
     "categories": [
       "cat11"
     ],
-    "services": "APOYO ESCOLAR, ATENCIÓN PSICOLÓGICA, JÓVENES, ATENCIÓN A LA INFANCIA, ATENCIÓN A FAMILIAS, OCIO Y TIEMPO LIBRE",
     "languages": [
       "ES"
     ],

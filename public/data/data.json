@@ -15,12 +15,19 @@
     "categories": [
       "cat1"
     ],
-    "services": "CLASES DE CASTELLANO, ORIENTACIÓN LABORAL, OCIO Y TIEMPO LIBRE",
+    "services": [
+      "srv11",
+      "srv15"
+    ],
     "languages": [
       "ES",
       "AR"
     ],
-    "additionalInfo": "",
+    "targettedChild": 1,
+    "targettedWomen": 1,
+    "targettedOrigins": [
+      "PE"
+    ],
     "contactPerson": "ÁLVARO JUNQUERA",
     "contactPhone": 914049118,
     "contactEmail": "coordinador@alternativaenmarcha.org",
@@ -48,9 +55,14 @@
       "cat5",
       "cat11"
     ],
-    "services": "ROPA",
+    "services": [
+      "srv21"
+    ],
     "languages": [
       "ES"
+    ],
+    "targettedOrigins": [
+      "VN"
     ],
     "additionalInfo": "MIÉRCOLES SE RECOGE NÚMERO DE ORDEN Y LA SEMANA SIGUIENTE EL LUNES SE ENTREGA LA ROPA. MESES DE VERANO JULIO Y AGOSTO CERRAMOS TAMBIÉN FIESTAS NO ATIENDEN.",
     "contactPerson": "ÁNGELES O MARTA",
@@ -78,7 +90,9 @@
     "categories": [
       "cat3"
     ],
-    "services": "VIH/SIDA, MATERIAL PREVENTIVO ITS (LUBRICANTES Y CONDONES MASCULINOS/FEMENINOS",
+    "services": [
+      "srv31"
+    ],
     "languages": [
       "ES",
       "EN"
@@ -98,7 +112,6 @@
     "orgName": "ASOCIACIÓN APOYO",
     "orgPhone": 914379815,
     "orgEmail": "apoyo@asociacionapoyo.org",
-    "orgWeb": "",
     "address": "CORREGIDOR DIEGO DE VALDERRABANO 45",
     "postalCode": 28030,
     "district": "MORATALAZ",
@@ -109,11 +122,13 @@
     "categories": [
       "cat4"
     ],
-    "services": "ORIENTACIÓN LABORAL, SERVICIO LEGAL, ATENCIÓN PSICOLÓGICA, ATENCIÓN A LA INFANCIA, ATENCIÓN A FAMILIAS",
+    "services": [
+      "srv41"
+    ],
     "languages": [
       "ES"
     ],
-    "additionalInfo": "",
+    "targettedChild": 1,
     "contactPerson": "ROBERTO",
     "contactPhone": 650010300,
     "contactEmail": "roenred@asociacionapoyo.org",
@@ -140,10 +155,10 @@
       "cat5",
       "cat6"
     ],
-    "services": "ROPA, CLASES DE CASTELLANO, APOYO ESCOLAR, OCIO Y TIEMPO LIBRE",
     "languages": [
       "ES"
     ],
+    "targettedWomen": 1,
     "additionalInfo": "HORARIOS DE LAS ACTIVIDADES: HTTP://WWW.LAVILLANA.ORG/AGENDA/",
     "contactPerson": "LA VILLANA",
     "contactPhone": 644882198,
@@ -170,12 +185,10 @@
     "categories": [
       "cat6"
     ],
-    "services": "CLASES DE CASTELLANO, CLASES DE INFORMÁTICA, OTRAS FORMACIONES, ORIENTACIÓN LABORAL, SERVICIO LEGAL, ATENCIÓN A LA MUJER, JÓVENES",
     "languages": [
       "ES",
       "AR"
     ],
-    "additionalInfo": "",
     "contactPerson": "KARLOS SAN PEDRO",
     "contactPhone": 660528316,
     "contactEmail": "karlossanpedro@lamercedmigraciones.org",
@@ -190,7 +203,6 @@
     "orgName": "ESCUELA POPULAR DE ADULTOS DEL BARRIO DEL PILAR",
     "orgPhone": 635736573,
     "orgEmail": "jsanzlan@ucm.es",
-    "orgWeb": "",
     "address": "BETANZOS 37",
     "postalCode": 28029,
     "district": "FUENCARRAL / EL PARDO",
@@ -201,11 +213,10 @@
     "categories": [
       "cat7"
     ],
-    "services": "CLASES DE CASTELLANO, CLASES DE INFORMÁTICA, SERVICIO LEGAL",
     "languages": [
       "ES"
     ],
-    "additionalInfo": "",
+    "targettedChild": 1,
     "contactPerson": "JON SANZ LANDALUZE",
     "contactPhone": 635736573,
     "contactEmail": "jsanzlan@ucm.es",
@@ -231,11 +242,12 @@
     "categories": [
       "cat8"
     ],
-    "services": "ALOJAMIENTO, ORIENTACIÓN LABORAL, ACOMPAÑAMIENTO SOCIAL, TRAMITACIÒN DE RENTAS MÍNIMAS, ATENCIÓN A PERSONAS SIN HOGAR",
     "languages": [
       "ES"
     ],
-    "additionalInfo": "",
+    "targettedOrigins": [
+      "CM"
+    ],
     "contactPerson": "BEATRIZ ORTIZ",
     "contactPhone": 914672626,
     "contactEmail": "comunicacion@asociacionrealidades.org",
@@ -262,11 +274,9 @@
       "cat9",
       "cat10"
     ],
-    "services": "APOYO ESCOLAR, FORMACIÓN PROFESIONAL, ORIENTACIÓN LABORAL, JÓVENES, OCIO Y TIEMPO LIBRE",
     "languages": [
       "ES"
     ],
-    "additionalInfo": "",
     "contactPerson": "MARTA APARICIO",
     "contactPhone": 917772822,
     "contactEmail": "asociacion@lakalle.org",
@@ -279,7 +289,6 @@
   {
     "ID": 10,
     "orgName": "LA INGOBERNABLE",
-    "orgPhone": "",
     "orgEmail": "bienvenida@ingobernable.net",
     "orgWeb": "www.ingobernable.net",
     "address": "GOBERNADOR 39",
@@ -292,13 +301,11 @@
     "categories": [
       "cat10"
     ],
-    "services": "ENSEÑANZA DE IDIOMAS, CLASES DE INFORMÁTICA, OTRAS FORMACIONES, ATENCIÓN A LA MUJER, OCIO Y TIEMPO LIBRE, DEPORTE, ACCESO A LA CULTURA, TALLER REPARACION DE BICIS",
     "languages": [
       "ES"
     ],
-    "additionalInfo": "",
+    "targettedWomen": 1,
     "contactPerson": "LA INGOBERNABLE",
-    "contactPhone": "",
     "contactEmail": " bienvenida@ingobernable.net",
     "fullAddress": "GOBERNADOR 39 28014, Madrid",
     "geocode": {
@@ -322,11 +329,10 @@
     "categories": [
       "cat11"
     ],
-    "services": "CLASES DE CASTELLANO, APOYO ESCOLAR, FORMACIÓN PROFESIONAL, CLASES DE INFORMÁTICA, ORIENTACIÓN LABORAL, JÓVENES, ATENCIÓN A LA INFANCIA, FORMACIÓN EN OFICIOS",
     "languages": [
       "ES"
     ],
-    "additionalInfo": "",
+    "targettedChild": 1,
     "contactPerson": "EVA JUAREZ",
     "contactPhone": 913721506,
     "contactEmail": "nortejoven@nortejoven.org",
@@ -339,7 +345,6 @@
   {
     "ID": 12,
     "orgName": "LA ENREDADERA",
-    "orgPhone": "",
     "orgEmail": "enredadera@riseup.net",
     "orgWeb": "laenredaderadetetuan.wordpress.com",
     "address": "ANASTASIO HERRERO 10",
@@ -352,13 +357,14 @@
     "categories": [
       "cat1"
     ],
-    "services": "COMIDA (CESTAS, PACKS ETC.), ROPA, ENSEÑANZA DE IDIOMAS, OCIO Y TIEMPO LIBRE, DEPORTE, ACCESO A LA CULTURA",
+    "services": [
+      "srv13",
+      "srv14"
+    ],
     "languages": [
       "ES"
     ],
-    "additionalInfo": "",
     "contactPerson": "LA ENREDADERA",
-    "contactPhone": "",
     "contactEmail": "enredadera@riseup.net",
     "fullAddress": "ANASTASIO HERRERO 10 28020, Madrid",
     "geocode": {
@@ -382,11 +388,13 @@
     "categories": [
       "cat2"
     ],
-    "services": "FORMACIÓN PROFESIONAL, ATENCIÓN PSICOLÓGICA, ATENCIÓN PSIQUIÁTRICA, ATENCIÓN A FAMILIAS",
+    "services": [
+      "srv22"
+    ],
     "languages": [
       "ES"
     ],
-    "additionalInfo": "",
+    "targettedWomen": 1,
     "contactPerson": "EDUARDO BRIK",
     "contactPhone": 914299756,
     "contactEmail": "terapiasinfronteras@gmail.com",
@@ -414,14 +422,19 @@
       "cat7",
       "cat10"
     ],
-    "services": "CLASES DE CASTELLANO, ENSEÑANZA DE IDIOMAS, APOYO ESCOLAR, CLASES DE INFORMÁTICA, OCIO Y TIEMPO LIBRE, ACCESO A LA CULTURA",
+    "services": [
+      "srv31",
+      "srv33"
+    ],
     "languages": [
       "ES",
       "EN",
       "FR",
       "AR"
     ],
-    "additionalInfo": "",
+    "targettedOrigins": [
+      "ES"
+    ],
     "contactPerson": "ROSA",
     "contactPhone": 913806604,
     "contactEmail": "gandalflf@hotmail.com",
@@ -447,11 +460,12 @@
     "categories": [
       "cat4"
     ],
-    "services": "CLASES DE CASTELLANO, APOYO ESCOLAR, CLASES DE INFORMÁTICA, OTRAS FORMACIONES, ORIENTACIÓN LABORAL, SERVICIO LEGAL, ATENCIÓN PSICOLÓGICA, ATENCIÓN A LA MUJER, ATENCIÓN A LA INFANCIA, ATENCIÓN A FAMILIAS",
+    "services": [
+      "srv42"
+    ],
     "languages": [
       "ES"
     ],
-    "additionalInfo": "",
     "contactPerson": "LAURA COMES CEREZO",
     "contactPhone": 918286978,
     "contactEmail": "coordinacioncepi@larueca.info",
@@ -477,7 +491,6 @@
     "categories": [
       "cat5"
     ],
-    "services": "CLASES DE CASTELLANO, SERVICIO LEGAL, VIH/SIDA, ADICCIONES, ATENCIÓN PSICOLÓGICA, JÓVENES, ATENCIÓN SOCIAL, ACTIVIDADES DE SOCIALIZACIÓN, ATENCIÓN EN TEMAS DE ASILO Y REFUGIO, EXTRANJERÍA, ETC.",
     "languages": [
       "ES",
       "EN",
@@ -497,7 +510,6 @@
   {
     "ID": 17,
     "orgName": "AFROAID",
-    "orgPhone": "",
     "orgEmail": "afroaidmail@gmail.com",
     "orgWeb": "www.afroaid.net",
     "address": "GENERAL ARANDA 30",
@@ -510,11 +522,9 @@
     "categories": [
       "cat6"
     ],
-    "services": "CLASES DE CASTELLANO, ENSEÑANZA DE IDIOMAS",
     "languages": [
       "ES"
     ],
-    "additionalInfo": "",
     "contactPerson": "MARÍA DE LA CRUZ",
     "contactPhone": 699684246,
     "contactEmail": "mcruzrubio@hotmail.com",
@@ -529,7 +539,6 @@
     "orgName": "ASOCIACIÓN CEPA-PUENTE DE VALLECAS",
     "orgPhone": 917779661,
     "orgEmail": "cepa.infancia@gmail.com",
-    "orgWeb": "",
     "address": "MARISMAS 37",
     "postalCode": 28038,
     "district": "PUENTE DE VALLECAS",
@@ -541,10 +550,14 @@
       "cat7",
       "cat2"
     ],
-    "services": "APOYO ESCOLAR, ATENCIÓN A LA INFANCIA, ATENCIÓN A FAMILIAS, OCIO Y TIEMPO LIBRE",
+    "services": [
+      "srv23"
+    ],
     "languages": [
       "ES"
     ],
+    "targettedChild": 1,
+    "targettedWomen": 1,
     "additionalInfo": "PERSONAS EN SITUACIÓN Y/O RIESGO DE EXCLUSIÓN SOCIAL",
     "contactPerson": "BELÉN CAÑERO",
     "contactPhone": 917779661,
@@ -558,7 +571,6 @@
   {
     "ID": 19,
     "orgName": "ORBITA DIVERSA",
-    "orgPhone": "",
     "orgEmail": "info@orbitadiversa.org",
     "orgWeb": "https://orbitadiversa.wordpress.com/",
     "address": "ALTAMIRANO, 37",
@@ -571,14 +583,11 @@
     "categories": [
       "cat8"
     ],
-    "services": "ENSEÑANZA DE IDIOMAS, OTRAS FORMACIONES, ATENCIÓN A LA MUJER, OCIO Y TIEMPO LIBRE",
     "languages": [
       "ES",
       "EN"
     ],
-    "additionalInfo": "",
     "contactPerson": "MATTEO RICCI UGATTI",
-    "contactPhone": "",
     "contactEmail": "matteo.ryu@orbitadiversa.org",
     "fullAddress": "ALTAMIRANO, 37 28012, Madrid",
     "geocode": {
@@ -602,13 +611,11 @@
     "categories": [
       "cat9"
     ],
-    "services": "SERVICIO LEGAL, ASESORAMIENTO LEGAL Y ACOMPAÑAMIENTO CASOS RACISMO Y XENOFOBIA, Y EXTRANJERÍA. VISITAS CIE ALUCHE. ESPACIO EMPODERAMIENTO PERSONAS NO BLANCAS GRUPO PSICOSOCIAL.",
     "languages": [
       "ES",
       "EN",
       "FR"
     ],
-    "additionalInfo": "",
     "contactPerson": "DANA",
     "contactPhone": 915592906,
     "contactEmail": "oid@sosracismomadrid.es",
@@ -634,11 +641,10 @@
     "categories": [
       "cat10"
     ],
-    "services": "CLASES DE CASTELLANO, ENSEÑANZA DE IDIOMAS, FORMACIÓN PROFESIONAL, CLASES DE INFORMÁTICA, OTRAS FORMACIONES, SERVICIO LEGAL, ATENCIÓN A FAMILIAS, OCIO Y TIEMPO LIBRE, ACCESO A LA CULTURA",
     "languages": [
       "ES"
     ],
-    "additionalInfo": "",
+    "targettedChild": 1,
     "contactPerson": "JOSÉ MARÍA",
     "contactPhone": 912244837,
     "contactEmail": "avpalomadehesa@gmail.com",
@@ -664,11 +670,9 @@
     "categories": [
       "cat11"
     ],
-    "services": "APOYO ESCOLAR, ATENCIÓN PSICOLÓGICA, JÓVENES, ATENCIÓN A LA INFANCIA, ATENCIÓN A FAMILIAS, OCIO Y TIEMPO LIBRE",
     "languages": [
       "ES"
     ],
-    "additionalInfo": "",
     "contactPerson": "MONICA PICHARDO GALAN",
     "contactPhone": 911684483,
     "contactEmail": "casaplaza@valponasca.org",

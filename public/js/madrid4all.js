@@ -6,6 +6,7 @@ var originalArrayOfLocations = [];
 var arrayOfLocations = [];
 var markersOnMap = [];
 var selectedCategories = [];
+var selectedServices = [];
 // lat and lng of the "main" city used to center the map
 var mainCityGeoCode = {
   "lat": 40.4168,
@@ -54,11 +55,11 @@ function initMenuContent(loadedCategories) {
     var arrayOfServices = loadedCategories[i].services;
     // TODO: replace second call to originalArrayOfLocations[i].categories by originalArrayOfLocations[i].categories.getLabel(language);
     innerHtmlCode += "<button onclick=\"toggleAccordionSection('" + loadedCategories[i].key + "')\" class=\"w3-button w3-block w3-light-grey w3-left-align w3-medium\">" + loadedCategories[i].ES + "</button>";
-    if (loadedCategories[i].services.length > 0) {
+    if (loadedCategories[i].services != null && loadedCategories[i].services.length > 0) {
       innerHtmlCode += "<div id=\"" + loadedCategories[i].key + "\" class=\"w3-hide\">";
       arrayOfServices.forEach(function (service) {
         console.log("category: " + loadedCategories[i].key + ", service: " + service.key);
-        innerHtmlCode += "<a href=\"javascript:void(0)\" id=\"" + service.key + "\" onclick=\"onCategoryClick(this.id)\" class=\"w3-bar-item w3-button w3-hover-white w3-small\">" + service.ES + "</a>";
+        innerHtmlCode += "<a href=\"javascript:void(0)\" id=\"" + service.key + "\" onclick=\"onServiceClick(this.id)\" class=\"w3-bar-item w3-button w3-hover-white w3-small\">" + service.ES + "</a>";
       });
       innerHtmlCode += "</div>";
     }
@@ -109,7 +110,7 @@ function addSingleLocationToMap(markerData) {
   var infoWindowCode = "<strong>" + markerData.orgName + "</strong><br>";
   infoWindowCode += "<em>" + address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a><br>";
   infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails('loc-details-" + markerData.ID + "')\">Show more details</a><br>";
-  console.log("infoWindowCode: " + infoWindowCode); 
+  //console.log("infoWindowCode: " + infoWindowCode); 
   var infowindow = new google.maps.InfoWindow({
     content: infoWindowCode
   });
@@ -145,20 +146,37 @@ function showLocationMarker(locationId){
 function onTextSearchInput(inputValue) {
   w3.filterHTML('#resultTable', '.item', inputValue);
 }
-// callback for the search by text
+// callback for the click on a category
 function onCategoryClick(selectedCategory) {
   console.log("Clicked on category " + selectedCategory);
   if (selectedCategories.includes(selectedCategory)) {
     // unselect category and search again
     selectedCategories.pop(selectedCategory);
     var element = document.getElementById(selectedCategory);
-    element.classList.remove("w3-light-grey");
+    element.classList.remove("w3-grey");
     findLocationsInDatabase();
   } else {
     // select category and search again
     selectedCategories.push(selectedCategory);
     var element = document.getElementById(selectedCategory);
     element.classList.add("w3-grey");
+    findLocationsInDatabase();
+  }
+}
+// calback for the click on service
+function onServiceClick(selectedService){
+  console.log("Clicked on service " + selectedService);
+  if (selectedServices.includes(selectedService)) {
+    // unselect service and search again
+    selectedServices.pop(selectedService);
+    var element = document.getElementById(selectedService);
+    element.classList.remove("w3-orange");
+    findLocationsInDatabase();
+  } else {
+    // select service and search again
+    selectedServices.push(selectedService);
+    var element = document.getElementById(selectedService);
+    element.classList.add("w3-orange");
     findLocationsInDatabase();
   }
 }
@@ -177,15 +195,27 @@ function clearPreviousResults() {
 // function to update the list of results after a change in the search form
 function findLocationsInDatabase() {
   // TODO: Rename ID in the Json and Excel file to key or something less similar to _id
+  // compose selector based on the user input
+  var searchCriterias = new Object();
+  // filter by categories
+  if(selectedCategories.length > 0) {
+    searchCriterias.categories = { $elemMatch: { $in: selectedCategories } };
+  }
+  // filter by services
+  if(selectedServices.length > 0) {
+    searchCriterias.services = { $elemMatch: { $in: selectedServices } };
+  }
+  // TODO: Add more filters
+  // perform the find in the DB
   db.find({
-    selector: { categories: { $elemMatch: { $in: selectedCategories } } },
+    selector: searchCriterias,
     fields: ['_id', 'ID', 'orgName', 'district', 'postalCode', 'languages', 'fullAddress', 'geocode', 'orgWeb'],
   }).then(function (result) {
     // clear previous results
     clearPreviousResults();
     // TODO: Fix me! This 'arrayOfLocations' must contain gmaps.Locations(), not "markerData"
     arrayOfLocations = result["docs"];
-    console.log(arrayOfLocations.length + " markers found for category '" + selectedCategories.toString() + "'.");
+    console.log(arrayOfLocations.length + " markers found for " + JSON.stringify(searchCriterias) + ".");
     // show found locations in the map
     addLocationsToMap(arrayOfLocations);
     // update result table with the found locations
