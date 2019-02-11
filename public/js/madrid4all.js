@@ -1,4 +1,5 @@
 // global variables
+var selectedLanguage = 'ES';
 var dbName = 'madrid4all.db';
 var db = new PouchDB(dbName);
 var map;
@@ -51,21 +52,46 @@ function initMenuContent(loadedCategories) {
   console.log("initMenuContent...");
   var innerHtmlCode = "";
   // load categories and services
-  for (var i = 0; i < loadedCategories.length; i++) {
-    var arrayOfServices = loadedCategories[i].services;
-    // TODO: replace second call to originalArrayOfLocations[i].categories by originalArrayOfLocations[i].categories.getLabel(language);
-    innerHtmlCode += "<button onclick=\"toggleAccordionSection('" + loadedCategories[i].key + "')\" class=\"w3-button w3-block w3-light-grey w3-left-align w3-medium\">" + loadedCategories[i].ES + "</button>";
-    if (loadedCategories[i].services != null && loadedCategories[i].services.length > 0) {
-      innerHtmlCode += "<div id=\"" + loadedCategories[i].key + "\" class=\"w3-hide\">";
-      arrayOfServices.forEach(function (service) {
-        console.log("category: " + loadedCategories[i].key + ", service: " + service.key);
-        innerHtmlCode += "<a href=\"javascript:void(0)\" id=\"" + service.key + "\" onclick=\"onServiceClick(this.id)\" class=\"w3-bar-item w3-button w3-hover-white w3-small\">" + service.ES + "</a>";
-      });
-      innerHtmlCode += "</div>";
+  if (loadedCategories != null && loadedCategories.length > 0){
+    for (var i = 0; i < loadedCategories.length; i++) {
+      var arrayOfServices = loadedCategories[i].services;
+      // TODO: replace second call to originalArrayOfLocations[i].categories by originalArrayOfLocations[i].categories.getLabel(language);
+      innerHtmlCode += "<button onclick=\"onCategoryClick('" + loadedCategories[i].key + "')\" class=\"w3-button w3-block w3-light-grey w3-left-align w3-medium\">" + loadedCategories[i][selectedLanguage] + "</button>";
+      innerHtmlCode += "<div id=\"" + loadedCategories[i].key + "\" class=\"w3-hide w3-grey\"></div>";
     }
+    // add the generated code to div = 'categories'
+    document.getElementById('categories').innerHTML = innerHtmlCode;
+    // load services
+    w3.getHttpObject("./data/services.json", function(loadedServices){
+      if (loadedServices != null && loadedServices.length > 0) {
+        for (var i = 0; i < loadedServices.length; i++) {
+          console.log("category: " + loadedServices[i].category + ", service: " + loadedServices[i].key);
+          var div = document.createElement('div');
+          innerHtmlCode = "<a href=\"javascript:void(0)\" onclick=\"onServiceClick('" + loadedServices[i].key + "')\" class=\"w3-bar-item w3-button w3-hover-white w3-small\">" + loadedServices[i][selectedLanguage] + "</a>";
+          innerHtmlCode += "<div id=\"" + loadedServices[i].key + "\" class=\"w3-hide w3-grey\"></div>";
+          div.innerHTML = innerHtmlCode;
+          document.getElementById(loadedServices[i].category).appendChild(div);
+        }
+        // load specialities
+        w3.getHttpObject("./data/specialities.json", function(loadedSpecialities){
+          if (loadedSpecialities != null && loadedSpecialities.length > 0) {
+            for (var i = 0; i < loadedSpecialities.length; i++) {
+              console.log("service: " + loadedSpecialities[i].service + ", speciality: " + loadedSpecialities[i].key);
+              var div = document.createElement('div');
+              div.innerHTML = "<a href=\"javascript:void(0)\" id=\"" + loadedSpecialities[i].key + "\" onclick=\"onSpecialityClick(this.id)\" class=\"w3-bar-item w3-button w3-hover-green w3-small\">" + loadedSpecialities[i][selectedLanguage] + "</a>";
+              document.getElementById(loadedSpecialities[i].service).appendChild(div);
+            }
+          } else {
+            console.log("No services found in services.json")
+          }
+    });
+      } else {
+        console.log("No services found in services.json")
+      }
+    });
+  } else {
+    console.log("No categories found in categories.json")
   }
-  // add the generated code to div = 'categories'
-  document.getElementById('categories').innerHTML = innerHtmlCode;
 }
 // function to creat search indexed on the database
 function createDBIndexes() {
@@ -152,16 +178,14 @@ function onCategoryClick(selectedCategory) {
   if (selectedCategories.includes(selectedCategory)) {
     // unselect category and search again
     selectedCategories.pop(selectedCategory);
-    var element = document.getElementById(selectedCategory);
-    element.classList.remove("w3-grey");
     findLocationsInDatabase();
   } else {
     // select category and search again
     selectedCategories.push(selectedCategory);
-    var element = document.getElementById(selectedCategory);
-    element.classList.add("w3-grey");
     findLocationsInDatabase();
   }
+  // update the UI
+  toggleChildElements(selectedCategory);
 }
 // calback for the click on service
 function onServiceClick(selectedService){
@@ -169,16 +193,18 @@ function onServiceClick(selectedService){
   if (selectedServices.includes(selectedService)) {
     // unselect service and search again
     selectedServices.pop(selectedService);
-    var element = document.getElementById(selectedService);
-    element.classList.remove("w3-orange");
     findLocationsInDatabase();
   } else {
     // select service and search again
     selectedServices.push(selectedService);
-    var element = document.getElementById(selectedService);
-    element.classList.add("w3-orange");
     findLocationsInDatabase();
   }
+  // update the UI
+  toggleChildElements(selectedService);
+}
+//
+function onSpecialityClick(selectedSpeciality) {
+  console.log("onSpecialityClick: " + selectedSpeciality);
 }
 // sets the map on all the displayed markers
 function setMapOnAllMarkers(map) {
@@ -244,28 +270,26 @@ function onResetClick() {
   clearPreviousResults();
   initPageContent(originalArrayOfLocations);
 }
-// script to open and close sidebar
+// show / hide  child elements
+function toggleChildElements(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className = x.className.replace("w3-hide", "w3-show")
+    x.previousElementSibling.className =
+      x.previousElementSibling.className.replace("w3-light-grey", "w3-grey");
+  } else {
+    x.className = x.className.replace("w3-show", "w3-hide");
+    x.previousElementSibling.className =
+      x.previousElementSibling.className.replace("w3-grey", "w3-light-grey");
+  }
+}
+// script to open sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("myOverlay").style.display = "block";
 }
+// script to close sidebar
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
-}
-// script to open or close an accordion in the left menu
-function toggleAccordionSection(id) {
-  // search by the category
-  onCategoryClick(id);
-  // alter the styles
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className =
-      x.previousElementSibling.className.replace("w3-light-grey", "w3-grey");
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className =
-      x.previousElementSibling.className.replace("w3-grey", "w3-light-grey");
-  }
 }

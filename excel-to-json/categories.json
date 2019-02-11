@@ -4,347 +4,69 @@
     "ES": "Servicios básicos",
     "EN": "English",
     "FR": "Francais",
-    "AR": "Arab",
-    "services": [
-      {
-        "key": "srv11",
-        "ES": "Alojamiento",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv12",
-        "ES": "Comedores",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv13",
-        "ES": "Comida",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv14",
-        "ES": "Productos de higiene",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv15",
-        "ES": "Duchas públicas",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv16",
-        "ES": "Ropa",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {},
-      {},
-      {}
-    ]
+    "AR": "Arab"
   },
   {
     "key": "cat2",
     "ES": "Salud",
     "EN": "English",
     "FR": "Francais",
-    "AR": "Arab",
-    "services": [
-      {
-        "key": "srv21",
-        "ES": "Atención médica general",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv22",
-        "ES": "SIDA/VIH",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv23",
-        "ES": "Adicciones",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv24",
-        "ES": "Dentista",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv25",
-        "ES": "Oculista/gafas",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv26",
-        "ES": "Vacunación",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv27",
-        "ES": "Ginecología",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv28",
-        "ES": "Atención psicológica",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv29",
-        "ES": "Atención psiquiátrica",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      }
-    ]
+    "AR": "Arab"
   },
   {
     "key": "cat3",
     "ES": "Educacion",
     "EN": "English",
     "FR": "Francais",
-    "AR": "Arab",
-    "services": [
-      {
-        "key": "srv31",
-        "ES": "Clases de español",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv32",
-        "ES": "Clases de otros idiomas",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv33",
-        "ES": "Clases de informática",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv34",
-        "ES": "Apoyo y material escolar",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv35",
-        "ES": "Formación profesional",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv36",
-        "ES": "Otras formaciones",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {},
-      {},
-      {}
-    ]
+    "AR": "Arab"
   },
   {
     "key": "cat4",
     "ES": "Ocio",
     "EN": "English",
     "FR": "Francais",
-    "AR": "Arab",
-    "services": [
-      {
-        "key": "srv41",
-        "ES": "Deportes",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv42",
-        "ES": "Acceso a la cultura",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv43",
-        "ES": "Tiempo libre",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {
-        "key": "srv44",
-        "ES": "Internet",
-        "EN": "English",
-        "FR": "Francais",
-        "AR": "Arab"
-      },
-      {},
-      {},
-      {},
-      {},
-      {}
-    ]
+    "AR": "Arab"
   },
   {
     "key": "cat5",
     "ES": "Información legal y asistencia jurídica",
     "EN": "English",
     "FR": "Francais",
-    "AR": "Arab",
-    "services": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ]
+    "AR": "Arab"
   },
   {
     "key": "cat6",
     "ES": "Información y orientación laboral",
     "EN": "English",
     "FR": "Francais",
-    "AR": "Arab",
-    "services": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ]
+    "AR": "Arab"
   },
   {
     "key": "cat7",
     "ES": "Mujer",
     "EN": "English",
     "FR": "Francais",
-    "AR": "Arab",
-    "services": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ]
+    "AR": "Arab"
   },
   {
     "key": "cat8",
     "ES": "Infancia y jóvenes",
     "EN": "English",
     "FR": "Francais",
-    "AR": "Arab",
-    "services": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ]
+    "AR": "Arab"
   },
   {
     "key": "cat9",
     "ES": "Familia",
     "EN": "English",
     "FR": "Francais",
-    "AR": "Arab",
-    "services": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ]
+    "AR": "Arab"
   },
   {
     "key": "cat10",
     "ES": "LGTBIQ+",
     "EN": "English",
     "FR": "Francais",
-    "AR": "Arab",
-    "services": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ]
-  },
-  {
-    "key": "cat11",
-    "ES": "Diversidad funcional",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab",
-    "services": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
-    ]
+    "AR": "Arab"
   }
 ]

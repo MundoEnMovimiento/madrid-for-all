@@ -1,0 +1,202 @@
+[
+  {
+    "key": "srv11",
+    "category": "cat1",
+    "ES": "Alojamiento",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv12",
+    "category": "cat1",
+    "ES": "Comedores",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv13",
+    "category": "cat1",
+    "ES": "Comida",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv14",
+    "category": "cat1",
+    "ES": "Productos de higiene",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv15",
+    "category": "cat1",
+    "ES": "Duchas públicas",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv16",
+    "category": "cat1",
+    "ES": "Ropa",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv21",
+    "category": "cat2",
+    "ES": "Atención médica general",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv22",
+    "category": "cat2",
+    "ES": "SIDA/VIH",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv23",
+    "category": "cat2",
+    "ES": "Adicciones",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv24",
+    "category": "cat2",
+    "ES": "Dentista",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv25",
+    "category": "cat2",
+    "ES": "Oculista/gafas",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv26",
+    "category": "cat2",
+    "ES": "Vacunación",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv27",
+    "category": "cat2",
+    "ES": "Ginecología",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv28",
+    "category": "cat2",
+    "ES": "Atención psicológica",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv29",
+    "category": "cat2",
+    "ES": "Atención psiquiátrica",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv31",
+    "category": "cat3",
+    "ES": "Clases de español",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv32",
+    "category": "cat3",
+    "ES": "Clases de otros idiomas",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv33",
+    "category": "cat3",
+    "ES": "Clases de informática",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv34",
+    "category": "cat3",
+    "ES": "Apoyo y material escolar",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv35",
+    "category": "cat3",
+    "ES": "Formación profesional",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv36",
+    "category": "cat3",
+    "ES": "Otras formaciones",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv41",
+    "category": "cat4",
+    "ES": "Deportes",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv42",
+    "category": "cat4",
+    "ES": "Acceso a la cultura",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv43",
+    "category": "cat4",
+    "ES": "Tiempo libre",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  },
+  {
+    "key": "srv44",
+    "category": "cat4",
+    "ES": "Internet",
+    "EN": "English",
+    "FR": "Francais",
+    "AR": "Arab"
+  }
+]
