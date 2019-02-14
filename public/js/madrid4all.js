@@ -56,7 +56,7 @@ function initMenuContent(loadedCategories) {
     for (var i = 0; i < loadedCategories.length; i++) {
       var arrayOfServices = loadedCategories[i].services;
       // TODO: replace second call to originalArrayOfLocations[i].categories by originalArrayOfLocations[i].categories.getLabel(language);
-      innerHtmlCode += "<button id=\"" + loadedCategories[i].key + "\" onclick=\"onCategoryClick(event, '" + loadedCategories[i].key + "')\" class=\"w3-button w3-block w3-left-align w3-medium\">" + loadedCategories[i][selectedLanguage] + "</button>";
+      innerHtmlCode += "<button id=\"" + loadedCategories[i].key + "\" onclick=\"onCategoryClick(event, '" + loadedCategories[i].key + "')\" class=\"w3-button w3-block w3-left-align w3-medium w3-hover-gray\">" + loadedCategories[i][selectedLanguage] + "</button>";
       innerHtmlCode += "<div id=\"" + loadedCategories[i].key + "-child\" class=\"w3-hide\"></div>";
     }
     // add the generated code to div = 'categories'
@@ -67,7 +67,7 @@ function initMenuContent(loadedCategories) {
         for (var i = 0; i < loadedServices.length; i++) {
           // console.log("category: " + loadedServices[i].category + ", service: " + loadedServices[i].key);
           var div = document.createElement('div');
-          innerHtmlCode = "<a id=\"" + loadedServices[i].key + "\" href=\"javascript:void(0)\" onclick=\"onServiceClick(event, '" + loadedServices[i].key + "')\" class=\"w3-bar-item w3-button w3-hover-blue w3-small\">" + loadedServices[i][selectedLanguage] + "</a>";
+          innerHtmlCode = "<a id=\"" + loadedServices[i].key + "\" href=\"javascript:void(0)\" onclick=\"onServiceClick(event, '" + loadedServices[i].key + "')\" class=\"w3-bar-item w3-button w3-hover-gray w3-small\">" + loadedServices[i][selectedLanguage] + "</a>";
           innerHtmlCode += "<div id=\"" + loadedServices[i].key + "-child\" class=\"w3-hide\"></div>";
           div.innerHTML = innerHtmlCode;
           document.getElementById(loadedServices[i].category + "-child").appendChild(div);
@@ -78,7 +78,7 @@ function initMenuContent(loadedCategories) {
             for (var i = 0; i < loadedSpecialities.length; i++) {
               console.log("service: " + loadedSpecialities[i].service + ", speciality: " + loadedSpecialities[i].key);
               var div = document.createElement('div');
-              div.innerHTML = "<a id=\"" + loadedSpecialities[i].key + "\" href=\"javascript:void(0)\"  onclick=\"onSpecialityClick(event, this.id)\" class=\"w3-bar-item w3-button w3-hover-green w3-tiny\">" + loadedSpecialities[i][selectedLanguage] + "</a>";
+              div.innerHTML = "<a id=\"" + loadedSpecialities[i].key + "\" href=\"javascript:void(0)\"  onclick=\"onSpecialityClick(event, this.id)\" class=\"w3-bar-item w3-button w3-hover-gray w3-tiny\">" + loadedSpecialities[i][selectedLanguage] + "</a>";
               document.getElementById(loadedSpecialities[i].service + "-child").appendChild(div);
             }
           } else {
