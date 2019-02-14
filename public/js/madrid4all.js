@@ -56,8 +56,8 @@ function initMenuContent(loadedCategories) {
     for (var i = 0; i < loadedCategories.length; i++) {
       var arrayOfServices = loadedCategories[i].services;
       // TODO: replace second call to originalArrayOfLocations[i].categories by originalArrayOfLocations[i].categories.getLabel(language);
-      innerHtmlCode += "<button onclick=\"onCategoryClick('" + loadedCategories[i].key + "')\" class=\"w3-button w3-block w3-light-grey w3-left-align w3-medium\">" + loadedCategories[i][selectedLanguage] + "</button>";
-      innerHtmlCode += "<div id=\"" + loadedCategories[i].key + "\" class=\"w3-hide w3-grey\"></div>";
+      innerHtmlCode += "<button id=\"" + loadedCategories[i].key + "\" onclick=\"onCategoryClick(event, '" + loadedCategories[i].key + "')\" class=\"w3-button w3-block w3-left-align w3-medium\">" + loadedCategories[i][selectedLanguage] + "</button>";
+      innerHtmlCode += "<div id=\"" + loadedCategories[i].key + "-child\" class=\"w3-hide\"></div>";
     }
     // add the generated code to div = 'categories'
     document.getElementById('categories').innerHTML = innerHtmlCode;
@@ -65,12 +65,12 @@ function initMenuContent(loadedCategories) {
     w3.getHttpObject("./data/services.json", function(loadedServices){
       if (loadedServices != null && loadedServices.length > 0) {
         for (var i = 0; i < loadedServices.length; i++) {
-          console.log("category: " + loadedServices[i].category + ", service: " + loadedServices[i].key);
+          // console.log("category: " + loadedServices[i].category + ", service: " + loadedServices[i].key);
           var div = document.createElement('div');
-          innerHtmlCode = "<a href=\"javascript:void(0)\" onclick=\"onServiceClick('" + loadedServices[i].key + "')\" class=\"w3-bar-item w3-button w3-hover-white w3-small\">" + loadedServices[i][selectedLanguage] + "</a>";
-          innerHtmlCode += "<div id=\"" + loadedServices[i].key + "\" class=\"w3-hide w3-grey\"></div>";
+          innerHtmlCode = "<a id=\"" + loadedServices[i].key + "\" href=\"javascript:void(0)\" onclick=\"onServiceClick(event, '" + loadedServices[i].key + "')\" class=\"w3-bar-item w3-button w3-hover-blue w3-small\">" + loadedServices[i][selectedLanguage] + "</a>";
+          innerHtmlCode += "<div id=\"" + loadedServices[i].key + "-child\" class=\"w3-hide\"></div>";
           div.innerHTML = innerHtmlCode;
-          document.getElementById(loadedServices[i].category).appendChild(div);
+          document.getElementById(loadedServices[i].category + "-child").appendChild(div);
         }
         // load specialities
         w3.getHttpObject("./data/specialities.json", function(loadedSpecialities){
@@ -78,8 +78,8 @@ function initMenuContent(loadedCategories) {
             for (var i = 0; i < loadedSpecialities.length; i++) {
               console.log("service: " + loadedSpecialities[i].service + ", speciality: " + loadedSpecialities[i].key);
               var div = document.createElement('div');
-              div.innerHTML = "<a href=\"javascript:void(0)\" id=\"" + loadedSpecialities[i].key + "\" onclick=\"onSpecialityClick(this.id)\" class=\"w3-bar-item w3-button w3-hover-green w3-small\">" + loadedSpecialities[i][selectedLanguage] + "</a>";
-              document.getElementById(loadedSpecialities[i].service).appendChild(div);
+              div.innerHTML = "<a id=\"" + loadedSpecialities[i].key + "\" href=\"javascript:void(0)\"  onclick=\"onSpecialityClick(event, this.id)\" class=\"w3-bar-item w3-button w3-hover-green w3-tiny\">" + loadedSpecialities[i][selectedLanguage] + "</a>";
+              document.getElementById(loadedSpecialities[i].service + "-child").appendChild(div);
             }
           } else {
             console.log("No services found in services.json")
@@ -173,7 +173,7 @@ function onTextSearchInput(inputValue) {
   w3.filterHTML('#resultTable', '.item', inputValue);
 }
 // callback for the click on a category
-function onCategoryClick(selectedCategory) {
+function onCategoryClick(event, selectedCategory) {
   console.log("Clicked on category " + selectedCategory);
   if (selectedCategories.includes(selectedCategory)) {
     // unselect category and search again
@@ -188,7 +188,7 @@ function onCategoryClick(selectedCategory) {
   toggleChildElements(selectedCategory);
 }
 // calback for the click on service
-function onServiceClick(selectedService){
+function onServiceClick(event, selectedService){
   console.log("Clicked on service " + selectedService);
   if (selectedServices.includes(selectedService)) {
     // unselect service and search again
@@ -203,7 +203,8 @@ function onServiceClick(selectedService){
   toggleChildElements(selectedService);
 }
 //
-function onSpecialityClick(selectedSpeciality) {
+function onSpecialityClick(event, selectedSpeciality) {
+  event.stopPropagation();
   console.log("onSpecialityClick: " + selectedSpeciality);
 }
 // sets the map on all the displayed markers
@@ -264,7 +265,7 @@ function onRowClick(markerId) {
 function onResetClick() {
   console.log("Clicked on reset.");
   //document.getElementById("searchText").textContent = "";
-  w3.toggleClass('.w3-grey', 'w3-grey', 'w3-light-grey');
+  w3.toggleClass('.yyy', 'yyy', 'xxx');
   w3.toggleClass('.w3-show', 'w3-show', 'w3-hide');
   // clear previous results
   clearPreviousResults();
@@ -272,16 +273,8 @@ function onResetClick() {
 }
 // show / hide  child elements
 function toggleChildElements(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className = x.className.replace("w3-hide", "w3-show")
-    x.previousElementSibling.className =
-      x.previousElementSibling.className.replace("w3-light-grey", "w3-grey");
-  } else {
-    x.className = x.className.replace("w3-show", "w3-hide");
-    x.previousElementSibling.className =
-      x.previousElementSibling.className.replace("w3-grey", "w3-light-grey");
-  }
+  w3.toggleClass('#' + id + "-child", 'w3-hide', 'w3-show');
+  //w3.addClass('#' + id);
 }
 // script to open sidebar
 function w3_open() {
