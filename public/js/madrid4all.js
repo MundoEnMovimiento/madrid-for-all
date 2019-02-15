@@ -52,7 +52,7 @@ function initMenuContent(loadedCategories) {
   console.log("initMenuContent...");
   var innerHtmlCode = "";
   // load categories and services
-  if (loadedCategories != null && loadedCategories.length > 0){
+  if (loadedCategories != null && loadedCategories.length > 0) {
     for (var i = 0; i < loadedCategories.length; i++) {
       var arrayOfServices = loadedCategories[i].services;
       // TODO: replace second call to originalArrayOfLocations[i].categories by originalArrayOfLocations[i].categories.getLabel(language);
@@ -62,7 +62,7 @@ function initMenuContent(loadedCategories) {
     // add the generated code to div = 'categories'
     document.getElementById('categories').innerHTML = innerHtmlCode;
     // load services
-    w3.getHttpObject("./data/services.json", function(loadedServices){
+    w3.getHttpObject("./data/services.json", function (loadedServices) {
       if (loadedServices != null && loadedServices.length > 0) {
         for (var i = 0; i < loadedServices.length; i++) {
           // console.log("category: " + loadedServices[i].category + ", service: " + loadedServices[i].key);
@@ -72,19 +72,6 @@ function initMenuContent(loadedCategories) {
           div.innerHTML = innerHtmlCode;
           document.getElementById(loadedServices[i].category + "-child").appendChild(div);
         }
-        // load specialities
-        w3.getHttpObject("./data/specialities.json", function(loadedSpecialities){
-          if (loadedSpecialities != null && loadedSpecialities.length > 0) {
-            for (var i = 0; i < loadedSpecialities.length; i++) {
-              console.log("service: " + loadedSpecialities[i].service + ", speciality: " + loadedSpecialities[i].key);
-              var div = document.createElement('div');
-              div.innerHTML = "<a id=\"" + loadedSpecialities[i].key + "\" href=\"javascript:void(0)\"  onclick=\"onSpecialityClick(event, this.id)\" class=\"w3-bar-item w3-button w3-hover-gray w3-tiny\">" + loadedSpecialities[i][selectedLanguage] + "</a>";
-              document.getElementById(loadedSpecialities[i].service + "-child").appendChild(div);
-            }
-          } else {
-            console.log("No services found in services.json")
-          }
-    });
       } else {
         console.log("No services found in services.json")
       }
@@ -149,22 +136,21 @@ function addSingleLocationToMap(markerData) {
   markersOnMap.push(marker);
 }
 // show location details
-function showLocationDetails(locationId){
+function showLocationDetails(locationId) {
   console.log("showLocationDetails: " + locationId);
   document.getElementById(locationId).scrollIntoView();
   document.getElementById(locationId).focus();
 }
 // highlight marker in map
-function showLocationMarker(locationId){
+function showLocationMarker(locationId) {
   console.log("showLocationMarker: " + locationId);
-  for (var i=0; i < markersOnMap.length; i++) 
-  {
-      var currMarker = markersOnMap[i];
-      if(currMarker.get('id') == locationId){
-        currMarker.setAnimation(google.maps.Animation.BOUNCE);
-      } else {
-        currMarker.setAnimation(null);
-      }
+  for (var i = 0; i < markersOnMap.length; i++) {
+    var currMarker = markersOnMap[i];
+    if (currMarker.get('id') == locationId) {
+      currMarker.setAnimation(google.maps.Animation.BOUNCE);
+    } else {
+      currMarker.setAnimation(null);
+    }
   }
   document.getElementById('servicesMap').scrollIntoView();
 }
@@ -188,7 +174,7 @@ function onCategoryClick(event, selectedCategory) {
   toggleChildElements(selectedCategory);
 }
 // calback for the click on service
-function onServiceClick(event, selectedService){
+function onServiceClick(event, selectedService) {
   console.log("Clicked on service " + selectedService);
   if (selectedServices.includes(selectedService)) {
     // unselect service and search again
@@ -201,11 +187,6 @@ function onServiceClick(event, selectedService){
   }
   // update the UI
   toggleChildElements(selectedService);
-}
-//
-function onSpecialityClick(event, selectedSpeciality) {
-  event.stopPropagation();
-  console.log("onSpecialityClick: " + selectedSpeciality);
 }
 // sets the map on all the displayed markers
 function setMapOnAllMarkers(map) {
@@ -225,11 +206,11 @@ function findLocationsInDatabase() {
   // compose selector based on the user input
   var searchCriterias = new Object();
   // filter by categories
-  if(selectedCategories.length > 0) {
+  if (selectedCategories.length > 0) {
     searchCriterias.categories = { $elemMatch: { $in: selectedCategories } };
   }
   // filter by services
-  if(selectedServices.length > 0) {
+  if (selectedServices.length > 0) {
     searchCriterias.services = { $elemMatch: { $in: selectedServices } };
   }
   // TODO: Add more filters
