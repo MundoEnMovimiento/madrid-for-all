@@ -56,7 +56,7 @@ function initMenuContent(loadedCategories) {
     for (var i = 0; i < loadedCategories.length; i++) {
       var arrayOfServices = loadedCategories[i].services;
       // TODO: replace second call to originalArrayOfLocations[i].categories by originalArrayOfLocations[i].categories.getLabel(language);
-      innerHtmlCode += "<button id=\"" + loadedCategories[i].key + "\" onclick=\"onCategoryClick(event, '" + loadedCategories[i].key + "')\" class=\"w3-button w3-block w3-left-align w3-medium w3-hover-gray\">" + loadedCategories[i][selectedLanguage] + "</button>";
+      innerHtmlCode += "<button id=\"" + loadedCategories[i].key + "\" onclick=\"onCategoryClick('" + loadedCategories[i].key + "')\" class=\"w3-button w3-block w3-hover-gray w3-medium w3-left-align\">" + loadedCategories[i][selectedLanguage] + "</button>";
       innerHtmlCode += "<div id=\"" + loadedCategories[i].key + "-child\" class=\"w3-hide\"></div>";
     }
     // add the generated code to div = 'categories'
@@ -67,7 +67,7 @@ function initMenuContent(loadedCategories) {
         for (var i = 0; i < loadedServices.length; i++) {
           // console.log("category: " + loadedServices[i].category + ", service: " + loadedServices[i].key);
           var div = document.createElement('div');
-          innerHtmlCode = "<a id=\"" + loadedServices[i].key + "\" href=\"javascript:void(0)\" onclick=\"onServiceClick(event, '" + loadedServices[i].key + "')\" class=\"w3-bar-item w3-button w3-hover-gray w3-small\">" + loadedServices[i][selectedLanguage] + "</a>";
+          innerHtmlCode = "<button id=\"" + loadedServices[i].key + "\" onclick=\"onServiceClick('" + loadedServices[i].key + "')\" class=\"w3-bar-item w3-button w3-block w3-hover-gray w3-small w3-left-align w3-margin-left\">" + loadedServices[i][selectedLanguage] + "</button>";
           innerHtmlCode += "<div id=\"" + loadedServices[i].key + "-child\" class=\"w3-hide\"></div>";
           div.innerHTML = innerHtmlCode;
           document.getElementById(loadedServices[i].category + "-child").appendChild(div);
@@ -122,7 +122,7 @@ function addSingleLocationToMap(markerData) {
   // create an infoWindow to be linked to the marker
   var infoWindowCode = "<strong>" + markerData.orgName + "</strong><br>";
   infoWindowCode += "<em>" + address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a><br>";
-  infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails('loc-details-" + markerData.ID + "')\">Show more details</a><br>";
+  infoWindowCode += "<a href=\"#\" onClick=\"showLocationDetails('loc-details-" + markerData.ID + "')\">Show more details</a><br>";
   //console.log("infoWindowCode: " + infoWindowCode); 
   var infowindow = new google.maps.InfoWindow({
     content: infoWindowCode
@@ -159,7 +159,7 @@ function onTextSearchInput(inputValue) {
   w3.filterHTML('#resultTable', '.item', inputValue);
 }
 // callback for the click on a category
-function onCategoryClick(event, selectedCategory) {
+function onCategoryClick(selectedCategory) {
   console.log("Clicked on category " + selectedCategory);
   if (selectedCategories.includes(selectedCategory)) {
     // unselect category and search again
@@ -171,10 +171,11 @@ function onCategoryClick(event, selectedCategory) {
     findLocationsInDatabase();
   }
   // update the UI
-  toggleChildElements(selectedCategory);
+  w3.toggleClass('#' + selectedCategory, 'w3-large');
+  w3.toggleClass('#' + selectedCategory + "-child", 'w3-hide', 'w3-show');
 }
 // calback for the click on service
-function onServiceClick(event, selectedService) {
+function onServiceClick(selectedService) {
   console.log("Clicked on service " + selectedService);
   if (selectedServices.includes(selectedService)) {
     // unselect service and search again
@@ -186,7 +187,7 @@ function onServiceClick(event, selectedService) {
     findLocationsInDatabase();
   }
   // update the UI
-  toggleChildElements(selectedService);
+  w3.toggleClass('#' + selectedCategory, 'w3-large');
 }
 // sets the map on all the displayed markers
 function setMapOnAllMarkers(map) {
@@ -246,16 +247,11 @@ function onRowClick(markerId) {
 function onResetClick() {
   console.log("Clicked on reset.");
   //document.getElementById("searchText").textContent = "";
-  w3.toggleClass('.yyy', 'yyy', 'xxx');
+  w3.removeClass('.w3-bold', 'w3-bold');
   w3.toggleClass('.w3-show', 'w3-show', 'w3-hide');
   // clear previous results
   clearPreviousResults();
   initPageContent(originalArrayOfLocations);
-}
-// show / hide  child elements
-function toggleChildElements(id) {
-  w3.toggleClass('#' + id + "-child", 'w3-hide', 'w3-show');
-  //w3.addClass('#' + id);
 }
 // script to open sidebar
 function w3_open() {
