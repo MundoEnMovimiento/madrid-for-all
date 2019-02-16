@@ -122,7 +122,7 @@ function addSingleLocationToMap(markerData) {
   // create an infoWindow to be linked to the marker
   var infoWindowCode = "<strong>" + markerData.orgName + "</strong><br>";
   infoWindowCode += "<em>" + address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a><br>";
-  infoWindowCode += "<a href=\"#\" onClick=\"showLocationDetails('loc-details-" + markerData.ID + "')\">Show more details</a><br>";
+  infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails('loc-details-" + markerData.ID + "')\">Mostrar más información</a><br>";
   //console.log("infoWindowCode: " + infoWindowCode); 
   var infowindow = new google.maps.InfoWindow({
     content: infoWindowCode
