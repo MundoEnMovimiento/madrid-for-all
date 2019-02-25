@@ -10,14 +10,15 @@
     "district": "CIUDAD LINEAL",
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, CON CITA PREVIA TELEFÓNICA",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "cat1"
+      "cat1",
+      "cat10"
     ],
     "services": [
-      "srv11",
-      "srv15"
+      "svc11",
+      "svc12"
     ],
     "languages": [
       "ES",
@@ -28,6 +29,7 @@
     "targettedOrigins": [
       "PE"
     ],
+    "languages[]2": "ES;AR",
     "contactPerson": "ÁLVARO JUNQUERA",
     "contactPhone": 914049118,
     "contactEmail": "coordinador@alternativaenmarcha.org",
@@ -48,15 +50,15 @@
     "district": "CENTRO",
     "locality": "Madrid",
     "timeTable": "MIERCOLES RECOGER NÚMERO, LUNES SIGUIENTE ENTREGA DE ROPA",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "VISITANDO NUESTRA SEDE, MIERCOLES DE 10,30 A 11,30",
     "categories": [
       "cat2",
-      "cat5",
-      "cat11"
+      "cat9"
     ],
     "services": [
-      "srv21"
+      "svc27",
+      "svc28"
     ],
     "languages": [
       "ES"
@@ -64,6 +66,7 @@
     "targettedOrigins": [
       "VN"
     ],
+    "languages[]2": "ES",
     "additionalInfo": "MIÉRCOLES SE RECOGE NÚMERO DE ORDEN Y LA SEMANA SIGUIENTE EL LUNES SE ENTREGA LA ROPA. MESES DE VERANO JULIO Y AGOSTO CERRAMOS TAMBIÉN FIESTAS NO ATIENDEN.",
     "contactPerson": "ÁNGELES O MARTA",
     "contactPhone": 915220070,
@@ -85,18 +88,21 @@
     "district": "CHAMBERÍ",
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, VISITANDO NUESTRA SEDE",
     "categories": [
-      "cat3"
+      "cat3",
+      "cat8"
     ],
     "services": [
-      "srv31"
+      "svc316",
+      "svc317"
     ],
     "languages": [
       "ES",
       "EN"
     ],
+    "languages[]2": "ES;EN",
     "additionalInfo": "INFORMACIÓN Y ACOMPAÑAMIENTO PARA VINCULACIÓN AL SISTEMA SANITARIO MADRILEÑO DE POBLACIÓN EN SITUACIÓN ADMINISTRATIVA IRREGULAR VIVIENDO CON EL VIH.",
     "contactPerson": "JORGE ALAMO BARROSO",
     "contactPhone": 915930540,
@@ -117,18 +123,21 @@
     "district": "MORATALAZ",
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, TARDES DE MIÉRCOLES Y VIERNES",
-    "priorAppointment": "NO",
+    "priorAppointment": 0,
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "cat4"
+      "cat4",
+      "cat7"
     ],
     "services": [
-      "srv41"
+      "svc422",
+      ""
     ],
     "languages": [
       "ES"
     ],
     "targettedChild": 1,
+    "languages[]2": "ES",
     "contactPerson": "ROBERTO",
     "contactPhone": 650010300,
     "contactEmail": "roenred@asociacionapoyo.org",
@@ -149,7 +158,7 @@
     "district": "PUENTE DE VALLECAS",
     "locality": "Madrid",
     "timeTable": "TODAS LAS TARDES",
-    "priorAppointment": "NO",
+    "priorAppointment": 0,
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
       "cat5",
@@ -159,6 +168,7 @@
       "ES"
     ],
     "targettedWomen": 1,
+    "languages[]2": "ES",
     "additionalInfo": "HORARIOS DE LAS ACTIVIDADES: HTTP://WWW.LAVILLANA.ORG/AGENDA/",
     "contactPerson": "LA VILLANA",
     "contactPhone": 644882198,
@@ -180,15 +190,17 @@
     "district": "BARRIO DE SALAMANCA",
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, VISITANDO NUESTRA SEDE",
     "categories": [
-      "cat6"
+      "cat6",
+      "cat5"
     ],
     "languages": [
       "ES",
       "AR"
     ],
+    "languages[]2": "ES;AR",
     "contactPerson": "KARLOS SAN PEDRO",
     "contactPhone": 660528316,
     "contactEmail": "karlossanpedro@lamercedmigraciones.org",
@@ -208,15 +220,21 @@
     "district": "FUENCARRAL / EL PARDO",
     "locality": "Madrid",
     "timeTable": "LUNES Y MIERCOLES (10:30-12:00 Y 19:30-21:00) Y MARTES (19:30-20:30)",
-    "priorAppointment": "NO",
+    "priorAppointment": 0,
     "wayOfContact": "VISITANDO NUESTRA SEDE",
     "categories": [
-      "cat7"
+      "cat7",
+      "cat4"
+    ],
+    "services": [
+      "svc424",
+      ""
     ],
     "languages": [
       "ES"
     ],
     "targettedChild": 1,
+    "languages[]2": "ES",
     "contactPerson": "JON SANZ LANDALUZE",
     "contactPhone": 635736573,
     "contactEmail": "jsanzlan@ucm.es",
@@ -237,10 +255,15 @@
     "district": "ARGANZUELA",
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL",
     "categories": [
-      "cat8"
+      "cat8",
+      "cat3"
+    ],
+    "services": [
+      "svc316",
+      ""
     ],
     "languages": [
       "ES"
@@ -248,6 +271,7 @@
     "targettedOrigins": [
       "CM"
     ],
+    "languages[]2": "ES",
     "contactPerson": "BEATRIZ ORTIZ",
     "contactPhone": 914672626,
     "contactEmail": "comunicacion@asociacionrealidades.org",
@@ -268,15 +292,20 @@
     "district": "PUENTE DE VALLECAS",
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL",
     "categories": [
       "cat9",
-      "cat10"
+      "cat2"
+    ],
+    "services": [
+      "svc215",
+      "svc216"
     ],
     "languages": [
       "ES"
     ],
+    "languages[]2": "ES",
     "contactPerson": "MARTA APARICIO",
     "contactPhone": 917772822,
     "contactEmail": "asociacion@lakalle.org",
@@ -296,15 +325,21 @@
     "district": "CENTRO",
     "locality": "Madrid",
     "timeTable": "TODAS LAS TARDES",
-    "priorAppointment": "NO",
+    "priorAppointment": 0,
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "cat10"
+      "cat10",
+      "cat1"
+    ],
+    "services": [
+      "svc15",
+      "svc16"
     ],
     "languages": [
       "ES"
     ],
     "targettedWomen": 1,
+    "languages[]2": "ES",
     "contactPerson": "LA INGOBERNABLE",
     "contactEmail": " bienvenida@ingobernable.net",
     "fullAddress": "GOBERNADOR 39 28014, Madrid",
@@ -324,15 +359,21 @@
     "district": "FUENCARRAL / EL PARDO",
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL",
     "categories": [
-      "cat11"
+      "cat1",
+      "cat10"
+    ],
+    "services": [
+      "svc15",
+      "svc16"
     ],
     "languages": [
       "ES"
     ],
     "targettedChild": 1,
+    "languages[]2": "ES",
     "contactPerson": "EVA JUAREZ",
     "contactPhone": 913721506,
     "contactEmail": "nortejoven@nortejoven.org",
@@ -352,18 +393,20 @@
     "district": "TETUAN",
     "locality": "Madrid",
     "timeTable": "TODAS LAS TARDES",
-    "priorAppointment": "NO",
+    "priorAppointment": 0,
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "cat1"
+      "cat2",
+      "cat9"
     ],
     "services": [
-      "srv13",
-      "srv14"
+      "svc211",
+      "svc212"
     ],
     "languages": [
       "ES"
     ],
+    "languages[]2": "ES",
     "contactPerson": "LA ENREDADERA",
     "contactEmail": "enredadera@riseup.net",
     "fullAddress": "ANASTASIO HERRERO 10 28020, Madrid",
@@ -383,18 +426,21 @@
     "district": "CENTRO",
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, A TRAVÉS DE LA WEB, VISITANDO NUESTRA SEDE",
     "categories": [
-      "cat2"
+      "cat3",
+      "cat8"
     ],
     "services": [
-      "srv22"
+      "svc318",
+      "svc319"
     ],
     "languages": [
       "ES"
     ],
     "targettedWomen": 1,
+    "languages[]2": "ES",
     "contactPerson": "EDUARDO BRIK",
     "contactPhone": 914299756,
     "contactEmail": "terapiasinfronteras@gmail.com",
@@ -415,16 +461,15 @@
     "district": "PUENTE DE VALLECAS",
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL",
     "categories": [
-      "cat3",
-      "cat7",
-      "cat10"
+      "cat4",
+      "cat7"
     ],
     "services": [
-      "srv31",
-      "srv33"
+      "svc422",
+      "svc423"
     ],
     "languages": [
       "ES",
@@ -435,6 +480,7 @@
     "targettedOrigins": [
       "ES"
     ],
+    "languages[]2": "ES;EN;FR;AR",
     "contactPerson": "ROSA",
     "contactPhone": 913806604,
     "contactEmail": "gandalflf@hotmail.com",
@@ -455,17 +501,16 @@
     "district": "ARGANZUELA",
     "locality": "Madrid",
     "timeTable": "LUNES 16-20H DE MARTES A SÁBADOS 10-14 Y 16-20H",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "cat4"
-    ],
-    "services": [
-      "srv42"
+      "cat5",
+      "cat6"
     ],
     "languages": [
       "ES"
     ],
+    "languages[]2": "ES",
     "contactPerson": "LAURA COMES CEREZO",
     "contactPhone": 918286978,
     "contactEmail": "coordinacioncepi@larueca.info",
@@ -486,9 +531,10 @@
     "district": "CENTRO",
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "A TRAVÉS DE LA WEB",
     "categories": [
+      "cat6",
       "cat5"
     ],
     "languages": [
@@ -497,6 +543,7 @@
       "FR",
       "AR"
     ],
+    "languages[]2": "ES;EN;FR;AR",
     "additionalInfo": "PRUEBA DE VIH",
     "contactPerson": "JAVIER",
     "contactPhone": 915211174,
@@ -517,14 +564,20 @@
     "district": "TETUAN",
     "locality": "Madrid",
     "timeTable": "FINES DE SEMANA",
-    "priorAppointment": "NO",
+    "priorAppointment": 0,
     "wayOfContact": "ENVIANDO UN E-MAIL",
     "categories": [
-      "cat6"
+      "cat7",
+      "cat4"
+    ],
+    "services": [
+      "svc422",
+      "svc425"
     ],
     "languages": [
       "ES"
     ],
+    "languages[]2": "ES",
     "contactPerson": "MARÍA DE LA CRUZ",
     "contactPhone": 699684246,
     "contactEmail": "mcruzrubio@hotmail.com",
@@ -544,20 +597,22 @@
     "district": "PUENTE DE VALLECAS",
     "locality": "Madrid",
     "timeTable": "TARDES DE LUNES A JUEVES",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "cat7",
-      "cat2"
+      "cat8",
+      "cat3"
     ],
     "services": [
-      "srv23"
+      "svc316",
+      "svc318"
     ],
     "languages": [
       "ES"
     ],
     "targettedChild": 1,
     "targettedWomen": 1,
+    "languages[]2": "ES",
     "additionalInfo": "PERSONAS EN SITUACIÓN Y/O RIESGO DE EXCLUSIÓN SOCIAL",
     "contactPerson": "BELÉN CAÑERO",
     "contactPhone": 917779661,
@@ -578,15 +633,21 @@
     "district": "CENTRO",
     "locality": "Madrid",
     "timeTable": "MIÉRCOLES Y VIERNES DE 17H A 21H",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "ENVIANDO UN E-MAIL",
     "categories": [
-      "cat8"
+      "cat9",
+      "cat2"
+    ],
+    "services": [
+      "svc211",
+      "svc214"
     ],
     "languages": [
       "ES",
       "EN"
     ],
+    "languages[]2": "ES;EN",
     "contactPerson": "MATTEO RICCI UGATTI",
     "contactEmail": "matteo.ryu@orbitadiversa.org",
     "fullAddress": "ALTAMIRANO, 37 28012, Madrid",
@@ -606,16 +667,22 @@
     "district": "CENTRO",
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, MAÑANAS L-J (CITA PREVIA) Y TARDES MARTES 19:30 A 21",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, EN MAÑANAS, TARDES MARTES 19:30 A 21 NO CITA PREVIA.",
     "categories": [
-      "cat9"
+      "cat10",
+      "cat1"
+    ],
+    "services": [
+      "svc13",
+      "svc16"
     ],
     "languages": [
       "ES",
       "EN",
       "FR"
     ],
+    "languages[]2": "ES;EN;FR",
     "contactPerson": "DANA",
     "contactPhone": 915592906,
     "contactEmail": "oid@sosracismomadrid.es",
@@ -636,15 +703,21 @@
     "district": "MONCLOA / ARAVACA",
     "locality": "Madrid",
     "timeTable": "MARTES Y JUEVES DE 19:30 A 21 HORAS",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, VISITANDO NUESTRA SEDE",
     "categories": [
+      "cat1",
       "cat10"
+    ],
+    "services": [
+      "svc14",
+      "svc11"
     ],
     "languages": [
       "ES"
     ],
     "targettedChild": 1,
+    "languages[]2": "ES",
     "contactPerson": "JOSÉ MARÍA",
     "contactPhone": 912244837,
     "contactEmail": "avpalomadehesa@gmail.com",
@@ -665,14 +738,20 @@
     "district": "TETUAN",
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
-    "priorAppointment": "SÍ",
+    "priorAppointment": 1,
     "wayOfContact": "CONTACTO TELEFÓNICO",
     "categories": [
-      "cat11"
+      "cat2",
+      "cat9"
+    ],
+    "services": [
+      "svc211",
+      "svc215"
     ],
     "languages": [
       "ES"
     ],
+    "languages[]2": "ES",
     "contactPerson": "MONICA PICHARDO GALAN",
     "contactPhone": 911684483,
     "contactEmail": "casaplaza@valponasca.org",

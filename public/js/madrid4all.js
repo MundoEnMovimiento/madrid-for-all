@@ -68,7 +68,7 @@ function initMenuContent(loadedCategories) {
       originalArrayOfServices = loadedServices;
       if (loadedServices != null && loadedServices.length > 0) {
         for (var i = 0; i < loadedServices.length; i++) {
-          // console.log("category: " + loadedServices[i].category + ", service: " + loadedServices[i].key);
+          console.log("category: " + loadedServices[i].category + ", service: " + loadedServices[i].key);
           var div = document.createElement('div');
           innerHtmlCode = "<button id=\"" + loadedServices[i].key + "\" onclick=\"onServiceClick('" + loadedServices[i].key + "')\" class=\"w3-bar-item w3-button w3-block w3-hover-gray w3-small w3-left-align w3-margin-left\">" + loadedServices[i][selectedLanguage] + "</button>";
           innerHtmlCode += "<div id=\"" + loadedServices[i].key + "-child\" class=\"w3-hide\"></div>";
@@ -166,16 +166,11 @@ function onCategoryClick(selectedCategory) {
   console.log("Clicked on category " + selectedCategory);
   if (selectedCategories.includes(selectedCategory)) {
     // unselect category and search again
-    selectedCategories.pop(selectedCategory);
-    // remove svc linked to that category from the search criteria
-    for(var i = 0; i < selectedServices.length; i++) {
-      // TODO: REMOVE ALL THE pop() by splice() !
-      var serviceCategory = selectedServices[i].charAt(3);
-      if(serviceCategory == selectedCategory) {
-        console.log("Removing service 'svc" + selectedServices[i] + ' from search criteria');
-        selectedServices.splice(i, 1);
-      }
-    }
+    selectedCategories.splice(selectedCategories.indexOf(selectedCategory), 1);
+    // remove svc linked to that category from the search criteria too
+    selectedServices = selectedServices.filter(function(svcId, index, arr){
+      return svcId.charAt(3) != selectedCategory;
+    });
   } else {
     // select category and search again
     selectedCategories.push(selectedCategory);
@@ -191,7 +186,7 @@ function onServiceClick(selectedService) {
   console.log("Clicked on service " + selectedService);
   if (selectedServices.includes(selectedService)) {
     // unselect service and search again
-    selectedServices.pop(selectedService);
+    selectedServices.splice(selectedServices.indexOf(selectedService),1);
   } else {
     // select service and search again
     selectedServices.push(selectedService);
@@ -218,15 +213,15 @@ function findLocationsInDatabase() {
   // TODO: Rename ID in the Json and Excel file to key or something less similar to _id
   // compose selector based on the user input
   var searchCriterias = new Object();
-  var processedCategories = selectedCategories;
-  var processedServices = selectedServices;
+  var processedCategories = selectedCategories.slice(0);
+  var processedServices = selectedServices.slice(0);
   // remove categories of any of their services are included in the search criteria
   for(var i = 0; i < selectedServices.length; i++){
     var serviceCategory = selectedServices[i].charAt(3);
     // remove the category of this service from the searchCriteria
     if(processedCategories.includes("cat" + serviceCategory)){
         console.log("Removing category 'cat" + serviceCategory + "' from the search criteria as '" + selectedServices[i] + "' is added");
-        processedCategories.pop(serviceCategory);
+        processedCategories.splice(processedCategories.indexOf(serviceCategory),1);
     }
   }
   // compose the final search criteria
