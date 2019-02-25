@@ -10,6 +10,9 @@ var arrayOfLocations = [];
 var markersOnMap = [];
 var selectedCategories = [];
 var selectedServices = [];
+var targetWomen = false;
+var targetChildren = false;
+var targetOrigin = false;
 // lat and lng of the "main" city used to center the map
 var mainCityGeoCode = {
   "lat": 40.4168,
@@ -125,7 +128,7 @@ function addSingleLocationToMap(markerData) {
   // create an infoWindow to be linked to the marker
   var infoWindowCode = "<strong>" + markerData.orgName + "</strong><br>";
   infoWindowCode += "<em>" + address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a><br>";
-  infoWindowCode += "<a href=\"#\" onClick=\"showLocationDetails('loc-details-" + markerData.ID + "')\">Mostrar más información</a><br>";
+  infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails(event, 'loc-details-" + markerData.ID + "')\">Mostrar más información</a><br>";
   //console.log("infoWindowCode: " + infoWindowCode); 
   var infowindow = new google.maps.InfoWindow({
     content: infoWindowCode
@@ -139,10 +142,9 @@ function addSingleLocationToMap(markerData) {
   markersOnMap.push(marker);
 }
 // show location details
-function showLocationDetails(locationId) {
+function showLocationDetails(event, locationId) {
   console.log("showLocationDetails: " + locationId);
   document.getElementById(locationId).scrollIntoView();
-  document.getElementById(locationId).focus();
 }
 // highlight marker in map
 function showLocationMarker(locationId) {
@@ -179,6 +181,7 @@ function onCategoryClick(selectedCategory) {
   findLocationsInDatabase();
   // update the UI
   w3.toggleClass('#' + selectedCategory, 'w3-large');
+  w3.toggleClass('#' + selectedCategory, 'w3-green');
   w3.toggleClass('#' + selectedCategory + "-child", 'w3-hide', 'w3-show');
 }
 // calback for the click on service
@@ -195,6 +198,24 @@ function onServiceClick(selectedService) {
   findLocationsInDatabase();
   // update the UI
   w3.toggleClass('#' + selectedService, 'w3-large');
+}
+// callback for the click on targetChild
+function onTargetChildrenClick() {
+  console.log("Clicked on targetChildren");
+  targetChildren = !targetChildren;
+  w3.toggleClass('#targetChildren', 'w3-green');
+}
+// callback for the click on targetWomen
+function onTargetWomenClick() {
+  console.log("Clicked on targetWomen");
+  targetWomen = !targetWomen;
+  w3.toggleClass('#targetWomen', 'w3-green');
+}
+// callback for the click on targetOrigin
+function onTargetOriginClick() {
+  console.log("Clicked on targetOrigin");
+  targetOrigin = !targetOrigin;
+  w3.toggleClass('#targetOrigin', 'w3-green');
 }
 // sets the map on all the displayed markers
 function setMapOnAllMarkers(map) {
@@ -224,7 +245,7 @@ function findLocationsInDatabase() {
         processedCategories.splice(processedCategories.indexOf(serviceCategory),1);
     }
   }
-  // compose the final search criteria
+   // compose the final search criteria
   if(processedCategories.length > 0) {
     searchCriterias.categories = { $elemMatch: { $in: processedCategories } };
   }
@@ -265,6 +286,7 @@ function onResetClick() {
   console.log("Clicked on reset.");
   //document.getElementById("searchText").textContent = "";
   w3.removeClass('.w3-large', 'w3-large');
+  w3.removeClass('.w3-green', 'w3-green');
   w3.toggleClass('.w3-show', 'w3-show', 'w3-hide');
   // clear previous results
   clearPreviousResults();
@@ -272,6 +294,9 @@ function onResetClick() {
   // clean selected criterias
   selectedCategories = [];
   selectedServices = [];
+  targetWomen = false;
+  targetChildren = false;
+  targetOrigin = false;
 }
 // script to open sidebar
 function w3_open() {
