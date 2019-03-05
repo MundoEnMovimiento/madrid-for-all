@@ -107,12 +107,22 @@ function addLocationsToMap(arrayOfLocations) {
     addSingleLocationToMap(markerData);
   });
   // show table with the markers
-  updateResultTable(arrayOfLocations);
+  updateResults(arrayOfLocations);
 }
 // function to update the resultTable
-function updateResultTable(arrayOfLocations) {
-  w3.displayObject("resultTable", { "records": arrayOfLocations });
-  w3.sortHTML('#resultTable', '.item', 'td:nth-child(1')
+function updateResults(arrayOfLocations) {  
+  // update resultTable
+  if(arrayOfLocations.length > 0) {
+    // update resultCounter
+    document.getElementById("resultCounter").innerHTML = "<p>" + arrayOfLocations.length + " resultado(s) encontrado(s)</p>";
+    // update resultTable
+    w3.displayObject("resultTable", { "records": arrayOfLocations });
+    w3.sortHTML('#resultTable', '.item', 'td:nth-child(1')
+  } else {
+    // update resultCounter
+    document.getElementById("resultCounter").innerHTML = "<p>No se ha encontrado ningún resultado</p>";
+    w3.hide('#resultTable');
+  }
 }
 // adds a marker to the map.
 function addSingleLocationToMap(markerData) {
@@ -267,7 +277,7 @@ function findLocationsInDatabase() {
     searchCriterias.targettedChild = { $eq: 1};
   }
   if(targetOrigin){
-    searchCriterias.targettedOrigins = { $exists : true };
+    searchCriterias.targettedOrigins = { $exists : true};
   }
   // perform the find in the DB
   db.find({
@@ -282,7 +292,7 @@ function findLocationsInDatabase() {
     // show found locations in the map
     addLocationsToMap(arrayOfLocations);
     // update result table with the found locations
-    updateResultTable(arrayOfLocations);
+    updateResults(arrayOfLocations);
   }).catch(function (err) {
     console.log(err);
   });

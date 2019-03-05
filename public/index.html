@@ -56,28 +56,29 @@
 
     <div class="w3-container">
       <div id="servicesMap" style="width:100%;height:600px;"></div>
-
       <br>
-
-      <table id="resultTable" class="w3-table w3-striped w3-bordered">
-        <thead>
-          <tr class="xxx">
-            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(1)')">Nombre</th>
-            <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Distrito</th>
+      <div id="searchResults">
+        <div id="resultCounter"></div>
+        <table id="resultTable" class="w3-table w3-striped w3-bordered">
+          <thead>
+            <tr>
+              <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(1)')">Nombre</th>
+              <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(2)')">Distrito</th>
+            </tr>
+          </thead>
+          <tr id="loc-details-{{ID}}" onclick="onRowClick({{orgName}})" w3-repeat="records" class="w3-padding-8 item">
+            <td>
+              <p>{{orgName}}</p>
+              <p class="w3-small">{{languages}}</p>
+            </td>
+            <td>
+              <p>{{district}}</p>
+              <p class="w3-small">{{postalCode}}</p>
+              <a href="javascript:void(0)" onClick="showLocationMarker('loc-marker-{{ID}}')">Mostrar en el mapa</a><br>
+            </td>
           </tr>
-        </thead>
-        <tr id="loc-details-{{ID}}" onclick="onRowClick({{orgName}})" w3-repeat="records" class="w3-padding-8 item">
-          <td>
-            <p>{{orgName}}</p>
-            <p class="w3-small">{{languages}}</p>
-          </td>
-          <td>
-            <p>{{district}}</p>
-            <p class="w3-small">{{postalCode}}</p>
-            <a href="javascript:void(0)" onClick="showLocationMarker('loc-marker-{{ID}}')">Mostrar en el mapa</a><br>
-          </td>
-        </tr>
-      </table>
+          </table>
+      </div>
     </div>
 
     <!-- Pagination 
@@ -95,7 +96,7 @@
   </div>
   <!-- End page content / w3-main -->
   <!-- Footer -->
-  <div class="w3-container xxx w3-padding-32" style="margin-top:75px;padding-right:58px">
+  <div class="w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
     <div class="w3-right">
       <!-- TODO: fill in correct link in href -->
       <p>Si quieres que tus servicios aparezcan en Madrid For All, rellena <a href="http://www.mundoenmovimiento.org">este
