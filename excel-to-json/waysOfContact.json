@@ -1,0 +1,23 @@
+[
+  {
+    "key": "phone",
+    "ES": "Teléfono",
+    "EN": "Phone",
+    "FR": "Téléphone",
+    "AR": "Arab"
+  },
+  {
+    "key": "visit",
+    "ES": "Visitar sede",
+    "EN": "English",
+    "FR": "Français",
+    "AR": "Arab"
+  },
+  {
+    "key": "email",
+    "ES": "Email",
+    "EN": "Email",
+    "FR": "Email",
+    "AR": "Arab"
+  }
+]

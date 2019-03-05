@@ -11,7 +11,11 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, CON CITA PREVIA TELEFÓNICA",
     "priorAppointment": 1,
-    "wayOfContact": "CONTACTO TELEFÓNICO",
+    "waysOfContact": [
+      "phone",
+      "visit",
+      "email"
+    ],
     "categories": [
       "cat1",
       "cat10"
@@ -27,12 +31,9 @@
     "targettedChild": 1,
     "targettedWomen": 1,
     "targettedOrigins": [
-      "PE"
+      "PE",
+      "EQ"
     ],
-    "languages[]2": "ES;AR",
-    "contactPerson": "ÁLVARO JUNQUERA",
-    "contactPhone": 914049118,
-    "contactEmail": "coordinador@alternativaenmarcha.org",
     "fullAddress": "BLAS DE OTERO, 66 28017, Madrid",
     "geocode": {
       "lat": 40.4236238,
@@ -51,7 +52,9 @@
     "locality": "Madrid",
     "timeTable": "MIERCOLES RECOGER NÚMERO, LUNES SIGUIENTE ENTREGA DE ROPA",
     "priorAppointment": 1,
-    "wayOfContact": "VISITANDO NUESTRA SEDE, MIERCOLES DE 10,30 A 11,30",
+    "waysOfContact": [
+      "phone"
+    ],
     "categories": [
       "cat2",
       "cat9"
@@ -66,11 +69,7 @@
     "targettedOrigins": [
       "VN"
     ],
-    "languages[]2": "ES",
     "additionalInfo": "MIÉRCOLES SE RECOGE NÚMERO DE ORDEN Y LA SEMANA SIGUIENTE EL LUNES SE ENTREGA LA ROPA. MESES DE VERANO JULIO Y AGOSTO CERRAMOS TAMBIÉN FIESTAS NO ATIENDEN.",
-    "contactPerson": "ÁNGELES O MARTA",
-    "contactPhone": 915220070,
-    "contactEmail": "hermandad@refugio.e.telefonica.net",
     "fullAddress": "CORREDERA BAJA DE SAN PABLO 16 28004, Madrid",
     "geocode": {
       "lat": 40.4226654,
@@ -89,7 +88,9 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
     "priorAppointment": 1,
-    "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, VISITANDO NUESTRA SEDE",
+    "waysOfContact": [
+      "visit"
+    ],
     "categories": [
       "cat3",
       "cat8"
@@ -102,11 +103,7 @@
       "ES",
       "EN"
     ],
-    "languages[]2": "ES;EN",
     "additionalInfo": "INFORMACIÓN Y ACOMPAÑAMIENTO PARA VINCULACIÓN AL SISTEMA SANITARIO MADRILEÑO DE POBLACIÓN EN SITUACIÓN ADMINISTRATIVA IRREGULAR VIVIENDO CON EL VIH.",
-    "contactPerson": "JORGE ALAMO BARROSO",
-    "contactPhone": 915930540,
-    "contactEmail": "jorge.alamo@fundaciontriangulo.es",
     "fullAddress": "MELENDEZ VALDES, 52 28015, Madrid",
     "geocode": {
       "lat": 40.4331491,
@@ -124,7 +121,9 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, TARDES DE MIÉRCOLES Y VIERNES",
     "priorAppointment": 0,
-    "wayOfContact": "CONTACTO TELEFÓNICO",
+    "waysOfContact": [
+      "email"
+    ],
     "categories": [
       "cat4",
       "cat7"
@@ -137,10 +136,6 @@
       "ES"
     ],
     "targettedChild": 1,
-    "languages[]2": "ES",
-    "contactPerson": "ROBERTO",
-    "contactPhone": 650010300,
-    "contactEmail": "roenred@asociacionapoyo.org",
     "fullAddress": "CORREGIDOR DIEGO DE VALDERRABANO 45 28030, Madrid",
     "geocode": {
       "lat": 40.4131224,
@@ -159,7 +154,9 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS TARDES",
     "priorAppointment": 0,
-    "wayOfContact": "CONTACTO TELEFÓNICO",
+    "waysOfContact": [
+      "email"
+    ],
     "categories": [
       "cat5",
       "cat6"
@@ -168,11 +165,7 @@
       "ES"
     ],
     "targettedWomen": 1,
-    "languages[]2": "ES",
     "additionalInfo": "HORARIOS DE LAS ACTIVIDADES: HTTP://WWW.LAVILLANA.ORG/AGENDA/",
-    "contactPerson": "LA VILLANA",
-    "contactPhone": 644882198,
-    "contactEmail": "info@lavillana.org",
     "fullAddress": "MONTSENY, 35  28038, Madrid",
     "geocode": {
       "lat": 40.4005434,
@@ -191,7 +184,9 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
     "priorAppointment": 1,
-    "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, VISITANDO NUESTRA SEDE",
+    "waysOfContact": [
+      "email"
+    ],
     "categories": [
       "cat6",
       "cat5"
@@ -200,10 +195,6 @@
       "ES",
       "AR"
     ],
-    "languages[]2": "ES;AR",
-    "contactPerson": "KARLOS SAN PEDRO",
-    "contactPhone": 660528316,
-    "contactEmail": "karlossanpedro@lamercedmigraciones.org",
     "fullAddress": "BOCANGEL, 2 28028, Madrid",
     "geocode": {
       "lat": 40.4298802,
@@ -221,7 +212,10 @@
     "locality": "Madrid",
     "timeTable": "LUNES Y MIERCOLES (10:30-12:00 Y 19:30-21:00) Y MARTES (19:30-20:30)",
     "priorAppointment": 0,
-    "wayOfContact": "VISITANDO NUESTRA SEDE",
+    "waysOfContact": [
+      "visit",
+      "email"
+    ],
     "categories": [
       "cat7",
       "cat4"
@@ -234,10 +228,6 @@
       "ES"
     ],
     "targettedChild": 1,
-    "languages[]2": "ES",
-    "contactPerson": "JON SANZ LANDALUZE",
-    "contactPhone": 635736573,
-    "contactEmail": "jsanzlan@ucm.es",
     "fullAddress": "BETANZOS 37 28029, Madrid",
     "geocode": {
       "lat": 40.4746269,
@@ -256,7 +246,10 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS",
     "priorAppointment": 1,
-    "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL",
+    "waysOfContact": [
+      "phone",
+      "visit"
+    ],
     "categories": [
       "cat8",
       "cat3"
@@ -269,12 +262,8 @@
       "ES"
     ],
     "targettedOrigins": [
-      "CM"
+      "CA"
     ],
-    "languages[]2": "ES",
-    "contactPerson": "BEATRIZ ORTIZ",
-    "contactPhone": 914672626,
-    "contactEmail": "comunicacion@asociacionrealidades.org",
     "fullAddress": "CACERES, 10 28045, Madrid",
     "geocode": {
       "lat": 40.3987635,
@@ -293,7 +282,10 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS",
     "priorAppointment": 1,
-    "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL",
+    "waysOfContact": [
+      "visit",
+      "email"
+    ],
     "categories": [
       "cat9",
       "cat2"
@@ -305,10 +297,6 @@
     "languages": [
       "ES"
     ],
-    "languages[]2": "ES",
-    "contactPerson": "MARTA APARICIO",
-    "contactPhone": 917772822,
-    "contactEmail": "asociacion@lakalle.org",
     "fullAddress": "JAVIER DE MIGUEL, 92 28018, Madrid",
     "geocode": {
       "lat": 40.3852155,
@@ -326,7 +314,9 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS TARDES",
     "priorAppointment": 0,
-    "wayOfContact": "CONTACTO TELEFÓNICO",
+    "waysOfContact": [
+      "email"
+    ],
     "categories": [
       "cat10",
       "cat1"
@@ -339,9 +329,6 @@
       "ES"
     ],
     "targettedWomen": 1,
-    "languages[]2": "ES",
-    "contactPerson": "LA INGOBERNABLE",
-    "contactEmail": " bienvenida@ingobernable.net",
     "fullAddress": "GOBERNADOR 39 28014, Madrid",
     "geocode": {
       "lat": 40.4115124,
@@ -360,7 +347,9 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
     "priorAppointment": 1,
-    "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL",
+    "waysOfContact": [
+      "phone"
+    ],
     "categories": [
       "cat1",
       "cat10"
@@ -373,10 +362,9 @@
       "ES"
     ],
     "targettedChild": 1,
-    "languages[]2": "ES",
-    "contactPerson": "EVA JUAREZ",
-    "contactPhone": 913721506,
-    "contactEmail": "nortejoven@nortejoven.org",
+    "targettedOrigins": [
+      "MO"
+    ],
     "fullAddress": "RIVADAVIA, 20 28029, Madrid",
     "geocode": {
       "lat": 40.4724723,
@@ -394,7 +382,9 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS TARDES",
     "priorAppointment": 0,
-    "wayOfContact": "CONTACTO TELEFÓNICO",
+    "waysOfContact": [
+      "email"
+    ],
     "categories": [
       "cat2",
       "cat9"
@@ -406,9 +396,6 @@
     "languages": [
       "ES"
     ],
-    "languages[]2": "ES",
-    "contactPerson": "LA ENREDADERA",
-    "contactEmail": "enredadera@riseup.net",
     "fullAddress": "ANASTASIO HERRERO 10 28020, Madrid",
     "geocode": {
       "lat": 40.4566109,
@@ -427,7 +414,9 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
     "priorAppointment": 1,
-    "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, A TRAVÉS DE LA WEB, VISITANDO NUESTRA SEDE",
+    "waysOfContact": [
+      "email"
+    ],
     "categories": [
       "cat3",
       "cat8"
@@ -440,10 +429,6 @@
       "ES"
     ],
     "targettedWomen": 1,
-    "languages[]2": "ES",
-    "contactPerson": "EDUARDO BRIK",
-    "contactPhone": 914299756,
-    "contactEmail": "terapiasinfronteras@gmail.com",
     "fullAddress": "SAN AGUSTIN, 7 28014, Madrid",
     "geocode": {
       "lat": 40.4148312,
@@ -462,7 +447,9 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS",
     "priorAppointment": 1,
-    "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL",
+    "waysOfContact": [
+      "email"
+    ],
     "categories": [
       "cat4",
       "cat7"
@@ -480,10 +467,6 @@
     "targettedOrigins": [
       "ES"
     ],
-    "languages[]2": "ES;EN;FR;AR",
-    "contactPerson": "ROSA",
-    "contactPhone": 913806604,
-    "contactEmail": "gandalflf@hotmail.com",
     "fullAddress": "RAFAEL FERNANDEZ HIJICOS, 2 28038, Madrid",
     "geocode": {
       "lat": 40.3924062,
@@ -502,7 +485,10 @@
     "locality": "Madrid",
     "timeTable": "LUNES 16-20H DE MARTES A SÁBADOS 10-14 Y 16-20H",
     "priorAppointment": 1,
-    "wayOfContact": "CONTACTO TELEFÓNICO",
+    "waysOfContact": [
+      "visit",
+      "email"
+    ],
     "categories": [
       "cat5",
       "cat6"
@@ -510,10 +496,6 @@
     "languages": [
       "ES"
     ],
-    "languages[]2": "ES",
-    "contactPerson": "LAURA COMES CEREZO",
-    "contactPhone": 918286978,
-    "contactEmail": "coordinacioncepi@larueca.info",
     "fullAddress": "ARQUITECTURA 15 DUPLICADO 28005, Madrid",
     "geocode": {
       "lat": 40.3998084,
@@ -532,7 +514,9 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
     "priorAppointment": 1,
-    "wayOfContact": "A TRAVÉS DE LA WEB",
+    "waysOfContact": [
+      "visit"
+    ],
     "categories": [
       "cat6",
       "cat5"
@@ -543,11 +527,7 @@
       "FR",
       "AR"
     ],
-    "languages[]2": "ES;EN;FR;AR",
     "additionalInfo": "PRUEBA DE VIH",
-    "contactPerson": "JAVIER",
-    "contactPhone": 915211174,
-    "contactEmail": "administracion@kifkif.info",
     "fullAddress": "ESPARTEROS 1 28012, Madrid",
     "geocode": {
       "lat": 40.4163611,
@@ -565,7 +545,9 @@
     "locality": "Madrid",
     "timeTable": "FINES DE SEMANA",
     "priorAppointment": 0,
-    "wayOfContact": "ENVIANDO UN E-MAIL",
+    "waysOfContact": [
+      "visit"
+    ],
     "categories": [
       "cat7",
       "cat4"
@@ -577,10 +559,6 @@
     "languages": [
       "ES"
     ],
-    "languages[]2": "ES",
-    "contactPerson": "MARÍA DE LA CRUZ",
-    "contactPhone": 699684246,
-    "contactEmail": "mcruzrubio@hotmail.com",
     "fullAddress": "GENERAL ARANDA 30 28029, Madrid",
     "geocode": {
       "lat": 40.4731095,
@@ -598,7 +576,10 @@
     "locality": "Madrid",
     "timeTable": "TARDES DE LUNES A JUEVES",
     "priorAppointment": 1,
-    "wayOfContact": "CONTACTO TELEFÓNICO",
+    "waysOfContact": [
+      "phone",
+      "email"
+    ],
     "categories": [
       "cat8",
       "cat3"
@@ -612,11 +593,10 @@
     ],
     "targettedChild": 1,
     "targettedWomen": 1,
-    "languages[]2": "ES",
+    "targettedOrigins": [
+      "CN"
+    ],
     "additionalInfo": "PERSONAS EN SITUACIÓN Y/O RIESGO DE EXCLUSIÓN SOCIAL",
-    "contactPerson": "BELÉN CAÑERO",
-    "contactPhone": 917779661,
-    "contactEmail": "cepa.infancia@gmail.com",
     "fullAddress": "MARISMAS 37 28038, Madrid",
     "geocode": {
       "lat": 40.4023568,
@@ -634,7 +614,9 @@
     "locality": "Madrid",
     "timeTable": "MIÉRCOLES Y VIERNES DE 17H A 21H",
     "priorAppointment": 1,
-    "wayOfContact": "ENVIANDO UN E-MAIL",
+    "waysOfContact": [
+      "email"
+    ],
     "categories": [
       "cat9",
       "cat2"
@@ -647,9 +629,6 @@
       "ES",
       "EN"
     ],
-    "languages[]2": "ES;EN",
-    "contactPerson": "MATTEO RICCI UGATTI",
-    "contactEmail": "matteo.ryu@orbitadiversa.org",
     "fullAddress": "ALTAMIRANO, 37 28012, Madrid",
     "geocode": {
       "lat": 40.4296027,
@@ -668,7 +647,9 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, MAÑANAS L-J (CITA PREVIA) Y TARDES MARTES 19:30 A 21",
     "priorAppointment": 1,
-    "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, EN MAÑANAS, TARDES MARTES 19:30 A 21 NO CITA PREVIA.",
+    "waysOfContact": [
+      "phone"
+    ],
     "categories": [
       "cat10",
       "cat1"
@@ -682,10 +663,6 @@
       "EN",
       "FR"
     ],
-    "languages[]2": "ES;EN;FR",
-    "contactPerson": "DANA",
-    "contactPhone": 915592906,
-    "contactEmail": "oid@sosracismomadrid.es",
     "fullAddress": "LAVAPIES, 13 28012, Madrid",
     "geocode": {
       "lat": 40.4110726,
@@ -704,7 +681,11 @@
     "locality": "Madrid",
     "timeTable": "MARTES Y JUEVES DE 19:30 A 21 HORAS",
     "priorAppointment": 1,
-    "wayOfContact": "CONTACTO TELEFÓNICO, ENVIANDO UN E-MAIL, VISITANDO NUESTRA SEDE",
+    "waysOfContact": [
+      "visit",
+      "email",
+      "phone"
+    ],
     "categories": [
       "cat1",
       "cat10"
@@ -717,10 +698,6 @@
       "ES"
     ],
     "targettedChild": 1,
-    "languages[]2": "ES",
-    "contactPerson": "JOSÉ MARÍA",
-    "contactPhone": 912244837,
-    "contactEmail": "avpalomadehesa@gmail.com",
     "fullAddress": "AGUILAR DE CAMPOO, 13 28039, Madrid",
     "geocode": {
       "lat": 40.4635373,
@@ -739,7 +716,9 @@
     "locality": "Madrid",
     "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
     "priorAppointment": 1,
-    "wayOfContact": "CONTACTO TELEFÓNICO",
+    "waysOfContact": [
+      "phone"
+    ],
     "categories": [
       "cat2",
       "cat9"
@@ -751,10 +730,6 @@
     "languages": [
       "ES"
     ],
-    "languages[]2": "ES",
-    "contactPerson": "MONICA PICHARDO GALAN",
-    "contactPhone": 911684483,
-    "contactEmail": "casaplaza@valponasca.org",
     "fullAddress": "SAN AQUILINO 27 28029, Madrid",
     "geocode": {
       "lat": 40.4718609,

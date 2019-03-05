@@ -8,4 +8,7 @@ convertExcel("data.xlsx", "categories.json", {sheet: '2', omitEmptyFields: true}
 console.log("Processing services sheet...");
 convertExcel("data.xlsx", "services.json", {sheet: '3', omitEmptyFields: true}, null);
 
+console.log("Processing waysOfContact sheet...");
+convertExcel("data.xlsx", "waysOfContact.json", {sheet: '4', omitEmptyFields: true}, null);
+
 console.log("Finished!");

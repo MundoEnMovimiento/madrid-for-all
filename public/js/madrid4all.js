@@ -180,8 +180,7 @@ function onCategoryClick(selectedCategory) {
   // trigger the find operation
   findLocationsInDatabase();
   // update the UI
-  w3.toggleClass('#' + selectedCategory, 'w3-large');
-  w3.toggleClass('#' + selectedCategory, 'w3-green');
+  w3.toggleClass('#' + selectedCategory, 'w3-text-green');
   w3.toggleClass('#' + selectedCategory + "-child", 'w3-hide', 'w3-show');
 }
 // calback for the click on service
@@ -197,24 +196,33 @@ function onServiceClick(selectedService) {
   // trigger the find operation
   findLocationsInDatabase();
   // update the UI
-  w3.toggleClass('#' + selectedService, 'w3-large');
+  w3.toggleClass('#' + selectedService, 'w3-text-green');
 }
 // callback for the click on targetChild
 function onTargetChildrenClick() {
   console.log("Clicked on targetChildren");
   targetChildren = !targetChildren;
+  // trigger the find operation
+  findLocationsInDatabase();
+  // update the UI
   w3.toggleClass('#targetChildren', 'w3-green');
 }
 // callback for the click on targetWomen
 function onTargetWomenClick() {
   console.log("Clicked on targetWomen");
   targetWomen = !targetWomen;
+  // trigger the find operation
+  findLocationsInDatabase();
+  // update the UI
   w3.toggleClass('#targetWomen', 'w3-green');
 }
 // callback for the click on targetOrigin
 function onTargetOriginClick() {
   console.log("Clicked on targetOrigin");
   targetOrigin = !targetOrigin;
+  // trigger the find operation
+  findLocationsInDatabase();
+  // update the UI
   w3.toggleClass('#targetOrigin', 'w3-green');
 }
 // sets the map on all the displayed markers
@@ -252,11 +260,19 @@ function findLocationsInDatabase() {
   if(processedServices.length > 0) {
     searchCriterias.services = { $elemMatch: { $in: processedServices } };
   }
-  // TODO: Add more filters
+  if(targetWomen){
+    searchCriterias.targettedWomen = { $eq: 1};
+  }
+  if(targetChildren){
+    searchCriterias.targettedChild = { $eq: 1};
+  }
+  if(targetOrigin){
+    searchCriterias.targettedOrigins = { $exists : true };
+  }
   // perform the find in the DB
   db.find({
     selector: searchCriterias,
-    fields: ['_id', 'ID', 'orgName', 'district', 'postalCode', 'languages', 'fullAddress', 'geocode', 'orgWeb'],
+    fields: ['_id', 'ID', 'orgName', 'district', 'postalCode', 'languages', 'fullAddress', 'geocode', 'orgWeb', 'targettedChild', 'targettedWomen', 'targettedOrigins'],
   }).then(function (result) {
     // clear previous results
     clearPreviousResults();
@@ -285,7 +301,7 @@ function onRowClick(markerId) {
 function onResetClick() {
   console.log("Clicked on reset.");
   //document.getElementById("searchText").textContent = "";
-  w3.removeClass('.w3-large', 'w3-large');
+  w3.removeClass('.w3-text-green', 'w3-text-green');
   w3.removeClass('.w3-green', 'w3-green');
   w3.toggleClass('.w3-show', 'w3-show', 'w3-hide');
   // clear previous results
