@@ -190,7 +190,7 @@ function onCategoryClick(selectedCategory) {
   // trigger the find operation
   findLocationsInDatabase();
   // update the UI
-  w3.toggleClass('#' + selectedCategory, 'w3-text-green');
+  w3.toggleClass('#' + selectedCategory, 'w3-text-red');
   w3.toggleClass('#' + selectedCategory + "-child", 'w3-hide', 'w3-show');
 }
 // calback for the click on service
@@ -206,7 +206,7 @@ function onServiceClick(selectedService) {
   // trigger the find operation
   findLocationsInDatabase();
   // update the UI
-  w3.toggleClass('#' + selectedService, 'w3-text-green');
+  w3.toggleClass('#' + selectedService, 'w3-text-red');
 }
 // callback for the click on targetChild
 function onTargetChildrenClick() {
@@ -215,7 +215,7 @@ function onTargetChildrenClick() {
   // trigger the find operation
   findLocationsInDatabase();
   // update the UI
-  w3.toggleClass('#targetChildren', 'w3-green');
+  w3.toggleClass('#targetChildren', 'w3-red');
 }
 // callback for the click on targetWomen
 function onTargetWomenClick() {
@@ -224,7 +224,7 @@ function onTargetWomenClick() {
   // trigger the find operation
   findLocationsInDatabase();
   // update the UI
-  w3.toggleClass('#targetWomen', 'w3-green');
+  w3.toggleClass('#targetWomen', 'w3-red');
 }
 // callback for the click on targetOrigin
 function onTargetOriginClick() {
@@ -233,7 +233,7 @@ function onTargetOriginClick() {
   // trigger the find operation
   findLocationsInDatabase();
   // update the UI
-  w3.toggleClass('#targetOrigin', 'w3-green');
+  w3.toggleClass('#targetOrigin', 'w3-red');
 }
 // sets the map on all the displayed markers
 function setMapOnAllMarkers(map) {
@@ -311,8 +311,8 @@ function onRowClick(markerId) {
 function onResetClick() {
   console.log("Clicked on reset.");
   //document.getElementById("searchText").textContent = "";
-  w3.removeClass('.w3-text-green', 'w3-text-green');
-  w3.removeClass('.w3-green', 'w3-green');
+  w3.removeClass('.w3-text-red', 'w3-text-red');
+  w3.removeClass('.w3-red', 'w3-red');
   w3.toggleClass('.w3-show', 'w3-show', 'w3-hide');
   // clear previous results
   clearPreviousResults();
