@@ -282,7 +282,7 @@ function findLocationsInDatabase() {
   // perform the find in the DB
   db.find({
     selector: searchCriterias,
-    fields: ['_id', 'ID', 'orgName', 'district', 'postalCode', 'languages', 'fullAddress', 'geocode', 'orgWeb', 'targettedChild', 'targettedWomen', 'targettedOrigins', 'waysOfContact', 'additionalInfo'],
+    fields: ['_id', 'ID', 'orgName', 'categories', 'services', 'district', 'languages', 'fullAddress', 'geocode', 'orgWeb', 'targettedChild', 'targettedWomen', 'targettedOrigins', 'waysOfContact', 'timeTable', 'additionalInfo'],
   }).then(function (result) {
     // clear previous results
     clearPreviousResults();
