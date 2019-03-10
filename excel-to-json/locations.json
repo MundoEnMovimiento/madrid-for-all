@@ -9,7 +9,12 @@
     "postalCode": 28017,
     "district": "CIUDAD LINEAL",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS MAÑANAS, CON CITA PREVIA TELEFÓNICA",
+    "timeTable": {
+      "ES": "TODAS LAS MAÑANAS, CON CITA PREVIA TELEFÓNICA",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "phone",
@@ -34,6 +39,11 @@
       "PE",
       "EQ"
     ],
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "BLAS DE OTERO, 66 28017, Madrid",
     "geocode": {
       "lat": 40.4236238,
@@ -50,7 +60,12 @@
     "postalCode": 28004,
     "district": "CENTRO",
     "locality": "Madrid",
-    "timeTable": "MIERCOLES RECOGER NÚMERO, LUNES SIGUIENTE ENTREGA DE ROPA",
+    "timeTable": {
+      "ES": "MIERCOLES RECOGER NÚMERO, LUNES SIGUIENTE ENTREGA DE ROPA",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "phone"
@@ -69,7 +84,12 @@
     "targettedOrigins": [
       "VN"
     ],
-    "additionalInfo": "MIÉRCOLES SE RECOGE NÚMERO DE ORDEN Y LA SEMANA SIGUIENTE EL LUNES SE ENTREGA LA ROPA. MESES DE VERANO JULIO Y AGOSTO CERRAMOS TAMBIÉN FIESTAS NO ATIENDEN.",
+    "additionalInfo": {
+      "ES": "MIÉRCOLES SE RECOGE NÚMERO DE ORDEN Y LA SEMANA SIGUIENTE EL LUNES SE ENTREGA LA ROPA. MESES DE VERANO JULIO Y AGOSTO CERRAMOS TAMBIÉN FIESTAS NO ATIENDEN.",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "CORREDERA BAJA DE SAN PABLO 16 28004, Madrid",
     "geocode": {
       "lat": 40.4226654,
@@ -86,7 +106,12 @@
     "postalCode": 28015,
     "district": "CHAMBERÍ",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
+    "timeTable": {
+      "ES": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "visit"
@@ -103,7 +128,12 @@
       "ES",
       "EN"
     ],
-    "additionalInfo": "INFORMACIÓN Y ACOMPAÑAMIENTO PARA VINCULACIÓN AL SISTEMA SANITARIO MADRILEÑO DE POBLACIÓN EN SITUACIÓN ADMINISTRATIVA IRREGULAR VIVIENDO CON EL VIH.",
+    "additionalInfo": {
+      "ES": "INFORMACIÓN Y ACOMPAÑAMIENTO PARA VINCULACIÓN AL SISTEMA SANITARIO MADRILEÑO DE POBLACIÓN EN SITUACIÓN ADMINISTRATIVA IRREGULAR VIVIENDO CON EL VIH.",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "MELENDEZ VALDES, 52 28015, Madrid",
     "geocode": {
       "lat": 40.4331491,
@@ -119,7 +149,12 @@
     "postalCode": 28030,
     "district": "MORATALAZ",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS MAÑANAS, TARDES DE MIÉRCOLES Y VIERNES",
+    "timeTable": {
+      "ES": "TODAS LAS MAÑANAS, TARDES DE MIÉRCOLES Y VIERNES",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 0,
     "waysOfContact": [
       "email"
@@ -136,6 +171,11 @@
       "ES"
     ],
     "targettedChild": 1,
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "CORREGIDOR DIEGO DE VALDERRABANO 45 28030, Madrid",
     "geocode": {
       "lat": 40.4131224,
@@ -152,7 +192,12 @@
     "postalCode": 28038,
     "district": "PUENTE DE VALLECAS",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS TARDES",
+    "timeTable": {
+      "ES": "TODAS LAS TARDES",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 0,
     "waysOfContact": [
       "email"
@@ -165,7 +210,12 @@
       "ES"
     ],
     "targettedWomen": 1,
-    "additionalInfo": "HORARIOS DE LAS ACTIVIDADES: HTTP://WWW.LAVILLANA.ORG/AGENDA/",
+    "additionalInfo": {
+      "ES": "HORARIOS DE LAS ACTIVIDADES: HTTP://WWW.LAVILLANA.ORG/AGENDA/",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "MONTSENY, 35  28038, Madrid",
     "geocode": {
       "lat": 40.4005434,
@@ -182,7 +232,12 @@
     "postalCode": 28028,
     "district": "BARRIO DE SALAMANCA",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
+    "timeTable": {
+      "ES": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "email"
@@ -195,6 +250,11 @@
       "ES",
       "AR"
     ],
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "BOCANGEL, 2 28028, Madrid",
     "geocode": {
       "lat": 40.4298802,
@@ -210,7 +270,12 @@
     "postalCode": 28029,
     "district": "FUENCARRAL / EL PARDO",
     "locality": "Madrid",
-    "timeTable": "LUNES Y MIERCOLES (10:30-12:00 Y 19:30-21:00) Y MARTES (19:30-20:30)",
+    "timeTable": {
+      "ES": "LUNES Y MIERCOLES (10:30-12:00 Y 19:30-21:00) Y MARTES (19:30-20:30)",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 0,
     "waysOfContact": [
       "visit",
@@ -228,6 +293,11 @@
       "ES"
     ],
     "targettedChild": 1,
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "BETANZOS 37 28029, Madrid",
     "geocode": {
       "lat": 40.4746269,
@@ -244,7 +314,12 @@
     "postalCode": 28045,
     "district": "ARGANZUELA",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS MAÑANAS",
+    "timeTable": {
+      "ES": "TODAS LAS MAÑANAS",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "phone",
@@ -264,6 +339,11 @@
     "targettedOrigins": [
       "CA"
     ],
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "CACERES, 10 28045, Madrid",
     "geocode": {
       "lat": 40.3987635,
@@ -280,7 +360,12 @@
     "postalCode": 28018,
     "district": "PUENTE DE VALLECAS",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS MAÑANAS",
+    "timeTable": {
+      "ES": "TODAS LAS MAÑANAS",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "visit",
@@ -297,6 +382,11 @@
     "languages": [
       "ES"
     ],
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "JAVIER DE MIGUEL, 92 28018, Madrid",
     "geocode": {
       "lat": 40.3852155,
@@ -312,7 +402,12 @@
     "postalCode": 28014,
     "district": "CENTRO",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS TARDES",
+    "timeTable": {
+      "ES": "TODAS LAS TARDES",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 0,
     "waysOfContact": [
       "email"
@@ -329,6 +424,11 @@
       "ES"
     ],
     "targettedWomen": 1,
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "GOBERNADOR 39 28014, Madrid",
     "geocode": {
       "lat": 40.4115124,
@@ -345,7 +445,12 @@
     "postalCode": 28029,
     "district": "FUENCARRAL / EL PARDO",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
+    "timeTable": {
+      "ES": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "phone"
@@ -365,6 +470,11 @@
     "targettedOrigins": [
       "MO"
     ],
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "RIVADAVIA, 20 28029, Madrid",
     "geocode": {
       "lat": 40.4724723,
@@ -380,7 +490,12 @@
     "postalCode": 28020,
     "district": "TETUAN",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS TARDES",
+    "timeTable": {
+      "ES": "TODAS LAS TARDES",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 0,
     "waysOfContact": [
       "email"
@@ -396,6 +511,11 @@
     "languages": [
       "ES"
     ],
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "ANASTASIO HERRERO 10 28020, Madrid",
     "geocode": {
       "lat": 40.4566109,
@@ -412,7 +532,12 @@
     "postalCode": 28014,
     "district": "CENTRO",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
+    "timeTable": {
+      "ES": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "email"
@@ -429,6 +554,11 @@
       "ES"
     ],
     "targettedWomen": 1,
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "SAN AGUSTIN, 7 28014, Madrid",
     "geocode": {
       "lat": 40.4148312,
@@ -445,7 +575,12 @@
     "postalCode": 28038,
     "district": "PUENTE DE VALLECAS",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS MAÑANAS",
+    "timeTable": {
+      "ES": "TODAS LAS MAÑANAS",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "email"
@@ -467,6 +602,11 @@
     "targettedOrigins": [
       "ES"
     ],
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "RAFAEL FERNANDEZ HIJICOS, 2 28038, Madrid",
     "geocode": {
       "lat": 40.3924062,
@@ -483,7 +623,12 @@
     "postalCode": 28005,
     "district": "ARGANZUELA",
     "locality": "Madrid",
-    "timeTable": "LUNES 16-20H DE MARTES A SÁBADOS 10-14 Y 16-20H",
+    "timeTable": {
+      "ES": "LUNES 16-20H DE MARTES A SÁBADOS 10-14 Y 16-20H",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "visit",
@@ -496,6 +641,11 @@
     "languages": [
       "ES"
     ],
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "ARQUITECTURA 15 DUPLICADO 28005, Madrid",
     "geocode": {
       "lat": 40.3998084,
@@ -512,7 +662,12 @@
     "postalCode": 28012,
     "district": "CENTRO",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
+    "timeTable": {
+      "ES": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "visit"
@@ -527,7 +682,12 @@
       "FR",
       "AR"
     ],
-    "additionalInfo": "PRUEBA DE VIH",
+    "additionalInfo": {
+      "ES": "PRUEBA DE VIH",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "ESPARTEROS 1 28012, Madrid",
     "geocode": {
       "lat": 40.4163611,
@@ -543,7 +703,12 @@
     "postalCode": 28029,
     "district": "TETUAN",
     "locality": "Madrid",
-    "timeTable": "FINES DE SEMANA",
+    "timeTable": {
+      "ES": "FINES DE SEMANA",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 0,
     "waysOfContact": [
       "visit"
@@ -559,6 +724,11 @@
     "languages": [
       "ES"
     ],
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "GENERAL ARANDA 30 28029, Madrid",
     "geocode": {
       "lat": 40.4731095,
@@ -574,7 +744,12 @@
     "postalCode": 28038,
     "district": "PUENTE DE VALLECAS",
     "locality": "Madrid",
-    "timeTable": "TARDES DE LUNES A JUEVES",
+    "timeTable": {
+      "ES": "TARDES DE LUNES A JUEVES",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "phone",
@@ -596,7 +771,12 @@
     "targettedOrigins": [
       "CN"
     ],
-    "additionalInfo": "PERSONAS EN SITUACIÓN Y/O RIESGO DE EXCLUSIÓN SOCIAL",
+    "additionalInfo": {
+      "ES": "PERSONAS EN SITUACIÓN Y/O RIESGO DE EXCLUSIÓN SOCIAL",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "MARISMAS 37 28038, Madrid",
     "geocode": {
       "lat": 40.4023568,
@@ -612,7 +792,12 @@
     "postalCode": 28012,
     "district": "CENTRO",
     "locality": "Madrid",
-    "timeTable": "MIÉRCOLES Y VIERNES DE 17H A 21H",
+    "timeTable": {
+      "ES": "MIÉRCOLES Y VIERNES DE 17H A 21H",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "email"
@@ -629,6 +814,11 @@
       "ES",
       "EN"
     ],
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "ALTAMIRANO, 37 28012, Madrid",
     "geocode": {
       "lat": 40.4296027,
@@ -645,7 +835,12 @@
     "postalCode": 28012,
     "district": "CENTRO",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS MAÑANAS, MAÑANAS L-J (CITA PREVIA) Y TARDES MARTES 19:30 A 21",
+    "timeTable": {
+      "ES": "TODAS LAS MAÑANAS, MAÑANAS L-J (CITA PREVIA) Y TARDES MARTES 19:30 A 21",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "phone"
@@ -663,6 +858,11 @@
       "EN",
       "FR"
     ],
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "LAVAPIES, 13 28012, Madrid",
     "geocode": {
       "lat": 40.4110726,
@@ -679,7 +879,12 @@
     "postalCode": 28039,
     "district": "MONCLOA / ARAVACA",
     "locality": "Madrid",
-    "timeTable": "MARTES Y JUEVES DE 19:30 A 21 HORAS",
+    "timeTable": {
+      "ES": "MARTES Y JUEVES DE 19:30 A 21 HORAS",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "visit",
@@ -698,6 +903,11 @@
       "ES"
     ],
     "targettedChild": 1,
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "AGUILAR DE CAMPOO, 13 28039, Madrid",
     "geocode": {
       "lat": 40.4635373,
@@ -714,7 +924,12 @@
     "postalCode": 28029,
     "district": "TETUAN",
     "locality": "Madrid",
-    "timeTable": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
+    "timeTable": {
+      "ES": "TODAS LAS MAÑANAS, TODAS LAS TARDES",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "priorAppointment": 1,
     "waysOfContact": [
       "phone"
@@ -730,6 +945,11 @@
     "languages": [
       "ES"
     ],
+    "additionalInfo": {
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arab"
+    },
     "fullAddress": "SAN AQUILINO 27 28029, Madrid",
     "geocode": {
       "lat": 40.4718609,

@@ -8,15 +8,15 @@
   crossorigin="anonymous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <!-- link to the favicon genereated at https://www.favicon-generator.org/ -->
-<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-<link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
 <!-- include necessary 3rd party javascript libraries -->
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.find.min.js"></script>
-<script src="./js/madrid4all.js"></script>
+<script src="../js/madrid4all.js"></script>
 <script>
-    var selectedLanguage = 'ES';
+    var selectedLanguage = 'EN';
 </script>
 <style>
   body,
@@ -46,7 +46,7 @@
 
 <body>
 
-  <div w3-include-html="./menu.html"></div>
+  <div w3-include-html="../menu.html"></div>
 
   <!-- !PAGE CONTENT! -->
   <div class="w3-main" style="margin-left:390px;margin-right:40px">
@@ -56,17 +56,17 @@
     <div class="w3-container" style="margin-top:20px">
         <div class="w3-row w3-margin-bottom">
             <div class="w3-col s12 m11 l11 w3-left">
-                <img src="./assets/madrid_for_all_header.png" alt="Madrid for all" class="w3-image" style="width:100%;max-width:600px">
+                <img src="../assets/madrid_for_all_header.png" alt="Madrid for all" class="w3-image" style="width:100%;max-width:600px">
                 <div class="w3-hide-small">
                     <hr style="width:700px;border:3px solid #F2323E" class="w3-round">
                 </div>
-                <p>Selecciona una categoría o un servicio para ver dónde está y cómo puedes acceder</p>
+                <p>Select a category or service to see where it is located and how you can reach it</p>
             </div>
             <div class="w3-col s11 m2 l1 w3-right">
-                <a href="./index.html" onClick="onLanguageChange('ES')">ES</a>
-                <a href="./EN/index.html" onClick="onLanguageChange('EN')">EN</a>
-                <a href="./FR/index.html" onClick="onLanguageChange('FR')">FR</a>
-                <a href="./AR/index.html" onClick="onLanguageChange('AR')">AR</a>
+                <a href="../index.html" onClick="onLanguageChange('ES')">ES</a>
+                <a href="../EN/index.html" onClick="onLanguageChange('EN')">EN</a>
+                <a href="../FR/index.html" onClick="onLanguageChange('FR')">FR</a>
+                <a href="../AR/index.html" onClick="onLanguageChange('AR')">AR</a>
             </div>
     </div>
 
@@ -87,7 +87,7 @@
             <td>
               <div class="w3-row">
                 <button id="loc-{{ID}}" onclick="onLocationClick('{{ID}}')" class="w3-button w3-col s10 m10 l10 w3-left w3-block w3-medium w3-left-align"><h4>{{orgName}}</h4></button>
-                <a href="javascript:void(0)" class="w3-col s2 m2 l2 w3-padding w3-right-align" onClick="showLocationMarker('loc-marker-{{ID}}')">Mostrar en el mapa</a>
+                <a href="javascript:void(0)" class="w3-col s2 m2 l2 w3-padding w3-right-align" onClick="showLocationMarker('loc-marker-{{ID}}')">Show in map</a>
               </div>
               <div id="loc-{{ID}}-details" class="w3-container w3-hide loc-details">
                 <div class="w3-row">
@@ -95,21 +95,21 @@
                     <div id="general-info-{{ID}}-tablink" class="w3-third tablink w3-bottombar w3-padding">General</div>
                   </a>
                   <a href="javascript:void(0)" onclick="openInfoTab('contact-info-{{ID}}');">
-                    <div id="contact-info-{{ID}}-tablink" class="w3-third tablink w3-bottombar w3-padding">Contacto y horarios</div>
+                    <div id="contact-info-{{ID}}-tablink" class="w3-third tablink w3-bottombar w3-padding">Contact and opening hours</div>
                   </a>
                   <a href="javascript:void(0)" onclick="openInfoTab('extra-info-{{ID}}');">
-                    <div id="extra-info-{{ID}}-tablink" class="w3-third tablink w3-bottombar w3-padding">Información adicional</div>
+                    <div id="extra-info-{{ID}}-tablink" class="w3-third tablink w3-bottombar w3-padding">Additional information</div>
                   </a>
                 </div>       
                 <div id="general-info-{{ID}}" class="w3-container infoTab" style="display:none">
-                  <p>Distrito: {{district}}</p>
-                  <p>Categorias: {{categories}}</p>
-                  <p>Servicios: {{services}}</p>
+                  <p>District: {{district}}</p>
+                  <p>Categories: {{categories}}</p>
+                  <p>Services: {{services}}</p>
                 </div>
                 <div id="contact-info-{{ID}}" class="w3-container infoTab" style="display:none">
-                  <p>Dirección: {{fullAddress}}</p>
-                  <p>Medio de contacto preferido: {{waysOfContact}}</p>
-                  <p>Horarios: {{timeTable}}</p>
+                  <p>Address: {{fullAddress}}</p>
+                  <p>Prefered way of contact: {{waysOfContact}}</p>
+                  <p>Opening hours: {{timeTable}}</p>
                 </div>
                 <div id="extra-info-{{ID}}" class="w3-container infoTab" style="display:none">
                   <p>{{additionalInfo}}</p>
@@ -150,9 +150,8 @@
   <div class="w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
     <div class="w3-right">
       <!-- TODO: fill in correct link in href -->
-      <p>Si quieres que tus servicios aparezcan en Madrid For All, rellena <a href="http://www.mundoenmovimiento.org">este
-          formulario</a></p>
-      <p>Puedes contactar con nosotros a través del correo info@mundoenmovimiento.org o de nuestra web
+      <p>If you want that your services are mentioned in Madrid For All, please fill in <a href="http://www.mundoenmovimiento.org">this form</a></p>
+      <p>You can contact us either through our email info@mundoenmovimiento.org or our web page
         www.mundoenmovimiento.org</p>
       <p class="w3-right">Powered by <a href="https://www.mundoenmovimiento.org" title="mundoenmovimiento" target="_blank"
           class="w3-hover-opacity">Mundo en Movimiento</a></p>

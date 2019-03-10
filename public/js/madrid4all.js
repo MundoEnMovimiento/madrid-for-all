@@ -1,5 +1,4 @@
 // global variables
-var selectedLanguage = 'ES';
 var dbName = 'madrid4all.db';
 var db = new PouchDB(dbName);
 var map;
@@ -67,7 +66,7 @@ function initMenuContent(loadedCategories) {
     // add the generated code to div = 'categories'
     document.getElementById('categories').innerHTML = innerHtmlCode;
     // load services
-    w3.getHttpObject("./data/services.json", function (loadedServices) {
+    w3.getHttpObject("/data/services.json", function (loadedServices) {
       originalArrayOfServices = loadedServices;
       if (loadedServices != null && loadedServices.length > 0) {
         for (var i = 0; i < loadedServices.length; i++) {
@@ -138,7 +137,7 @@ function addSingleLocationToMap(markerData) {
   // create an infoWindow to be linked to the marker
   var infoWindowCode = "<strong>" + markerData.orgName + "</strong><br>";
   infoWindowCode += "<em>" + address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a><br>";
-  infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails(event, 'loc-" + markerData.ID + "')\">Mostrar más información</a><br>";
+  infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails(event, '" + markerData.ID + "')\">Mostrar más información</a><br>";
   //console.log("infoWindowCode: " + infoWindowCode); 
   var infowindow = new google.maps.InfoWindow({
     content: infoWindowCode
@@ -154,7 +153,8 @@ function addSingleLocationToMap(markerData) {
 // show location details
 function showLocationDetails(event, locationId) {
   console.log("showLocationDetails: " + locationId);
-  document.getElementById(locationId).scrollIntoView();
+  onLocationClick(locationId);
+  document.getElementById('loc-' + locationId).scrollIntoView();
 }
 // highlight marker in map
 function showLocationMarker(locationId) {
@@ -307,6 +307,11 @@ function onLocationClick(locationId) {
   }
   w3.toggleClass('#loc-' + locationId + '-details', 'w3-hide', 'w3-show');
   openInfoTab('general-info-' + locationId);
+}
+// function to implement the language change
+function onLanguageChange(language) {
+  console.log("onLanguageChange: " + language);
+  selectedLanguage = language;
 }
 // function to reset the search results
 function onResetClick() {
