@@ -138,7 +138,7 @@ function addSingleLocationToMap(markerData) {
   // create an infoWindow to be linked to the marker
   var infoWindowCode = "<strong>" + markerData.orgName + "</strong><br>";
   infoWindowCode += "<em>" + address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a><br>";
-  infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails(event, 'loc-details-" + markerData.ID + "')\">Mostrar más información</a><br>";
+  infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails(event, 'loc-" + markerData.ID + "')\">Mostrar más información</a><br>";
   //console.log("infoWindowCode: " + infoWindowCode); 
   var infowindow = new google.maps.InfoWindow({
     content: infoWindowCode
@@ -282,7 +282,7 @@ function findLocationsInDatabase() {
   // perform the find in the DB
   db.find({
     selector: searchCriterias,
-    fields: ['_id', 'ID', 'orgName', 'district', 'postalCode', 'languages', 'fullAddress', 'geocode', 'orgWeb', 'targettedChild', 'targettedWomen', 'targettedOrigins'],
+    fields: ['_id', 'ID', 'orgName', 'district', 'postalCode', 'languages', 'fullAddress', 'geocode', 'orgWeb', 'targettedChild', 'targettedWomen', 'targettedOrigins', 'waysOfContact', 'additionalInfo'],
   }).then(function (result) {
     // clear previous results
     clearPreviousResults();
@@ -298,14 +298,15 @@ function findLocationsInDatabase() {
   });
 }
 // callback for the click on a row of the result table
-function onRowClick(markerId) {
-  console.log("Clicked row of marker with id: " + markerId);
-  db.get(markerId + "").then(function (doc) {
-    console.log("Fetched marker with id '" + doc["_id"] + "' and name '" + doc["orgName"] + "'-");
-    // TODO: complete action linked to the selection of a row
-  }).catch(function (err) {
-    console.log(err);
-  });
+function onLocationClick(locationId) {
+  console.log("Clicked onLocationClick with id: " + locationId);
+  // update UI
+  locDetailsDiv = document.getElementsByClassName("loc-details");
+  for (i = 0; i < locDetailsDiv.length; i++) {
+    locDetailsDiv[i].className = locDetailsDiv[i].className.replace(" w3-show", " w3-hide");
+  }
+  w3.toggleClass('#loc-' + locationId + '-details', 'w3-hide', 'w3-show');
+  openInfoTab('general-info-' + locationId);
 }
 // function to reset the search results
 function onResetClick() {
@@ -333,4 +334,18 @@ function w3_open() {
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
+}
+// function to handel the result row's tabs
+function openInfoTab(tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("infoTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+  }
+  document.getElementById(tabName + '-tablink').className += " w3-border-red";
+  document.getElementById(tabName).style.display = "block";
 }

@@ -40,33 +40,5 @@
     "EN": "English",
     "FR": "Francais",
     "AR": "Arab"
-  },
-  {
-    "key": "cat7",
-    "ES": "Mujer",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
-  },
-  {
-    "key": "cat8",
-    "ES": "Infancia y jóvenes",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
-  },
-  {
-    "key": "cat9",
-    "ES": "Familia",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
-  },
-  {
-    "key": "cat10",
-    "ES": "LGTBIQ+",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
   }
 ]

@@ -11,4 +11,7 @@ convertExcel("data.xlsx", "services.json", {sheet: '3', omitEmptyFields: true}, 
 console.log("Processing waysOfContact sheet...");
 convertExcel("data.xlsx", "waysOfContact.json", {sheet: '4', omitEmptyFields: true}, null);
 
+console.log("Processing extraInfo sheet...");
+convertExcel("data.xlsx", "extraInfo.json", {sheet: '5', omitEmptyFields: true}, null);
+
 console.log("Finished!");
