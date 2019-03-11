@@ -86,47 +86,39 @@
           <tr w3-repeat="records" class="item">
             <td>
               <div class="w3-row">
-                <button id="loc-{{ID}}" onclick="onLocationClick('{{ID}}')" class="w3-button w3-col s10 m10 l10 w3-left w3-block w3-medium w3-left-align"><h5>{{orgName}}</h5></button>
-                <a href="javascript:void(0)" class="w3-col s2 m2 l2 w3-padding w3-right-align" onClick="showLocationMarker('loc-marker-{{ID}}')">Show in map</a>
+                <button id="loc-{{ID}}" onclick="onLocationClick('{{ID}}')" class="w3-button w3-col s11 m10 l10 w3-left w3-block w3-medium w3-left-align">{{orgName}}</button>
+                <a href="javascript:void(0)" class="w3-col w3-hide-small m2 l2 w3-padding w3-right-align" onClick="showLocationMarker('loc-marker-{{ID}}')">Show in map</a>
+                <a href="javascript:void(0)" class="w3-col w3-hide-large w3-hide-medium s1 w3-right-align" onClick="showLocationMarker('loc-marker-{{ID}}')">+</a>
               </div>
-              <div id="loc-{{ID}}-details" class="w3-container w3-hide loc-details">
+              <div id="loc-{{ID}}-details" class="w3-hide loc-details">
                 <div class="w3-row">
                   <a href="javascript:void(0)" onclick="openInfoTab('general-info-{{ID}}');">
-                    <div id="general-info-{{ID}}-tablink" class="w3-third tablink w3-bottombar w3-padding">General</div>
+                    <div id="general-info-{{ID}}-tablink" class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">General</div>
                   </a>
                   <a href="javascript:void(0)" onclick="openInfoTab('contact-info-{{ID}}');">
-                    <div id="contact-info-{{ID}}-tablink" class="w3-third tablink w3-bottombar w3-padding">Contact and opening hours</div>
+                    <div id="contact-info-{{ID}}-tablink" class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">Contacto y horarios</div>
                   </a>
                   <a href="javascript:void(0)" onclick="openInfoTab('extra-info-{{ID}}');">
-                    <div id="extra-info-{{ID}}-tablink" class="w3-third tablink w3-bottombar w3-padding">Additional information</div>
+                    <div id="extra-info-{{ID}}-tablink" class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">Información adicional</div>
                   </a>
-                </div>       
-                <div id="general-info-{{ID}}" class="w3-container infoTab" style="display:none">
-                  <p>District: {{district}}</p>
-                  <p>Categories: {{categories}}</p>
-                  <p>Services: {{services}}</p>
                 </div>
-                <div id="contact-info-{{ID}}" class="w3-container infoTab" style="display:none">
-                  <p>Address: {{fullAddress}}</p>
-                  <p>Prefered way of contact: {{waysOfContact}}</p>
-                  <p>Opening hours: {{timeTable}}</p>
-                </div>
-                <div id="extra-info-{{ID}}" class="w3-container infoTab" style="display:none">
-                  <p>{{additionalInfo}}</p>
-                </div>
+                <div class="w3-row">
+                  <div id="general-info-{{ID}}" class="w3-col s12 m4 l4 infoTab" style="display:none">
+                    <p>District: {{district}}</p>
+                    <p>Categories: {{categories}}</p>
+                    <p>Services: {{services}}</p>
+                  </div>
+                  <div id="contact-info-{{ID}}" class="w3-col s12 m4 l4 infoTab" style="display:none">
+                    <p>Address: {{fullAddress}}</p>
+                    <p>Prefered way of contact: {{waysOfContact}}</p>
+                    <p>Opening hours: {{timeTable}}</p>
+                  </div>
+                  <div id="extra-info-{{ID}}" class="w3-col s12 m4 l4 infoTab" style="display:none">
+                    <p>{{additionalInfo}}</p>
+                  </div>
+                </div> 
               </div>
           </td>
-            <!--
-            <td>
-              <p>{{orgName}}</p>
-              <p class="w3-small">{{languages}}</p>
-            </td>
-            <td>
-              <p>{{district}}</p>
-              <p class="w3-small">{{postalCode}}</p>
-              <a href="javascript:void(0)" onClick="showLocationMarker('loc-marker-{{ID}}')">Mostrar en el mapa</a><br>
-            </td>
-            -->
           </tr>
           </table>
       </div>
