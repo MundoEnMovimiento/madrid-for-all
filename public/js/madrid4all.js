@@ -61,8 +61,8 @@ function initMenuContent(loadedCategories) {
     for (var i = 0; i < loadedCategories.length; i++) {
       // TODO: replace second call to originalArrayOfLocations[i].categories by originalArrayOfLocations[i].categories.getLabel(language);
       innerHtmlCode += "<div class=\"w3-bar\">";
-      innerHtmlCode += "<img class=\"w3-bar-item w3-left w3-padding-small w3-mobile\" src=\"/assets/" + loadedCategories[i].icon + "\" height=\"42\" width=\"42\">";
-      innerHtmlCode += "<button class=\"w3-bar-item w3-button w3-hover-gray w3-medium w3-left w3-padding-small w3-mobile\" id=\"" + loadedCategories[i].key + "\" onclick=\"onCategoryClick('" + loadedCategories[i].key + "')\">" + loadedCategories[i][selectedLanguage] + "</button>";
+      innerHtmlCode += "<img class=\"w3-bar-item w3-left w3-padding-small w3-hide-small\" src=\"/assets/" + loadedCategories[i].icon + "\" height=\"42\" width=\"42\">";
+      innerHtmlCode += "<button class=\"w3-bar-item w3-button w3-hover-gray w3-medium w3-left-align w3-padding-small w3-mobile\" id=\"" + loadedCategories[i].key + "\" onclick=\"onCategoryClick('" + loadedCategories[i].key + "')\">" + loadedCategories[i][selectedLanguage] + "</button>";
       innerHtmlCode += "</div>"
       innerHtmlCode += "<div id=\"" + loadedCategories[i].key + "-child\" class=\"w3-hide\"></div>";
     }
@@ -116,13 +116,13 @@ function updateResults(arrayOfLocations) {
   // update resultTable
   if(arrayOfLocations.length > 0) {
     // update resultCounter
-    document.getElementById("resultCounter").innerHTML = "<p>" + arrayOfLocations.length + " resultado(s) encontrado(s)</p>";
+    document.getElementById("resultCounter").innerHTML = "<p>" + arrayOfLocations.length  + " " + getTranslatedLabel("result-found") + "</p>";
     // update resultTable
     w3.displayObject("resultTable", { "records": arrayOfLocations });
     w3.sortHTML('#resultTable', '.item', 'td:nth-child(1')
   } else {
     // update resultCounter
-    document.getElementById("resultCounter").innerHTML = "<p>No se ha encontrado ningún resultado</p>";
+    document.getElementById("resultCounter").innerHTML = "<p>" + getTranslatedLabel("no-result-found") + "</p>";
     w3.hide('#resultTable');
   }
 }
@@ -356,4 +356,25 @@ function openInfoTab(tabName) {
   }
   document.getElementById(tabName + '-tablink').className += " w3-border-red";
   document.getElementById(tabName).style.display = "block";
+}
+// function to handle the different static message
+function getTranslatedLabel(labelId){
+  if("ES" == selectedLanguage) {
+      switch(labelId){
+        case 'no-result-found':
+           return "No se ha encontrado ningún resultado";
+        case 'result-found':
+          return " resultado(s) encontrados";    
+        default:
+          console.log("Unknow labelId" + labelId);
+          return "";
+      }
+  } else if("EN" == selectedLanguage) {
+  
+
+  } else if("FR" == selectedLanguage) {
+
+  } else {
+    console.log("Unknown language: " + selectedLanguage);
+  }
 }
