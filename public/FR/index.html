@@ -16,7 +16,7 @@
 <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.find.min.js"></script>
 <script src="../js/madrid4all.js"></script>
 <script>
-    var selectedLanguage = 'EN';
+    var selectedLanguage = 'FR';
 </script>
 <style>
   body,
@@ -60,7 +60,7 @@
                 <div class="w3-hide-small">
                     <hr style="width:700px;border:3px solid #F2323E" class="w3-round">
                 </div>
-                <p>Select a category or service to see where it is located and how you can reach it</p>
+                <p>Merci de selectionner une catégorie ou service afin de voir son emplacement et savoir comment y arriver</p>
             </div>
             <div class="w3-col s11 m2 l1 w3-right">
                 <a href="../index.html" onClick="onLanguageChange('ES')">ES</a>
@@ -87,29 +87,29 @@
             <td>
               <div class="w3-row">
                 <button id="loc-{{ID}}" onclick="onLocationClick('{{ID}}')" class="w3-button w3-col s10 m10 l10 w3-left w3-block w3-medium w3-left-align"><h5>{{orgName}}</h5></button>
-                <a href="javascript:void(0)" class="w3-col s2 m2 l2 w3-padding w3-right-align" onClick="showLocationMarker('loc-marker-{{ID}}')">Show in map</a>
+                <a href="javascript:void(0)" class="w3-col s2 m2 l2 w3-padding w3-right-align" onClick="showLocationMarker('loc-marker-{{ID}}')">Montrer sur la carte</a>
               </div>
               <div id="loc-{{ID}}-details" class="w3-container w3-hide loc-details">
                 <div class="w3-row">
                   <a href="javascript:void(0)" onclick="openInfoTab('general-info-{{ID}}');">
-                    <div id="general-info-{{ID}}-tablink" class="w3-third tablink w3-bottombar w3-padding">General</div>
+                    <div id="general-info-{{ID}}-tablink" class="w3-third tablink w3-bottombar w3-padding">Générale</div>
                   </a>
                   <a href="javascript:void(0)" onclick="openInfoTab('contact-info-{{ID}}');">
-                    <div id="contact-info-{{ID}}-tablink" class="w3-third tablink w3-bottombar w3-padding">Contact and opening hours</div>
+                    <div id="contact-info-{{ID}}-tablink" class="w3-third tablink w3-bottombar w3-padding">Contact et horaire d'ouverture</div>
                   </a>
                   <a href="javascript:void(0)" onclick="openInfoTab('extra-info-{{ID}}');">
-                    <div id="extra-info-{{ID}}-tablink" class="w3-third tablink w3-bottombar w3-padding">Additional information</div>
+                    <div id="extra-info-{{ID}}-tablink" class="w3-third tablink w3-bottombar w3-padding">Information additionelle</div>
                   </a>
                 </div>       
                 <div id="general-info-{{ID}}" class="w3-container infoTab" style="display:none">
                   <p>District: {{district}}</p>
-                  <p>Categories: {{categories}}</p>
+                  <p>Catégories: {{categories}}</p>
                   <p>Services: {{services}}</p>
                 </div>
                 <div id="contact-info-{{ID}}" class="w3-container infoTab" style="display:none">
-                  <p>Address: {{fullAddress}}</p>
-                  <p>Prefered way of contact: {{waysOfContact}}</p>
-                  <p>Opening hours: {{timeTable}}</p>
+                  <p>Addrese: {{fullAddress}}</p>
+                  <p>Moyen de contact préféré: {{waysOfContact}}</p>
+                  <p>Horaire d'ouverture: {{timeTable}}</p>
                 </div>
                 <div id="extra-info-{{ID}}" class="w3-container infoTab" style="display:none">
                   <p>{{additionalInfo}}</p>

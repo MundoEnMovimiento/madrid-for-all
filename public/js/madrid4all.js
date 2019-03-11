@@ -25,7 +25,7 @@ function loadMap() {
   var mapOptions = {
     // create map centered in 'mainCity'
     center: mapPosition,
-    zoom: 12 // bigger number = closer map
+    zoom: 11 // bigger number = closer map
   };
   // create new map and center it in 'mainCity'
   map = new google.maps.Map(mapCanvas, mapOptions);
