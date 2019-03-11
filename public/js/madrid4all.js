@@ -60,7 +60,10 @@ function initMenuContent(loadedCategories) {
   if (loadedCategories != null && loadedCategories.length > 0) {
     for (var i = 0; i < loadedCategories.length; i++) {
       // TODO: replace second call to originalArrayOfLocations[i].categories by originalArrayOfLocations[i].categories.getLabel(language);
-      innerHtmlCode += "<button id=\"" + loadedCategories[i].key + "\" onclick=\"onCategoryClick('" + loadedCategories[i].key + "')\" class=\"w3-button w3-block w3-hover-gray w3-medium w3-left-align\">" + loadedCategories[i][selectedLanguage] + "</button>";
+      innerHtmlCode += "<div class=\"w3-bar\">";
+      innerHtmlCode += "<img class=\"w3-bar-item w3-left w3-padding-small w3-mobile\" src=\"/assets/" + loadedCategories[i].icon + "\" height=\"42\" width=\"42\">";
+      innerHtmlCode += "<button class=\"w3-bar-item w3-button w3-hover-gray w3-medium w3-left w3-padding-small w3-mobile\" id=\"" + loadedCategories[i].key + "\" onclick=\"onCategoryClick('" + loadedCategories[i].key + "')\">" + loadedCategories[i][selectedLanguage] + "</button>";
+      innerHtmlCode += "</div>"
       innerHtmlCode += "<div id=\"" + loadedCategories[i].key + "-child\" class=\"w3-hide\"></div>";
     }
     // add the generated code to div = 'categories'
