@@ -1,23 +1,32 @@
 [
   {
-    "key": "phone",
-    "ES": "Teléfono",
-    "EN": "Phone",
-    "FR": "Téléphone",
-    "AR": "Arab"
+    "Key": "phone",
+    "ES": "Llama por teléfono.",
+    "EN": "Give us a phonecall.",
+    "FR": "Contact par téléphone."
   },
   {
-    "key": "visit",
-    "ES": "Visitar sede",
-    "EN": "English",
-    "FR": "Français",
-    "AR": "Arab"
+    "Key": "visit",
+    "ES": "Visita la sede.",
+    "EN": "Visit us at our office.",
+    "FR": "En se rendant sur place."
   },
   {
-    "key": "email",
-    "ES": "Email",
-    "EN": "Email",
-    "FR": "Email",
-    "AR": "Arab"
+    "Key": "email",
+    "ES": "Envía un email.",
+    "EN": "Send us an email.",
+    "FR": "Contact par mail."
+  },
+  {
+    "Key": "facebook",
+    "ES": "Escríbenos en facebook.",
+    "EN": "Write us on facebook.",
+    "FR": "Contact par facebook. "
+  },
+  {
+    "Key": "web",
+    "ES": "Contáctanos en nuestra web.",
+    "EN": "Contact us through our website.",
+    "FR": "Contactez-nous sur le web."
   }
 ]

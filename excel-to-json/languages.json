@@ -1,0 +1,68 @@
+[
+  {
+    "key": "ES",
+    "ES": "Castellano",
+    "EN": "Spanish",
+    "FR": "Espagnol"
+  },
+  {
+    "key": "EN",
+    "ES": "Inglés",
+    "EN": "English",
+    "FR": "Anglais"
+  },
+  {
+    "key": "FR",
+    "ES": "Francés",
+    "EN": "French",
+    "FR": "Français"
+  },
+  {
+    "key": "AR",
+    "ES": "Árabe",
+    "EN": "Arabic",
+    "FR": "Arabe"
+  },
+  {
+    "key": "PT",
+    "ES": "Portugués",
+    "EN": "Portuguese",
+    "FR": "Portugais"
+  },
+  {
+    "key": "IT",
+    "ES": "Italiano",
+    "EN": "Italian",
+    "FR": "Italien"
+  },
+  {
+    "key": "BD",
+    "ES": "Bengalí",
+    "EN": "Bengali",
+    "FR": "Bengali"
+  },
+  {
+    "key": "AL",
+    "ES": "Lenguas africanas",
+    "EN": "African Languages",
+    "FR": "Langues africaines"
+  },
+  {
+    "key": "SW",
+    "ES": "Suajili",
+    "EN": "Swahili",
+    "FR": "Swahili"
+  },
+  {
+    "key": "SO",
+    "ES": "Somalí",
+    "EN": "Somali",
+    "FR": "Somali"
+  },
+  {
+    "key": "WO",
+    "ES": "Wolof",
+    "EN": "Wolof",
+    "FR": "Wolof"
+  }
+]

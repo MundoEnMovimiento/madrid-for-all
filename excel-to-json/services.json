@@ -1,202 +1,254 @@
 [
   {
-    "key": "svc11",
+    "key": "srv11",
     "category": "cat1",
     "ES": "Alojamiento",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Housing",
+    "FR": "Logement"
   },
   {
-    "key": "svc12",
+    "key": "srv12",
     "category": "cat1",
     "ES": "Comedores",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Soup kitchens",
+    "FR": "Cantines"
   },
   {
-    "key": "svc13",
+    "key": "srv13",
     "category": "cat1",
-    "ES": "Comida",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "ES": "Comida y cesta de la compra",
+    "EN": "Food ",
+    "FR": "Distribution de paniers repas"
   },
   {
-    "key": "svc14",
-    "category": "cat1",
-    "ES": "Productos de higiene",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
-  },
-  {
-    "key": "svc15",
+    "key": "srv14",
     "category": "cat1",
     "ES": "Duchas públicas",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Public Showers",
+    "FR": "Douches publiques"
   },
   {
-    "key": "svc16",
+    "key": "srv15",
     "category": "cat1",
     "ES": "Ropa",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Clothing",
+    "FR": "Vêtements"
   },
   {
-    "key": "svc27",
+    "key": "srv16",
+    "category": "cat1",
+    "ES": "Lavandería",
+    "EN": "Laundry",
+    "FR": "Buanderie"
+  },
+  {
+    "key": "srv17",
+    "category": "cat1",
+    "ES": "Transporte",
+    "EN": "Transportation",
+    "FR": "Transport"
+  },
+  {
+    "key": "srv21",
     "category": "cat2",
     "ES": "Atención médica general",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "General medical assistance",
+    "FR": "Attention médicale générale"
   },
   {
-    "key": "svc28",
+    "key": "srv22",
     "category": "cat2",
-    "ES": "SIDA/VIH",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "ES": "VIH",
+    "EN": "HIV",
+    "FR": "VIH"
   },
   {
-    "key": "svc29",
+    "key": "srv23",
+    "category": "cat2",
+    "ES": "Chagas",
+    "EN": "Chagas",
+    "FR": "Chagas"
+  },
+  {
+    "key": "srv24",
     "category": "cat2",
     "ES": "Adicciones",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Addictions",
+    "FR": "Dépendances"
   },
   {
-    "key": "svc210",
+    "key": "srv25",
     "category": "cat2",
     "ES": "Dentista",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Dentist",
+    "FR": "Dentiste"
   },
   {
-    "key": "svc211",
+    "key": "srv26",
     "category": "cat2",
-    "ES": "Oculista/gafas",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "ES": "Oculista/Gafas",
+    "EN": "Optician / Glasses",
+    "FR": "Ophtalmologie"
   },
   {
-    "key": "svc212",
+    "key": "srv27",
     "category": "cat2",
     "ES": "Vacunación",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Vaccination",
+    "FR": "Vaccins"
   },
   {
-    "key": "svc213",
+    "key": "srv28",
+    "category": "cat2",
+    "ES": "Planificación familiar/ Anticoncepción",
+    "EN": "Family planning / Contraception",
+    "FR": "Planing familial / Contraception"
+  },
+  {
+    "key": "srv29",
     "category": "cat2",
     "ES": "Ginecología",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Ginecology",
+    "FR": "Ginécologie"
   },
   {
-    "key": "svc214",
+    "key": "srv210",
     "category": "cat2",
-    "ES": "Atención psicológica",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "ES": "Interrupción voluntaria del embarazo",
+    "EN": "Voluntary termination of pregnancy",
+    "FR": "Interruption volontaire de grossesse"
   },
   {
-    "key": "svc215",
+    "key": "srv211",
     "category": "cat2",
-    "ES": "Atención psiquiátrica",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "ES": "Atención Psicológica",
+    "EN": "Psychological care ",
+    "FR": "Attention psychologique"
   },
   {
-    "key": "svc316",
+    "key": "srv212",
+    "category": "cat2",
+    "ES": "Atención Psiquiátrica",
+    "EN": "Psychiatric care",
+    "FR": "Attention psychiatrique"
+  },
+  {
+    "key": "srv31",
     "category": "cat3",
     "ES": "Clases de español",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Spanish lessons",
+    "FR": "Cours d'espagnol"
   },
   {
-    "key": "svc317",
+    "key": "srv32",
     "category": "cat3",
     "ES": "Clases de otros idiomas",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Other languages lessons",
+    "FR": "Cours de langues"
   },
   {
-    "key": "svc318",
+    "key": "srv33",
     "category": "cat3",
     "ES": "Clases de informática",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "IT lessons",
+    "FR": "Classes d'Informatique"
   },
   {
-    "key": "svc319",
+    "key": "srv34",
     "category": "cat3",
-    "ES": "Apoyo y material escolar",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "ES": "Apoyo escolar",
+    "EN": "School support",
+    "FR": "Appui scolaire"
   },
   {
-    "key": "svc320",
+    "key": "srv35",
     "category": "cat3",
     "ES": "Formación profesional",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Professional training",
+    "FR": "Formation professionnelle "
   },
   {
-    "key": "svc321",
+    "key": "srv36",
     "category": "cat3",
     "ES": "Otras formaciones",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Other trainings",
+    "FR": "Autres formations "
   },
   {
-    "key": "svc422",
+    "key": "srv41",
     "category": "cat4",
     "ES": "Deportes",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Sports",
+    "FR": "Sports"
   },
   {
-    "key": "svc423",
+    "key": "srv42",
     "category": "cat4",
     "ES": "Acceso a la cultura",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Access to culture",
+    "FR": "Accès à la culture"
   },
   {
-    "key": "svc424",
+    "key": "srv43",
     "category": "cat4",
     "ES": "Tiempo libre",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Free time",
+    "FR": "Temps libre"
   },
   {
-    "key": "svc425",
+    "key": "srv44",
     "category": "cat4",
     "ES": "Internet",
-    "EN": "English",
-    "FR": "Francais",
-    "AR": "Arab"
+    "EN": "Internet",
+    "FR": "Internet"
+  },
+  {
+    "key": "srv51",
+    "category": "cat5",
+    "ES": "Agresiones racistas y xenófobas",
+    "EN": "Racist and xenophobic attacks",
+    "FR": "Agressions racistes et xénophobes"
+  },
+  {
+    "key": "srv52",
+    "category": "cat5",
+    "ES": "Acompañamiento en CIEs",
+    "EN": "Support for people in detention centres for migrants",
+    "FR": "Soutien dans des centres de détention pour étrangers"
+  },
+  {
+    "key": "srv53",
+    "category": "cat5",
+    "ES": "Trata ",
+    "EN": "Human trafficking",
+    "FR": "Traite des personnes"
+  },
+  {
+    "key": "srv54",
+    "category": "cat5",
+    "ES": "Prostitución",
+    "EN": "Prostitution",
+    "FR": "Prostitution"
+  },
+  {
+    "key": "srv55",
+    "category": "cat5",
+    "ES": "Violencia de género",
+    "EN": "Gender violence",
+    "FR": "Violence de genre"
+  },
+  {
+    "key": "srv56",
+    "category": "cat5",
+    "ES": "Agresiones sexuales",
+    "EN": "Sexual assaults",
+    "FR": "Agressions sexuelles"
+  },
+  {
+    "key": "srv57",
+    "category": "cat5",
+    "ES": "Mutilación genital femenina",
+    "EN": "Female genital mutilation",
+    "FR": "Mutilation génitale féminine"
   }
 ]

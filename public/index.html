@@ -66,7 +66,7 @@
                 <a href="./index.html" onClick="onLanguageChange('ES')">ES</a>
                 <a href="./EN/index.html" onClick="onLanguageChange('EN')">EN</a>
                 <a href="./FR/index.html" onClick="onLanguageChange('FR')">FR</a>
-                <a href="./AR/index.html" onClick="onLanguageChange('AR')">AR</a>
+                <!--a href="./AR/index.html" onClick="onLanguageChange('AR')">AR</a-->
             </div>
     </div>
 
@@ -116,17 +116,6 @@
                 </div>
               </div>
           </td>
-            <!--
-            <td>
-              <p>{{orgName}}</p>
-              <p class="w3-small">{{languages}}</p>
-            </td>
-            <td>
-              <p>{{district}}</p>
-              <p class="w3-small">{{postalCode}}</p>
-              <a href="javascript:void(0)" onClick="showLocationMarker('loc-marker-{{ID}}')">Mostrar en el mapa</a><br>
-            </td>
-            -->
           </tr>
           </table>
       </div>
@@ -147,17 +136,8 @@
   </div>
   <!-- End page content / w3-main -->
   <!-- Footer -->
-  <div class="w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
-    <div class="w3-right">
-      <!-- TODO: fill in correct link in href -->
-      <p>Si quieres que tus servicios aparezcan en Madrid For All, rellena <a href="http://www.mundoenmovimiento.org">este
-          formulario</a></p>
-      <p>Puedes contactar con nosotros a través del correo info@mundoenmovimiento.org o de nuestra web
-        www.mundoenmovimiento.org</p>
-      <p class="w3-right">Powered by <a href="https://www.mundoenmovimiento.org" title="mundoenmovimiento" target="_blank"
-          class="w3-hover-opacity">Mundo en Movimiento</a></p>
-    </div>
-  </div>
+  <div w3-include-html="./footer.html"></div>
+  
   <script>
     // destroy DB in order to recreate it from scratch
     db.destroy().then(
