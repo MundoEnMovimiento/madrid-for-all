@@ -135,12 +135,12 @@ function addSingleLocationToMap(markerData) {
     map: map,
     id: 'loc-marker-' + markerData.ID,
     position: markerPosition,
-    title: markerData.orgName + ". Click for more details"
+    title: markerData.orgName + ". " + getTranslatedLabel("more-info")
   });
   // create an infoWindow to be linked to the marker
   var infoWindowCode = "<strong>" + markerData.orgName + "</strong><br>";
   infoWindowCode += "<em>" + address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a><br>";
-  infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails(event, '" + markerData.ID + "')\">Mostrar más información</a><br>";
+  infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails(event, '" + markerData.ID + "')\">" + getTranslatedLabel("click-for-more-details") + "</a><br>";
   //console.log("infoWindowCode: " + infoWindowCode); 
   var infowindow = new google.maps.InfoWindow({
     content: infoWindowCode
@@ -364,16 +364,43 @@ function getTranslatedLabel(labelId){
         case 'no-result-found':
            return "No se ha encontrado ningún resultado";
         case 'result-found':
-          return " resultado(s) encontrados";    
+          return " resultado(s) encontrados";
+        case 'click-for-more-details':
+          return 'Pincha aquí para más detalles';
+        case 'more-info':
+          return 'Más información';
         default:
-          console.log("Unknow labelId" + labelId);
+          console.log("Unknown labelId: " + labelId);
           return "";
       }
   } else if("EN" == selectedLanguage) {
-  
-
+        switch(labelId){
+          case 'no-result-found':
+            return "No results found";
+          case 'result-found':
+            return " result(s) found";
+          case 'click-for-more-details':
+            return 'Click here for more details';  
+          case 'more-info':
+            return 'More info';
+          default:
+            console.log("Unknown labelId: " + labelId);
+            return "";
+        }
   } else if("FR" == selectedLanguage) {
-
+        switch(labelId){
+          case 'no-result-found':
+            return "Aucun résultat trouvé";
+          case 'result-found':
+            return " résultat(s) trouvé(s)";
+          case 'click-for-more-details':
+            return 'Click ici pour plus de détails'; 
+          case 'more-info':
+            return 'Plus d\'info'; 
+          default:
+            console.log("Unknown labelId: " + labelId);
+            return "";
+    }
   } else {
     console.log("Unknown language: " + selectedLanguage);
   }
