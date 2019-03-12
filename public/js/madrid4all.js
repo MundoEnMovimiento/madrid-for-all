@@ -405,3 +405,9 @@ function getTranslatedLabel(labelId){
     console.log("Unknown language: " + selectedLanguage);
   }
 }
+// function to translate categories into labels
+function translateArrayOfCategories(arrayOfCategories){
+  console.log("translateArrayOfCategories: " + arrayOfCategories);
+  return arrayOfCategories.map(x => originalArrayOfCategories[x][selectedLanguage]);
+}
+

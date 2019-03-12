@@ -15,7 +15,7 @@
       "FR": "\nToutes les matinées, para rendez-vous pris par téléphone"
     },
     "priorAppointment": "Si",
-    "wayOfContact": "phone",
+    "waysOfContact": "phone",
     "categories": [
       "cat7",
       "cat4",
@@ -52,7 +52,7 @@
       "FR": "\n\nPrendre contact avant de venir"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email",
+    "waysOfContact": "phone;email",
     "categories": [
       "cat4",
       "cat1"
@@ -128,7 +128,7 @@
       "FR": "\n\nLe mercredi 10,30-11:30 para rendez-vous. Les vêtements sont délivrés le lundi qui suit\n\n"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "visit",
+    "waysOfContact": "visit",
     "categories": [
       "cat1"
     ],
@@ -164,7 +164,7 @@
       "FR": "\n\nTous les matins. Le mercredi et le vendredi après-midi"
     },
     "priorAppointment": "No",
-    "wayOfContact": "phone",
+    "waysOfContact": "phone",
     "categories": [
       "cat7",
       "cat6",
@@ -200,7 +200,7 @@
       "FR": "\n\nTous les après-midi"
     },
     "priorAppointment": "No",
-    "wayOfContact": "visit",
+    "waysOfContact": "visit",
     "categories": [
       "cat1",
       "cat3",
@@ -242,7 +242,7 @@
       "FR": "Toute la journée"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;visit;email",
+    "waysOfContact": "phone;visit;email",
     "categories": [
       "cat3",
       "cat7",
@@ -286,7 +286,7 @@
       "FR": "\n\nLundi et Mercredi (10:30-12:00 y 19:30-21:00)\nMardi (19:30-20:30)\n"
     },
     "priorAppointment": "No",
-    "wayOfContact": "visit",
+    "waysOfContact": "visit",
     "categories": [
       "cat3",
       "cat6"
@@ -321,7 +321,7 @@
       "FR": "\n\nTous les matins"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;",
+    "waysOfContact": "phone;",
     "categories": [
       "cat1",
       "cat7",
@@ -361,7 +361,7 @@
       "FR": "\n\nTous les matins"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email",
+    "waysOfContact": "phone;email",
     "categories": [
       "cat3",
       "cat7",
@@ -439,7 +439,7 @@
       "FR": "Toute la journée"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email",
+    "waysOfContact": "phone;email",
     "categories": [
       "cat3",
       "cat7"
@@ -519,7 +519,7 @@
       "FR": "\n\nToute la journée"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;visit;email;",
+    "waysOfContact": "phone;visit;email;",
     "categories": [
       "cat3",
       "cat2"
@@ -558,7 +558,7 @@
       "FR": "\n\nTous les matins"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email",
+    "waysOfContact": "phone;email",
     "categories": [
       "cat3",
       "cat4"
@@ -597,7 +597,7 @@
       "FR": "\n\nLundi de 16h à 20h\nDu mardi au samedi de 10h à 14h et de 16h à 20h"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone",
+    "waysOfContact": "phone",
     "categories": [
       "cat3",
       "cat7",
@@ -641,7 +641,7 @@
       "FR": "Le week-end"
     },
     "priorAppointment": "No",
-    "wayOfContact": "email",
+    "waysOfContact": "email",
     "categories": [
       "cat3"
     ],
@@ -675,7 +675,7 @@
       "FR": "\n\nTous les matins"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;visit",
+    "waysOfContact": "phone;visit",
     "categories": [
       "cat7"
     ],
@@ -709,7 +709,7 @@
       "FR": "\n\nLe lundi et le jeudi après-midi"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone",
+    "waysOfContact": "phone",
     "categories": [
       "cat3",
       "cat4"
@@ -748,7 +748,7 @@
       "FR": "\n\nMercredi et Vendredi de 17h à 21h"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "email",
+    "waysOfContact": "email",
     "categories": [
       "cat3",
       "cat4"
@@ -791,7 +791,7 @@
       "FR": "Tous les matins\nDu lundi au jeudi matin sur prise de rendez-vous et le mardi après-midi de 19h30 à 21h"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email;visit",
+    "waysOfContact": "phone;email;visit",
     "categories": [
       "cat6",
       "cat5",
@@ -833,7 +833,7 @@
       "FR": "Mardi et jeudi de 19h30 à 21h"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email;visit",
+    "waysOfContact": "phone;email;visit",
     "categories": [
       "cat3",
       "cat6",
@@ -874,7 +874,7 @@
       "FR": "\n\nToute la journée"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone",
+    "waysOfContact": "phone",
     "categories": [
       "cat3",
       "cat2",
@@ -916,7 +916,7 @@
       "FR": "\n\nToute la journée"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone",
+    "waysOfContact": "phone",
     "categories": [
       "cat3",
       "cat2",
@@ -958,7 +958,7 @@
       "FR": "\n\nToute la journée du lundi au vendredi, sauf le vendredi après-midi"
     },
     "priorAppointment": "No",
-    "wayOfContact": "visit",
+    "waysOfContact": "visit",
     "categories": [
       "cat1",
       "cat3",
@@ -1012,7 +1012,7 @@
       "FR": "\nToute la journée"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "web",
+    "waysOfContact": "web",
     "categories": [
       "cat1",
       "cat6",
@@ -1061,7 +1061,7 @@
       "FR": "\nToute la journée"
     },
     "priorAppointment": "No",
-    "wayOfContact": "phone;email;visit",
+    "waysOfContact": "phone;email;visit",
     "categories": [
       "cat6",
       "cat2"
@@ -1102,7 +1102,7 @@
       "FR": "Tous les matins"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email;visit",
+    "waysOfContact": "phone;email;visit",
     "categories": [
       "cat3",
       "cat7",
@@ -1145,7 +1145,7 @@
       "FR": "\nToute la journée"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email;visit",
+    "waysOfContact": "phone;email;visit",
     "categories": [
       "cat2",
       "cat5"
@@ -1189,7 +1189,7 @@
       "FR": "\nTous les matins"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email;visit;web",
+    "waysOfContact": "phone;email;visit;web",
     "categories": [
       "cat6",
       "cat2"
@@ -1228,7 +1228,7 @@
       "FR": "Tous les après-midi"
     },
     "priorAppointment": "No",
-    "wayOfContact": "visit",
+    "waysOfContact": "visit",
     "categories": [
       "cat6",
       "cat1",
@@ -1273,7 +1273,7 @@
       "FR": "\nToute la journée"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email;web;visit",
+    "waysOfContact": "phone;email;web;visit",
     "categories": [
       "cat6",
       "cat7",
@@ -1360,7 +1360,7 @@
       "FR": "\nTous les matins"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email",
+    "waysOfContact": "phone;email",
     "categories": [
       "cat1"
     ],
@@ -1397,7 +1397,7 @@
       "FR": "\nTous les matins"
     },
     "priorAppointment": "No",
-    "wayOfContact": "visit",
+    "waysOfContact": "visit",
     "categories": [
       "cat10"
     ],
@@ -1432,7 +1432,7 @@
       "FR": "\n\nTous les après-midi de 16h à 19h30"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;visit",
+    "waysOfContact": "phone;visit",
     "categories": [
       "cat3"
     ],
@@ -1470,7 +1470,7 @@
       "FR": "\n\nLe matin du lundi au jeudi\nTous les après-midi sauf le mardi\n\n"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;web;visit",
+    "waysOfContact": "phone;web;visit",
     "categories": [
       "cat1",
       "cat3",
@@ -1554,7 +1554,7 @@
       "FR": "Tous les matins"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email",
+    "waysOfContact": "phone;email",
     "categories": [
       "cat3",
       "cat7",
@@ -1631,7 +1631,7 @@
       "FR": "\n\nToute la journée du lundi au jeudi (de 9h à 18h) et vendredi de 9h à 15h"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone",
+    "waysOfContact": "phone",
     "categories": [
       "cat1",
       "cat7",
@@ -1676,7 +1676,7 @@
       "FR": "Tous les matins"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email;web",
+    "waysOfContact": "phone;email;web",
     "categories": [
       "cat2",
       "cat6"
@@ -1711,7 +1711,7 @@
       "FR": "Permanence 24/24h\n\n"
     },
     "priorAppointment": "No",
-    "wayOfContact": "phone;email;visit",
+    "waysOfContact": "phone;email;visit",
     "categories": [
       "cat3",
       "cat7",
@@ -1758,7 +1758,7 @@
       "FR": "Du lundi au samedi de 17h à 19h : Goûter et dîner"
     },
     "priorAppointment": "No",
-    "wayOfContact": "visit",
+    "waysOfContact": "visit",
     "categories": [
       "cat1"
     ],
@@ -1795,7 +1795,7 @@
       "FR": "Dimanche matin de 8h30 à 11h : Petit déjeuner"
     },
     "priorAppointment": "No",
-    "wayOfContact": "visit",
+    "waysOfContact": "visit",
     "categories": [
       "cat1"
     ],
@@ -1828,7 +1828,7 @@
       "FR": "24/24h"
     },
     "priorAppointment": "No",
-    "wayOfContact": "phone;visit",
+    "waysOfContact": "phone;visit",
     "categories": [
       "cat1"
     ],
@@ -1865,7 +1865,7 @@
       "FR": "Tous les après-midi, de 12h à 19h"
     },
     "priorAppointment": "No",
-    "wayOfContact": "phone;visit",
+    "waysOfContact": "phone;visit",
     "categories": [
       "cat1",
       "cat2",
@@ -1907,7 +1907,7 @@
       "FR": "Tous les après-midi"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;visit",
+    "waysOfContact": "phone;visit",
     "categories": [
       "cat1"
     ],
@@ -1946,7 +1946,7 @@
       "FR": "Tous les jours (week-end inclu) durant toute la journée"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "visit",
+    "waysOfContact": "visit",
     "categories": [
       "cat1",
       "cat2",
@@ -1988,7 +1988,7 @@
       "FR": "Tous les matins"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;visit",
+    "waysOfContact": "phone;visit",
     "categories": [
       "cat2",
       "cat3",
@@ -2032,7 +2032,7 @@
       "FR": "sur rendez-vous selon le temps disponible."
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email",
+    "waysOfContact": "phone;email",
     "categories": [
       "cat3",
       "cat8",
@@ -2082,7 +2082,7 @@
       "FR": "Toute la journée jusqu'à 17h"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email;visit;web",
+    "waysOfContact": "phone;email;visit;web",
     "categories": [
       "cat8",
       "cat2"
@@ -2126,7 +2126,7 @@
       "FR": "Todas las mañanas, Todas las tardes, Fines de semana\n\nTous les jours (week-end inclu) durant toute la journée"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email;visit;web",
+    "waysOfContact": "phone;email;visit;web",
     "categories": [
       "cat3",
       "cat6",
@@ -2175,7 +2175,7 @@
       "FR": "Tous les matins du lundi au vendedi"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email;visit",
+    "waysOfContact": "phone;email;visit",
     "categories": [
       "cat7",
       "cat5",
@@ -2213,7 +2213,7 @@
       "FR": "Le jeudi de 17h à 20h"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email;visit",
+    "waysOfContact": "phone;email;visit",
     "categories": [
       "cat7",
       "cat2",
@@ -2259,7 +2259,7 @@
       "FR": "Toute la journée"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email;visit",
+    "waysOfContact": "phone;email;visit",
     "categories": [
       "cat6",
       "cat2",
@@ -2305,7 +2305,7 @@
       "FR": "Toute la journée"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email;visit",
+    "waysOfContact": "phone;email;visit",
     "categories": [
       "cat6",
       "cat5",
@@ -2351,7 +2351,7 @@
       "FR": "Pas de permanence sur place"
     },
     "priorAppointment": "No",
-    "wayOfContact": "Facebook",
+    "waysOfContact": "Facebook",
     "categories": [
       "cat3",
       "cat7",
@@ -2398,7 +2398,7 @@
       "FR": "Week-ends, le deuxième dimanche du mois à 17h00, Assemblée mensuelle"
     },
     "priorAppointment": "No",
-    "wayOfContact": "Facebook",
+    "waysOfContact": "Facebook",
     "categories": [
       "cat6"
     ],
@@ -2433,7 +2433,7 @@
       "FR": "Toute le journée"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "phone;email",
+    "waysOfContact": "phone;email",
     "categories": [
       "cat3",
       "cat7",
@@ -2474,7 +2474,7 @@
       "FR": "Toute le journée"
     },
     "priorAppointment": "Sí",
-    "wayOfContact": "email",
+    "waysOfContact": "email",
     "categories": [
       "cat1",
       "cat3"
@@ -2589,7 +2589,7 @@
       "FR": "Pas de permanence sur place"
     },
     "priorAppointment": "No",
-    "wayOfContact": "web;email",
+    "waysOfContact": "web;email",
     "categories": [
       "cat3",
       "cat5"
