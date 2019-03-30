@@ -12,6 +12,7 @@ var selectedServices = [];
 var targetWomen = false;
 var targetChildren = false;
 var targetOrigin = false;
+var vueResultCounter;
 // lat and lng of the "main" city used to center the map
 var mainCityGeoCode = {
   "lat": 40.4168,
@@ -113,18 +114,27 @@ function addLocationsToMap(arrayOfLocations) {
 }
 // function to update the resultTable
 function updateResults(arrayOfLocations) {  
-  // update resultTable
+  
+  if (vueResultCounter == null) {
+      vueResultCounter = new Vue({
+      el: '#resultCounter',
+      data: {
+        message: '-'
+      }
+    });
+  }
+
+  // update resultCounter and resultTable
   if(arrayOfLocations.length > 0) {
-    // update resultCounter
-    document.getElementById("resultCounter").innerHTML = "<p>" + arrayOfLocations.length  + " " + getTranslatedLabel("result-found") + "</p>";
+    vueResultCounter.message = arrayOfLocations.length  + " " + getTranslatedLabel("result-found");
     // update resultTable
     w3.displayObject("resultTable", { "records": arrayOfLocations });
     w3.sortHTML('#resultTable', '.item', 'td:nth-child(1')
   } else {
-    // update resultCounter
-    document.getElementById("resultCounter").innerHTML = "<p>" + getTranslatedLabel("no-result-found") + "</p>";
+    vueResultCounter.message = getTranslatedLabel("no-result-found");
     w3.hide('#resultTable');
-  }
+  } 
+  console.log("vueResultCounter.message: " + vueResultCounter.message);
 }
 // adds a marker to the map.
 function addSingleLocationToMap(markerData) {
