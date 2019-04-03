@@ -19,9 +19,9 @@
 <!-- production version, optimized for size and speed 
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 -->
-<script src="./js/madrid4all.js"></script>
+<script src="./js/domain.js"></script>
 <script>
-    var selectedLanguage = 'ES';
+    selectedLanguage = 'ES';
 </script>
 <style>
   body,
@@ -90,38 +90,38 @@
               <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(1)')"></th>
             </tr>
           </thead>
-          <tr w3-repeat="records" class="item">
+          <tr v-for="loc in locations" class="item">
             <td>
               <div class="w3-row">
-                <button id="loc-{{ID}}" onclick="onLocationClick('{{ID}}')" class="w3-button w3-col s11 m10 l10 w3-left w3-block w3-medium w3-left-align">{{orgName}}</button>
-                <a href="javascript:void(0)" class="w3-col w3-hide-small m2 l2 w3-padding w3-right-align" onClick="showLocationMarker('loc-marker-{{ID}}')">Mostrar en el mapa</a>
-                <a href="javascript:void(0)" class="w3-col w3-hide-large w3-hide-medium s1 w3-right-align" onClick="showLocationMarker('loc-marker-{{ID}}')">+</a>
+                <button v-bind:id="'loc-' + loc.ID" v-on:click="onLocationClick('' + loc.ID)" class="w3-button w3-col s11 m10 l10 w3-left w3-block w3-medium w3-left-align">{{loc.orgName}}</button>
+                <a href="javascript:void(0)" class="w3-col w3-hide-small m2 l2 w3-padding w3-right-align" v-on:click="showLocationMarker('loc-marker-' + loc.ID)">Mostrar en el mapa</a>
+                <a href="javascript:void(0)" class="w3-col w3-hide-large w3-hide-medium s1 w3-right-align" v-on:click="showLocationMarker('loc-marker-' + loc.ID)">+</a>
               </div>
-              <div id="loc-{{ID}}-details" class="w3-hide loc-details">
+              <div v-bind:id="'loc-' + loc.ID + '-details'" class="w3-hide loc-details">
                 <div class="w3-row">
-                  <a href="javascript:void(0)" onclick="openInfoTab('general-info-{{ID}}');">
-                    <div id="general-info-{{ID}}-tablink" class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">General</div>
+                  <a href="javascript:void(0)" v-on:click="openInfoTab('general-info-' + loc.ID);">
+                    <div v-bind:id="'general-info-' + loc.ID + '-tablink'" class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">General</div>
                   </a>
-                  <a href="javascript:void(0)" onclick="openInfoTab('contact-info-{{ID}}');">
-                    <div id="contact-info-{{ID}}-tablink" class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">Contacto y horarios</div>
+                  <a href="javascript:void(0)" v-on:click="openInfoTab('contact-info-' + loc.ID);">
+                    <div v-bind:id="'contact-info-' + loc.ID + '-tablink'" class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">Contacto y horarios</div>
                   </a>
-                  <a href="javascript:void(0)" onclick="openInfoTab('extra-info-{{ID}}');">
-                    <div id="extra-info-{{ID}}-tablink" class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">Información adicional</div>
+                  <a href="javascript:void(0)" v-on:click="openInfoTab('extra-info-' + loc.ID);">
+                    <div v-bind:id="'extra-info-' + loc.ID + '-tablink'" class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">Información adicional</div>
                   </a>
                 </div>
                 <div class="w3-row">
-                  <div id="general-info-{{ID}}" class="w3-col s12 m4 l4 infoTab" style="display:none">
-                    <p>Distrito: {{district}}</p>
-                    <p>Categorias: {{categories}}</p>
-                    <p>Servicios: {{services}}</p>
+                  <div v-bind:id="'general-info-' + loc.ID" class="w3-col s12 m4 l4 infoTab" style="display:none; width:100%">
+                    <p>Distrito: {{loc.district}}</p>
+                    <p>Categorias: {{loc.categories}}</p>
+                    <p v-for="service in loc.services">{{printService(service)}}</p>
                   </div>
-                  <div id="contact-info-{{ID}}" class="w3-col s12 m4 l4 infoTab" style="display:none">
-                    <p>Dirección: {{fullAddress}}</p>
-                    <p>Medios de contacto preferidos: {{waysOfContact}}</p>
-                    <p>Horarios: {{timeTable}}</p>
+                  <div v-bind:id="'contact-info-' + loc.ID" class="w3-col s12 m4 l4 infoTab" style="display:none; width:100%">
+                    <p>Dirección: {{loc.fullAddress}}</p>
+                    <p>Medios de contacto preferidos: {{loc.waysOfContact}}</p>
+                    <p>Horarios: {{loc.timeTable}}</p>
                   </div>
-                  <div id="extra-info-{{ID}}" class="w3-col s12 m4 l4 infoTab" style="display:none">
-                    <p>{{additionalInfo}}</p>
+                  <div v-bind:id="'extra-info-' + loc.ID" class="w3-col s12 m4 l4 infoTab" style="display:none; width:100%">
+                    <p>{{loc.additionalInfo}}</p>
                   </div>
                 </div> 
               </div>
@@ -130,9 +130,6 @@
           </table>
       </div>
     </div>
-
-    
-
     <!-- Pagination 
     <div class="w3-center">
       <div class="w3-bar">
@@ -157,7 +154,6 @@
         // Once we destroy the database, we have to create a new one otherwise we'll get an error, "Error: database is destroyed".
         db = new PouchDB(dbName);
         // initialize page content by loading its associated 'data.js'
-        w3.getHttpObject("/data/locations.json", initPageContent);
         w3.getHttpObject("/data/categories.json", initMenuContent);
       }
     )
@@ -169,6 +165,7 @@
   </script>
   <!-- async load / call external js scripts -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-cYGCy5xyn4C5hH0rv7iWbw4nNGqcU0E&callback=loadMap"></script>
+  <script src="./js/controller.js"></script>
 
 </body>
 

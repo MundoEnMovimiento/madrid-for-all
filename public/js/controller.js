@@ -1,23 +1,61 @@
 // global variables
-var dbName = 'madrid4all.db';
-var db = new PouchDB(dbName);
-var map;
-var originalArrayOfLocations = [];
-var originalArrayOfCategories = [];
-var originalArrayOfServices = [];
-var arrayOfLocations = [];
-var markersOnMap = [];
-var selectedCategories = [];
-var selectedServices = [];
-var targetWomen = false;
-var targetChildren = false;
-var targetOrigin = false;
-var vueResultCounter;
-// lat and lng of the "main" city used to center the map
-var mainCityGeoCode = {
-  "lat": 40.4168,
-  "lng": -3.7038
-}
+var vueResultCounter = new Vue({
+  el: '#resultCounter',
+  data: {
+    message: '-'
+  }
+});
+var vueResultTable = new Vue({
+  el: '#resultTable',
+  data: { locations : arrayOfLocations},
+  methods : {
+    // callback for the click on a row of the result table
+    onLocationClick : function(locationId) {
+      console.log("Clicked onLocationClick with id: " + locationId);
+      // update UI
+      locDetailsDiv = document.getElementsByClassName("loc-details");
+      for (i = 0; i < locDetailsDiv.length; i++) {
+        locDetailsDiv[i].className = locDetailsDiv[i].className.replace(" w3-show", " w3-hide");
+      }
+      w3.toggleClass('#loc-' + locationId + '-details', 'w3-hide', 'w3-show');
+      this.openInfoTab('general-info-' + locationId);
+    },
+    // callback to handle the tab switch on the table result
+    openInfoTab : function(tabName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("infoTab");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+      }
+      document.getElementById(tabName + '-tablink').className += " w3-border-red";
+      document.getElementById(tabName).style.display = "block";
+    },
+    // highlight marker in map
+    showLocationMarker : function(locationId) {
+      console.log("showLocationMarker: " + locationId);
+      for (var i = 0; i < markersOnMap.length; i++) {
+        var currMarker = markersOnMap[i];
+        if (currMarker.get('id') == locationId) {
+          currMarker.setAnimation(google.maps.Animation.BOUNCE);
+        } else {
+          currMarker.setAnimation(null);
+        }
+      }
+      document.getElementById('servicesMap').scrollIntoView();
+    },
+    printService : function(serviceKey) {
+      var serviceDetails = originalArrayOfServices.find(function(element) {
+        return element.key == serviceKey;
+      });
+      return "serviceDetails.key = " + serviceDetails[selectedLanguage];
+    }
+  }
+});
+
 // list of functions
 // Function to Show Map of Services
 function loadMap() {
@@ -36,21 +74,8 @@ function initPageContent(loadedLocations) {
   console.log("initPageContent...")
   originalArrayOfLocations = loadedLocations;
   arrayOfLocations = originalArrayOfLocations;
-  // check if the db is empty. In that case, load the content of data.js file
-  db.info().then(function (result) {
-    if (result.doc_count === 0) {
-      console.log('DB empty! Lets add data.json into it...');
-      db.bulkDocs(arrayOfLocations).then(function (innerResult) {
-        console.log("Locations added successfully to DB. ");
-        createDBIndexes();
-      }).catch(function (err) {
-        console.log("Error while adding locations to DB: " + err);
-      });
-    } else {
-      console.log('DB not empty. It contains already ' + result.doc_count + ' records. No extra content is loaded from data.js.')
-    }
-    addLocationsToMap(arrayOfLocations);
-  });
+  initDBContent();
+  addLocationsToMap();
 }
 // callback to load menu content: categories, services, etc.
 function initMenuContent(loadedCategories) {
@@ -81,6 +106,8 @@ function initMenuContent(loadedCategories) {
           div.innerHTML = innerHtmlCode;
           document.getElementById(loadedServices[i].category + "-child").appendChild(div);
         }
+        // once the menu is ready, we can proceed to load the page content
+        w3.getHttpObject("/data/locations.json", initPageContent);
       } else {
         console.log("No services found in services.json")
       }
@@ -89,49 +116,26 @@ function initMenuContent(loadedCategories) {
     console.log("No categories found in categories.json")
   }
 }
-// function to creat search indexed on the database
-function createDBIndexes() {
-  // create the necessary db indexes
-  db.createIndex({
-    index: {
-      fields: ['categories', 'orgName']
-    }
-  }).then(function (result) {
-    console.log("Successfully created index over the categories");
-  }).catch(function (err) {
-    console.log("Error creating index on the categories: " + err);
-  });
-}
 // display array of markers on the map
-function addLocationsToMap(arrayOfLocations) {
+function addLocationsToMap() {
   // add the markers to the map
   arrayOfLocations.forEach(markerData => {
     //console.log("Adding marker " + markerData.orgName + ", " + markerData.address + " to the map...");
     addSingleLocationToMap(markerData);
   });
   // show table with the markers
-  updateResults(arrayOfLocations);
+  updateResults();
 }
 // function to update the resultTable
-function updateResults(arrayOfLocations) {  
-  
-  if (vueResultCounter == null) {
-      vueResultCounter = new Vue({
-      el: '#resultCounter',
-      data: {
-        message: '-'
-      }
-    });
-  }
-
+function updateResults() {  
   // update resultCounter and resultTable
   if(arrayOfLocations.length > 0) {
     vueResultCounter.message = arrayOfLocations.length  + " " + getTranslatedLabel("result-found");
-    // update resultTable
-    w3.displayObject("resultTable", { "records": arrayOfLocations });
+    vueResultTable.locations = arrayOfLocations;
     w3.sortHTML('#resultTable', '.item', 'td:nth-child(1')
   } else {
     vueResultCounter.message = getTranslatedLabel("no-result-found");
+    vueResultTable.locations = [];
     w3.hide('#resultTable');
   } 
   console.log("vueResultCounter.message: " + vueResultCounter.message);
@@ -166,21 +170,8 @@ function addSingleLocationToMap(markerData) {
 // show location details
 function showLocationDetails(event, locationId) {
   console.log("showLocationDetails: " + locationId);
-  onLocationClick(locationId);
+  vueResultTable.onLocationClick(locationId);
   document.getElementById('loc-' + locationId).scrollIntoView();
-}
-// highlight marker in map
-function showLocationMarker(locationId) {
-  console.log("showLocationMarker: " + locationId);
-  for (var i = 0; i < markersOnMap.length; i++) {
-    var currMarker = markersOnMap[i];
-    if (currMarker.get('id') == locationId) {
-      currMarker.setAnimation(google.maps.Animation.BOUNCE);
-    } else {
-      currMarker.setAnimation(null);
-    }
-  }
-  document.getElementById('servicesMap').scrollIntoView();
 }
 // callback for the search by text
 function onTextSearchInput(inputValue) {
@@ -260,67 +251,6 @@ function clearPreviousResults() {
   markersOnMap = [];
   arrayOfLocations = [];
 }
-// function to update the list of results after a change in the search form
-function findLocationsInDatabase() {
-  // TODO: Rename ID in the Json and Excel file to key or something less similar to _id
-  // compose selector based on the user input
-  var searchCriterias = new Object();
-  var processedCategories = selectedCategories.slice(0);
-  var processedServices = selectedServices.slice(0);
-  // remove categories of any of their services are included in the search criteria
-  for(var i = 0; i < selectedServices.length; i++){
-    var serviceCategory = selectedServices[i].charAt(3);
-    // remove the category of this service from the searchCriteria
-    if(processedCategories.includes("cat" + serviceCategory)){
-        console.log("Removing category 'cat" + serviceCategory + "' from the search criteria as '" + selectedServices[i] + "' is added");
-        processedCategories.splice(processedCategories.indexOf(serviceCategory),1);
-    }
-  }
-   // compose the final search criteria
-  if(processedCategories.length > 0) {
-    searchCriterias.categories = { $elemMatch: { $in: processedCategories } };
-  }
-  if(processedServices.length > 0) {
-    searchCriterias.services = { $elemMatch: { $in: processedServices } };
-  }
-  if(targetWomen){
-    searchCriterias.targettedWomen = { $eq: 1};
-  }
-  if(targetChildren){
-    searchCriterias.targettedChild = { $eq: 1};
-  }
-  if(targetOrigin){
-    searchCriterias.targettedOrigins = { $exists : true};
-  }
-  // perform the find in the DB
-  db.find({
-    selector: searchCriterias,
-    fields: ['_id', 'ID', 'orgName', 'categories', 'services', 'district', 'languages', 'fullAddress', 'geocode', 'orgWeb', 'targettedChild', 'targettedWomen', 'targettedOrigins', 'waysOfContact', 'timeTable', 'additionalInfo'],
-  }).then(function (result) {
-    // clear previous results
-    clearPreviousResults();
-    // TODO: Fix me! This 'arrayOfLocations' must contain gmaps.Locations(), not "markerData"
-    arrayOfLocations = result["docs"];
-    console.log(arrayOfLocations.length + " markers found for " + JSON.stringify(searchCriterias) + ".");
-    // show found locations in the map
-    addLocationsToMap(arrayOfLocations);
-    // update result table with the found locations
-    updateResults(arrayOfLocations);
-  }).catch(function (err) {
-    console.log(err);
-  });
-}
-// callback for the click on a row of the result table
-function onLocationClick(locationId) {
-  console.log("Clicked onLocationClick with id: " + locationId);
-  // update UI
-  locDetailsDiv = document.getElementsByClassName("loc-details");
-  for (i = 0; i < locDetailsDiv.length; i++) {
-    locDetailsDiv[i].className = locDetailsDiv[i].className.replace(" w3-show", " w3-hide");
-  }
-  w3.toggleClass('#loc-' + locationId + '-details', 'w3-hide', 'w3-show');
-  openInfoTab('general-info-' + locationId);
-}
 // function to implement the language change
 function onLanguageChange(language) {
   console.log("onLanguageChange: " + language);
@@ -352,20 +282,6 @@ function w3_open() {
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
-}
-// function to handel the result row's tabs
-function openInfoTab(tabName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("infoTab");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
-  }
-  document.getElementById(tabName + '-tablink').className += " w3-border-red";
-  document.getElementById(tabName).style.display = "block";
 }
 // function to handle the different static message
 function getTranslatedLabel(labelId){
