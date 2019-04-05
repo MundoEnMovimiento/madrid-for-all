@@ -168,7 +168,7 @@
     "categories": [
       "cat7",
       "cat6",
-      "cat2 "
+      "cat2"
     ],
     "services": [
       "srv211"
@@ -328,8 +328,7 @@
       "cat10"
     ],
     "services": [
-      "srv11",
-      "cat7"
+      "srv11"
     ],
     "languages": [
       "ES"
@@ -1259,7 +1258,7 @@
   },
   {
     "ID": 33,
-    "orgName": "ASOCIACIÓN DE MUJERES SEPARADAS Y DIVORCIADAS \"CARMEN GARCÍA CASTELLÓN\"",
+    "orgName": "ASOCIACIÓN DE MUJERES SEPARADAS Y DIVORCIADAS CARMEN GARCÍA CASTELLÓN",
     "orgPhone": 915704428,
     "orgEmail": "info@asociacioncgc.es",
     "orgWeb": "www.asociacioncgc.es",
@@ -1437,7 +1436,7 @@
       "cat3"
     ],
     "services": [
-      " srv35"
+      "srv35"
     ],
     "languages": [
       "ES"
@@ -1518,7 +1517,7 @@
       "cat8"
     ],
     "services": [
-      " srv36",
+      "srv36",
       "srv31",
       "srv34"
     ],
@@ -1875,7 +1874,7 @@
       "srv14",
       "srv21",
       "srv16",
-      "srv15 "
+      "srv15"
     ],
     "languages": [
       "ES"
@@ -2178,8 +2177,7 @@
     "waysOfContact": "phone;email;visit",
     "categories": [
       "cat7",
-      "cat5",
-      ""
+      "cat5"      
     ],
     "services": [
       "srv55"
@@ -2217,8 +2215,7 @@
     "categories": [
       "cat7",
       "cat2",
-      "cat5",
-      ""
+      "cat5"
     ],
     "services": [
       "srv211",
@@ -2270,8 +2267,7 @@
       "srv22",
       "srv211",
       "srv54",
-      "srv55",
-      ""
+      "srv55"
     ],
     "languages": [
       "ES"
@@ -2310,8 +2306,7 @@
       "cat6",
       "cat5",
       "cat4",
-      "cat2",
-      ""
+      "cat2"      
     ],
     "services": [
       "srv22",
@@ -2362,8 +2357,7 @@
     "services": [
       "srv31",
       "srv52",
-      "srv36",
-      ""
+      "srv36"
     ],
     "languages": [
       "ES",
@@ -2437,8 +2431,7 @@
     "categories": [
       "cat3",
       "cat7",
-      "cat6",
-      ""
+      "cat6" 
     ],
     "services": [
       "srv36"
@@ -2551,8 +2544,8 @@
     },
     "priorAppointment": "No",
     "categories": [
-      "cat4:cat1",
-      ""
+      "cat4",
+      "cat1"
     ],
     "services": [
       "srv42",
@@ -2596,8 +2589,7 @@
     ],
     "services": [
       "srv36",
-      "srv52",
-      ""
+      "srv52"
     ],
     "languages": [
       "ES",

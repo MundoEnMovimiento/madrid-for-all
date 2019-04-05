@@ -47,11 +47,27 @@ var vueResultTable = new Vue({
       }
       document.getElementById('servicesMap').scrollIntoView();
     },
-    printService : function(serviceKey) {
-      var serviceDetails = originalArrayOfServices.find(function(element) {
-        return element.key == serviceKey;
+    printCategories : function(categories) {
+      var output = "";
+      categories.forEach(function(categoryKey){
+        console.log("categoryKey: '" + categoryKey + "'");
+        output += originalArrayOfCategories.find(function(element) {
+          return element.key == categoryKey;
+        })[selectedLanguage];
+        output += " ";
       });
-      return "serviceDetails.key = " + serviceDetails[selectedLanguage];
+      return output;
+    },
+    printServices : function(services) {
+      var output = "";
+      services.forEach(function(serviceKey){
+        console.log("serviceKey: '" + serviceKey + "'");
+        output += originalArrayOfServices.find(function(element) {
+          return element.key == serviceKey;
+        })[selectedLanguage];
+        output += " ";
+      });
+      return output;
     }
   }
 });

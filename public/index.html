@@ -130,8 +130,8 @@
                 <div class="w3-row">
                   <div v-bind:id="'general-info-' + loc.ID" class="w3-col s12 m4 l4 infoTab" style="display:none; width:100%">
                     <p>Distrito: {{loc.district}}</p>
-                    <p>Categorias: {{loc.categories}}</p>
-                    <p v-for="service in loc.services">{{printService(service)}}</p>
+                    <p>Categorias: <div v-if="loc.categories">{{printCategories(loc.categories)}}</p>
+                    <p>Servicios: <div v-if="loc.services">{{printServices(loc.services)}} </div></p>
                   </div>
                   <div v-bind:id="'contact-info-' + loc.ID" class="w3-col s12 m4 l4 infoTab" style="display:none; width:100%">
                     <p>Dirección: {{loc.fullAddress}}</p>
