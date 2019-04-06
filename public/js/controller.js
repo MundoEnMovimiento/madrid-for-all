@@ -48,26 +48,24 @@ var vueResultTable = new Vue({
       document.getElementById('servicesMap').scrollIntoView();
     },
     printCategories : function(categories) {
-      var output = "";
+      var output = [];
       categories.forEach(function(categoryKey){
         console.log("categoryKey: '" + categoryKey + "'");
-        output += originalArrayOfCategories.find(function(element) {
+        output.push(originalArrayOfCategories.find(function(element) {
           return element.key == categoryKey;
-        })[selectedLanguage];
-        output += " ";
+        })[selectedLanguage]);
       });
-      return output;
+      return output.join(" - ");
     },
     printServices : function(services) {
-      var output = "";
+      var output = [];
       services.forEach(function(serviceKey){
         console.log("serviceKey: '" + serviceKey + "'");
-        output += originalArrayOfServices.find(function(element) {
+        output.push(originalArrayOfServices.find(function(element) {
           return element.key == serviceKey;
-        })[selectedLanguage];
-        output += " ";
+        })[selectedLanguage]);
       });
-      return output;
+      return output.join(" - ");
     }
   }
 });
