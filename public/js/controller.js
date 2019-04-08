@@ -59,13 +59,17 @@ var vueResultTable = new Vue({
     },
     printServices : function(services) {
       var output = [];
-      services.forEach(function(serviceKey){
-        console.log("serviceKey: '" + serviceKey + "'");
-        output.push(originalArrayOfServices.find(function(element) {
-          return element.key == serviceKey;
-        })[selectedLanguage]);
-      });
-      return output.join(" - ");
+      if(services ==  null) {
+        return " - "
+      } else {
+        services.forEach(function(serviceKey){
+          // console.log("serviceKey: '" + serviceKey + "'");
+          output.push(originalArrayOfServices.find(function(element) {
+            return element.key == serviceKey;
+          })[selectedLanguage]);
+        });
+        return output.join(" - ");
+      }
     }
   }
 });
@@ -85,7 +89,7 @@ function loadMap() {
 }
 /// callback to load the page content
 function initPageContent(loadedLocations) {
-  console.log("initPageContent...")
+  console.log("initPageContent with " + loadedLocations);
   originalArrayOfLocations = loadedLocations;
   arrayOfLocations = originalArrayOfLocations;
   initDBContent();
@@ -142,6 +146,7 @@ function addLocationsToMap() {
 }
 // function to update the resultTable
 function updateResults() {  
+  console.log("updateResults...");
   // update resultCounter and resultTable
   if(arrayOfLocations.length > 0) {
     vueResultCounter.message = arrayOfLocations.length  + " " + getTranslatedLabel("result-found");
