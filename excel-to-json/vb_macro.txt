@@ -1,94 +1,153 @@
-Function GetLatitude(address As String) As String
-  Dim strAddress As String
-  Dim strQuery As String
-  Dim strLatitude As String
-  Dim strLongitude As String
-  Dim gmapsKey As String
-  strAddress = URLEncode(address)
-  gmapsKey = "AIzaSyA-cYGCy5xyn4C5hH0rv7iWbw4nNGqcU0E"
-  'Assemble the query string
-  strQuery = "https://maps.googleapis.com/maps/api/geocode/xml?"
-  strQuery = strQuery & "address=" & strAddress
-  strQuery = strQuery & "&sensor=false"
-  strQuery = strQuery & "&key=" & gmapsKey
-  'define XML and HTTP components
-  Dim googleResult As New MSXML2.DOMDocument
-  Dim googleService As New MSXML2.XMLHTTP
-  Dim oNodes As MSXML2.IXMLDOMNodeList
-  Dim oNode As MSXML2.IXMLDOMNode
-  'create HTTP request to query URL - make sure to have
-  'that last "False" there for synchronous operation
-  'MsgBox strQuery
-  googleService.Open "GET", strQuery, False
-  googleService.send
-  'MsgBox googleService.responseText
-  googleResult.LoadXML (googleService.responseText)
-  Set oNodes = googleResult.getElementsByTagName("geometry")
-  If oNodes.Length = 1 Then
-    For Each oNode In oNodes
-      strLatitude = oNode.ChildNodes(0).ChildNodes(0).Text
-      GetLatitude = strLatitude
-    Next oNode
-  Else
-    GetLatitude = address & ": Not Found (try again, you may have done too many too fast)"
-  End If
+Option Explicit
+  
+Function GetCoordinates(Address As String) As String
+    
+    '-----------------------------------------------------------------------------------------------------
+    'This function returns the latitude and longitude of a given address using the Google Geocoding API.
+    'The function uses the "simplest" form of Google Geocoding API (sending only the address parameter),
+    'so, optional parameters such as bounds, language, region and components are NOT used.
+    'In case of multiple results (for example two cities sharing the same name), the function
+    'returns the FIRST OCCURRENCE, so be careful in the input address (tip: use the city name and the
+    'postal code if they are available).
+    
+    'NOTE: As Google points out, the use of the Google Geocoding API is subject to a limit of 40,000
+    'requests per month, so be careful not to exceed this limit. For more info check:
+    'https://cloud.google.com/maps-platform/pricing/sheet
+        
+    'In order to use this function you must enable the XML, v3.0 library from VBA editor:
+    'Go to Tools -> References -> check the Microsoft XML, v3.0.
+    'If you don't have the v3.0 use any other version of it (e.g. v6.0).
+    
+    '2018 Update: In order to use this function you will now need a valid API key.
+    'Check the next link that guides you on how to acquire a free API key:
+    'https://www.myengineeringworld.net/2018/02/how-to-get-free-google-api-key.html
+    
+    '2018 Update 2 (July): The EncodeURL function was added to avoid problems with special characters.
+    'This is a common problem with addresses that are from Greece, Serbia, Germany and other countries.
+    
+    'Written By:    Christos Samaras
+    'Date:          12/06/2014
+    'Last Updated:  09/08/2018
+    'E-mail:        xristos.samaras@gmail.com
+    'Site:          https://www.myengineeringworld.net
+    '-----------------------------------------------------------------------------------------------------
+    
+    'Declaring the necessary variables.
+    'The first 2 variables using 30 at the end, corresponding to the "Microsoft XML, v3.0" library
+    'in VBA (msxml3.dll). If you use any other version of it (e.g. v6.0), then declare these variables
+    'as XMLHTTP60 and DOMDocument60 respectively.
+    Dim ApiKey          As String
+    Dim Request         As New XMLHTTP30
+    Dim Results         As New DOMDocument30
+    Dim StatusNode      As IXMLDOMNode
+    Dim LatitudeNode    As IXMLDOMNode
+    Dim LongitudeNode   As IXMLDOMNode
+       
+    'Set your API key in this variable. Check this link for more info:
+    'https://www.myengineeringworld.net/2018/02/how-to-get-free-google-api-key.html
+    ApiKey = "AIzaSyA-cYGCy5xyn4C5hH0rv7iWbw4nNGqcU0E"
+    
+    'Check that an API key has been provided.
+    If ApiKey = vbNullString Or ApiKey = "Your API Key goes here!" Then
+        GetCoordinates = "Invalid API Key"
+        Exit Function
+    End If
+    
+    'Generic error handling.
+    On Error GoTo errorHandler
+    
+    'Create the request based on Google Geocoding API. Parameters (from Google page):
+    '- Address: The address that you want to geocode.
+    
+    'Note: The EncodeURL function was added to allow users from Greece, Poland, Germany, France and other countries
+    'geocode address from their home countries without a problem. The particular function (EncodeURL),
+    'returns a URL-encoded string without the special characters.
+    Request.Open "GET", "https://maps.googleapis.com/maps/api/geocode/xml?" _
+    & "&address=" & Application.EncodeURL(Address) & "&key=" & ApiKey, False
+    
+    'Send the request to the Google server.
+    Request.send
+    
+    'Read the results from the request.
+    Results.LoadXML Request.responseText
+    
+    'Get the status node value.
+    Set StatusNode = Results.SelectSingleNode("//status")
+    
+    'Based on the status node result, proceed accordingly.
+    Select Case UCase(StatusNode.Text)
+    
+        Case "OK"   'The API request was successful. At least one geocode was returned.
+            
+            'Get the latitude and longitude node values of the first geocode.
+            Set LatitudeNode = Results.SelectSingleNode("//result/geometry/location/lat")
+            Set LongitudeNode = Results.SelectSingleNode("//result/geometry/location/lng")
+            
+            'Return the coordinates as a string (latitude, longitude).
+            GetCoordinates = LatitudeNode.Text & ", " & LongitudeNode.Text
+        
+        Case "ZERO_RESULTS"   'The geocode was successful but returned no results.
+            GetCoordinates = "The address probably not exists"
+            
+        Case "OVER_QUERY_LIMIT" 'The requestor has exceeded the limit of 2500 request/day.
+            GetCoordinates = "Requestor has exceeded the server limit"
+            
+        Case "REQUEST_DENIED"   'The API did not complete the request.
+            GetCoordinates = "Server denied the request"
+            
+        Case "INVALID_REQUEST"  'The API request is empty or is malformed.
+            GetCoordinates = "Request was empty or malformed"
+        
+        Case "UNKNOWN_ERROR"    'Indicates that the request could not be processed due to a server error.
+            GetCoordinates = "Unknown error"
+        
+        Case Else   'Just in case...
+            GetCoordinates = "Error"
+        
+    End Select
+        
+    'In case of error, release the objects.
+errorHandler:
+    Set StatusNode = Nothing
+    Set LatitudeNode = Nothing
+    Set LongitudeNode = Nothing
+    Set Results = Nothing
+    Set Request = Nothing
+    
 End Function
-Function GetLongitud(address As String) As String
-  Dim strAddress As String
-  Dim strQuery As String
-  Dim strLatitude As String
-  Dim strLongitude As String
-  Dim gmapsKey As String
-  strAddress = URLEncode(address)
-  gmapsKey = "AIzaSyA-cYGCy5xyn4C5hH0rv7iWbw4nNGqcU0E"
-  'Assemble the query string
-  strQuery = "https://maps.googleapis.com/maps/api/geocode/xml?"
-  strQuery = strQuery & "address=" & strAddress
-  strQuery = strQuery & "&sensor=false"
-  strQuery = strQuery & "&key=" & gmapsKey
-  'define XML and HTTP components
-  Dim googleResult As New MSXML2.DOMDocument
-  Dim googleService As New MSXML2.XMLHTTP
-  Dim oNodes As MSXML2.IXMLDOMNodeList
-  Dim oNode As MSXML2.IXMLDOMNode
-  'create HTTP request to query URL - make sure to have
-  'that last "False" there for synchronous operation
-  'MsgBox strQuery
-  googleService.Open "GET", strQuery, False
-  googleService.send
-  'MsgBox googleService.responseText
-  googleResult.LoadXML (googleService.responseText)
-  Set oNodes = googleResult.getElementsByTagName("geometry")
-  If oNodes.Length = 1 Then
-    For Each oNode In oNodes
-      strLongitude = oNode.ChildNodes(0).ChildNodes(1).Text
-      GetLongitud = strLongitude
-    Next oNode
-  Else
-    GetLongitud = address & ": Not Found (try again, you may have done too many too fast)"
-  End If
+  
+'-------------------------------------------------------------------------------------------------------------------
+'The next two functions using the GetCoordinates function to get the latitude and the longitude of a given address.
+'-------------------------------------------------------------------------------------------------------------------
+Function GetLatitude(Address As String) As String
+    
+    'Declaring the necessary variable.
+    Dim Coordinates As String
+    
+    'Get the coordinates for the given address.
+    Coordinates = GetCoordinates(Address)
+    
+    'Return the latitude as a String
+    If Coordinates <> vbNullString Then
+        GetLatitude = Replace(Left(Coordinates, WorksheetFunction.Find(",", Coordinates) - 1), " ", "")
+    Else
+        GetLatitude = 0
+    End If
 End Function
-Public Function URLEncode(StringVal As String, Optional SpaceAsPlus As Boolean = False) As String
-  Dim StringLen As Long: StringLen = Len(StringVal)
-  If StringLen > 0 Then
-    ReDim result(StringLen) As String
-    Dim i As Long, CharCode As Integer
-    Dim Char As String, Space As String
-    If SpaceAsPlus Then Space = "+" Else Space = "%20"
-    For i = 1 To StringLen
-      Char = Mid$(StringVal, i, 1)
-      CharCode = Asc(Char)
-      Select Case CharCode
-      Case 97 To 122, 65 To 90, 48 To 57, 45, 46, 95, 126
-        result(i) = Char
-      Case 32
-        result(i) = Space
-      Case 0 To 15
-        result(i) = "%0" & Hex(CharCode)
-      Case Else
-        result(i) = "%" & Hex(CharCode)
-      End Select
-    Next i
-    URLEncode = Join(result, "")
-  End If
+  
+Function GetLongitude(Address As String) As String
+
+    'Declaring the necessary variable.
+    Dim Coordinates As String
+    
+    'Get the coordinates for the given address.
+    Coordinates = GetCoordinates(Address)
+    
+    'Return the longitude as a String
+    If Coordinates <> vbNullString Then
+        GetLongitude = Replace(Right(Coordinates, Len(Coordinates) - WorksheetFunction.Find(",", Coordinates)), " ", "")
+    Else
+        GetLongitude = 0
+    End If
+    
 End Function

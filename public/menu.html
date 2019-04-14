@@ -15,10 +15,18 @@
         <a id="targetChildren" href="#" onClick="onTargetChildrenClick()" class="w3-bar-item w3-button w3-hover-gray w3-medium"><i class="fas fa-child"></i></a>
         <a id="targetWomen" href="javascript:void(0)" onClick="onTargetWomenClick()" class="w3-bar-item w3-button w3-hover-gray w3-medium"><i class="fas fa-female"></i></a>
         <a id="targetOrigin" href="javascript:void(0)" onClick="onTargetOriginClick()" class="w3-bar-item w3-button w3-hover-gray w3-medium"><i class="fas fa-flag"></i></a>
+        <a id="targetLGTBI" href="javascript:void(0)" onClick="onTargetLGTBIClick()" class="w3-bar-item w3-button w3-hover-gray w3-medium"><i class="fas fa-star"></i></a>
     </div>
     <!-- Servicios -->
-    <div id="categories">
-        <h4>Loading categories...</h4>
+    <div id="sideBarMenu">
+        <div v-for="svcItem in listOfServices" class="w3-bar">
+            <img v-bind:id="svcItem.key + '-btn'" class="w3-bar-item w3-left w3-padding-small w3-hide-small" v-bind:src="'/assets/' + svcItem.icon" height="42" width="42">
+            <button v-bind:id="svcItem.key" class="w3-bar-item w3-button w3-hover-gray w3-medium w3-left-align w3-padding-small w3-mobile"  v-on:click="onCategoryClick(svcItem.key)">{{svcItem.ES}}</button>
+            <div v-bind:id="svcItem.key + '-child'" class="w3-hide">
+                <button v-bind:id="svcItem.key" v-on:click="onServiceClick(svcItem.key)" class="w3-bar-item w3-button w3-block w3-hover-gray w3-small w3-left-align w3-margin-left\">{{svcItem.ES}}</button>
+                <div v-bind:id="svcItem.key + '-child'" class="w3-hide"></div>
+            </div>
+        </div>
     </div>
     <!-- Bottom bar with social icons
     <div class="w3-bar w3-bottom">

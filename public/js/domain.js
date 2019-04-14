@@ -3,11 +3,10 @@ var dbName = 'madrid4all.db';
 var db = new PouchDB(dbName);
 var map;
 var originalArrayOfLocations = [];
-var originalArrayOfCategories = [];
 var originalArrayOfServices = [];
+var originalLocationServices = [];
 var arrayOfLocations = [];
 var markersOnMap = [];
-var selectedCategories = [];
 var selectedServices = [];
 var selectedLanguage = 'ES';
 var targetWomen = false;
@@ -24,7 +23,7 @@ function initDBContent() {
     db.info().then(function (result) {
         if (result.doc_count === 0) {
             console.log('DB empty! Lets add loaded locations in it...');
-            db.bulkDocs(arrayOfLocations).then(function (innerResult) {
+            db.bulkDocs(arrayOfLocations).then(function () {
                 console.log("Locations added successfully to DB. ");
                 createDBIndexes();
             }).catch(function (err) {
@@ -41,7 +40,8 @@ function createDBIndexes() {
     // create the necessary db indexes
     db.createIndex({
       index: {
-        fields: ['categories', 'orgName']
+        // TODO: Review teh indexes for the search
+        fields: ['orgName']
       }
     }).then(function (result) {
       console.log("Successfully created index over the categories");
@@ -54,7 +54,7 @@ function createDBIndexes() {
 function findLocationsInDatabase() {
     // TODO: Rename ID in the Json and Excel file to key or something less similar to _id
     // compose selector based on the user input
-    var searchCriterias = new Object();
+    /* var searchCriterias = new Object();
     var processedCategories = selectedCategories.slice(0);
     var processedServices = selectedServices.slice(0);
     // remove categories of any of their services are included in the search criteria
@@ -89,7 +89,6 @@ function findLocationsInDatabase() {
     }).then(function (result) {
       // clear previous results
       clearPreviousResults();
-      // TODO: Fix me! This 'arrayOfLocations' must contain gmaps.Locations(), not "markerData"
       arrayOfLocations = result["docs"];
       console.log(arrayOfLocations.length + " markers found for " + JSON.stringify(searchCriterias) + ".");
       // show found locations in the map
@@ -98,5 +97,5 @@ function findLocationsInDatabase() {
       updateResults(arrayOfLocations);
     }).catch(function (err) {
       console.log(err);
-    });
+    }); */
   }

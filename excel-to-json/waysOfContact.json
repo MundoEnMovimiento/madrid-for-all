@@ -1,30 +1,30 @@
 [
   {
-    "Key": "phone",
+    "key": "phone",
     "ES": "Llama por teléfono.",
     "EN": "Give us a phonecall.",
     "FR": "Contact par téléphone."
   },
   {
-    "Key": "visit",
+    "key": "visit",
     "ES": "Visita la sede.",
     "EN": "Visit us at our office.",
     "FR": "En se rendant sur place."
   },
   {
-    "Key": "email",
+    "key": "email",
     "ES": "Envía un email.",
     "EN": "Send us an email.",
     "FR": "Contact par mail."
   },
   {
-    "Key": "facebook",
+    "key": "facebook",
     "ES": "Escríbenos en facebook.",
     "EN": "Write us on facebook.",
     "FR": "Contact par facebook. "
   },
   {
-    "Key": "web",
+    "key": "web",
     "ES": "Contáctanos en nuestra web.",
     "EN": "Contact us through our website.",
     "FR": "Contactez-nous sur le web."

@@ -1,0 +1,38 @@
+[
+  {
+    "key": "OPEN",
+    "ES": "Abierto a todo el mundo",
+    "EN": "Open to everybody",
+    "FR": "Ouvert à tout le monde"
+  },
+  {
+    "key": "CHILD",
+    "ES": "Exclusivo para menores",
+    "EN": "Exclusive for minors",
+    "FR": "Exclusif pour mineurs"
+  },
+  {
+    "key": "WOMEN",
+    "ES": "Exclusivo para mujeres",
+    "EN": "Exclusive for women",
+    "FR": "Exclusif pour femmes"
+  },
+  {
+    "key": "LGTBIQ",
+    "ES": "LGTBIQ+",
+    "EN": "LGTBIQ+",
+    "FR": "LGTBIQ+"
+  },
+  {
+    "key": "AF",
+    "ES": "África",
+    "EN": "Africa",
+    "FR": "Afrique"
+  },
+  {
+    "key": "AFS",
+    "ES": "África subsahariana",
+    "EN": "Subsaharian Africa",
+    "FR": "Afrique sub-saharienne"
+  }
+]
