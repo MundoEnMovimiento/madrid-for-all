@@ -19,8 +19,8 @@
   <!-- development version, includes helpful console warnings -->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <!-- production version, optimized for size and speed 
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
--->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  -->
   <script src="./js/domain.js"></script>
   <script>
     selectedLanguage = 'ES';
@@ -51,7 +51,8 @@
     }
   </style>
 
-  <!-- Matomo -->
+  <!-- Matomo tracking. https://matomo.org/docs/installation/#install-the-javascript-tracking-tag
+  -->
   <script type="text/javascript">
     var _paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -85,7 +86,7 @@
         <a href="javascript:void(0)" onclick="onResetClick()" class="w3-button"><i class="far fa-times-circle"></i></a>
       </div>
     </div>
-    <!-- Target -->
+    <!-- Target filters -->
     <div id="target" class="w3-bar w3-margin-bottom">
       <a id="targetChildren" href="#" onClick="onTargetChildrenClick()"
         class="w3-bar-item w3-button w3-hover-gray w3-medium"><i class="fas fa-child"></i></a>
@@ -96,7 +97,7 @@
       <a id="targetLGTBI" href="javascript:void(0)" onClick="onTargetLGTBIClick()"
         class="w3-bar-item w3-button w3-hover-gray w3-medium"><i class="fas fa-star"></i></a>
     </div>
-    <!-- Servicios -->
+    <!-- List services in the sideBar -->
     <div id="sideBarMenu">
       <div v-for="svcItem in listOfServices" class="w3-bar">
         <div v-bind:id="svcItem.key" v-if="svcItem.key.indexOf('s0') != -1">

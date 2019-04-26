@@ -58,15 +58,17 @@ var vueResultTable = new Vue({
       if (locServicesItem == null) {
         return " - "
       } else {
-        Object.keys(locServicesItem).forEach(function (key, index) {
-          // the partern of the 'keys' for the services are 'c#s#'
-          if (key.startsWith("c")) {
-            //var svcId = key.substring(key.indexOf("s"), key.length);
-            var svcId = key;
+        Object.keys(locServicesItem).forEach(function (svcId, index) {
+          // the partern of the 'keys' for the services are 'c#s#'. Remember 'locationID' fields also exists
+          if (svcId.startsWith("c")) {
             // console.log("svcId: " + svcId);
-            output.push(originalArrayOfServices.find(function (element) {
+            output.push(originalServices.find(function (element) {
               return element.key == svcId;
             })[selectedLanguage])
+          } else {
+            if(svcId.localeCompare("locationID") != 0){
+              console.log("Invalid service key pattern : '" + svcId + "'");
+            }
           }
         });
       }
@@ -76,28 +78,33 @@ var vueResultTable = new Vue({
 });
 var vueSideBarMenu = new Vue({
   el: '#sideBarMenu',
-  data: { listOfServices: originalArrayOfServices },
+  data: { listOfServices: originalServices },
   methods: {
     // callback for the click on a category
     onCategoryClick: function (svcItem) {
-      console.log("Clicked on service " + svcItem.key + " with category " + svcItem.category);
-      this.onServiceClick(svcItem.key);
+      console.log("Clicked on category " + svcItem.key);
+      // update the UI
+      // if previously selected, means this is an 'un-selection'
+      var childServiceIDs = getChildServiceIDs(svcItem.key);
+      var childrenIncluded = childServiceIDs.reduce((previouslyIncluded, curChildId) => previouslyIncluded || selectedServices.includes(curChildId), false);
+      if (selectedServices.includes(svcItem.key) || childrenIncluded) {
+        if(childServiceIDs != null) {
+          childServiceIDs.forEach(function(curChildID){
+            w3.removeClass('#' + curChildID + '-btn', 'w3-text-red');
+          });
+        }
+      }
       w3.toggleClass("." + svcItem.category + "-child", 'w3-hide', 'w3-show');
+      // trigger the find operation
+      findLocationsInDatabase("CATEGORY", svcItem.key);
     },
     // calback for the click on service
     onServiceClick: function (serviceKey) {
       console.log("Clicked on service " + serviceKey);
-      if (selectedServices.includes(serviceKey)) {
-        // unselect service and search again
-        selectedServices.splice(selectedServices.indexOf(serviceKey), 1);
-      } else {
-        // select service and search again
-        selectedServices.push(serviceKey);
-      }
-      // trigger the find operation
-      findLocationsInDatabase();
       // update the UI
       w3.toggleClass('#' + serviceKey + '-btn', 'w3-text-red');
+      // trigger the find operation
+      findLocationsInDatabase("SERVICE", serviceKey);
     }
   }
 });
@@ -122,21 +129,21 @@ function initLocationServicesRelations(loadedLocationServicesRelations) {
 /// callback to load the page content
 function initPageContent(loadedLocations) {
   // console.log("initPageContent with " + loadedLocations);
-  originalArrayOfLocations = loadedLocations;
-  arrayOfLocations = originalArrayOfLocations;
+  originalLocations = loadedLocations;
+  arrayOfLocations = originalLocations;
   initDBContent();
   addLocationsToMap();
 }
 // callback to load menu content: categories, services, etc.
 function initMenuContent(loadedServices) {
   console.log("initMenuContent...");
-  originalArrayOfServices = loadedServices;
-  vueSideBarMenu.listOfServices = originalArrayOfServices;
+  originalServices = loadedServices;
+  vueSideBarMenu.listOfServices = originalServices;
   w3.getHttpObject("/data/locations.json", initPageContent);
 }
 // function to update the resultTable
 function updateResults() {
-  console.log("updateResults...");
+  // console.log("updateResults...");
   // update resultCounter and resultTable
   if (arrayOfLocations.length > 0) {
     vueResultCounter.message = arrayOfLocations.length + " " + getTranslatedLabel("result-found");
@@ -156,8 +163,6 @@ function addLocationsToMap() {
     //console.log("Adding marker " + markerData.orgName + ", " + markerData.address + " to the map...");
     addLocationToMap(markerData);
   });
-  // show table with the markers
-  updateResults();
 }
 // adds a marker to the map.
 function addLocationToMap(markerData) {
@@ -198,30 +203,39 @@ function onTextSearchInput(inputValue) {
 }
 // callback for the click on targetChild
 function onTargetChildrenClick() {
-  console.log("Clicked on targetChildren");
+  console.log("Clicked onTargetChildrenClick");
   targetChildren = !targetChildren;
   // trigger the find operation
-  findLocationsInDatabase();
+  findLocationsInDatabase("FILTER", -1);
   // update the UI
   w3.toggleClass('#targetChildren', 'w3-red');
 }
 // callback for the click on targetWomen
 function onTargetWomenClick() {
-  console.log("Clicked on targetWomen");
+  console.log("Clicked onTargetWomenClick");
   targetWomen = !targetWomen;
   // trigger the find operation
-  findLocationsInDatabase();
+  findLocationsInDatabase("FILTER", -1);
   // update the UI
   w3.toggleClass('#targetWomen', 'w3-red');
 }
 // callback for the click on targetOrigin
 function onTargetOriginClick() {
-  console.log("Clicked on targetOrigin");
+  console.log("Clicked onTargetOriginClick");
   targetOrigin = !targetOrigin;
   // trigger the find operation
-  findLocationsInDatabase();
+  findLocationsInDatabase("FILTER", -1);
   // update the UI
   w3.toggleClass('#targetOrigin', 'w3-red');
+}
+// callback for the click on targetLGTBI
+function onTargetLGTBIClick() {
+  console.log("Clicked onTargetLGTBIClick");
+  targetLGTBI = !targetLGTBI;
+  // trigger the find operation
+  findLocationsInDatabase("FILTER", -1);
+  // update the UI
+  w3.toggleClass('#targetLGTBI', 'w3-red');
 }
 // sets the map on all the displayed markers
 function setMapOnAllMarkers(map) {
@@ -249,7 +263,7 @@ function onResetClick() {
   w3.toggleClass('.w3-show', 'w3-show', 'w3-hide');
   // clear previous results
   clearPreviousResults();
-  initPageContent(originalArrayOfLocations);
+  initPageContent(originalLocations);
   // clean selected criterias
   selectedCategories = [];
   selectedServices = [];
@@ -318,6 +332,18 @@ function getTranslatedLabel(labelId) {
 // function to translate categories into labels
 function translateArrayOfCategories(arrayOfCategories) {
   console.log("translateArrayOfCategories: " + arrayOfCategories);
-  return arrayOfCategories.map(x => originalArrayOfCategories[x][selectedLanguage]);
+  return arrayOfCategories.map(x => originalCategories[x][selectedLanguage]);
+}
+// function to get the list of child services of the indicated one
+function getChildServiceIDs(curServiceID) {
+  console.log("getChildServices - curServiceID: " + curServiceID);
+  var listOfChildren = [];
+  var curServiceCat = curServiceID.substring(0, curServiceID.indexOf("s"));
+  originalServices.forEach(function (item) {
+    if (curServiceID != item.key && item.category == curServiceCat) {
+      listOfChildren.push(item.key);
+    }
+  });
+  return listOfChildren;
 }
 
