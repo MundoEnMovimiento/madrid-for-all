@@ -206,12 +206,12 @@
                   <div v-bind:id="'contact-info-' + loc.ID" class="w3-col s12 m4 l4 infoTab"
                     style="display:none; width:100%">
                     <p>Distrito: {{loc.district}} - Dirección: {{loc.fullAddress}}</p>
-                    <p>Medios de contacto preferidos: {{loc.waysOfContact}}</p>
-                    <p>Horarios: {{loc.timeTable}}</p>
+                    <p>Medios de contacto preferidos: {{printWaysOfContact(loc.waysOfContact)}}</p>
+                    <p>Horarios: {{printTimetable(loc.timeTable)}}</p>
                   </div>
                   <div v-bind:id="'extra-info-' + loc.ID" class="w3-col s12 m4 l4 infoTab"
                     style="display:none; width:100%">
-                    <p>{{loc.additionalInfo}}</p>
+                    <p>{{printAdditionalInfo(loc.additionalInfo)}}</p>
                   </div>
                 </div>
               </td>

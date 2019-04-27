@@ -73,6 +73,16 @@ var vueResultTable = new Vue({
         });
       }
       return output.join(" - ");
+    },
+    printAdditionalInfo : function(additionalInfo){
+      return additionalInfo[selectedLanguage];
+    },
+    printTimetable : function(timeTable){
+      return timeTable[selectedLanguage];
+    },
+    printWaysOfContact : function(waysOfContact) {
+      // TODO: Find the translations
+      return waysOfContact;
     }
   }
 });
