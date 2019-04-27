@@ -1,38 +1,22 @@
 [
   {
     "locationID": "loc1",
-    "c1s1": [
+    "c3s1": [
       "OPEN"
     ],
-    "c1s2": [
-      "OPEN",
-      "CHILD"
-    ],
-    "c1s3": [
+    "c4s3": [
       "OPEN"
     ],
-    "c1s4": [
+    "c7s0": [
       "OPEN"
-    ],
+    ]
+  },
+  {
+    "locationID": "loc2",
     "c1s5": [
-      "WOMEN"
-    ],
-    "c2s3": [
       "OPEN"
     ],
-    "c2s9": [
-      "OPEN"
-    ],
-    "c3s2": [
-      "OPEN"
-    ],
-    "c4s1": [
-      "OPEN"
-    ],
-    "c5s2": [
-      "OPEN"
-    ],
-    "c6s0": [
+    "c4s3": [
       "OPEN"
     ],
     "c10s0": [
@@ -40,130 +24,26 @@
     ]
   },
   {
-    "locationID": "loc2",
-    "c1s2": [
-      "OPEN"
-    ],
-    "c1s3": [
-      "WOMEN",
-      "CHILD"
-    ],
-    "c1s6": [
-      "OPEN"
-    ],
-    "c2s4": [
-      "OPEN"
-    ],
-    "c2s10": [
-      "OPEN"
-    ],
-    "c3s3": [
-      "OPEN"
-    ],
-    "c4s2": [
-      "OPEN"
-    ],
-    "c5s3": [
-      "OPEN"
-    ]
-  },
-  {
     "locationID": "loc3",
-    "c1s1": [
-      "OPEN"
-    ],
-    "c1s3": [
-      "OPEN"
-    ],
-    "c1s7": [
-      "OPEN"
-    ],
-    "c2s1": [
-      "OPEN"
-    ],
-    "c2s5": [
-      "OPEN"
-    ],
-    "c2s7": [
-      "OPEN"
-    ],
-    "c2s11": [
-      "OPEN"
-    ],
-    "c3s4": [
-      "OPEN"
-    ],
-    "c3s6": [
-      "OPEN"
-    ],
-    "c4s3": [
-      "OPEN"
-    ],
-    "c5s4": [
-      "OPEN"
-    ],
-    "c5s6": [
-      "OPEN"
-    ],
-    "c8s0": [
+    "c1s2": [
       "OPEN"
     ]
   },
   {
     "locationID": "loc4",
-    "c1s4": [
-      "OPEN",
-      "WOMEN"
-    ],
-    "c2s2": [
-      "OPEN"
-    ],
-    "c2s8": [
-      "OPEN"
-    ],
-    "c3s1": [
-      "OPEN"
-    ],
-    "c5s1": [
-      "OPEN"
-    ],
-    "c5s7": [
-      "OPEN"
-    ],
-    "c9s0": [
+    "c1s5": [
       "OPEN"
     ]
   },
   {
     "locationID": "loc5",
-    "c1s3": [
+    "c2s11": [
       "OPEN"
     ],
-    "c1s5": [
-      "OPEN"
+    "c4s3": [
+      "CHILD"
     ],
-    "c1s6": [
-      "OPEN",
-      "WOMEN"
-    ],
-    "c2s3": [
-      "OPEN",
-      "WOMEN"
-    ],
-    "c2s9": [
-      "OPEN",
-      "WOMEN"
-    ],
-    "c3s2": [
-      "OPEN"
-    ],
-    "c4s1": [
-      "OPEN"
-    ],
-    "c5s2": [
-      "OPEN"
-    ],
-    "c6s0": [
+    "c7s0": [
       "OPEN"
     ],
     "c10s0": [
@@ -172,50 +52,10 @@
   },
   {
     "locationID": "loc6",
-    "c1s1": [
-      "CHILD"
-    ],
-    "c1s7": [
-      "CHILD"
-    ],
-    "c2s5": [
-      "CHILD"
-    ],
-    "c2s11": [
-      "CHILD"
-    ],
-    "c3s4": [
-      "CHILD"
-    ],
-    "c4s3": [
-      "CHILD"
-    ],
-    "c5s4": [
-      "CHILD"
-    ]
-  },
-  {
-    "locationID": "loc7",
     "c1s5": [
       "OPEN"
     ],
-    "c1s7": [
-      "OPEN"
-    ],
-    "c2s3": [
-      "OPEN"
-    ],
-    "c2s5": [
-      "OPEN"
-    ],
-    "c2s9": [
-      "OPEN"
-    ],
-    "c2s11": [
-      "OPEN",
-      "WOMEN"
-    ],
-    "c3s2": [
+    "c3s1": [
       "OPEN"
     ],
     "c3s4": [
@@ -226,62 +66,11 @@
     ],
     "c4s3": [
       "OPEN"
-    ],
-    "c5s2": [
-      "OPEN"
-    ],
-    "c5s4": [
-      "OPEN"
-    ],
-    "c6s0": [
-      "OPEN"
-    ],
-    "c10s0": [
-      "OPEN"
     ]
   },
   {
-    "locationID": "loc8",
-    "c1s1": [
-      "CHILD"
-    ],
-    "c1s3": [
-      "CHILD"
-    ],
-    "c2s6": [
-      "OPEN"
-    ],
-    "c2s12": [
-      "OPEN"
-    ],
-    "c3s5": [
-      "OPEN"
-    ],
-    "c4s4": [
-      "OPEN"
-    ],
-    "c5s5": [
-      "OPEN"
-    ],
-    "c7s0": [
-      "OPEN"
-    ]
-  },
-  {
-    "locationID": "loc9",
-    "c1s6": [
-      "OPEN"
-    ],
-    "c2s1": [
-      "OPEN"
-    ],
-    "c2s4": [
-      "OPEN"
-    ],
-    "c2s7": [
-      "OPEN"
-    ],
-    "c2s10": [
+    "locationID": "loc7",
+    "c3s1": [
       "OPEN"
     ],
     "c3s3": [
@@ -290,173 +79,209 @@
     "c3s6": [
       "OPEN"
     ],
-    "c4s2": [
+    "c7s0": [
       "OPEN"
     ],
-    "c5s3": [
+    "c10s0": [
+      "LGTBIQ",
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc8",
+    "c3s1": [
       "OPEN"
     ],
-    "c5s6": [
+    "c3s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc9",
+    "c1s1": [
       "OPEN"
     ],
-    "c8s0": [
+    "c7s0": [
+      "OPEN"
+    ],
+    "c10s0": [
       "OPEN"
     ]
   },
   {
     "locationID": "loc10",
-    "c1s1": [
-      "WOMEN"
-    ],
-    "c1s3": [
-      "CHILD"
-    ],
-    "c1s5": [
-      "CHILD"
-    ],
-    "c2s2": [
-      "OPEN"
-    ],
-    "c2s8": [
-      "OPEN"
-    ],
-    "c3s1": [
-      "OPEN"
-    ],
-    "c5s1": [
-      "OPEN"
-    ],
-    "c5s7": [
-      "OPEN"
-    ],
-    "c9s0": [
-      "OPEN"
-    ]
-  },
-  {
-    "locationID": "loc11",
-    "c1s1": [
-      "OPEN"
-    ],
-    "c2s3": [
-      "OPEN"
-    ],
-    "c2s6": [
-      "CHILD"
-    ],
-    "c2s9": [
-      "OPEN"
-    ],
-    "c2s12": [
-      "CHILD"
-    ],
-    "c3s2": [
-      "OPEN"
-    ],
-    "c3s5": [
-      "CHILD"
-    ],
-    "c4s1": [
-      "OPEN"
-    ],
-    "c4s4": [
-      "OPEN",
-      "WOMEN"
-    ],
-    "c5s2": [
-      "OPEN"
-    ],
-    "c5s5": [
-      "CHILD"
-    ],
-    "c6s0": [
-      "OPEN"
-    ],
-    "c7s0": [
-      "CHILD"
-    ],
-    "c10s0": [
-      "OPEN"
-    ]
-  },
-  {
-    "locationID": "loc12",
-    "c1s3": [
-      "WOMEN"
-    ],
-    "c1s5": [
-      "CHILD"
-    ]
-  },
-  {
-    "locationID": "loc13",
-    "c1s1": [
-      "LGTBI"
-    ],
-    "c1s3": [
-      "OPEN"
-    ],
-    "c2s6": [
-      "CHILD"
-    ],
-    "c2s12": [
-      "CHILD"
-    ],
-    "c3s5": [
-      "CHILD"
-    ],
-    "c4s4": [
-      "CHILD"
-    ],
-    "c5s5": [
-      "CHILD"
-    ],
-    "c7s0": [
-      "CHILD"
-    ]
-  },
-  {
-    "locationID": "loc14",
-    "c1s1": [
-      "CHILD"
-    ],
-    "c1s5": [
-      "WOMEN"
-    ],
-    "c1s7": [
-      "OPEN"
-    ],
-    "c2s3": [
-      "OPEN"
-    ],
-    "c2s5": [
-      "OPEN"
-    ],
-    "c2s9": [
-      "OPEN"
-    ],
-    "c2s11": [
-      "OPEN"
-    ],
-    "c3s2": [
-      "OPEN"
-    ],
     "c3s4": [
       "OPEN"
     ],
-    "c4s1": [
+    "c3s5": [
       "OPEN"
     ],
     "c4s3": [
       "OPEN"
     ],
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc11",
+    "c3s2": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ],
+    "c4s1": [
+      "OPEN"
+    ],
+    "c4s2": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ],
+    "c4s4": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc12",
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c3s5": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc13",
+    "c1s3": [
+      "OPEN"
+    ],
+    "c1s5": [
+      "OPEN"
+    ],
+    "c3s2": [
+      "OPEN"
+    ],
+    "c4s2": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ],
+    "c4s4": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc14",
+    "c2s11": [
+      "OPEN"
+    ],
+    "c2s12": [
+      "OPEN"
+    ],
+    "c3s5": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc15",
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s2": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c4s2": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc16",
+    "c2s11": [
+      "OPEN"
+    ],
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc17",
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc18",
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc19",
+    "c3s4": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc20",
+    "c3s2": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc21",
+    "c5s1": [
+      "OPEN"
+    ],
     "c5s2": [
-      "OPEN"
-    ],
-    "c5s4": [
-      "OPEN"
-    ],
-    "c6s0": [
       "OPEN"
     ],
     "c10s0": [
@@ -464,47 +289,14 @@
     ]
   },
   {
-    "locationID": "loc15",
-    "c1s3": [
-      "LGTBI"
-    ],
-    "c1s5": [
+    "locationID": "loc22",
+    "c3s1": [
       "OPEN"
     ],
-    "c2s6": [
-      "WOMEN"
-    ],
-    "c2s12": [
-      "WOMEN"
-    ],
-    "c3s5": [
-      "WOMEN"
-    ],
-    "c4s4": [
-      "WOMEN"
-    ],
-    "c5s5": [
-      "WOMEN"
-    ],
-    "c7s0": [
-      "WOMEN"
-    ]
-  },
-  {
-    "locationID": "loc16",
-    "c1s3": [
-      "CHILD"
-    ],
-    "c2s1": [
+    "c3s2": [
       "OPEN"
     ],
-    "c2s6": [
-      "OPEN"
-    ],
-    "c2s7": [
-      "OPEN"
-    ],
-    "c2s12": [
+    "c3s3": [
       "OPEN"
     ],
     "c3s5": [
@@ -513,13 +305,381 @@
     "c3s6": [
       "OPEN"
     ],
-    "c4s4": [
+    "c4s2": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc23",
+    "c2s11": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc24",
+    "c2s11": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc25",
+    "c1s1": [
+      "OPEN",
+      "WOMEN",
+      "CHILD"
+    ],
+    "c1s3": [
+      "AFS"
+    ],
+    "c1s4": [
+      "AFS"
+    ],
+    "c1s5": [
+      "AFS"
+    ],
+    "c1s6": [
+      "AFS"
+    ],
+    "c1s7": [
+      "AFS"
+    ],
+    "c2s1": [
+      "AFS",
+      "WOMEN"
+    ],
+    "c2s9": [
+      "WOMEN"
+    ],
+    "c2s11": [
+      "AFS",
+      "WOMEN"
+    ],
+    "c2s12": [
+      "AFS",
+      "WOMEN"
+    ],
+    "c3s1": [
+      "AFS",
+      "WOMEN"
+    ],
+    "c3s3": [
+      "AFS"
+    ],
+    "c3s5": [
+      "AFS",
+      "WOMEN"
+    ],
+    "c4s3": [
+      "AFS",
+      "CHILD"
+    ],
+    "c5s5": [
+      "WOMEN"
+    ],
+    "c7s0": [
+      "AFS",
+      "WOMEN"
+    ],
+    "c10s0": [
+      "AFS",
+      "WOMEN",
+      "CHILD"
+    ]
+  },
+  {
+    "locationID": "loc26",
+    "c1s1": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c2s2": [
+      "OPEN"
+    ],
+    "c2s4": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c2s11": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c3s1": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c4s3": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c8s0": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c10s0": [
+      "LGTBIQ",
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc27",
+    "c3s4": [
+      "CHILD"
+    ],
+    "c4s1": [
+      "CHILD"
+    ],
+    "c4s3": [
+      "CHILD"
+    ]
+  },
+  {
+    "locationID": "loc28",
+    "c2s2": [
+      "OPEN",
+      "LGTBIQ"
+    ],
+    "c10s0": [
+      "LGTBIQ"
+    ]
+  },
+  {
+    "locationID": "loc29",
+    "c2s11": [
+      "WOMEN"
+    ],
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "WOMEN"
+    ],
+    "c3s6": [
+      "WOMEN"
+    ],
+    "c4s3": [
+      "WOMEN"
+    ],
+    "c7s0": [
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc30",
+    "c2s2": [
+      "OPEN"
+    ],
+    "c2s11": [
+      "OPEN",
+      "WOMEN"
+    ],
+    "c5s5": [
+      "WOMEN"
+    ],
+    "c5s6": [
+      "WOMEN"
+    ],
+    "c10s0": [
+      "OPEN",
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc31",
+    "c2s11": [
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc32",
+    "c1s5": [
+      "OPEN"
+    ],
+    "c3s1": [
+      "OPEN"
+    ],
+    "c4s1": [
+      "OPEN"
+    ],
+    "c4s2": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc33",
+    "c2s11": [
+      "WOMEN"
+    ],
+    "c4s3": [
+      "WOMEN"
+    ],
+    "c5s5": [
+      "WOMEN"
+    ],
+    "c5s6": [
+      "WOMEN"
+    ],
+    "c7s0": [
+      "WOMEN"
+    ],
+    "c10s0": [
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc34",
+    "c3s5": [
       "OPEN"
     ],
     "c5s5": [
+      "WOMEN"
+    ],
+    "c7s0": [
       "OPEN"
     ],
-    "c5s6": [
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc35",
+    "c1s5": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc36"
+  },
+  {
+    "locationID": "loc37",
+    "c3s5": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc38",
+    "c1s1": [
+      "OPEN"
+    ],
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc39",
+    "c3s1": [
+      "OPEN",
+      "WOMEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN",
+      "WOMEN"
+    ],
+    "c4s2": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ],
+    "c8s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc40",
+    "c3s1": [
+      "WOMEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc41",
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc42",
+    "c1s1": [
+      "OPEN",
+      "WOMEN",
+      "CHILD"
+    ],
+    "c1s5": [
+      "OPEN"
+    ],
+    "c2s11": [
+      "WOMEN"
+    ],
+    "c5s5": [
+      "WOMEN"
+    ],
+    "c6s0": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN",
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc43",
+    "c2s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc44",
+    "c3s4": [
+      "OPEN"
+    ],
+    "c3s5": [
+      "OPEN"
+    ],
+    "c4s2": [
+      "OPEN"
+    ],
+    "c5s1": [
       "OPEN"
     ],
     "c7s0": [
@@ -530,147 +690,321 @@
     ]
   },
   {
-    "locationID": "loc17",
-    "c1s5": [
-      "LGTBI"
-    ],
-    "c2s2": [
-      "OPEN"
-    ],
-    "c2s8": [
-      "OPEN"
-    ],
-    "c3s1": [
-      "OPEN"
-    ],
-    "c5s1": [
-      "OPEN"
-    ],
-    "c5s7": [
-      "OPEN"
-    ],
-    "c9s0": [
+    "locationID": "loc45",
+    "c1s2": [
       "OPEN"
     ]
   },
   {
-    "locationID": "loc18",
-    "c1s1": [
-      "OPEN"
-    ],
+    "locationID": "loc46",
     "c1s2": [
-      "CHILD"
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc47",
+    "c1s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc48",
+    "c1s4": [
+      "OPEN"
     ],
     "c1s5": [
-      "CHILD"
-    ],
-    "c2s3": [
       "OPEN"
     ],
-    "c2s6": [
-      "LGTBI"
-    ],
-    "c2s9": [
+    "c1s6": [
       "OPEN"
     ],
-    "c2s12": [
-      "LGTBI"
-    ],
-    "c3s2": [
+    "c2s1": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc49",
+    "c1s3": [
       "OPEN"
     ],
-    "c3s5": [
-      "LGTBI"
-    ],
-    "c4s1": [
+    "c1s4": [
       "OPEN"
     ],
-    "c4s4": [
-      "LGTBI"
-    ],
-    "c5s2": [
+    "c1s6": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc50",
+    "c1s2": [
       "OPEN"
     ],
-    "c5s5": [
-      "LGTBI"
-    ],
-    "c6s0": [
+    "c1s4": [
       "OPEN"
     ],
-    "c7s0": [
-      "LGTBI"
+    "c1s6": [
+      "OPEN"
+    ],
+    "c2s11": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
     ],
     "c10s0": [
       "OPEN"
     ]
   },
   {
-    "locationID": "loc19",
-    "c1s2": [
-      "OPEN"
-    ],
-    "c1s3": [
-      "WOMEN"
-    ],
-    "c2s6": [
-      "CHILD"
-    ],
-    "c2s12": [
-      "CHILD"
-    ],
-    "c3s5": [
-      "CHILD"
-    ],
-    "c4s4": [
-      "CHILD"
-    ],
-    "c5s5": [
-      "CHILD"
-    ],
-    "c7s0": [
-      "CHILD"
-    ]
-  },
-  {
-    "locationID": "loc20",
-    "c1s3": [
-      "OPEN"
-    ],
-    "c1s7": [
-      "OPEN"
-    ],
-    "c2s2": [
-      "CHILD"
-    ],
-    "c2s5": [
-      "OPEN"
-    ],
-    "c2s8": [
-      "CHILD"
-    ],
+    "locationID": "loc51",
     "c2s11": [
       "OPEN"
     ],
     "c3s1": [
-      "CHILD"
+      "OPEN"
     ],
     "c3s4": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc52",
+    "c3s1": [
+      "AF",
+      "WOMEN"
+    ],
+    "c3s6": [
+      "AF",
+      "WOMEN"
+    ],
+    "c5s2": [
+      "OPEN"
+    ],
+    "c5s7": [
+      "AF",
+      "WOMEN"
+    ],
+    "c8s0": [
+      "AF",
+      "WOMEN"
+    ],
+    "c10s0": [
+      "AF",
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc53",
+    "c2s1": [
+      "OPEN"
+    ],
+    "c2s2": [
+      "OPEN"
+    ],
+    "c2s3": [
+      "OPEN"
+    ],
+    "c2s11": [
+      "OPEN"
+    ],
+    "c8s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc54",
+    "c2s11": [
+      "OPEN"
+    ],
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ],
+    "c5s2": [
+      "WOMEN"
+    ],
+    "c5s5": [
+      "WOMEN"
+    ],
+    "c5s6": [
+      "WOMEN"
+    ],
+    "c5s7": [
+      "WOMEN"
+    ],
+    "c6s0": [
+      "OPEN"
+    ],
+    "c8s0": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc55",
+    "c5s5": [
+      "WOMEN"
+    ],
+    "c7s0": [
+      "WOMEN"
+    ],
+    "c10s0": [
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc56",
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc57",
+    "c2s11": [
+      "OPEN"
+    ],
+    "c5s1": [
+      "OPEN"
+    ],
+    "c5s2": [
+      "OPEN"
+    ],
+    "c5s3": [
+      "OPEN",
+      "WOMEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc58",
+    "c1s1": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc59",
+    "c2s2": [
+      "OPEN"
+    ],
+    "c2s11": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c5s4": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c5s5": [
+      "LGTBIQ",
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc60",
+    "c2s2": [
+      "OPEN"
+    ],
+    "c2s11": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c4s3": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c5s5": [
+      "LGTBIQ",
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc61",
+    "c3s1": [
+      "OPEN"
+    ],
+    "c5s2": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc62",
+    "c10s0": [
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc63",
+    "c3s6": [
+      "OPEN"
+    ],
+    "c6s0": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc64",
+    "c1s1": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc65",
+    "c2s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc66",
+    "c3s1": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc67",
+    "c3s6": [
+      "OPEN"
+    ],
+    "c4s2": [
       "OPEN"
     ],
     "c4s3": [
       "OPEN"
     ],
-    "c5s1": [
-      "CHILD"
-    ],
-    "c5s4": [
+    "c4s4": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc68",
+    "c3s6": [
       "OPEN"
     ],
-    "c5s7": [
-      "CHILD"
-    ],
-    "c9s0": [
-      "CHILD"
+    "c5s1": [
+      "OPEN"
     ]
   }
 ]

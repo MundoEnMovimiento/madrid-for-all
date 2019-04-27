@@ -12,7 +12,7 @@ var selectedLanguage = 'ES'
 var targetWomen = false;
 var targetChildren = false;
 var targetOrigin = false;
-var targetLGTBI = false;
+var targetLGTBIQ = false;
 // lat and lng of the "main" city used to center the map
 var mainCityGeoCode = {
   "lat": 40.4168,
@@ -153,10 +153,24 @@ function findLocationsInDatabase(searchType, serviceKey) {
       return curService + ":CHILD"
     });
   } else if (targetOrigin) {
-    console.error("Filter by origin not implemented yet...");
-  } else if (targetLGTBI) {
+    
+    var afServices = processedServices.slice(0);
+    var afsServices = processedServices.slice(0);
+
+    afServices = afServices.map(function (curService) {
+      return curService + ":AF";
+    });
+
+    afsServices = afsServices.map(function (curService) {
+      return curService + ":AFS";
+    });
+
+    processedServices = processedServices.concat(afServices);
+    processedServices = processedServices.concat(afsServices);
+
+  } else if (targetLGTBIQ) {
     processedServices = processedServices.map(function (curService) {
-      return curService + ":LGTBI"
+      return curService + ":LGTBIQ"
     });
   } else {
     // we need to include all of the possible combinations
@@ -171,19 +185,24 @@ function findLocationsInDatabase(searchType, serviceKey) {
     childServices = childServices.map(function (curService) {
       return curService.replace("OPEN", "CHILD");
     });
-    var originServices = processedServices.slice(0);
-    originServices = originServices.map(function (curService) {
-      return curService.replace("OPEN", "ORIGIN");
+    var afServices = processedServices.slice(0);
+    afServices = afServices.map(function (curService) {
+      return curService.replace("OPEN", "AF");
     });
-    var lgtbiServices = processedServices.slice(0);
-    lgtbiServices = lgtbiServices.map(function (curService) {
-      return curService.replace("OPEN", "LGTBI");
+    var afsServices = processedServices.slice(0);
+    afsServices = afsServices.map(function (curService) {
+      return curService.replace("OPEN", "AFS");
+    });
+    var lgtbiqServices = processedServices.slice(0);
+    lgtbiServices = lgtbiqServices.map(function (curService) {
+      return curService.replace("OPEN", "LGTBIQ");
     });
 
     processedServices = processedServices.concat(womenServices);
     processedServices = processedServices.concat(childServices);
-    processedServices = processedServices.concat(originServices);
-    processedServices = processedServices.concat(lgtbiServices);
+    processedServices = processedServices.concat(afServices);
+    processedServices = processedServices.concat(afsServices);
+    processedServices = processedServices.concat(lgtbiqServices);
   }
   console.log("processedServices after filters: " + processedServices);
   // compose the searcCriterias

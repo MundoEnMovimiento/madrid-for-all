@@ -132,7 +132,7 @@ function initPageContent(loadedLocations) {
   originalLocations = loadedLocations;
   arrayOfLocations = originalLocations;
   initDBContent();
-  addLocationsToMap();
+  updateResultsAndMap();
 }
 // callback to load menu content: categories, services, etc.
 function initMenuContent(loadedServices) {
@@ -141,28 +141,26 @@ function initMenuContent(loadedServices) {
   vueSideBarMenu.listOfServices = originalServices;
   w3.getHttpObject("/data/locations.json", initPageContent);
 }
-// function to update the resultTable
-function updateResults() {
-  // console.log("updateResults...");
+// display array of markers on the map
+function updateResultsAndMap() {
+  // console.log("updateResultsAndMap...");
+  // add the markers to the map
+  arrayOfLocations.forEach(markerData => {
+    //console.log("Adding marker " + markerData.orgName + ", " + markerData.address + " to the map...");
+    addLocationToMap(markerData);
+  });
   // update resultCounter and resultTable
   if (arrayOfLocations.length > 0) {
     vueResultCounter.message = arrayOfLocations.length + " " + getTranslatedLabel("result-found");
     vueResultTable.locations = arrayOfLocations;
-    w3.sortHTML('#resultTable', '.item', 'td:nth-child(1')
+    w3.show('#resultTable');
+    w3.sortHTML('#resultTable', '.item', 'td:nth-child(1)')
   } else {
     vueResultCounter.message = getTranslatedLabel("no-result-found");
     vueResultTable.locations = [];
     w3.hide('#resultTable');
   }
   console.log("vueResultCounter.message: " + vueResultCounter.message);
-}
-// display array of markers on the map
-function addLocationsToMap() {
-  // add the markers to the map
-  arrayOfLocations.forEach(markerData => {
-    //console.log("Adding marker " + markerData.orgName + ", " + markerData.address + " to the map...");
-    addLocationToMap(markerData);
-  });
 }
 // adds a marker to the map.
 function addLocationToMap(markerData) {
@@ -228,14 +226,14 @@ function onTargetOriginClick() {
   // update the UI
   w3.toggleClass('#targetOrigin', 'w3-red');
 }
-// callback for the click on targetLGTBI
-function onTargetLGTBIClick() {
+// callback for the click on targetLGTBIQ
+function onTargetLGTBIQClick() {
   console.log("Clicked onTargetLGTBIClick");
-  targetLGTBI = !targetLGTBI;
+  targetLGTBIQ = !targetLGTBIQ;
   // trigger the find operation
   findLocationsInDatabase("FILTER", -1);
   // update the UI
-  w3.toggleClass('#targetLGTBI', 'w3-red');
+  w3.toggleClass('#targetLGTBIQ', 'w3-red');
 }
 // sets the map on all the displayed markers
 function setMapOnAllMarkers(map) {
