@@ -212,38 +212,66 @@ function onTextSearchInput(inputValue) {
 // callback for the click on targetChild
 function onTargetChildrenClick() {
   console.log("Clicked onTargetChildrenClick");
-  targetChildren = !targetChildren;
-  // trigger the find operation
-  findLocationsInDatabase("FILTER", -1);
   // update the UI
   w3.toggleClass('#targetChildren', 'w3-red');
+  w3.removeClass('#targetLGTBIQ', 'w3-red');
+  w3.removeClass('#targetWomen', 'w3-red');
+  w3.removeClass('#targetOrigin', 'w3-red');
+  // toggle this filter and disable the others
+  targetChildren = !targetChildren;
+  targetLGTBIQ = false;
+  targetWomen = false;
+  targetOrigin = false;
+  // trigger the find operation
+  findLocationsInDatabase("FILTER", -1);
 }
 // callback for the click on targetWomen
 function onTargetWomenClick() {
   console.log("Clicked onTargetWomenClick");
-  targetWomen = !targetWomen;
-  // trigger the find operation
-  findLocationsInDatabase("FILTER", -1);
   // update the UI
   w3.toggleClass('#targetWomen', 'w3-red');
+  w3.removeClass('#targetChildren', 'w3-red');
+  w3.removeClass('#targetLGTBIQ', 'w3-red');
+  w3.removeClass('#targetOrigin', 'w3-red');
+  // toggle this filter and disable the others
+  targetWomen = !targetWomen;
+  targetChildren = false;
+  targetLGTBIQ = false;
+  targetOrigin = false;
+  // trigger the find operation
+  findLocationsInDatabase("FILTER", -1);
 }
 // callback for the click on targetOrigin
 function onTargetOriginClick() {
   console.log("Clicked onTargetOriginClick");
-  targetOrigin = !targetOrigin;
-  // trigger the find operation
-  findLocationsInDatabase("FILTER", -1);
   // update the UI
   w3.toggleClass('#targetOrigin', 'w3-red');
+  w3.removeClass('#targetChildren', 'w3-red');
+  w3.removeClass('#targetWomen', 'w3-red');
+  w3.removeClass('#targetLGTBIQ', 'w3-red');
+  // toggle this filter and disable the others
+  targetOrigin = !targetOrigin;
+  targetChildren = false;
+  targetWomen = false;
+  targetLGTBIQ = false;
+  // trigger the find operation
+  findLocationsInDatabase("FILTER", -1);
 }
 // callback for the click on targetLGTBIQ
 function onTargetLGTBIQClick() {
   console.log("Clicked onTargetLGTBIClick");
-  targetLGTBIQ = !targetLGTBIQ;
-  // trigger the find operation
-  findLocationsInDatabase("FILTER", -1);
   // update the UI
   w3.toggleClass('#targetLGTBIQ', 'w3-red');
+  w3.removeClass('#targetChildren', 'w3-red');
+  w3.removeClass('#targetWomen', 'w3-red');
+  w3.removeClass('#targetOrigin', 'w3-red');
+  // toggle this filter and disable the others
+  targetLGTBIQ = !targetLGTBIQ;
+  targetChildren = false;
+  targetWomen = false;
+  targetOrigin = false;
+  // trigger the find operation
+  findLocationsInDatabase("FILTER", -1);
 }
 // sets the map on all the displayed markers
 function setMapOnAllMarkers(map) {
