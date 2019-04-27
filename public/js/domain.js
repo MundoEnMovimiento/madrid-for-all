@@ -218,9 +218,7 @@ function findLocationsInDatabase(searchType, serviceKey) {
     arrayOfLocations = result["docs"];
     // console.log(arrayOfLocations.length + " markers found for " + JSON.stringify(searchCriterias) + ".");
     // show found locations in the map
-    addLocationsToMap(arrayOfLocations);
-    // update result table with the found locations
-    updateResults(arrayOfLocations);
+    updateResultsAndMap(arrayOfLocations);
   }).catch(function (err) {
     console.log(err);
   });
