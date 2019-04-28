@@ -67,7 +67,7 @@ function createDBIndexes() {
       fields: ['ID', 'services', 'orgName']
     }
   }).then(function (result) {
-    console.log("Successfully created index over ID and services: " + result);
+    console.log("Successfully created index over ID and services");
   }).catch(function (err) {
     console.log("Error creating index over the ID and services: " + err);
   });

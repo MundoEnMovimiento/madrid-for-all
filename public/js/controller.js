@@ -82,7 +82,7 @@ var vueResultTable = new Vue({
     },
     printWaysOfContact: function (waysOfContact) {
       var output = [];
-      console.log("printWaysOfContact: " + waysOfContact);
+      // console.log("printWaysOfContact: " + waysOfContact);
       if (waysOfContact != null) {
         waysOfContact.forEach(function (curWoC) {
           output.push(originalWaysOfContact.find(function (element) {
@@ -178,12 +178,11 @@ function updateResultsAndMap() {
   if (arrayOfLocations.length > 0) {
     vueResultCounter.message = arrayOfLocations.length + " " + getTranslatedLabel("result-found");
     vueResultTable.locations = arrayOfLocations;
-    w3.show('#resultTable');
-    w3.sortHTML('#resultTable', '.item', 'td:nth-child(1)')
+    // w3.show('#resultTable');
   } else {
     vueResultCounter.message = getTranslatedLabel("no-result-found");
     vueResultTable.locations = [];
-    w3.hide('#resultTable');
+    // w3.hide('#resultTable');
   }
   console.log("vueResultCounter.message: " + vueResultCounter.message);
 }

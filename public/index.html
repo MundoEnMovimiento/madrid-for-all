@@ -165,13 +165,8 @@
           <div id="resultCounter">
             {{message}}
           </div>
-          <table id="resultTable" class="w3-table w3-striped w3-bordered">
-            <thead>
-              <tr>
-                <th onclick="w3.sortHTML('#resultTable','.item', 'td:nth-child(1)')"></th>
-              </tr>
-            </thead>
-            <tr v-for="loc in locations" class="item">
+          <table id="resultTable" class="w3-table w3-responsive w3-striped w3-bordered" style="display: table;">
+            <tr v-for="loc in locations">
               <td>
                 <div class="w3-row">
                   <button v-bind:id="'loc-' + loc.ID" v-on:click="onLocationClick('' + loc.ID)"
