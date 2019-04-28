@@ -5,6 +5,7 @@ var map;
 var originalLocations = [];
 var originalServices = [];
 var originalLocationServices = [];
+var originalWaysOfContact = [];
 var arrayOfLocations = [];
 var markersOnMap = [];
 var selectedServices = [];

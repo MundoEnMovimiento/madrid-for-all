@@ -243,7 +243,8 @@
         function () {
           // Once we destroy the database, we have to create a new one otherwise we'll get an error, "Error: database is destroyed".
           db = new PouchDB(dbName);
-          // load data to create the menus
+          // load data from JSON files
+          w3.getHttpObject("/data/waysOfContact.json", initWaysOfContact);
           w3.getHttpObject("/data/locationServices.json", initLocationServicesRelations);
           w3.getHttpObject("/data/services.json", initMenuContent);
         }

@@ -80,9 +80,19 @@ var vueResultTable = new Vue({
     printTimetable : function(timeTable){
       return timeTable[selectedLanguage];
     },
-    printWaysOfContact : function(waysOfContact) {
-      // TODO: Find the translations
-      return waysOfContact;
+    printWaysOfContact: function (waysOfContact) {
+      var output = [];
+      console.log("printWaysOfContact: " + waysOfContact);
+      if (waysOfContact != null) {
+        waysOfContact.forEach(function (curWoC) {
+          output.push(originalWaysOfContact.find(function (element) {
+            return element.key == curWoC;
+          })[selectedLanguage]);
+        });
+        return output.join(" - ");
+      } else {
+        return " - ";
+      }
     }
   }
 });
@@ -130,6 +140,11 @@ function loadMap() {
   };
   // create new map and center it in 'mainCity'
   map = new google.maps.Map(mapCanvas, mapOptions);
+}
+// callback to load the waysOfContact
+function initWaysOfContact(loadedWaysOfContact) {
+  // console.log("initWaysOfContact: " + initWaysOfContact);
+  originalWaysOfContact = loadedWaysOfContact;
 }
 // callback to load the locationServicesRelations
 function initLocationServicesRelations(loadedLocationServicesRelations) {
