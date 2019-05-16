@@ -12,16 +12,24 @@ var vueResultTable = new Vue({
     // callback for the click on a row of the result table
     onLocationClick: function (locationId) {
       console.log("Clicked onLocationClick with id: " + locationId);
-      // update UI
+      // highlight selected location
+      locRowDiv = document.getElementsByClassName("loc-row");
+      for (i = 0; i < locRowDiv.length; i++) {
+        locRowDiv[i].className = locRowDiv[i].className.replace(" w3-red", "");
+      }
+      document.getElementById(locationId + '-row').className += " w3-red";
+      // show the details of the location
       locDetailsDiv = document.getElementsByClassName("loc-details");
       for (i = 0; i < locDetailsDiv.length; i++) {
         locDetailsDiv[i].className = locDetailsDiv[i].className.replace(" w3-show", " w3-hide");
       }
-      w3.toggleClass('#loc-' + locationId + '-details', 'w3-hide', 'w3-show');
-      this.openInfoTab('general-info-' + locationId);
+      // open the tab 'general-info' in the details
+      w3.toggleClass('#' + locationId + '-details', 'w3-hide', 'w3-show');
+      this.openInfoTab(locationId + '-general-info');
     },
     // callback to handle the tab switch on the table result
     openInfoTab: function (tabName) {
+      // console.log("Opening tabName " + tabName + "...");
       var i, x, tablinks;
       x = document.getElementsByClassName("infoTab");
       for (i = 0; i < x.length; i++) {
@@ -217,7 +225,7 @@ function addLocationToMap(markerData) {
 function showLocationDetails(event, locationId) {
   console.log("showLocationDetails: " + locationId);
   vueResultTable.onLocationClick(locationId);
-  document.getElementById('loc-' + locationId).scrollIntoView();
+  document.getElementById(locationId + '-btn').scrollIntoView();
 }
 // callback for the search by text
 function onTextSearchInput(inputValue) {
