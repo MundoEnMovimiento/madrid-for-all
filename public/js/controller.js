@@ -199,27 +199,40 @@ function addLocationToMap(markerData) {
   // initialize variables
   var address = markerData.fullAddress;
   var markerPosition = new google.maps.LatLng(markerData.geocode);
-  var marker = new google.maps.Marker({
-    map: map,
-    id: 'loc-marker-' + markerData.ID,
-    position: markerPosition,
-    title: markerData.orgName + ". " + getTranslatedLabel("more-info")
-  });
   // create an infoWindow to be linked to the marker
   var infoWindowCode = "<strong>" + markerData.orgName + "</strong><br>";
   infoWindowCode += "<em>" + address + "</em><br><a href=\"" + markerData.orgWeb + "\">" + markerData.orgWeb + "</a><br>";
   infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails(event, '" + markerData.ID + "')\">" + getTranslatedLabel("click-for-more-details") + "</a><br>";
-  //console.log("infoWindowCode: " + infoWindowCode); 
-  var infowindow = new google.maps.InfoWindow({
+
+  var locationInfoWindow = new google.maps.InfoWindow({
     content: infoWindowCode
   });
+
+  //console.log("infoWindowCode: " + infoWindowCode); 
+
+  var marker = new google.maps.Marker({
+    map: map,
+    id: 'loc-marker-' + markerData.ID,
+    position: markerPosition,
+    title: markerData.orgName + ". " + getTranslatedLabel("more-info"),
+    infoWindow: locationInfoWindow
+  });
+
+  
   // add a click listener to our marker
   google.maps.event.addListener(marker, 'click', function () {
-    infowindow.open(map, marker); // Open our InfoWindow
-    this.setAnimation(null);
+    hideAllInfoWindows(map);
+    marker.infoWindow.open(map, marker); // Open marker InfoWindow
+    marker.setAnimation(null);
   });
   // update the list of displayed markers
   markersOnMap.push(marker);
+}
+// function to hide all the info windows that are opened
+function hideAllInfoWindows(map) {
+  markersOnMap.forEach(function(marker) {
+    marker.infoWindow.close(map, marker);
+ }); 
 }
 // show location details
 function showLocationDetails(event, locationId) {
