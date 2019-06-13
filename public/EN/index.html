@@ -90,18 +90,18 @@
     <div id="sideBarMenu">
       <div v-for="svcItem in listOfServices" class="w3-bar">
         <div v-bind:id="svcItem.key" v-if="svcItem.key.indexOf('s0') != -1">
-          <img v-bind:id="svcItem.key + '-img'" class="w3-bar-item w3-left w3-padding-small w3-hide-small"
-            v-bind:src="'../assets/' + svcItem.icon" height="42" width="42">
-          <button v-if="svcItem.key.indexOf('s0') != -1" v-bind:id="svcItem.key + '-btn'"
-            class="w3-bar-item w3-button w3-hover-gray w3-medium w3-left-align w3-padding-small w3-mobile"
+          <img class="w3-bar-item w3-left w3-padding-small w3-hide-small"
+            v-bind:src="'/assets/' + svcItem.icon" height="42" width="42">
+          <button v-bind:id="svcItem.key + '-btn'"
+            class="menu-btn w3-bar-item w3-button w3-medium w3-left-align w3-padding-small w3-mobile"
             v-on:click="onCategoryClick(svcItem)">{{svcItem.EN}}</button>
         </div>
-        <div v-else class="w3-hide" v-bind:class="svcItem.category + '-child'">
-          <button v-bind:id="svcItem.key + '-btn'" v-on:click="onServiceClick(svcItem.key)"
-            class="w3-bar-item w3-button w3-block w3-hover-gray w3-small w3-left-align w3-margin-left">{{svcItem.EN}}</button>
+        <div v-else class="menu-service-div w3-hide" v-bind:class="svcItem.category + '-child'">
+          <button v-bind:id="svcItem.key + '-btn'"
+            class="menu-btn w3-bar-item w3-button w3-small w3-left-align w3-padding-small w3-mobile"
+            v-on:click="onServiceClick(svcItem.key)">{{svcItem.EN}}</button>
         </div>
       </div>
-    </div>
   </nav>
 
   <!-- Top menu on small screens -->
@@ -144,7 +144,7 @@
         <br>
         <!-- Target filters -->
         <div id="target" class="w3-bar w3-margin-bottom">
-          <a id="targetChildren" href="#" onClick="onTargetChildrenClick()"
+          <a id="targetChildren" href="javascript:void(0)" onClick="onTargetChildrenClick()"
             class="w3-bar-item w3-button w3-hover-gray w3-medium">
             <img id="c1s0-img" src="/assets/infancia.png" height="42" width="42" class="w3-bar-item w3-left w3-padding-small">
             <div class="w3-bar-item w3-padding-small w3-hide-small">Children Only</div></a>

@@ -112,17 +112,13 @@ var vueSideBarMenu = new Vue({
     onCategoryClick: function (svcItem) {
       console.log("Clicked on category " + svcItem.key);
       // update the UI
-      // if previously selected, means this is an 'un-selection'
-      var childServiceIDs = getChildServiceIDs(svcItem.key);
-      var childrenIncluded = childServiceIDs.reduce((previouslyIncluded, curChildId) => previouslyIncluded || selectedServices.includes(curChildId), false);
-      if (selectedServices.includes(svcItem.key) || childrenIncluded) {
-        if(childServiceIDs != null) {
-          childServiceIDs.forEach(function(curChildID){
-            w3.removeClass('#' + curChildID + '-btn', 'w3-text-red');
-          });
-        }
-      }
+      // clean all previous selections
+      w3.removeClass('.menu-btn', 'w3-text-red');
+      w3.removeClass('.menu-service-div', 'w3-show');
+      w3.addClass('.menu-service-div', 'w3-hide');
+      // highlight current selection
       w3.toggleClass("." + svcItem.category + "-child", 'w3-hide', 'w3-show');
+      // w3.addClass("." + svcItem.category + "-child .menu-btn", 'w3-text-red');
       // trigger the find operation
       findLocationsInDatabase("CATEGORY", svcItem.key);
     },
@@ -130,6 +126,7 @@ var vueSideBarMenu = new Vue({
     onServiceClick: function (serviceKey) {
       console.log("Clicked on service " + serviceKey);
       // update the UI
+      w3.removeClass('.menu-btn', 'w3-text-red');
       w3.toggleClass('#' + serviceKey + '-btn', 'w3-text-red');
       // trigger the find operation
       findLocationsInDatabase("SERVICE", serviceKey);
@@ -176,7 +173,6 @@ function initMenuContent(loadedServices) {
 }
 // display array of markers on the map
 function updateResultsAndMap() {
-  // console.log("updateResultsAndMap...");
   // add the markers to the map
   arrayOfLocations.forEach(markerData => {
     //console.log("Adding marker " + markerData.orgName + ", " + markerData.address + " to the map...");
@@ -186,11 +182,9 @@ function updateResultsAndMap() {
   if (arrayOfLocations.length > 0) {
     vueResultCounter.message = arrayOfLocations.length + " " + getTranslatedLabel("result-found");
     vueResultTable.locations = arrayOfLocations;
-    // w3.show('#resultTable');
   } else {
     vueResultCounter.message = getTranslatedLabel("no-result-found");
     vueResultTable.locations = [];
-    // w3.hide('#resultTable');
   }
   console.log("vueResultCounter.message: " + vueResultCounter.message);
 }
@@ -207,9 +201,7 @@ function addLocationToMap(markerData) {
   var locationInfoWindow = new google.maps.InfoWindow({
     content: infoWindowCode
   });
-
   //console.log("infoWindowCode: " + infoWindowCode); 
-
   var marker = new google.maps.Marker({
     map: map,
     id: 'loc-marker-' + markerData.ID,
@@ -218,7 +210,6 @@ function addLocationToMap(markerData) {
     infoWindow: locationInfoWindow
   });
 
-  
   // add a click listener to our marker
   google.maps.event.addListener(marker, 'click', function () {
     hideAllInfoWindows(map);
