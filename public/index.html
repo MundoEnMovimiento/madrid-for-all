@@ -76,7 +76,8 @@
   <nav class="w3-sidebar w3-light-gray w3-collapse w3-top w3-large w3-padding"
     style="z-index:3;width:350px;font-weight:bold;" id="mySidebar"><br>
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
-      style="width:100%;font-size:20px">Cerrar Menu</a>
+      style="width:100%;font-size:15px">Cerrar Menu</a>
+    <!--
     <div class="w3-row w3-margin-bottom">
       <div class="w3-col s10 m10 l10 w3-left">
         <input id="searchText" class="w3-input" type="text" oninput="onTextSearchInput(this.value)"
@@ -86,6 +87,7 @@
         <a href="javascript:void(0)" onclick="onResetClick()" class="w3-button"><i class="far fa-times-circle"></i></a>
       </div>
     </div>
+    -->
     <!-- List services in the sideBar -->
     <div id="sideBarMenu">
       <div v-for="svcItem in listOfServices" class="w3-bar">
@@ -124,9 +126,9 @@
       <div class="w3-row w3-margin-bottom">
         <div class="w3-col s12 m11 l11 w3-left">
           <img src="./assets/madrid_for_all_header.png" alt="Madrid for all" class="w3-image"
-            style="width:100%;max-width:600px">
+            style="width:100%;max-width:400px">
           <div class="w3-hide-small">
-            <hr style="width:700px;border:3px solid #F2323E" class="w3-round">
+            <hr style="max-width:500px;border:3px solid #F2323E" class="w3-round">
           </div>
           <p>Selecciona una categoría o un servicio para ver dónde está y cómo puedes acceder</p>
         </div>
@@ -161,6 +163,9 @@
             class="w3-bar-item w3-button w3-hover-gray w3-medium">
             <img id="c1s0-img" src="/assets/LGTBIQ.png" height="42" width="42" class="w3-bar-item w3-left w3-padding-small">
             <div class="w3-bar-item w3-padding-small w3-hide-small">Exclusivo LGTBI+</div></a>
+          <a id="resetSearch" href="javascript:void(0)" onClick="onResetClick()"
+            class="w3-bar-item w3-button w3-hover-gray w3-medium">
+            <div class="w3-bar-item w3-padding-small w3-hide-small"><i class="far fa-times-circle"></i>&nbsp;Limpiar filtros</div></a>
         </div>
         <br>
         <div id="searchResults">
