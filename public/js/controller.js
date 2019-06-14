@@ -198,7 +198,7 @@ function addLocationToMap(markerData) {
   var markerPosition = new google.maps.LatLng(markerData.geocode);
   // create an infoWindow to be linked to the marker
   var infoWindowCode = "<strong>" + markerData.orgName + "</strong><br>";
-  infoWindowCode += "<em>" + address + "</em><br><a href='//" + markerData.orgWeb + "'>" + markerData.orgWeb + "</a><br>";
+  infoWindowCode += "<em>" + address + "</em><br><a href='//" + markerData.orgWeb + "' target='_blank'>" + markerData.orgWeb + "</a><br>";
   infoWindowCode += "<a href=\"javascript:void(0)\" onClick=\"showLocationDetails(event, '" + markerData.ID + "')\">" + getTranslatedLabel("click-for-more-details") + "</a><br>";
 
   var locationInfoWindow = new google.maps.InfoWindow({
