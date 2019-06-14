@@ -119,6 +119,8 @@ var vueSideBarMenu = new Vue({
       // highlight current selection
       w3.toggleClass("." + svcItem.category + "-child", 'w3-hide', 'w3-show');
       w3.addClass('#' + svcItem.key + '-btn', 'w3-text-red');
+      // close menu on small screens
+      w3_close();
       // trigger the find operation
       findLocationsInDatabase("CATEGORY", svcItem.key);
     },
@@ -128,6 +130,8 @@ var vueSideBarMenu = new Vue({
       // update the UI
       w3.removeClass('.menu-btn', 'w3-text-red');
       w3.toggleClass('#' + serviceKey + '-btn', 'w3-text-red');
+      // close menu on small screens
+      w3_close();
       // trigger the find operation
       findLocationsInDatabase("SERVICE", serviceKey);
     }
