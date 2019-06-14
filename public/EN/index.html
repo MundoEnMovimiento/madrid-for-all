@@ -206,9 +206,11 @@
                   </div>
                   <div v-bind:id="loc.ID + '-contact-info'" class="w3-col s12 m4 l4 infoTab"
                     style="display:none; width:100%">
-                    <p>District: {{loc.district}} - Address: {{loc.fullAddress}}</p>
-                    <p>Prefered way of contact: {{printWaysOfContact(loc.waysOfContact)}}</p>
-                    <p>Time table: {{printTimetable(loc.timeTable)}}</p>
+                    <p>District: {{loc.district}} &nbsp; Address: {{loc.fullAddress}}</p>
+                    <p>Phone: {{loc.orgPhone}} &nbsp; Email: {{loc.orgEmail}}</p>
+                    <p>Preferred ways of contact: {{printWaysOfContact(loc.waysOfContact)}}</p>
+                    <p>Timetable: {{printTimetable(loc.timeTable)}}</p>
+                    <p>Web page: <a v-bind:href="'//' + loc.orgWeb" target='_blank'>{{loc.orgWeb}}</a></p>
                   </div>
                   <div v-bind:id="loc.ID + '-extra-info'" class="w3-col s12 m4 l4 infoTab"
                     style="display:none; width:100%">

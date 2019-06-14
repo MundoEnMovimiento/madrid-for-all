@@ -207,9 +207,11 @@
                   </div>
                   <div v-bind:id="loc.ID + '-contact-info'" class="w3-col s12 m4 l4 infoTab"
                     style="display:none; width:100%">
-                    <p>Distrito: {{loc.district}} - Dirección: {{loc.fullAddress}}</p>
+                    <p>Distrito: {{loc.district}} &nbsp; Dirección: {{loc.fullAddress}}</p>
+                    <p>Teléfono: {{loc.orgPhone}} &nbsp; Email: {{loc.orgEmail}}</p>
                     <p>Medios de contacto preferidos: {{printWaysOfContact(loc.waysOfContact)}}</p>
                     <p>Horarios: {{printTimetable(loc.timeTable)}}</p>
+                    <p>Página web: <a v-bind:href="'//' + loc.orgWeb" target='_blank'>{{loc.orgWeb}}</a></p>
                   </div>
                   <div v-bind:id="loc.ID + '-extra-info'" class="w3-col s12 m4 l4 infoTab"
                     style="display:none; width:100%">
