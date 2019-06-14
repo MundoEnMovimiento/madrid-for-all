@@ -64,10 +64,12 @@ function createDBIndexes() {
   // create the necessary db indexes
   db.createIndex({
     index: {
-      fields: ['ID', 'services', 'orgName']
+      fields: ['orgName', 'ID', 'services']
     }
   }).then(function (result) {
-    console.log("Successfully created index over ID and services");
+    console.log("Successfully created index over ID, orgName and services");
+    // once the DB is ready, we perform the default search including all the services
+    onResetClick();
   }).catch(function (err) {
     console.log("Error creating index over the ID and services: " + err);
   });
@@ -85,7 +87,7 @@ function findLocationsInDatabase(searchType, serviceKey) {
   } else if (searchType == "SERVICE") { // clicked on a "service" under a "category" 
       processedServices.push(serviceKey);
   } else {
-    processedServices = selectedServices;
+    processedServices = selectedServices;;
     console.log("Filters to be applied to the previous selection");
   }
   // keep current selection for the next search in case some filters are applied
@@ -151,16 +153,18 @@ function findLocationsInDatabase(searchType, serviceKey) {
   console.log("processedServices after filters: " + processedServices);
   // compose the searcCriterias
   if (processedServices.length > 0) {
+    // searchCriterias.orgName = {$gte: null};
     searchCriterias.services = { $elemMatch: { $in: processedServices } };
   }
   // perform the find in the DB
-  db.find({
+db.find({
     selector: searchCriterias
+    // sort: [ 'orgName' ]
   }).then(function (result) {
     // clear previous results
     clearPreviousResults();
     arrayOfLocations = result["docs"];
-    // console.log(arrayOfLocations.length + " markers found for " + JSON.stringify(searchCriterias) + ".");
+    console.log(arrayOfLocations.length + " markers found for " + JSON.stringify(searchCriterias) + ".");
     // show found locations in the map
     updateResultsAndMap(arrayOfLocations);
   }).catch(function (err) {

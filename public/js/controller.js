@@ -118,7 +118,7 @@ var vueSideBarMenu = new Vue({
       w3.addClass('.menu-service-div', 'w3-hide');
       // highlight current selection
       w3.toggleClass("." + svcItem.category + "-child", 'w3-hide', 'w3-show');
-      // w3.addClass("." + svcItem.category + "-child .menu-btn", 'w3-text-red');
+      w3.addClass('#' + svcItem.key + '-btn', 'w3-text-red');
       // trigger the find operation
       findLocationsInDatabase("CATEGORY", svcItem.key);
     },
@@ -162,7 +162,6 @@ function initPageContent(loadedLocations) {
   originalLocations = loadedLocations;
   arrayOfLocations = originalLocations;
   initDBContent();
-  updateResultsAndMap();
 }
 // callback to load menu content: categories, services, etc.
 function initMenuContent(loadedServices) {
@@ -325,13 +324,18 @@ function onResetClick() {
   w3.toggleClass('.w3-show', 'w3-show', 'w3-hide');
   // clear previous results
   clearPreviousResults();
-  initPageContent(originalLocations);
   // clean selected criterias
-  selectedCategories = [];
   selectedServices = [];
+  // by default, we search for all of the services
+  originalServices.forEach(function (item) {
+    selectedServices.push(item.key);
+  });
   targetWomen = false;
   targetChildren = false;
   targetOrigin = false;
+  targetLGTBIQ = false;
+  // update displayed results
+  findLocationsInDatabase("FILTER", -1);
 }
 // script to open sidebar
 function w3_open() {
