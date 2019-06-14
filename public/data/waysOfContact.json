@@ -3,30 +3,35 @@
     "key": "phone",
     "ES": "Llama por teléfono.",
     "EN": "Give us a phonecall.",
-    "FR": "Contact par téléphone."
+    "FR": "Par téléphone.",
+    "AR": "الاتصال عبر الهاتف"
   },
   {
     "key": "visit",
     "ES": "Visita la sede.",
     "EN": "Visit us at our office.",
-    "FR": "En se rendant sur place."
+    "FR": "En se rendant sur place.",
+    "AR": "اذهب إلى المكتب"
   },
   {
     "key": "email",
     "ES": "Envía un email.",
     "EN": "Send us an email.",
-    "FR": "Contact par mail."
+    "FR": "Par mail.",
+    "AR": "أرسل بريدًا إلكترونيًا"
   },
   {
     "key": "facebook",
     "ES": "Escríbenos en facebook.",
     "EN": "Write us on facebook.",
-    "FR": "Contact par facebook. "
+    "FR": "Via facebook. ",
+    "AR": "اكتب لنا على الفيسبوك"
   },
   {
     "key": "web",
     "ES": "Contáctanos en nuestra web.",
     "EN": "Contact us through our website.",
-    "FR": "Contactez-nous via notre site web."
+    "FR": "Via notre site web.",
+    "AR": "اتصل بنا على موقعنا"
   }
 ]

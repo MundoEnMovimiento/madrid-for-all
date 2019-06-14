@@ -3,30 +3,35 @@
     "key": "OPEN",
     "ES": "Abierto a todo el mundo",
     "EN": "Open to everybody",
+    "AR": "مفتوح للعالم كله",
     "FR": "Ouvert à tout le monde"
   },
   {
     "key": "CHILD",
     "ES": "Exclusivo para menores",
     "EN": "Exclusive for minors",
+    "AR": "حصري للقاصرين",
     "FR": "Exclusif pour mineurs"
   },
   {
     "key": "WOMEN",
     "ES": "Exclusivo para mujeres",
     "EN": "Exclusive for women",
+    "AR": "حصري للمرأة",
     "FR": "Exclusif pour femmes"
   },
   {
     "key": "LGTBIQ",
     "ES": "LGTBIQ+",
     "EN": "LGTBIQ+",
+    "AR": "LGTBIQ+",
     "FR": "LGTBIQ+"
   },
   {
     "key": "AF",
     "ES": "África",
     "EN": "Africa",
+    "AR": "أفريقيا",
     "FR": "Afrique"
   },
   {

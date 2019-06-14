@@ -6,7 +6,7 @@
     "ES": "Servicios básicos",
     "EN": "Basic services",
     "FR": "Services de première nécessité ",
-    "AR": "Arab"
+    "AR": "الخدمات الأساسية"
   },
   {
     "key": "c1s1",
@@ -14,7 +14,7 @@
     "ES": "Alojamiento",
     "EN": "Housing",
     "FR": "Logement",
-    "AR": "Arab"
+    "AR": "الإقامة"
   },
   {
     "key": "c1s2",
@@ -22,7 +22,7 @@
     "ES": "Comedores",
     "EN": "Soup kitchens",
     "FR": "Cantines",
-    "AR": "Arab"
+    "AR": "غرف الطعام"
   },
   {
     "key": "c1s3",
@@ -30,7 +30,7 @@
     "ES": "Comida y cesta de la compra",
     "EN": "Food ",
     "FR": "Distribution de paniers repas",
-    "AR": "Arab"
+    "AR": " الطعام وسلة شراء\n"
   },
   {
     "key": "c1s4",
@@ -38,7 +38,7 @@
     "ES": "Duchas públicas",
     "EN": "Public Showers",
     "FR": "Douches publiques",
-    "AR": "Arab"
+    "AR": "الاستحمام العامة"
   },
   {
     "key": "c1s5",
@@ -46,7 +46,7 @@
     "ES": "Ropa",
     "EN": "Clothing",
     "FR": "Vêtements",
-    "AR": "Arab"
+    "AR": "ملابس"
   },
   {
     "key": "c1s6",
@@ -54,7 +54,7 @@
     "ES": "Lavandería",
     "EN": "Laundry",
     "FR": "Buanderie",
-    "AR": "Arab"
+    "AR": "مغسلة"
   },
   {
     "key": "c1s7",
@@ -62,7 +62,7 @@
     "ES": "Transporte",
     "EN": "Transportation",
     "FR": "Transport",
-    "AR": "Arab"
+    "AR": "نقل"
   },
   {
     "key": "c2s0",
@@ -71,7 +71,7 @@
     "ES": "Salud",
     "EN": "Health",
     "FR": "Santé ",
-    "AR": "Arab"
+    "AR": "الصحة"
   },
   {
     "key": "c2s1",
@@ -79,7 +79,7 @@
     "ES": "Atención médica general",
     "EN": "General medical assistance",
     "FR": "Attention médicale générale",
-    "AR": "Arab"
+    "AR": "الرعاية الطبية العامة"
   },
   {
     "key": "c2s2",
@@ -87,7 +87,7 @@
     "ES": "VIH",
     "EN": "HIV",
     "FR": "VIH",
-    "AR": "Arab"
+    "AR": "الإيدز"
   },
   {
     "key": "c2s3",
@@ -95,7 +95,7 @@
     "ES": "Chagas",
     "EN": "Chagas",
     "FR": "Chagas",
-    "AR": "Arab"
+    "AR": "Chagas"
   },
   {
     "key": "c2s4",
@@ -103,7 +103,7 @@
     "ES": "Adicciones",
     "EN": "Addictions",
     "FR": "Dépendances",
-    "AR": "Arab"
+    "AR": "الإدمان"
   },
   {
     "key": "c2s5",
@@ -111,7 +111,7 @@
     "ES": "Dentista",
     "EN": "Dentist",
     "FR": "Dentiste",
-    "AR": "Arab"
+    "AR": "طبيب أسنان"
   },
   {
     "key": "c2s6",
@@ -119,7 +119,7 @@
     "ES": "Oculista/Gafas",
     "EN": "Optician / Glasses",
     "FR": "Ophtalmologie",
-    "AR": "Arab"
+    "AR": "طبيب العيون"
   },
   {
     "key": "c2s7",
@@ -127,7 +127,7 @@
     "ES": "Vacunación",
     "EN": "Vaccination",
     "FR": "Vaccins",
-    "AR": "Arab"
+    "AR": "التطعيم"
   },
   {
     "key": "c2s8",
@@ -135,7 +135,7 @@
     "ES": "Planificación familiar/ Anticoncepción",
     "EN": "Family planning / Contraception",
     "FR": "Planing familial / Contraception",
-    "AR": "Arab"
+    "AR": "التخطيط العائلي"
   },
   {
     "key": "c2s9",
@@ -143,7 +143,7 @@
     "ES": "Ginecología",
     "EN": "Ginecology",
     "FR": "Ginécologie",
-    "AR": "Arab"
+    "AR": "طبيب نسائي"
   },
   {
     "key": "c2s10",
@@ -151,7 +151,7 @@
     "ES": "Interrupción voluntaria del embarazo",
     "EN": "voluntary termination of pregnancy",
     "FR": "Interruption volontaire de grossesse",
-    "AR": "Arab"
+    "AR": "المقاطعة الطوعية للحمل"
   },
   {
     "key": "c2s11",
@@ -159,7 +159,7 @@
     "ES": "Atención Psicológica",
     "EN": "Psychological care ",
     "FR": "Attention psychologique",
-    "AR": "Arab"
+    "AR": "الاهتمام النفسي"
   },
   {
     "key": "c2s12",
@@ -167,7 +167,7 @@
     "ES": "Atención Psiquiátrica",
     "EN": "Psychiatric care",
     "FR": "Attention psychiatrique",
-    "AR": "Arab"
+    "AR": "رعاية نفسية"
   },
   {
     "key": "c3s0",
@@ -176,7 +176,7 @@
     "ES": "Educacion",
     "EN": "Education",
     "FR": "Éducation ",
-    "AR": "Arab"
+    "AR": "تعليم"
   },
   {
     "key": "c3s1",
@@ -184,7 +184,7 @@
     "ES": "Clases de español",
     "EN": "Spanish lessons",
     "FR": "Cours d'espagnol",
-    "AR": "Arab"
+    "AR": "دروس الاسبانية"
   },
   {
     "key": "c3s2",
@@ -192,7 +192,7 @@
     "ES": "Clases de otros idiomas",
     "EN": "Other languages lessons",
     "FR": "Cours de langues",
-    "AR": "Arab"
+    "AR": "دورات اللغة"
   },
   {
     "key": "c3s3",
@@ -200,15 +200,15 @@
     "ES": "Clases de informática",
     "EN": "IT lessons",
     "FR": "Classes d'Informatique",
-    "AR": "Arab"
+    "AR": "فصول الكمبيوتر"
   },
   {
     "key": "c3s4",
     "category": "c3",
     "ES": "Apoyo escolar",
     "EN": "School support",
-    "FR": "Appui scolaire",
-    "AR": "Arab"
+    "FR": "Soutien scolaire",
+    "AR": "دعم المدارس"
   },
   {
     "key": "c3s5",
@@ -216,7 +216,7 @@
     "ES": "Formación profesional",
     "EN": "Professional training",
     "FR": "Formation professionnelle ",
-    "AR": "Arab"
+    "AR": "التدريب المهني"
   },
   {
     "key": "c3s6",
@@ -224,7 +224,7 @@
     "ES": "Otras formaciones",
     "EN": "Other trainings",
     "FR": "Autres formations ",
-    "AR": "Arab"
+    "AR": "تدريب مهني آخر"
   },
   {
     "key": "c4s0",
@@ -233,7 +233,7 @@
     "ES": "Ocio",
     "EN": "Leisure",
     "FR": "Loisirs ",
-    "AR": "Arab"
+    "AR": "وقت ممتع"
   },
   {
     "key": "c4s1",
@@ -241,7 +241,7 @@
     "ES": "Deportes",
     "EN": "Sports",
     "FR": "Sports",
-    "AR": "Arab"
+    "AR": "الرياضة"
   },
   {
     "key": "c4s2",
@@ -249,7 +249,7 @@
     "ES": "Acceso a la cultura",
     "EN": "Access to culture",
     "FR": "Accès à la culture",
-    "AR": "Arab"
+    "AR": "الوصول إلى الثقافة"
   },
   {
     "key": "c4s3",
@@ -257,7 +257,7 @@
     "ES": "Tiempo libre",
     "EN": "Free time",
     "FR": "Temps libre",
-    "AR": "Arab"
+    "AR": "وقت الفراغ"
   },
   {
     "key": "c4s4",
@@ -265,7 +265,7 @@
     "ES": "Internet",
     "EN": "Internet",
     "FR": "Internet",
-    "AR": "Arab"
+    "AR": "الإنترنت"
   },
   {
     "key": "c5s0",
@@ -274,7 +274,7 @@
     "ES": "Recursos contra la violencia",
     "EN": "Resources against violence",
     "FR": "Recours contre la violence ",
-    "AR": "Arab"
+    "AR": "الموارد ضد العنف"
   },
   {
     "key": "c5s1",
@@ -282,7 +282,7 @@
     "ES": "Agresiones racistas y xenófobas",
     "EN": "Racist and xenophobic attacks",
     "FR": "Agressions racistes et xénophobes",
-    "AR": "Arab"
+    "AR": "الاعتداءات العنصرية وكره الأجانب"
   },
   {
     "key": "c5s2",
@@ -290,7 +290,7 @@
     "ES": "Acompañamiento en CIEs",
     "EN": "Support for people in detention centres for migrants",
     "FR": "Soutien pour les personnes détenues dans les centres d'internement pour étrangers",
-    "AR": "Arab"
+    "AR": "المرافق في CIES"
   },
   {
     "key": "c5s3",
@@ -298,7 +298,7 @@
     "ES": "Trata ",
     "EN": "Human trafficking",
     "FR": "Traite des personnes",
-    "AR": "Arab"
+    "AR": "الاتجار بالأشخاص"
   },
   {
     "key": "c5s4",
@@ -306,7 +306,7 @@
     "ES": "Prostitución",
     "EN": "Prostitution",
     "FR": "Prostitution",
-    "AR": "Arab"
+    "AR": "دعارة"
   },
   {
     "key": "c5s5",
@@ -314,7 +314,7 @@
     "ES": "Violencia de género",
     "EN": "Gender violence",
     "FR": "Violence de genre",
-    "AR": "Arab"
+    "AR": "العنف الجنسي"
   },
   {
     "key": "c5s6",
@@ -322,7 +322,7 @@
     "ES": "Agresiones sexuales",
     "EN": "Sexual assaults",
     "FR": "Agressions sexuelles",
-    "AR": "Arab"
+    "AR": "اعتداء جنسي"
   },
   {
     "key": "c5s7",
@@ -330,34 +330,34 @@
     "ES": "Mutilación genital femenina",
     "EN": "Female genital mutilation",
     "FR": "Mutilation génitale féminine",
-    "AR": "Arab"
+    "AR": "تشويه الأعضاء التناسلية الأنثوية"
   },
   {
     "key": "c6s0",
     "category": "c6",
     "icon": "legal.png",
     "ES": "Info. legal y asistencia jurídica",
-    "EN": "Legal information and assistance",
+    "EN": "Legal info and assistance",
     "FR": "Assistance juridique ",
-    "AR": "Arab"
+    "AR": "المساعدة القانونية"
   },
   {
     "key": "c7s0",
     "category": "c7",
     "icon": "laboral.png",
-    "ES": "Info. y orientación laboral",
-    "EN": "Job training and Labour guidance",
-    "FR": "Orientation laborale ",
-    "AR": "Arab"
+    "ES": "Info y orientación laboral",
+    "EN": "Job training and labour guidance",
+    "FR": "Orientation professionnelle",
+    "AR": "معلومات والتوجه العمل"
   },
   {
     "key": "c8s0",
     "category": "c8",
     "icon": "traduccion.png",
-    "ES": "Traducción y Mediación cultural",
-    "EN": "Translation and Cultural mediation",
-    "FR": "Traduction / Médiation culturelle ",
-    "AR": "Arab"
+    "ES": "Traducción y mediación cultural",
+    "EN": "Translation & cultural mediation",
+    "FR": "Traduction / médiation culturelle ",
+    "AR": " ترجمة والوساطة الثقافية"
   },
   {
     "key": "c9s0",
@@ -366,7 +366,7 @@
     "ES": "Retorno Voluntario",
     "EN": "Voluntary return",
     "FR": "Retour volontaire ",
-    "AR": "Arab"
+    "AR": "العودة الطوعية"
   },
   {
     "key": "c10s0",
@@ -375,6 +375,6 @@
     "ES": "Acompañamiento social",
     "EN": "Social support",
     "FR": "Accompagnement social",
-    "AR": "Arab"
+    "AR": "مرافقة اجتماعية"
   }
 ]

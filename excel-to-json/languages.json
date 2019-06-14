@@ -3,67 +3,78 @@
     "key": "ES",
     "ES": "Castellano",
     "EN": "Spanish",
-    "FR": "Espagnol"
+    "FR": "Espagnol",
+    "AR": "الاسبانيه"
   },
   {
     "key": "EN",
     "ES": "Inglés",
     "EN": "English",
-    "FR": "Anglais"
+    "FR": "Anglais",
+    "AR": "الإنجليزية"
   },
   {
     "key": "FR",
     "ES": "Francés",
     "EN": "French",
-    "FR": "Français"
+    "FR": "Français",
+    "AR": "الفرنسية"
   },
   {
     "key": "AR",
     "ES": "Árabe",
     "EN": "Arabic",
-    "FR": "Arabe"
+    "FR": "Arabe",
+    "AR": " العربية"
   },
   {
     "key": "PT",
     "ES": "Portugués",
     "EN": "Portuguese",
-    "FR": "Portugais"
+    "FR": "Portugais",
+    "AR": "البرتغالية"
   },
   {
     "key": "IT",
     "ES": "Italiano",
     "EN": "Italian",
-    "FR": "Italien"
+    "FR": "Italien",
+    "AR": "الإيطالي"
   },
   {
     "key": "BD",
     "ES": "Bengalí",
     "EN": "Bengali",
-    "FR": "Bengali"
+    "FR": "Bengali",
+    "AR": "بنغالي"
   },
   {
     "key": "AL",
     "ES": "Lenguas africanas",
     "EN": "African Languages",
-    "FR": "Langues africaines"
+    "FR": "Langues africaines",
+    "AR": "اللغات الافريقية"
   },
   {
     "key": "SW",
     "ES": "Suajili",
     "EN": "Swahili",
-    "FR": "Swahili"
+    "FR": "Swahili",
+    "AR": "السواحلية"
   },
   {
     "key": "SO",
     "ES": "Somalí",
     "EN": "Somali",
-    "FR": "Somali"
+    "FR": "Somali",
+    "AR": "صومالي"
   },
   {
     "key": "WO",
     "ES": "Wolof",
     "EN": "Wolof",
-    "FR": "Wolof"
+    "FR": "Wolof",
+    "AR": "الولوف"
   },
   {},
   {},
