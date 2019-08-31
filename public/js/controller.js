@@ -174,6 +174,11 @@ function initMenuContent(loadedServices) {
   vueSideBarMenu.listOfServices = originalServices;
   w3.getHttpObject("/data/locations.json", initPageContent);
 }
+// callback to load menu content: categories, services, etc.
+function initValueLists(loadedValueLists) {
+  console.log("initValue Lists...");
+  valueLists = loadedValueLists;
+}
 // display array of markers on the map
 function updateResultsAndMap() {
   // add the markers to the map
@@ -352,52 +357,13 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 // function to handle the different static message
-function getTranslatedLabel(labelId) {
-  if ("ES" == selectedLanguage) {
-    switch (labelId) {
-      case 'no-result-found':
-        return "No se ha encontrado ningún resultado";
-      case 'result-found':
-        return " resultado(s) encontrados";
-      case 'click-for-more-details':
-        return 'Pincha aquí para más detalles';
-      case 'more-info':
-        return 'Más información';
-      default:
-        console.log("Unknown labelId: " + labelId);
-        return "";
+function getTranslatedLabel(code) {
+    var label = valueLists.find(itm => itm.code === code)[selectedLanguage];
+    if(!label){
+      console.log("Unknown labelId: " + labelId);
+      label = "";
     }
-  } else if ("EN" == selectedLanguage) {
-    switch (labelId) {
-      case 'no-result-found':
-        return "No results found";
-      case 'result-found':
-        return " result(s) found";
-      case 'click-for-more-details':
-        return 'Click here for more details';
-      case 'more-info':
-        return 'More info';
-      default:
-        console.log("Unknown labelId: " + labelId);
-        return "";
-    }
-  } else if ("FR" == selectedLanguage) {
-    switch (labelId) {
-      case 'no-result-found':
-        return "Aucun résultat trouvé";
-      case 'result-found':
-        return " résultat(s) trouvé(s)";
-      case 'click-for-more-details':
-        return 'Click ici pour plus de détails';
-      case 'more-info':
-        return 'Plus d\'info';
-      default:
-        console.log("Unknown labelId: " + labelId);
-        return "";
-    }
-  } else {
-    console.log("Unknown language: " + selectedLanguage);
-  }
+    return label;
 }
 // function to translate categories into labels
 function translateArrayOfCategories(arrayOfCategories) {
@@ -416,4 +382,3 @@ function getChildServiceIDs(curServiceID) {
   });
   return listOfChildren;
 }
-

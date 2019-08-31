@@ -10,6 +10,7 @@ var arrayOfLocations = [];
 var markersOnMap = [];
 var selectedServices = [];
 var selectedLanguage = 'ES'
+var valueLists = [];
 var targetWomen = false;
 var targetChildren = false;
 var targetOrigin = false;

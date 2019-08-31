@@ -1,0 +1,31 @@
+[
+    {
+        "code": "no-result-found",
+        "ES": "No se ha encontrado ningún resultado",
+        "EN": "No results found",
+        "FR": "Aucun résultat trouvé",
+        "AR": "-"
+    },
+    {
+        "code": "result-found",
+        "ES": " resultado(s) encontrados",
+        "EN": " result(s) found",
+        "FR": " résultat(s) trouvé(s)",
+        "AR": "-"
+    },
+    {
+        "code": "click-for-more-details",
+        "ES": "Pincha aquí para más detalles",
+        "EN": "Click here for more details",
+        "FR": "Clique ici pour plus de détails",
+        "AR": "-"
+    },
+    {
+        "code": "more-info",
+        "ES": "Más información",
+        "EN": "More info",
+        "FR": "Plus d'info",
+        "AR": "-"
+    }
+
+]
