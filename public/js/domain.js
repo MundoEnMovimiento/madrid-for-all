@@ -65,10 +65,10 @@ function createDBIndexes() {
   // create the necessary db indexes
   db.createIndex({
     index: {
-      fields: ['orgName', 'ID', 'services']
+      fields: ['orgName', 'services']
     }
   }).then(function (result) {
-    console.log("Successfully created index over ID, orgName and services");
+    console.log("Successfully created index over orgName and services");
     // once the DB is ready, we perform the default search including all the services
     onResetClick();
   }).catch(function (err) {
@@ -94,7 +94,7 @@ function findLocationsInDatabase(searchType, serviceKey) {
   // keep current selection for the next search in case some filters are applied
   selectedServices = processedServices;
   // process the filters to apply if any
-  console.log("processedServices before filters: " + processedServices);
+  // console.log("processedServices before filters: " + processedServices);
   if (targetWomen) {
     processedServices = processedServices.map(function (curService) {
       return curService + ":WOMEN"
@@ -154,18 +154,19 @@ function findLocationsInDatabase(searchType, serviceKey) {
   console.log("processedServices after filters: " + processedServices);
   // compose the searcCriterias
   if (processedServices.length > 0) {
-    // searchCriterias.orgName = {$gte: null};
     searchCriterias.services = { $elemMatch: { $in: processedServices } };
   }
+  // add orgName to the criteria so the "sort" operation works
+  searchCriterias.orgName = {$gt: null};
   // perform the find in the DB
-db.find({
-    selector: searchCriterias
-    // sort: [ 'orgName' ]
+  db.find({
+    selector: searchCriterias,
+    sort: [ {'orgName' : 'asc' } ]
   }).then(function (result) {
     // clear previous results
     clearPreviousResults();
     arrayOfLocations = result["docs"];
-    console.log(arrayOfLocations.length + " markers found for " + JSON.stringify(searchCriterias) + ".");
+    // console.log(arrayOfLocations.length + " markers found for " + JSON.stringify(searchCriterias) + ".");
     // show found locations in the map
     updateResultsAndMap(arrayOfLocations);
   }).catch(function (err) {
