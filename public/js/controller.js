@@ -174,11 +174,6 @@ function initMenuContent(loadedServices) {
   vueSideBarMenu.listOfServices = originalServices;
   w3.getHttpObject("/data/locations.json", initPageContent);
 }
-// callback to load menu content: categories, services, etc.
-function initValueLists(loadedValueLists) {
-  console.log("initValue Lists...");
-  valueLists = loadedValueLists;
-}
 // display array of markers on the map
 function updateResultsAndMap() {
   // add the markers to the map
@@ -356,15 +351,7 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
 }
-// function to handle the different static message
-function getTranslatedLabel(code) {
-    var label = valueLists.find(itm => itm.code === code)[selectedLanguage];
-    if(!label){
-      console.log("Unknown labelId: " + labelId);
-      label = "";
-    }
-    return label;
-}
+
 // function to translate categories into labels
 function translateArrayOfCategories(arrayOfCategories) {
   console.log("translateArrayOfCategories: " + arrayOfCategories);

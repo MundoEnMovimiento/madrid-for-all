@@ -92,8 +92,8 @@
     <div id="sideBarMenu">
       <div v-for="svcItem in listOfServices" class="w3-bar">
         <div v-bind:id="svcItem.key" v-if="svcItem.key.indexOf('s0') != -1">
-          <img class="w3-bar-item w3-left w3-padding-small w3-hide-small"
-            v-bind:src="'/assets/' + svcItem.icon" height="42" width="42">
+          <img class="w3-bar-item w3-left w3-padding-small w3-hide-small" v-bind:src="'/assets/' + svcItem.icon"
+            height="42" width="42">
           <button v-bind:id="svcItem.key + '-btn'"
             class="menu-btn w3-bar-item w3-button w3-medium w3-left-align w3-padding-small w3-mobile"
             v-on:click="onCategoryClick(svcItem)">{{svcItem.ES}}</button>
@@ -114,8 +114,8 @@
 
 
   <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="Cerrar menu"
-    id="myOverlay"></div>
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="Cerrar menu" id="myOverlay">
+  </div>
 
   <!-- !PAGE CONTENT! -->
   <div class="w3-main" style="margin-left:390px;margin-right:40px">
@@ -130,9 +130,7 @@
           <div class="w3-hide-small">
             <hr style="max-width:500px;border:3px solid #F2323E" class="w3-round">
           </div>
-          <p>En este mapa podrás encontrar recursos gratuitos para personas migrantes en Madrid.</p>
-          <p>Selecciona el servicio que necesitas en el menú y los recursos aparecerán en el mapa. Haz click encima para obtener más información.</p>
-          <p>Si quieres saber si hay recursos exclusivos para infancia, LGTBIQ+, mujeres o por origen, pulsa el filtro que encontrarás bajo el mapa.</p>
+          <div id="introText"></div>
         </div>
         <div class="w3-col s11 m2 l1 w3-right">
           <a href="./index.html" onClick="onLanguageChange('ES')">ES</a>
@@ -148,23 +146,32 @@
         <div id="target" class="w3-bar w3-margin-bottom">
           <a id="targetChildren" href="javascript:void(0)" onClick="onTargetChildrenClick()"
             class="w3-bar-item w3-button w3-hover-gray">
-            <img id="c1s0-img" src="/assets/infancia.png" height="32" width="32" class="w3-bar-item w3-left w3-padding-small">
-            <div class="w3-bar-item w3-padding-small w3-hide-small w3-small">Exclusivo Niños / Jóvenes</div></a>
+            <img id="c1s0-img" src="/assets/infancia.png" height="32" width="32"
+              class="w3-bar-item w3-left w3-padding-small">
+            <div id="targetChildrenLabel" class="w3-bar-item w3-padding-small w3-hide-small w3-small"></div>
+          </a>
           <a id="targetWomen" href="javascript:void(0)" onClick="onTargetWomenClick()"
             class="w3-bar-item w3-button w3-hover-gray">
-            <img id="c1s0-img" src="/assets/mujer.png" height="32" width="32" class="w3-bar-item w3-left w3-padding-small">
-            <div class="w3-bar-item w3-padding-small w3-hide-small w3-small">Exclusivo Mujeres</div></a>
+            <img id="c1s0-img" src="/assets/mujer.png" height="32" width="32"
+              class="w3-bar-item w3-left w3-padding-small">
+            <div id="targetWomenLabel" class="w3-bar-item w3-padding-small w3-hide-small w3-small"></div>
+          </a>
           <a id="targetOrigin" href="javascript:void(0)" onClick="onTargetOriginClick()"
             class="w3-bar-item w3-button w3-hover-gray">
-            <img id="c1s0-img" src="/assets/origen.png" height="32" width="32" class="w3-bar-item w3-left w3-padding-small">
-            <div class="w3-bar-item w3-padding-small w3-hide-small w3-small">Exclusivo Origen Determinado</div></a>
+            <img id="c1s0-img" src="/assets/origen.png" height="32" width="32"
+              class="w3-bar-item w3-left w3-padding-small">
+            <div id="targetOriginLabel" class="w3-bar-item w3-padding-small w3-hide-small w3-small"></div>
+          </a>
           <a id="targetLGTBIQ" href="javascript:void(0)" onClick="onTargetLGTBIQClick()"
             class="w3-bar-item w3-button w3-hover-gray">
-            <img id="c1s0-img" src="/assets/LGTBIQ.png" height="32" width="32" class="w3-bar-item w3-left w3-padding-small">
-            <div class="w3-bar-item w3-padding-small w3-hide-small w3-small">Exclusivo LGTBI+</div></a>
+            <img id="c1s0-img" src="/assets/LGTBIQ.png" height="32" width="32"
+              class="w3-bar-item w3-left w3-padding-small">
+            <div id="targetLGTBIQLabel" class="w3-bar-item w3-padding-small w3-hide-small w3-small"></div>
+          </a>
           <a id="resetSearch" href="javascript:void(0)" onClick="onResetClick()"
             class="w3-bar-item w3-button w3-hover-gray">
-            <div class="w3-bar-item w3-padding-small w3-small"><i class="far fa-times-circle"></i>&nbsp;Limpiar filtros</div></a>
+            <div id="resetSearchLabel" class="w3-bar-item w3-padding-small w3-small"><i class="far fa-times-circle"></i></div>
+          </a>
         </div>
         <br>
         <div id="searchResults">
@@ -251,6 +258,7 @@
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1HFnc4icvHi5psYM-GF_an1Ri4UHQVv4&callback=loadMap"></script>
     <script src="./js/controller.js"></script>
+    <!-- Load the labels for the elements that were not loaded before -->
 
 </body>
 

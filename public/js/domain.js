@@ -20,7 +20,22 @@ var mainCityGeoCode = {
   "lat": 40.4168,
   "lng": -3.7038
 }
-
+// callback to load menu content: categories, services, etc.
+function initValueLists(loadedValueLists) {
+  console.log("initValue Lists...");
+  valueLists = loadedValueLists;
+  loadStaticLabels();
+}
+// 
+function loadStaticLabels(){
+  document.getElementById("targetChildrenLabel").innerHTML = getTranslatedLabel("target-children");
+  document.getElementById("targetWomenLabel").innerHTML = getTranslatedLabel("target-women");
+  document.getElementById("targetOriginLabel").innerHTML = getTranslatedLabel("target-origin");
+  document.getElementById("targetLGTBIQLabel").innerHTML = getTranslatedLabel("target-lgtbi");
+  document.getElementById("resetSearchLabel").innerHTML = getTranslatedLabel("clean-filters");
+  document.getElementById("introText").innerHTML = getTranslatedLabel("intro-text");
+}
+// method to initialize the DB content
 function initDBContent() {
   // check if the db is empty. In that case, load the arrayOfLocations in it
   db.info().then(function (result) {
@@ -151,7 +166,7 @@ function findLocationsInDatabase(searchType, serviceKey) {
     processedServices = processedServices.concat(afsServices);
     processedServices = processedServices.concat(lgtbiqServices);
   }
-  console.log("processedServices after filters: " + processedServices);
+  // console.log("processedServices after filters: " + processedServices);
   // compose the searcCriterias
   if (processedServices.length > 0) {
     searchCriterias.services = { $elemMatch: { $in: processedServices } };
@@ -172,4 +187,13 @@ function findLocationsInDatabase(searchType, serviceKey) {
   }).catch(function (err) {
     console.log(err);
   });
+}
+// function to handle the different static message
+function getTranslatedLabel(code) {
+  var label = valueLists.find(itm => itm.code === code)[selectedLanguage];
+  if(!label){
+    console.log("Unknown labelId: " + labelId);
+    label = "";
+  }
+  return label;
 }
