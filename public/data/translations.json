@@ -87,7 +87,7 @@
         "code": "district",
         "ES": "Distrito",
         "EN": "District",
-        "FR": "Distrit",
+        "FR": "Quartier",
         "AR": "ar"
     },
 	{
@@ -149,8 +149,8 @@
 	{
         "code": "contact-and-timetable",
         "ES": "Contacto y Horarios",
-        "EN": "Contact et Horaires",
-        "FR": "Contact and Time Table",
+        "EN": "Contact and Time Table",
+        "FR": "Contact et Horaires",
         "AR": "ar"
     },
 	{
