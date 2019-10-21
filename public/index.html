@@ -9,7 +9,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-149353278-2');
 </script>
 
@@ -32,9 +31,6 @@
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   -->
   <script src="./js/domain.js"></script>
-  <script>
-    selectedLanguage = 'ES';
-  </script>
   <style>
     body,
     h1,
@@ -85,19 +81,8 @@
   <!-- Sidebar/menu -->
   <nav class="w3-sidebar w3-light-gray w3-collapse w3-top w3-large w3-padding"
     style="z-index:3;width:350px;font-weight:bold;" id="mySidebar"><br>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
-      style="width:100%;font-size:15px">Cerrar Menu</a>
-    <!--
-    <div class="w3-row w3-margin-bottom">
-      <div class="w3-col s10 m10 l10 w3-left">
-        <input id="searchText" class="w3-input" type="text" oninput="onTextSearchInput(this.value)"
-          placeholder="Buscar...">
-      </div>
-      <div class="w3-col s2 m2 l2 w3-center">
-        <a href="javascript:void(0)" onclick="onResetClick()" class="w3-button"><i class="far fa-times-circle"></i></a>
-      </div>
-    </div>
-    -->
+    <a id="closeMenu" href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:15px"></a>
     <!-- List services in the sideBar -->
     <div id="sideBarMenu">
       <div v-for="svcItem in listOfServices" class="w3-bar">
@@ -106,12 +91,12 @@
             height="42" width="42">
           <button v-bind:id="svcItem.key + '-btn'"
             class="menu-btn w3-bar-item w3-button w3-medium w3-left-align w3-padding-small w3-mobile"
-            v-on:click="onCategoryClick(svcItem)">{{svcItem.ES}}</button>
+            v-on:click="onCategoryClick(svcItem)">{{printService(svcItem)}}</button>
         </div>
         <div v-else class="menu-service-div w3-hide" v-bind:class="svcItem.category + '-child'">
           <button v-bind:id="svcItem.key + '-btn'"
             class="menu-btn w3-bar-item w3-button w3-small w3-left-align w3-padding-small w3-mobile"
-            v-on:click="onServiceClick(svcItem.key)">{{svcItem.ES}}</button>
+            v-on:click="onServiceClick(svcItem.key)">{{printService(svcItem)}}</button>
         </div>
       </div>
     </div>
@@ -122,8 +107,8 @@
     <a href="javascript:void(0)" class="w3-button w3-light-gray w3-margin-right" onclick="w3_open()">&#9776;</a>
   </header>
 
-
   <!-- Overlay effect when opening sidebar on small screens -->
+  <!-- TODO: change title attribute -->
   <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="Cerrar menu" id="myOverlay">
   </div>
 
@@ -143,10 +128,10 @@
           <div id="introText"></div>
         </div>
         <div class="w3-col s11 m2 l1 w3-right">
-          <a href="./index.html" onClick="onLanguageChange('ES')">ES</a>
-          <a href="./EN/index.html" onClick="onLanguageChange('EN')">EN</a>
-          <a href="./FR/index.html" onClick="onLanguageChange('FR')">FR</a>
-          <!--a href="./AR/index.html" onClick="onLanguageChange('AR')">AR</a-->
+          <a href="javascript:void(0)" onClick="onLanguageChange('ES')"><img src="./assets/spain.png" height="16" width="16"/>ES</a>
+          <a href="javascript:void(0)" onClick="onLanguageChange('EN')"><img src="./assets/united-kingdom.png" height="16" width="16"/>EN</a>
+          <a href="javascript:void(0)" onClick="onLanguageChange('FR')"><img src="./assets/france.png" height="16" width="16"/>FR</a>
+          <!--a href="javascript:void(0)" onClick="onLanguageChange('AR')">AR</a-->
         </div>
       </div>
       <div class="w3-container">
@@ -195,7 +180,7 @@
                   <div v-bind:id="loc.ID + '-btn'" v-on:click="onLocationClick('' + loc.ID)"
                     class="w3-col s10 m10 l10 w3-left w3-medium w3-left-align">{{loc.orgName}}</div>
                   <a href="javascript:void(0)" class="w3-col s2 m2 l2 w3-padding w3-right-align"
-                    v-on:click="showLocationMarker('loc-marker-' + loc.ID)">Mostrar en el mapa</a>
+                    v-on:click="showLocationMarker('loc-marker-' + loc.ID)">{{printLabel("show-in-map")}}</a>
                   <!--a href="javascript:void(0)" class="w3-col s1 w3-right-align"
                     v-on:click="showLocationMarker('loc-marker-' + loc.ID)">+</a-->
                 </button>
@@ -203,17 +188,17 @@
                   <a href="javascript:void(0)" v-on:click="openInfoTab(loc.ID + '-general-info');">
                     <div v-bind:id="loc.ID + '-general-info-tablink'"
                       class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">
-                      Servicios</div>
+                      {{printLabel("services")}}</div>
                   </a>
                   <a href="javascript:void(0)" v-on:click="openInfoTab(loc.ID + '-contact-info');">
                     <div v-bind:id="loc.ID + '-contact-info-tablink'"
                       class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">
-                      Contacto y horarios</div>
+                      {{printLabel("contact-and-timetable")}}</div>
                   </a>
                   <a href="javascript:void(0)" v-on:click="openInfoTab(loc.ID + '-extra-info');">
                     <div v-bind:id="loc.ID + '-extra-info-tablink'"
                       class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">
-                      Información adicional</div>
+                      {{printLabel("additional-info")}}</div>
                   </a>
                 </div>
                 <div class="w3-row">
@@ -224,11 +209,11 @@
                   </div>
                   <div v-bind:id="loc.ID + '-contact-info'" class="w3-col s12 m4 l4 infoTab"
                     style="display:none; width:100%">
-                    <p>Distrito: {{loc.district}} &nbsp; Dirección: {{loc.fullAddress}}</p>
-                    <p>Teléfono: {{loc.orgPhone}} &nbsp; Email: {{loc.orgEmail}}</p>
-                    <p>Medios de contacto preferidos: {{printWaysOfContact(loc.waysOfContact)}}</p>
-                    <p>Horarios: {{printTimetable(loc.timeTable)}}</p>
-                    <p>Página web: <a v-bind:href="'//' + loc.orgWeb" target='_blank'>{{loc.orgWeb}}</a></p>
+                    <p>{{printLabel("district")}} {{loc.district}} &nbsp; {{printLabel("address")}} {{loc.fullAddress}}</p>
+                    <p>{{printLabel("phone")}} {{loc.orgPhone}} &nbsp; {{printLabel("email")}} {{loc.orgEmail}}</p>
+                    <p>{{printLabel("prefered-contacts")}} {{printWaysOfContact(loc.waysOfContact)}}</p>
+                    <p>{{printLabel("timetable")}} {{printTimetable(loc.timeTable)}}</p>
+                    <p>{{printLabel("web-page")}} <a v-bind:href="'//' + loc.orgWeb" target='_blank'>{{loc.orgWeb}}</a></p>
                   </div>
                   <div v-bind:id="loc.ID + '-extra-info'" class="w3-col s12 m4 l4 infoTab"
                     style="display:none; width:100%">
@@ -243,8 +228,13 @@
     </div>
     <!-- End page content / w3-main -->
     <!-- Footer -->
-    <div w3-include-html="./footer.html"></div>
-
+    <div class="w3-container w3-padding-32" style="margin-top:50px">
+        <div class="w3-left">
+          <div id="footerText"></div>
+          <p class="w3-right">Powered by <a href="https://www.mundoenmovimiento.org" title="mundoenmovimiento" target="_blank" class="w3-hover-opacity"><img src="./assets/mundo_en_movimiento_logo.png" alt="Madrid for all" class="w3-image" style="width:100%;max-width:200px"></a></p>
+        </div>
+      </div>
+    <!-- Post DOM loading scripts -->
     <script>
       // destroy DB in order to recreate it from scratch
       db.destroy().then(
@@ -255,7 +245,7 @@
           w3.getHttpObject("/data/waysOfContact.json", initWaysOfContact);
           w3.getHttpObject("/data/locationServices.json", initLocationServicesRelations);
           w3.getHttpObject("/data/services.json", initMenuContent);
-          w3.getHttpObject("/data/valueLists.json", initValueLists);
+          w3.getHttpObject("/data/translations.json", initTranslations);
         }
       )
       // Post DOM loaded actions

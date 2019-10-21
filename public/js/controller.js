@@ -101,6 +101,10 @@ var vueResultTable = new Vue({
       } else {
         return " - ";
       }
+    },
+    printLabel : function(label){
+      var translatedLabel = getTranslatedLabel(label);
+      return translatedLabel;
     }
   }
 });
@@ -134,6 +138,9 @@ var vueSideBarMenu = new Vue({
       w3_close();
       // trigger the find operation
       findLocationsInDatabase("SERVICE", serviceKey);
+    },
+    printService : function(serviceItem){
+      return serviceItem[selectedLanguage];
     }
   }
 });
@@ -318,6 +325,10 @@ function clearPreviousResults() {
 function onLanguageChange(language) {
   console.log("onLanguageChange: " + language);
   selectedLanguage = language;
+  vueSideBarMenu.listOfServices = [];
+  vueSideBarMenu.listOfServices = originalServices;
+  loadStaticLabels();
+  onResetClick();
 }
 // function to reset the search results
 function onResetClick() {

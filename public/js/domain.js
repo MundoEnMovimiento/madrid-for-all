@@ -9,8 +9,8 @@ var originalWaysOfContact = [];
 var arrayOfLocations = [];
 var markersOnMap = [];
 var selectedServices = [];
-var selectedLanguage = 'ES'
-var valueLists = [];
+var selectedLanguage = 'ES';
+var translations = [];
 var targetWomen = false;
 var targetChildren = false;
 var targetOrigin = false;
@@ -21,9 +21,9 @@ var mainCityGeoCode = {
   "lng": -3.7038
 }
 // callback to load menu content: categories, services, etc.
-function initValueLists(loadedValueLists) {
-  console.log("initValue Lists...");
-  valueLists = loadedValueLists;
+function initTranslations(loadedTranslations) {
+  console.log("initTranslations...");
+  translations = loadedTranslations;
   loadStaticLabels();
 }
 // 
@@ -34,6 +34,8 @@ function loadStaticLabels(){
   document.getElementById("targetLGTBIQLabel").innerHTML = getTranslatedLabel("target-lgtbi");
   document.getElementById("resetSearchLabel").innerHTML = getTranslatedLabel("clean-filters");
   document.getElementById("introText").innerHTML = getTranslatedLabel("intro-text");
+  document.getElementById("footerText").innerHTML = getTranslatedLabel("footer-text");
+  document.getElementById("closeMenu").innerHTML = getTranslatedLabel("close-menu");
 }
 // method to initialize the DB content
 function initDBContent() {
@@ -190,7 +192,7 @@ function findLocationsInDatabase(searchType, serviceKey) {
 }
 // function to handle the different static message
 function getTranslatedLabel(code) {
-  var label = valueLists.find(itm => itm.code === code)[selectedLanguage];
+  var label = translations.find(itm => itm.code === code)[selectedLanguage];
   if(!label){
     console.log("Unknown labelId: " + labelId);
     label = "";
