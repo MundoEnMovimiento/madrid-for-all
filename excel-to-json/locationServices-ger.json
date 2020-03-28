@@ -1,0 +1,1052 @@
+[
+  {
+    "locationID": "loc1",
+    "c3s1": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc2",
+    "c1s5": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc3",
+    "c1s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc4",
+    "c1s5": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc5",
+    "c2s11": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "CHILD"
+    ],
+    "c7s0": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc6",
+    "c1s5": [
+      "OPEN"
+    ],
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c4s1": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc7",
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "LGTBIQ",
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc8",
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc9",
+    "c1s1": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc10",
+    "c3s4": [
+      "OPEN"
+    ],
+    "c3s5": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc11",
+    "c3s2": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ],
+    "c4s1": [
+      "OPEN"
+    ],
+    "c4s2": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ],
+    "c4s4": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc12",
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c3s5": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc13",
+    "c1s3": [
+      "OPEN"
+    ],
+    "c1s5": [
+      "OPEN"
+    ],
+    "c3s2": [
+      "OPEN"
+    ],
+    "c4s2": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ],
+    "c4s4": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc14",
+    "c2s11": [
+      "OPEN"
+    ],
+    "c2s12": [
+      "OPEN"
+    ],
+    "c3s5": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc15",
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s2": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c4s2": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc16",
+    "c2s11": [
+      "OPEN"
+    ],
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc17",
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc18",
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc19",
+    "c3s4": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc20",
+    "c3s2": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc21",
+    "c5s1": [
+      "OPEN"
+    ],
+    "c5s2": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc22",
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s2": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "OPEN"
+    ],
+    "c3s5": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ],
+    "c4s2": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc23",
+    "c2s11": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc24",
+    "c2s11": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc25",
+    "c1s1": [
+      "OPEN",
+      "WOMEN",
+      "CHILD"
+    ],
+    "c1s3": [
+      "AFS"
+    ],
+    "c1s4": [
+      "AFS"
+    ],
+    "c1s5": [
+      "AFS"
+    ],
+    "c1s6": [
+      "AFS"
+    ],
+    "c1s7": [
+      "AFS"
+    ],
+    "c2s1": [
+      "AFS",
+      "WOMEN"
+    ],
+    "c2s9": [
+      "WOMEN"
+    ],
+    "c2s11": [
+      "AFS",
+      "WOMEN"
+    ],
+    "c2s12": [
+      "AFS",
+      "WOMEN"
+    ],
+    "c3s1": [
+      "AFS",
+      "WOMEN"
+    ],
+    "c3s3": [
+      "AFS"
+    ],
+    "c3s5": [
+      "AFS",
+      "WOMEN"
+    ],
+    "c4s3": [
+      "AFS",
+      "CHILD"
+    ],
+    "c5s5": [
+      "WOMEN"
+    ],
+    "c7s0": [
+      "AFS",
+      "WOMEN"
+    ],
+    "c10s0": [
+      "AFS",
+      "WOMEN",
+      "CHILD"
+    ]
+  },
+  {
+    "locationID": "loc26",
+    "c1s1": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c2s2": [
+      "OPEN"
+    ],
+    "c2s4": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c2s11": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c3s1": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c4s3": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c8s0": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c10s0": [
+      "LGTBIQ",
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc27",
+    "c3s4": [
+      "CHILD"
+    ],
+    "c4s1": [
+      "CHILD"
+    ],
+    "c4s3": [
+      "CHILD"
+    ]
+  },
+  {
+    "locationID": "loc28",
+    "c2s2": [
+      "OPEN",
+      "LGTBIQ"
+    ],
+    "c10s0": [
+      "LGTBIQ"
+    ]
+  },
+  {
+    "locationID": "loc29",
+    "c2s11": [
+      "WOMEN"
+    ],
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "WOMEN"
+    ],
+    "c3s6": [
+      "WOMEN"
+    ],
+    "c4s3": [
+      "WOMEN"
+    ],
+    "c7s0": [
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc30",
+    "c2s2": [
+      "OPEN"
+    ],
+    "c2s11": [
+      "OPEN",
+      "WOMEN"
+    ],
+    "c5s5": [
+      "WOMEN"
+    ],
+    "c5s6": [
+      "WOMEN"
+    ],
+    "c10s0": [
+      "OPEN",
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc31",
+    "c2s11": [
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc32",
+    "c1s5": [
+      "OPEN"
+    ],
+    "c3s1": [
+      "OPEN"
+    ],
+    "c4s1": [
+      "OPEN"
+    ],
+    "c4s2": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc33",
+    "c2s11": [
+      "WOMEN"
+    ],
+    "c4s3": [
+      "WOMEN"
+    ],
+    "c5s5": [
+      "WOMEN"
+    ],
+    "c5s6": [
+      "WOMEN"
+    ],
+    "c7s0": [
+      "WOMEN"
+    ],
+    "c10s0": [
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc34",
+    "c3s5": [
+      "OPEN"
+    ],
+    "c5s5": [
+      "WOMEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc35",
+    "c1s5": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc36"
+  },
+  {
+    "locationID": "loc37",
+    "c3s5": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc38",
+    "c1s1": [
+      "OPEN"
+    ],
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s3": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc39",
+    "c3s1": [
+      "OPEN",
+      "WOMEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN",
+      "WOMEN"
+    ],
+    "c4s2": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ],
+    "c8s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc40",
+    "c3s1": [
+      "WOMEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc41",
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc42",
+    "c1s1": [
+      "OPEN",
+      "WOMEN",
+      "CHILD"
+    ],
+    "c1s5": [
+      "OPEN"
+    ],
+    "c2s11": [
+      "WOMEN"
+    ],
+    "c5s5": [
+      "WOMEN"
+    ],
+    "c6s0": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN",
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc43",
+    "c2s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc44",
+    "c3s4": [
+      "OPEN"
+    ],
+    "c3s5": [
+      "OPEN"
+    ],
+    "c4s2": [
+      "OPEN"
+    ],
+    "c5s1": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ],
+    "c8s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc45",
+    "c1s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc46",
+    "c1s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc47",
+    "c1s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc48",
+    "c1s4": [
+      "OPEN"
+    ],
+    "c1s5": [
+      "OPEN"
+    ],
+    "c1s6": [
+      "OPEN"
+    ],
+    "c2s1": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc49",
+    "c1s3": [
+      "OPEN"
+    ],
+    "c1s4": [
+      "OPEN"
+    ],
+    "c1s6": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc50",
+    "c1s2": [
+      "OPEN"
+    ],
+    "c1s4": [
+      "OPEN"
+    ],
+    "c1s6": [
+      "OPEN"
+    ],
+    "c2s11": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc51",
+    "c2s11": [
+      "OPEN"
+    ],
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc52",
+    "c3s1": [
+      "AF",
+      "WOMEN"
+    ],
+    "c3s6": [
+      "AF",
+      "WOMEN"
+    ],
+    "c5s2": [
+      "OPEN"
+    ],
+    "c5s7": [
+      "AF",
+      "WOMEN"
+    ],
+    "c8s0": [
+      "AF",
+      "WOMEN"
+    ],
+    "c10s0": [
+      "AF",
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc53",
+    "c2s1": [
+      "OPEN"
+    ],
+    "c2s2": [
+      "OPEN"
+    ],
+    "c2s3": [
+      "OPEN"
+    ],
+    "c2s11": [
+      "OPEN"
+    ],
+    "c8s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc54",
+    "c2s11": [
+      "OPEN"
+    ],
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OPEN"
+    ],
+    "c5s2": [
+      "WOMEN"
+    ],
+    "c5s5": [
+      "WOMEN"
+    ],
+    "c5s6": [
+      "WOMEN"
+    ],
+    "c5s7": [
+      "WOMEN"
+    ],
+    "c6s0": [
+      "OPEN"
+    ],
+    "c8s0": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc55",
+    "c5s5": [
+      "WOMEN"
+    ],
+    "c7s0": [
+      "WOMEN"
+    ],
+    "c10s0": [
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc56",
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc57",
+    "c2s11": [
+      "OPEN"
+    ],
+    "c5s1": [
+      "OPEN"
+    ],
+    "c5s2": [
+      "OPEN"
+    ],
+    "c5s3": [
+      "OPEN",
+      "WOMEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc58",
+    "c1s1": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc59",
+    "c2s2": [
+      "OPEN"
+    ],
+    "c2s11": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c5s4": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c5s5": [
+      "LGTBIQ",
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc60",
+    "c2s2": [
+      "OPEN"
+    ],
+    "c2s11": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c4s3": [
+      "LGTBIQ",
+      "WOMEN"
+    ],
+    "c5s5": [
+      "LGTBIQ",
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc61",
+    "c3s1": [
+      "OPEN"
+    ],
+    "c5s2": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc62",
+    "c10s0": [
+      "WOMEN"
+    ]
+  },
+  {
+    "locationID": "loc63",
+    "c3s6": [
+      "OPEN"
+    ],
+    "c6s0": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc64",
+    "c1s1": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc65",
+    "c2s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc66",
+    "c3s1": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc67",
+    "c3s6": [
+      "OPEN"
+    ],
+    "c4s2": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ],
+    "c4s4": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc68",
+    "c3s6": [
+      "OPEN"
+    ],
+    "c5s1": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc69",
+    "c1s1": [
+      "OPEN"
+    ],
+    "c2s1": [
+      "OPEN"
+    ],
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OF"
+    ],
+    "c4s1": [
+      "OPEN"
+    ],
+    "c5s1": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc70",
+    "c1s1": [
+      "OPEN"
+    ],
+    "c2s1": [
+      "OPEN"
+    ],
+    "c3s1": [
+      "OPEN"
+    ],
+    "c3s6": [
+      "OF"
+    ],
+    "c4s1": [
+      "OPEN"
+    ],
+    "c5s1": [
+      "OPEN"
+    ]
+  }
+]

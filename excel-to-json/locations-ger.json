@@ -1,0 +1,2325 @@
+[
+  {
+    "ID": "loc1",
+    "orgName": "ALTERNATIVA EN MARCHA",
+    "orgPhone": 914049118,
+    "orgEmail": "aem@alternativaenmarcha.org",
+    "orgWeb": "www.alternativaenmarcha.org",
+    "address": "CALLE JOSÉ LUIS DE ARRESE 66 LOCAL",
+    "postalCode": 28017,
+    "district": "Ciudad Lineal",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, con cita previa",
+      "EN": "Every morning, only with appointment",
+      "FR": "Tous les matins de la semaine, sur rendez-vous"
+    },
+    "priorAppointment": "Si",
+    "waysOfContact": [
+      "phone"
+    ],
+    "languages": [
+      "ES",
+      "AR"
+    ],
+    "additionalInfo": {},
+    "fullAddress": "CALLE JOSÉ LUIS DE ARRESE 66 LOCAL, 28017, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc2",
+    "orgName": "BIENVENIDXS REFUGIADXS ALCALÁ DE HENARES",
+    "orgPhone": 680995764,
+    "orgEmail": "bienvenidosrefugiadosadh@gmail.com",
+    "orgWeb": "www.refugiadosalcala.es",
+    "address": "CALLE ENTREPEÑAS, 2",
+    "postalCode": 28803,
+    "district": "Sin presencia física",
+    "locality": "ALCALÁ DE HENARES",
+    "timeTable": {
+      "ES": "Contactar antes de venir",
+      "EN": "Contactar antes de venir",
+      "FR": "Prendre rendez-vous avant de venir"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email"
+    ],
+    "languages": [
+      "ES",
+      "EN"
+    ],
+    "additionalInfo": {
+      "ES": "También ofrecemos material escolar, productos de higiene, muebles y menaje del hogar.",
+      "EN": "We also offer school material, hygiene products, furniture and household items. \nWe are open to try new ways of support.",
+      "FR": "Nous proposons également des fournitures scolaires, des produits d’hygiène, des meubles et des articles ménagers."
+    },
+    "geocode": {
+      "lat": 40419138,
+      "lng": -3687799,
+      "coordinates": "40.419138, -3.687799"
+    }
+  },
+  {
+    "ID": "loc3",
+    "orgName": "HERMANDAD DEL REFUGIO DE MADRID",
+    "orgPhone": 915220070,
+    "orgEmail": "hermandad@refugio.e.telefonica.net",
+    "orgWeb": "www.realhermandaddelrefugio.org",
+    "address": "CORREDERA BAJA DE SAN PABLO, 16",
+    "postalCode": 28004,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las tardes, de lunes a sábado, el domingo cierra",
+      "EN": "Every afternoon/evening, from Monday to Friday, Sunday closed.",
+      "FR": "\nL'après-midi, du lundi au samedi. Fermé le dimanche"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Cenas de 19 a 20 horas",
+      "EN": "Canteen, dinner 19 to 20h.",
+      "FR": "Dîner servi de 19h à 20h"
+    },
+    "fullAddress": "CORREDERA BAJA DE SAN PABLO, 16, 28004, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc4",
+    "orgName": "HERMANDAD DEL REFUGIO DE MADRID",
+    "orgPhone": 915220070,
+    "orgEmail": "hermandad@refugio.e.telefonica.net",
+    "orgWeb": "www.realhermandaddelrefugio.org",
+    "address": "CORREDERA BAJA DE SAN PABLO, 16",
+    "postalCode": 28004,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Miércoles 10,30h a 11,30h recoger número, lunes siguiente entrega de la ropa",
+      "EN": "Wenesday 10:30-11:30 for appointment, Mondays to get the clothes",
+      "FR": "Le mercredi de 10h30 à 11h30 sur rendez-vous. Les vêtements sont délivrés le lundi qui suit\n\n"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Ropero: los miércoles se recoge número de orden y la semana siguiente el lunes se entrega la ropa. Meses de verano, julio y agosto y los días festivos está cerrado.",
+      "EN": "Clothing: Wednesday to collect the ticket and next Monday to deliver the clothes.\nSummer months, July and August, and national festivities the service is closed.",
+      "FR": "Un numéro sera donné le mercredi afin de récupérer les vêtements le lundi suivant. Le centre est fermé les mois de juillet et août ainsi que les jours fériés."
+    },
+    "fullAddress": "CORREDERA BAJA DE SAN PABLO, 16, 28004, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc5",
+    "orgName": "ASOCIACIÓN APOYO",
+    "orgPhone": 914379815,
+    "orgEmail": "apoyo@asociacionapoyo.org",
+    "address": "CALLE DEL CORREGIDOR DIEGO DE VALDERRABANO, 45",
+    "postalCode": 28030,
+    "district": "Moratalaz",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, tardes de miércoles y viernes",
+      "EN": "Every morning, Wednesday and Friday afternoons",
+      "FR": "Tous les matins de la semaine. Le mercredi et le vendredi après-midi"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "phone"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a la familia y la infancia",
+      "FR": "Services à la famille et à l'enfance."
+    },
+    "fullAddress": "CALLE DEL CORREGIDOR DIEGO DE VALDERRABANO, 45, 28030, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc6",
+    "orgName": "LA VILLANA",
+    "orgPhone": 644882198,
+    "orgEmail": "info@lavillana.org",
+    "orgWeb": "www.lavillana.org",
+    "address": "CALLE MONTSENY, 35",
+    "postalCode": 28038,
+    "district": "Puente de Vallecas",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las tardes",
+      "EN": "Every afternoon/evening",
+      "FR": "Tous les après-midi"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Horarios de las actividades: www.lavillana.org/agenda/",
+      "EN": "Activities schedule: www.lavillana.org/agenda/",
+      "FR": "Horaires des activités disponibles sur www.lavillana.org/agenda/"
+    },
+    "fullAddress": "CALLE MONTSENY, 35 , 28038, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc7",
+    "orgName": "LA MERCED MIGRACIONES",
+    "orgPhone": 913555550,
+    "orgEmail": "lamerced@lamercedmigraciones.org",
+    "orgWeb": "www.lamercedmigraciones.org",
+    "address": "CALLE BOCÁNGEL, 2",
+    "postalCode": 28028,
+    "district": "Salamanca",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes",
+      "EN": "Every morning, Every afternoon/evening",
+      "FR": "Toute la journée"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      "AR",
+      "FR"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a jóvenes de 18 a 30 años",
+      "EN": "Women and youth assistance.",
+      "FR": "Attention spécifique dirigée aux femmes et à la jeunesse (de 18 à 30 ans)"
+    },
+    "fullAddress": "CALLE BOCÁNGEL, 2, 28028, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc8",
+    "orgName": "ESCUELA POPULAR DE ADULTOS DEL BARRIO DEL PILAR",
+    "orgPhone": 635736573,
+    "orgEmail": "jsanzlan@ucm.es",
+    "address": "CALLE BETANZOS, 37",
+    "postalCode": 28029,
+    "district": "Fuencarral / El Pardo",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Lunes y miércoles (10:30h a 12:00h y 19:30h a 21:00h) y martes (19:30h a 20:30h)",
+      "EN": "Monday and Wednesday (10:30-12:00 and 19:30-21:00) and Tuesday (19:30-20:30)",
+      "FR": "Lundi et Mercredi (de 10h30 à 12h et de 19h30 à 21h)\nMardi (de 19h30 à 20h30)\n"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {},
+    "fullAddress": "CALLE BETANZOS, 37, 28029, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc9",
+    "orgName": "ASOCIACIÓN REALIDADES",
+    "orgPhone": 914672726,
+    "orgEmail": "info@asociacionrealidades.org",
+    "orgWeb": "www.asociacionrealidades.org",
+    "address": "CALLE CÁCERES, 10 1º DERECHA",
+    "postalCode": 28045,
+    "district": "Arganzuela",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas",
+      "EN": "Every morning",
+      "FR": "Tous les matins"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Tramitación de rentas mínimas (REMI), atención a personas sin hogar.",
+      "EN": "Minimal benefits proceedings (REMI), and support for homeless people.",
+      "FR": "Assistance pour les démarches concernant le revenu minimum (REMI).  Attention spécifique dirigée aux sans-abri"
+    },
+    "fullAddress": "CALLE CÁCERES, 10 1º DERECHA, 28045, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc10",
+    "orgName": "ASOCIACIÓN CULTURAL LA KALLE",
+    "orgPhone": 917772822,
+    "orgEmail": "asociacion@lakalle.org",
+    "orgWeb": "www.lakalle.org",
+    "address": "CALLE JAVIER DE MIGUEL, 92 BLOQUE I LOCAL 1",
+    "postalCode": 28018,
+    "district": "Puente de Vallecas",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas",
+      "EN": "Every morning",
+      "FR": "Tous les matins"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a jóvenes de 12 a 30 años",
+      "FR": "Services pour les jeunes de 12 à 30 ans"
+    },
+    "fullAddress": "CALLE JAVIER DE MIGUEL, 92 BLOQUE I LOCAL 1, 28018, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc11",
+    "orgName": "LA INGOBERNABLE",
+    "orgEmail": "bienvenida@ingobernable.net",
+    "orgWeb": "www.ingobernable.net",
+    "address": "CALLE GOBERNADOR, 39",
+    "postalCode": 28014,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las tardes",
+      "EN": "Every afternoon/evening",
+      "FR": "Tous les après-midi"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Taller de reparación de bicis",
+      "EN": "Bycicle repair workshop",
+      "FR": "Atelier de réparation de vélo"
+    },
+    "fullAddress": "CALLE GOBERNADOR, 39, 28014, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc12",
+    "orgName": "ASOCIACIÓN CULTURAL NORTE JOVEN",
+    "orgPhone": 913721506,
+    "orgEmail": "nortejoven@nortejoven.org",
+    "orgWeb": "www.nortejoven.org",
+    "address": "CALLE RIVADAVIA, 20",
+    "postalCode": 28029,
+    "district": "Fuencarral / El Pardo",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes",
+      "EN": "Every morning, Every afternoon/evening",
+      "FR": "Toute la journée"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a jóvenes de 16 a 25 años",
+      "EN": "Childhood and youth assistance.\nProfessional training.",
+      "FR": "Services dédiés aux jeunes de 16 à 25 ans\nFormation aux métiers."
+    },
+    "fullAddress": "CALLE RIVADAVIA, 20, 28029, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc13",
+    "orgName": "LA ENREDADERA",
+    "orgEmail": "enredadera@riseup.net",
+    "orgWeb": "laenredaderadetetuan.wordpress.com",
+    "address": "CALLE ANASTASIO HERRERO, 10",
+    "postalCode": 28020,
+    "district": "Tetuan",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las tardes",
+      "EN": "Every afternoon/evening",
+      "FR": "Tous les après-midi"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {},
+    "fullAddress": "CALLE ANASTASIO HERRERO, 10, 28020, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc14",
+    "orgName": "ASOCIACIÓN DE PSICOTERAPIA SISTÉMICA TRANSCULTURAL. TERAPIAS SIN FRONTERAS\n",
+    "orgPhone": 914299756,
+    "orgEmail": "info@terapiasinfronteras.com",
+    "orgWeb": "www.terapiasinfronteras.com",
+    "address": "CALLE SAN AGUSTIN, 7. 1RA, EXT IZDA",
+    "postalCode": 28014,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes",
+      "EN": "Every morning, Every afternoon/evening",
+      "FR": "Toute la journée"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      "EN",
+      "FR",
+      "AR"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a las familias",
+      "FR": "Services à la famille"
+    },
+    "fullAddress": "CALLE SAN AGUSTIN, 7. 1RA, EXT IZDA, 28014, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc15",
+    "orgName": "ASOCIACIÓN CULTURAL GANDALF",
+    "orgPhone": 913806604,
+    "orgEmail": "gandalflf@hotmail.com",
+    "orgWeb": "acgandalf-gandalf.blogspot.com.es",
+    "address": "CALLE RAFAEL FERNANDEZ HIJICOS, 2",
+    "postalCode": 28038,
+    "district": "Puente de Vallecas",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas",
+      "EN": "Every morning",
+      "FR": "Tous les matins"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email"
+    ],
+    "languages": [
+      "ES",
+      "EN"
+    ],
+    "additionalInfo": {},
+    "fullAddress": "CALLE RAFAEL FERNANDEZ HIJICOS, 2, 28038, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc16",
+    "orgName": "CEPI CENTRO ARGANZUELA (LA RUECA ASOCIACIÓN)",
+    "orgPhone": 918286978,
+    "orgEmail": "cepiarganzuela@larueca.info",
+    "orgWeb": "www.larueca.info",
+    "address": "CALLE ARQUITECTURA 15 DUPLICADO",
+    "postalCode": 28005,
+    "district": "Arganzuela",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Lunes de 16h-20h, martes a sábados de 10h-14h y de 16h-20h",
+      "EN": "Monday 16-20h From Tuesday to Saturday 10-14h and 16-20h",
+      "FR": "Lundi de 16h à 20h\nDu mardi au samedi de 10h à 14h et de 16h à 20h"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a las familias, la mujer y la infancia",
+      "EN": "Families, women and childhood assistance",
+      "FR": "Services à la famille, aux femmes et à la jeunesse"
+    },
+    "fullAddress": "CALLE ARQUITECTURA 15 DUPLICADO, 28005, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc17",
+    "orgName": "AFROAID",
+    "orgEmail": "afroaidmail@gmail.com",
+    "orgWeb": "www.afroaid.net",
+    "address": "CALLE DE MATILDE LANDA, 30",
+    "postalCode": 28029,
+    "district": "Tetuan",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Fines de semana",
+      "EN": "Weekends",
+      "FR": "Le week-end"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "email"
+    ],
+    "languages": [
+      "ES",
+      "EN"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a jóvenes a partir de 18 años",
+      "FR": "Services à la jeunesse (à partir de 18 ans)"
+    },
+    "fullAddress": "CALLE MATILDE LANDA 30, 28029 MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc18",
+    "orgName": "ASOCIACIÓN CEPA-PUENTE DE VALLECAS",
+    "orgPhone": 917779661,
+    "orgEmail": "cepaongcolectivo@gmail.com",
+    "address": "CALLE DE RAMÓN PÉREZ DE AYALA, 26 LOCAL POSTERIOR",
+    "postalCode": 28038,
+    "district": "Puente de Vallecas",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas",
+      "EN": "Every morning",
+      "FR": "Tous les matins"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "EN": "Women assistance",
+      "FR": "Services d'attention aux femmes"
+    },
+    "fullAddress": "CALLE DE RAMÓN PÉREZ DE AYALA, 26, 28038, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc19",
+    "orgName": "ASOCIACIÓN CEPA-PUENTE DE VALLECAS",
+    "orgPhone": 917779661,
+    "orgEmail": "cepa.infancia@gmail.com",
+    "address": "CALLE MARISMAS, 37",
+    "postalCode": 28038,
+    "district": "Puente de Vallecas",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las tardes de lunes a jueves",
+      "EN": "Afternoons from Monday  to Thursday",
+      "FR": "Du lundi au jeudi, l'après-midi"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a familia. Apoyo escolar de 5 a 18 años. Se ofrecen talleres de acompañamiento a la inserción laboral a partir de los 18 años",
+      "EN": "Families and childhod assistance",
+      "FR": "Services à la famille. Soutien scolaire pour les jeunes de 5 à 18 ans. Ateliers d'insertion professionnelle à partir de 18 ans."
+    },
+    "fullAddress": "CALLE MARISMAS, 37, 28038, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc20",
+    "orgName": "ORBITA DIVERSA",
+    "orgEmail": "info@orbitadiversa.org",
+    "orgWeb": "orbitadiversa.wordpress.com",
+    "address": "CALLE RIBERA DE CURTIDORES, 2",
+    "postalCode": 28005,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Miércoles y viernes de 17h a 21h",
+      "EN": "Wednesday and Fridays from 17h to 21h",
+      "FR": "Mercredi et Vendredi de 17h à 21h"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "email"
+    ],
+    "languages": [
+      "ES",
+      "EN",
+      "IT"
+    ],
+    "additionalInfo": {},
+    "fullAddress": "CALLE RIBERA DE CURTIDORES, 2, 28005, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc21",
+    "orgName": "SOS RACISMO MADRID",
+    "orgPhone": 915592906,
+    "orgEmail": "info@sosracismomadrid.es",
+    "orgWeb": "www.sosracismomadrid.es",
+    "address": "CALLE LAVAPIÉS, 13",
+    "postalCode": 28012,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Con cita previa, todas las mañanas de lunes a jueves. Sin cita previa, tardes de martes 19:30h a 21h",
+      "EN": "Every morning from Monday to Thursday (with appointment) and Tuesday afternoon from 19:30 to 21 (without appointment)",
+      "FR": "Du lundi au jeudi matin sur prise de rendez-vous et le mardi après-midi de 19h30 à 21h"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      "EN",
+      "FR"
+    ],
+    "additionalInfo": {
+      "ES": "Espacio de empoderamiento para personas no blancas (grupo de acompañamiento psicosocial).",
+      "EN": "Empowerment space, psychosocial group for no-white people",
+      "FR": "Espace d'émancipation pour les personnes non blanches (groupe d'accompagnement psychologique)"
+    },
+    "fullAddress": "CALLE LAVAPIÉS, 13, 28012, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc22",
+    "orgName": "ASOCIACIÓN VECINAL PALOMA DEHESA DE LA VILLA",
+    "orgPhone": 912244837,
+    "orgEmail": "avpalomadehesa@gmail.com",
+    "orgWeb": "www.avpalomadehesa.com",
+    "address": "CALLE AGUILAR DE CAMPOO, 13 POSTERIOR",
+    "postalCode": 28039,
+    "district": "Moncloa / Aravaca",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Martes y jueves de 19:30 a 21 horas",
+      "EN": "Tuesday and Thursday from 19:30 to 21",
+      "FR": "Mardi et jeudi de 19h30 à 21h"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a las familias",
+      "FR": "Services à la famille"
+    },
+    "fullAddress": "CALLE AGUILAR DE CAMPOO, 13 POSTERIOR, 28039, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc23",
+    "orgName": "ASOCIACIÓN VALPONASCA",
+    "orgPhone": 911684483,
+    "orgEmail": "valponasca@valponasca.org",
+    "orgWeb": "www.valponasca.org",
+    "address": "CALLE SAN AQUILINO, 27",
+    "postalCode": 28029,
+    "district": "Tetuan",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes",
+      "EN": "Every morning, Every afternoon/evening",
+      "FR": "Toute la journée"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a familias y a jóvenes de 6 a 19 años",
+      "EN": "Families, youth and childhood assistance",
+      "FR": "Enfance et jeunesse (de 6 à 19 ans)"
+    },
+    "fullAddress": "CALLE SAN AQUILINO, 27 , 28029, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc24",
+    "orgName": "ASOCIACIÓN VALPONASCA",
+    "orgPhone": 911684483,
+    "orgEmail": "valponasca@valponasca.org",
+    "orgWeb": "www.valponasca.org",
+    "address": "CALLE ARANZUEQUE, 3",
+    "postalCode": 28023,
+    "district": "Tetuan",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes",
+      "EN": "Every morning, Every afternoon/evening",
+      "FR": "Toute la journée"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a familias y a jóvenes de 6 a 19 años",
+      "EN": "Families, youth and childhood assistance",
+      "FR": "Enfance et jeunesse (de 6 à 19 ans)"
+    },
+    "fullAddress": "CALLE ARANZUEQUE, 3, 28023, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc25",
+    "orgName": "ASOCIACIÓN KARIBU",
+    "orgPhone": 915531873,
+    "orgEmail": "karibu@asociacionkaribu.org",
+    "orgWeb": "www.asociacionkaribu.org",
+    "address": "CALLE SANTA ENGRACIA, 140",
+    "postalCode": 28003,
+    "district": "Chamberí",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas y todas las tardes, de lunes a viernes, excepto viernes tarde",
+      "EN": "Every morning and every afternoon/evening, from Monday to Friday, except from Friday afternoon",
+      "FR": "Toute la semaine, sauf le vendredi après-midi"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      "EN",
+      "FR"
+    ],
+    "additionalInfo": {
+      "ES": "Ofrecemos productos de higiene",
+      "EN": "Subsaharian women assistance",
+      "FR": "Nous avons des produits d'hygiène"
+    },
+    "fullAddress": "CALLE SANTA ENGRACIA, 140, 28003, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc26",
+    "orgName": "KIFKIF",
+    "orgPhone": 915211174,
+    "orgEmail": "psocial@kifkif.info",
+    "orgWeb": "www.kifkif.info",
+    "address": "CALLE ESPARTEROS, 1, 3º, 5ª",
+    "postalCode": 28012,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes",
+      "EN": "Every morning, Every afternoon/evening",
+      "FR": "\nToute la journée"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "web"
+    ],
+    "languages": [
+      "ES",
+      "EN",
+      "PT",
+      "IT",
+      "AR"
+    ],
+    "additionalInfo": {
+      "EN": "LGTBIQ+, women, childhood and youth assistance",
+      "FR": "Femmes, LGBTIQ+, enfance et jeunesse"
+    },
+    "fullAddress": "CALLE ESPARTEROS, 1, 3º, 5ª, 28012, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc27",
+    "orgName": "AJIVA",
+    "orgEmail": "ajiva1993@gmail.com",
+    "orgWeb": "ajiva.org",
+    "district": "Sin presencia física",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las tardes y fines de semana",
+      "EN": "Every afternoon/evening, Weekends",
+      "FR": "Tous les après-midi de la semaine, ainsi que le week-end"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "web"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Campamentos de verano y convivencias. Atención a niños y jóvenes entre 6 y 18 años",
+      "EN": "Summer camps, meetings, and trips. Childhood and youth",
+      "FR": "Camps d'été. Services à l'enfance (de 6 à 18 ans)"
+    },
+    "geocode": {
+      "lat": 40417061,
+      "lng": -3687920,
+      "coordinates": "40.417061, -3.687920"
+    }
+  },
+  {
+    "ID": "loc28",
+    "orgName": "ARCÓPOLI",
+    "orgPhone": 918780905,
+    "orgEmail": "buzon@arcopoli.org",
+    "orgWeb": "www.arcopoli.org",
+    "address": "CALLE MONTERA, 24, 2 O",
+    "postalCode": 28013,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes",
+      "EN": "Every morning, Every afternoon/evening",
+      "FR": "\nToute la journée"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      "EN"
+    ],
+    "additionalInfo": {
+      "ES": "Acompañamiento social y juridico de situaciones de lgtbifobia, también para personas heterosexuales que se vean afectadas.",
+      "EN": "LGTBIQ+ assistance",
+      "FR": "Accompagnement social et juridique pour les personnes LGTBIQ+."
+    },
+    "fullAddress": "CALLE MONTERA, 24, 2 O, 28013, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc29",
+    "orgName": "ASOCIACIÓN GRUPO LABOR",
+    "orgPhone": 917975354,
+    "orgEmail": "espanol.grupolabor@gmail.com",
+    "orgWeb": "www.grupolabor.org/",
+    "address": "CALLE ROMERAL, 12",
+    "postalCode": 28021,
+    "district": "Villaverde",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas",
+      "EN": "Every morning",
+      "FR": "Tous les matins"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a mujeres reclusas y exreclusas (Trabajadora social miércoles de 9.30h a 12.30h /Psicóloga martes de 9.30 a 12.30h)  Actividades de participación ciudadana.",
+      "EN": "Personal development and female empowerment lessons.\nWe offer free courses:cooking, cleaning and fashion lessons.\nHome assistance courses (not for free).",
+      "FR": "Cours de développement personnel et autonomisation des femmes.\nNous offrons des cours gratuits de cuisine, nettoyage et mode.\nCours d'aide à domicile (pas gratuit)"
+    },
+    "fullAddress": "CALLE ROMERAL, 12 , 28021, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc30",
+    "orgName": "APLEC INCLUSIÓN + IGUALDAD",
+    "orgPhone": 639902518,
+    "orgEmail": "laura_gg@aplec-i.org",
+    "address": "CALLE MAYOR 21, 1º IZQ",
+    "postalCode": 28013,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes",
+      "EN": "Every morning, Every afternoon/evening",
+      "FR": "\nToute la journée"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      "EN",
+      "FR"
+    ],
+    "additionalInfo": {
+      "EN": "Women and childhood assistance.",
+      "FR": "Services d'attention aux femmes et à la jeunesse"
+    },
+    "fullAddress": "CALLE MAYOR 21, 1º IZQ, 28013, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc31",
+    "orgName": "ASOCIACIÓN DE MUJERES NOSOTRAS MISMAS CHAMBERÍ",
+    "orgPhone": 914424991,
+    "orgEmail": "contacta@nosotrasmismas.org",
+    "orgWeb": "nosotrasmismas.org",
+    "address": "CALLE SAN BERNARDO, 120 1º IZQ C",
+    "postalCode": 28015,
+    "district": "Chamberí",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas",
+      "EN": "Every morning",
+      "FR": "\nTous les matins"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit",
+      "web"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Talleres para mujeres en la web www.nosotrasmismas.org",
+      "EN": "Women assistance.",
+      "FR": "Ateliers dédiés aux femmes disponibles sur le site www.nosotrasmismas.org"
+    },
+    "fullAddress": "CALLE SAN BERNARDO, 120 1º IZQ C, 28015, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc32",
+    "orgName": "SERCADE",
+    "orgPhone": 676553906,
+    "orgEmail": "carmen.cabrillo@sercade.org",
+    "orgWeb": "www.sercade.org",
+    "address": "CALLE LOPE DE VEGA, 45",
+    "postalCode": 28014,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las tardes",
+      "EN": "Every afternoon/evening",
+      "FR": "Tous les après-midi"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      "FR"
+    ],
+    "additionalInfo": {
+      "ES": "Es un centro abierto a todas las personas aunque la mayoría de las que vienen son hombres jóvenes de origen subsahariano (Camerún, Mali y Guinea, sobre todo)",
+      "EN": "It is a centre open to everyone, but most of the people who come are young men from Subsaharian Africa (Cameroun, Mali, and Guinea above all)",
+      "FR": "C'est un centre ouvert à tous, même si la majorité de ceux qui viennent sont de jeunes hommes d'origine sub-saharienne (le Cameroun, le Mali et la Guinée en majorité)."
+    },
+    "fullAddress": "CALLE LOPE DE VEGA, 45, 28014, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc33",
+    "orgName": "ASOCIACIÓN DE MUJERES SEPARADAS Y DIVORCIADAS \"CARMEN GARCÍA CASTELLÓN\"",
+    "orgPhone": 915704428,
+    "orgEmail": "info@asociacioncgc.es",
+    "orgWeb": "www.asociacioncgc.es",
+    "address": "CALLE FRAY JUNÍPERO SERRA, 43 ESC 2, 3",
+    "postalCode": 28039,
+    "district": "Tetuan",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes",
+      "EN": "Every morning, Every afternoon/evening",
+      "FR": "\nToute la journée"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit",
+      "web"
+    ],
+    "languages": [
+      "ES",
+      "EN"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a familias",
+      "EN": "Women and families assistance.",
+      "FR": "Services aux familles"
+    },
+    "fullAddress": "CALLE FRAY JUNÍPERO SERRA, 43 ESC 2, 3, 28039, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc34",
+    "orgName": "CANDELITA",
+    "orgPhone": 915235845,
+    "orgEmail": "candelita@candelita.org",
+    "orgWeb": "www.candelita.org",
+    "address": "CALLE SANCHO DÁVILA, 19",
+    "postalCode": 28028,
+    "district": "Salamanca",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas",
+      "EN": "Every morning",
+      "FR": "\nTous les matins"
+    },
+    "priorAppointment": "Sí",
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Centro de día Pachamama para mujeres en calle Lérida 70 de lunes a viernes de 10h a 20h y sábados de 10h a 14h",
+      "EN": "Women, childhood and youth assistance.",
+      "FR": "Services d'assistance pour les femmes dans le centre situé calle Lérida 70, ouvert du lundi au vendredi de 10h à 20h, et le samedi de 10h à 14h."
+    },
+    "fullAddress": "CALLE SANCHO DÁVILA, 19, 28028, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc35",
+    "orgName": "ASOCIACIÓN ÁNGELES URBANOS",
+    "orgPhone": 626274495,
+    "orgEmail": "angelesurbanos4@gmail.com",
+    "orgWeb": "angelesurbanos4@gmail.com",
+    "address": "CALLE SILVANO, 150",
+    "postalCode": 28043,
+    "district": "Hortaleza",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas",
+      "EN": "Every morning",
+      "FR": "\nTous les matins"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a personas con diversidad funcional",
+      "EN": "Functional diversity",
+      "FR": "Diversité fonctionnelle"
+    },
+    "fullAddress": "CALLE SILVANO, 150, 28043, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc36",
+    "orgName": "ADESPRO",
+    "orgPhone": 917868384,
+    "orgEmail": "ljorge@adespro.org",
+    "orgWeb": "adespro.org",
+    "address": "CALLE SANTANDERINA, 4",
+    "postalCode": 28053,
+    "district": "Puente de Vallecas",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas",
+      "EN": "Every morning",
+      "FR": "\nTous les matins"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a las familias, infancia (de 3 a 15 años), jóvenes y mayores migrantes. Realizamos\nderivación a servicios sociales.",
+      "EN": "Families, childhood, youth, elderly, and migrants assistance.\nReferral to social services.",
+      "FR": "Services à la famille, à l'enfance, la jeunesse et aux personnes âgées.\nRéférence aux services sociaux"
+    },
+    "fullAddress": "CALLE SANTANDERINA, 4, 28053, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc37",
+    "orgName": "CIUDAD JOVEN",
+    "orgPhone": 915076281,
+    "orgEmail": "talleres@ciudadjoven.org",
+    "orgWeb": "ciudajoven.org",
+    "address": "CALLE AVELINO FERNADEZ DE LA POZA, 55",
+    "postalCode": 28053,
+    "district": "Puente de Vallecas",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las tardes, de 16h a 19:30h",
+      "EN": "Every afternoon/evening, from 16 to 19h30",
+      "FR": "Tous les après-midi de 16h à 19h30"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a Infancia y jóvenes, entre 16 y 21 años.Taller de mecanica de motos y electricidad básica.",
+      "EN": "childhood and youth assistance, people from 16 to 21 y.o.\nMechanic workshop for motorbikes. Electricity workshop.",
+      "FR": "Services d'attention dédiés à la jeunesse, de 16 à 21 ans.\nAteliers de mécanique moto et d'électricté"
+    },
+    "fullAddress": "CALLE AVELINO FERNADEZ DE LA POZA, 55, 28053, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc38",
+    "orgName": "OTRO PUNTO DE PARTIDA",
+    "orgPhone": 677220379,
+    "orgEmail": "otropuntodepartida@gmail.com",
+    "orgWeb": "www.otropuntodepartida.org",
+    "address": "CALLE RUIDERA, 10 BAJO",
+    "postalCode": 28053,
+    "district": "Puente de Vallecas",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Lunes y jueves en las mañanas,todas las tardes de lunes a jueves excepto martes",
+      "EN": "Monday and Thursday mornings and every afternoon but Tuesday",
+      "FR": "Le lundi et jeudi matin\nMercredi et vendredi après-midi\n\n"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "visit",
+      "web"
+    ],
+    "languages": [
+      "ES",
+      "EN"
+    ],
+    "additionalInfo": {
+      "EN": "Migrant support in general and families assistance.",
+      "FR": "Accompagnement en général dans tous les domaines pour les migrants. Services à la famille."
+    },
+    "fullAddress": "CALLE RUIDERA, 10 BAJO, 28053, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc39",
+    "orgName": "ASOCIACIÓN VALIENTE BANGLA",
+    "orgPhone": 671054528,
+    "orgEmail": "fazle_elahi786@yahoo.com",
+    "address": "CALLE PROVISIONES, 14 LOCAL",
+    "postalCode": 28012,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las tardes",
+      "EN": "Every afternoon/evening",
+      "FR": "Tous les après-midi"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "phone",
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      "BD"
+    ],
+    "additionalInfo": {
+      "ES": "\nActivades lunes y miércoles: clases de español (exclusivas para mujeres) y apoyo escolar.                                                                                                                             Martes: por la mañana clases de español.",
+      "EN": "24h Activities: \nMonday and Wednesday: Spanish lessons (just for women) and school support.\nTuesday morning: Spanish lessons.\nTuesday and Thursday afternoon: Spanish lessons for all.\nCultural activities: Celebration of the end of Ramadan, conmemoration of",
+      "FR": "Lundi et mercredi: cours d'espagnol (réservé aux femmes) et soutien scolaire.\nMardi : cours d'espagnol le matin.\nMardi et jeudi après-midi : cours d'espagnol pour tous\n\nActivités culturelles: soutenir la fin du Ramadan, préparer la journée de la langue et"
+    },
+    "fullAddress": "CALLE PROVISIONES, 14 LOCAL, 28012, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc40",
+    "orgName": "ASOCIACIÓN PARA LA INTEGRACIÓN DEL MENOR PAIDEIA",
+    "orgPhone": 915398704,
+    "orgEmail": "tssocioemadrid@asociacionpaideia.org",
+    "orgWeb": "asociacionpaideia.org/",
+    "address": "CALLE EMBAJADORES, 37 POSTERIOR, LOCAL.",
+    "postalCode": 28012,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas",
+      "EN": "Every morning",
+      "FR": "Tous les matins"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a familias",
+      "EN": "Families assistance.",
+      "FR": "Services à la famille"
+    },
+    "fullAddress": "CALLE EMBAJADORES, 37 POSTERIOR, LOCAL., 28012, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc41",
+    "orgName": "ASOCIACIÓN AMIGOS DEL RETIRO",
+    "orgPhone": 679367339,
+    "orgEmail": "julio.molinos@gmail.com",
+    "orgWeb": "amigosdelretiro.org",
+    "address": "PASEO JULIO ROMERO DE TORRES S/N PARQUE DEL RETIRO",
+    "postalCode": 28009,
+    "district": "Retiro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes",
+      "EN": "Every morning, Every afternoon/evening",
+      "FR": "\nToute la journée"
+    },
+    "priorAppointment": "No",
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Hay juegos de cartas, petanca, parchis, biblioteca...y mucho ajedrez",
+      "EN": "There are cards games, boules, parchis, library,... and a lot of chess",
+      "FR": "Il y a des jeux de cartes, pétanque, parchis, une bibliothèque, ... et beaucoup de jeux d'échecs."
+    },
+    "fullAddress": "PASEO JULIO ROMERO DE TORRES S/N PARQUE DEL RETIRO, 28009, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc42",
+    "orgName": "ASOCIACIÓN PROGESTIÓN",
+    "orgPhone": 914719719,
+    "orgEmail": "info@progestion.org",
+    "orgWeb": "www.progestion.org/",
+    "address": "CALLE MANUEL FERNANDEZ CABALLERO, 4",
+    "postalCode": 28019,
+    "district": "Carabanchel",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, De lunes a jueves de 9 a 18H y viernes de 9 a 15h",
+      "EN": "Monday to Thursday, from 9 to 18, and Friday, from 9 to 15h",
+      "FR": "Toute la journée du lundi au jeudi, de 9h à 18h, et le vendredi de 9h à 15h"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Para una primera atención sin cita,se puede acudir los martes pares de cada mes de 9 a 13h. A partir de esta visita se valorarán necesidades y se hará socio si procede y así podrán pedir cita telefónica. Atención a la mujer\nEnlace a nuestro blog de extran",
+      "EN": "Women assistance, gender violence.\nLink to our blog on foreigners: blogextranjeriaprogestion.org/",
+      "FR": "La première visite ne demande pas de rendez-vous. Il suffit de venir chaque mardi pair du mois de 9h à 13h. Cette visite permet d'évaluer les nécessités pour les prochains rendez-vous qui se programmeront, dès lors, par téléphone. Nous disposons aussi de"
+    },
+    "fullAddress": "CALLE MANUEL FERNANDEZ CABALLERO, 4, 28019, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc43",
+    "orgName": "GRUPO DE TRABAJO SOBRE TRATAMIENTO DEL VIH",
+    "orgPhone": 683280312,
+    "orgEmail": "madrid@gtt-vih.org",
+    "orgWeb": "www.gtt-vih.org",
+    "address": "CALLE GANDÍA, N.1 - LOCAL 9A",
+    "postalCode": 28007,
+    "district": "Retiro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas",
+      "EN": "Every morning",
+      "FR": "Tous les matins"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "web"
+    ],
+    "languages": [
+      "ES",
+      "EN",
+      "FR"
+    ],
+    "additionalInfo": {},
+    "fullAddress": "CALLE GANDÍA, N.1 - LOCAL 9A, 28007, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc44",
+    "orgName": "ASOCIACIÓN SOCIAL Y CULTURAL CASA DE PAZ",
+    "orgPhone": 913802721,
+    "orgEmail": "casadepaz01@yahoo.es",
+    "address": "CALLE ANDALUCES, 22 POST.",
+    "postalCode": 28038,
+    "district": "Puente de Vallecas",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "24 horas",
+      "EN": "24 hours",
+      "FR": "Permanence 24/24h\n\n"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      "EN"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a personas con diversidad funcional, Atención a familias",
+      "EN": "Job orientation, Legal service, Cultural mediation, Functional diversity, womeN, and families assistance, Religion.",
+      "FR": "Services d'attention pour les femmes et les familles"
+    },
+    "fullAddress": "CALLE ANDALUCES, 22 POST., 28038, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc45",
+    "orgName": "COMEDOR ASISTENCIAL VIRGEN DE LA CANDELARIA. ORDEN DE MALTA",
+    "orgPhone": 915417065,
+    "orgEmail": "info@ordendemalta.es",
+    "orgWeb": "www.ordendelamalta.es",
+    "address": "CALLE VIRGEN DE LA OLIVA, 69-71",
+    "postalCode": 28037,
+    "district": "San Blas / Canillejas",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Lunes a sábado de 17h a 19h (cena)",
+      "EN": "Dinner Monday to Saturday, from 17h to 19h",
+      "FR": "Goûter et dîner du lundi au samedi de 17h à 19h"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Merienda-cena de lunes a sábado de 17h a 19h. Acudiendo al comedor, se necesitará firmar un documento confirmando que la persona/usuario no tiene recursos. Se piden una pequeña serie de datos muy básicos.",
+      "EN": "To access the canteen the person needs to sign a document confirming the lack of resources. Some basic information is requested.",
+      "FR": "Goûter et dîner servis du lundi au samedi de 17h à 19h. Pour accéder à la cantine, la personne doit signer un document confirmant le manque de ressources. Certaines informations d'identité sont demandées."
+    },
+    "fullAddress": "CALLE VIRGEN DE LA OLIVA, 69-71, 28037, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc46",
+    "orgName": "PARROQUIA NUESTRA SEÑORA DE LAS DELICIAS",
+    "orgPhone": 915392036,
+    "orgEmail": "info@ordendemalta.es",
+    "orgWeb": "www.ordendemalta.es",
+    "address": "PASEO DE NTRA. SRA. DE LAS DELICIAS, 61",
+    "postalCode": 28045,
+    "district": "Arganzuela",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todos los domingos por la mañana (8:30h a 11h)",
+      "EN": "Breakfast on Sunday morning (8h30-11h)",
+      "FR": "Petit déjeuner chaque dimanche de 8h30 à 11h"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Desayunos cada domingos por la mañana de las 8.30 a las 11h",
+      "FR": "Petit-déjeuner proposé à la cantine chaque dimanche entre 8h30 et 11h"
+    },
+    "fullAddress": "PASEO DE NTRA. SRA. DE LAS DELICIAS, 61, 28045, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc47",
+    "orgName": "CENTRO SOCIAL SAN JUAN BAUTISTA",
+    "orgPhone": 917087074,
+    "orgEmail": "info@ordendemalta.es",
+    "orgWeb": "www.ordendemalta.es",
+    "address": "CALLE BASCONES, 21",
+    "postalCode": 28029,
+    "district": "Tetuan",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "24 horas",
+      "EN": "24 hours",
+      "FR": "Permanence 24/24h"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "phone",
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Desayunos cada domingo por la mañana de las 8:30 a las 11h",
+      "EN": "Breakfast every Sunday 8:30 to 11h.",
+      "FR": "Petit Déjeuner proposé à la cantine chaque dimanche entre 8h30 et 11h"
+    },
+    "fullAddress": "CALLE BASCONES, 21, 28029, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc48",
+    "orgName": "CENTRO SOCIAL SAN JUAN BAUTISTA",
+    "orgPhone": 917087074,
+    "orgEmail": "info@ordendemalta.es",
+    "orgWeb": "www.ordendemalta.es",
+    "address": "CALLE MORANDO, 18",
+    "postalCode": 28029,
+    "district": "Tetuan",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las tardes, Atención telefónica de las 12h a las 19h, Atención especifica dependiendo del servicio pedido",
+      "EN": "Every afternoon/evening, Phonecall line from 12 to 19h. Specific assistance according to the requested service",
+      "FR": "Tous les après-midi, de 12h à 19h, par téléphone afin de joindre le service souhaité"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "phone",
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Se pedirá información básica a las personas que utilicen los servicios para hacerles una ficha.\nProductos de higiene, Atención médica general, Asesoría legal (Miercoles 16h-19h) \n- Médico (Lunes y Miercoles 16h-19h) \n- Duchas Hombres y Mujeres (Domingo 8h",
+      "EN": "Basic information will be requested before accessing the services to build a personal profile.\nPublic showers, Clothing, Hygiene products, General Medical Care, Legal assistance (Wednesday 16h-19h)\nDoctor (Monday and Wednesday 16h-19h)\nShowers for men and",
+      "FR": "Des informations d'identité sont requises afin d'accéder aux services.\nDouches publiques, Vêtements, Produits d'hygiène, Soins médicaux généraux, Assistance juridique (mercredi 16h-19h)\nDocteur (lundi et mercredi 16h-19h)\nDouches pour hommes et femmes (di"
+    },
+    "fullAddress": "CALLE MORANDO, 18 , 28029, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc49",
+    "orgName": "COMUNIDAD DE SANT'EGIDIO",
+    "orgPhone": 910115565,
+    "orgWeb": "www.santegidiomadrid.org",
+    "address": "CALLE OLIVAR, 1 (BIS) LOCALES",
+    "postalCode": 28012,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las tardes",
+      "EN": "Every afternoon/evening",
+      "FR": "Tous les après-midi"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Servicio de atención todos los miércoles, jueves y viernes\nde 17:00 a 19:30 horas.\n• Reparto de cena caliente, bocadillos, fruta, café\nbollería, servicio de duchas y lavandería.\n• El reparto de la cena se realiza en 12 puntos\ndistintos de Madrid.\n• Más in",
+      "EN": "Open to public every Wednesday, Thursday, and fridays from 17:00 to 19:30.\n• Hot dinner delivery, sandwiches, fruit, coffee, bakery, showers and laundry.\n• Dinner is delivered in 12 locations around Madrid. \n• More info: Iglesia de Ntra. Sra. de las Marav",
+      "FR": "Service d'attention générale le mercredi, jeudi et vendredi de 17h à 19h \n"
+    },
+    "fullAddress": "CALLE OLIVAR, 1 (BIS) LOCALES, 28012, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc50",
+    "orgName": "CENTRO DE DÍA LUZ CASANOVA. APOSTÓLICAS DEL CORAZÓN DE JESÚS",
+    "orgPhone": 914454169,
+    "orgEmail": "eusaperez@proyectosluzcasanova.org",
+    "orgWeb": "www.proyectosluzcasanova.org/",
+    "address": "CALLE JOSÉ MARAÑÓN, 15-E",
+    "postalCode": 28010,
+    "district": "Chamberí",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes, Fines de semana",
+      "EN": "Every morning, Every afternoon/evening, Weekends",
+      "FR": "Toute la semaine (week-end inclu) durant toute la journée"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "• Comida diaria de 12:45 a 14:00 horas. Desayuno y merienda.\n• De 17:00 a 19:00 horas, de lunes a sábado. Merienda-cena.\n• Forma de acceso al comedor: De Lunes a Viernes a las 09:00 se entregan 5 TARJETAS en la puerta (a nuevos usuarios que luego ya serán",
+      "EN": "\"• Social, psichologic and educational assistance.\n• Laundry and lockers.\n• Daily meals from 12:45 to 14:00. Breakfast and mid-afternoon snack.\n• From 17:00 to 19:00, from Monday to Saturday. Dinner.\n• Way to access the canteen: from Monday to Friday at 9",
+      "FR": "- Attention sociale, psychologique et éducative - Buanderie et casiers - Service de repas proposé chaque jour entre 12h45 et 14h (Déjeuner et goûter) et lundi au samedi, de 17h à 19h (Goûter et dîner) - L'accès à la cantine se fera grâce à une carte. 5 ca"
+    },
+    "fullAddress": "CALLE JOSÉ MARAÑÓN, 15-E, 28010, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc51",
+    "orgName": "IBN BATTUTA",
+    "orgPhone": 914682859,
+    "orgEmail": "info@fundacioibnbattuta.org",
+    "orgWeb": "www.fundacioibnbattuta.org/",
+    "address": "CALLE CASINO, 12",
+    "postalCode": 28005,
+    "district": "Arganzuela",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas",
+      "EN": "Every morning",
+      "FR": "Tous les matins"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      "EN",
+      "AR"
+    ],
+    "additionalInfo": {
+      "ES": "Horario de clases de Español:\nMartes y Jueves de 10h-13h (nivel básico)\nMiércoles 11h-12:30 (nivel avanzado)",
+      "EN": "Spanish lessons: \nTuesday and Thursday 10-13h (basic level)\nWednesday 11_12:30 (advanced level)",
+      "FR": "Les classes d'espagnol sont réparties le mardi et jeudi de 10h à 13h (Niveau débutant) et le mercredi de 11h à 12h30 (Niveau avancé)"
+    },
+    "fullAddress": "CALLE CASINO, 12, 28005, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc52",
+    "orgName": "ACCIÓN EN RED",
+    "orgPhone": 655485241,
+    "orgEmail": "refugiados@accionenredmadrid.org",
+    "orgWeb": "accionenredmadrid.org",
+    "address": "CALLE SAN FELIPE NERI, 4 BAJO DCHA",
+    "postalCode": 28013,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Con cita previa según horario disponible.",
+      "EN": "Prior appointment according to availability",
+      "FR": "Sur rendez-vous pour connaître les horaires disponibles"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email"
+    ],
+    "languages": [
+      "ES",
+      "EN",
+      "FR"
+    ],
+    "additionalInfo": {
+      "ES": "Nuestro servicio va dirigido fundamentalmente a personas solicitantes de asilo y menores no acompañadas.",
+      "EN": "Our service is targetted mainly for asylum seekers and unaccompanied mnors. It is not a punctual service, but sustainable throughout the time that is needed to acquire the knowledge and right social skills to reach a certain level of autonomy.",
+      "FR": "Notre service s'adresse, avant tout, aux personnes qui sollicitent l'asile et aux mineurs non accompagnés."
+    },
+    "fullAddress": "CALLE SAN FELIPE NERI, 4 BAJO DCHA, 28013, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc53",
+    "orgName": "SALUD ENTRE CULTURAS",
+    "orgPhone": 622042564,
+    "orgEmail": "info@saludentreculturas.es",
+    "orgWeb": "www.saludentreculturas.es",
+    "address": "CARRETERA DE COLMENAR KM 9,100",
+    "postalCode": 28034,
+    "district": "Fuencarral / El Pardo",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, hasta las 17:00",
+      "EN": "Every morning and every afternoon until 17:00",
+      "FR": "Toute la journée jusqu'à 17h"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit",
+      "web"
+    ],
+    "languages": [
+      "EN",
+      "FR",
+      "AR",
+      "AL"
+    ],
+    "additionalInfo": {
+      "ES": "Puedes escribir por correo electrónico o whatsapp en inglés, francés, árabe o incluso en lenguas africanas",
+      "EN": "You can write us an email or on whatsapp in English, French, Arabic, or even in African languages.",
+      "FR": "Il est possible de nous joindre via Whatsapp ou par mail en nous écrivant en anglais, en français, en arabe ou en langues africaines."
+    },
+    "fullAddress": "CARRETERA DE COLMENAR KM 9,100, 28034, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc54",
+    "orgName": "SAVE A GIRL SAVE A GENERATION",
+    "orgPhone": 658977641,
+    "orgEmail": "info@saveagirlsaveageneration.org",
+    "orgWeb": "www.saveagirlsaveageneration.org",
+    "address": "CALLE MARTIN DE VARGAS, 13 BAJO",
+    "postalCode": 28005,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes, Todas las noches, Fines de semana",
+      "EN": "Every morning, every afternoon/evening, every night and Weekends",
+      "FR": "Toute la semaine (week-end inclu) durant toute la journée"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit",
+      "web"
+    ],
+    "languages": [
+      "ES",
+      "EN",
+      "SW",
+      "SO"
+    ],
+    "additionalInfo": {},
+    "fullAddress": "CALLE MARTIN DE VARGAS, 13 BAJO, 28005, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc55",
+    "orgName": "FEDERACIÓN DE MUJERES PROGRESITAS",
+    "orgPhone": 915390238,
+    "orgEmail": "comunicacion@fmujeresprogresistas.org",
+    "orgWeb": "www.fmujeresprogresistas.org",
+    "address": "CALLE RIBERA DE CURTIDORES, 3 LOCAL 8",
+    "postalCode": 28005,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Mañanas de lunes a viernes",
+      "EN": "Monday to Friday mornings",
+      "FR": "Tous les matins du lundi au vendedi"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "EN": "Job orientation, women assistance, gender violence",
+      "FR": "Orientation professionnelle, assistance aux femmes, aux victimes de  violence de genre"
+    },
+    "fullAddress": "CALLE RIBERA DE CURTIDORES, 3 LOCAL 8, 28005, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc56",
+    "orgName": "RED SOLIDARIA DE ACOGIDA. RSA",
+    "orgEmail": "bienvenidarefugiadxs@gmail.com",
+    "orgWeb": "www.redsolidariadeacogida.es",
+    "district": "Sin presencia física",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Sin atención presencial",
+      "EN": "In-person assistance not available",
+      "FR": "Pas de permanence sur place"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "email",
+      "web"
+    ],
+    "languages": [
+      "ES",
+      "EN",
+      "FR",
+      "AR"
+    ],
+    "additionalInfo": {
+      "ES": "Acompañamiento e incidencia política/social",
+      "EN": "General social support and advocacy.",
+      "FR": "Accompagnement et incidences politiques/sociales"
+    },
+    "geocode": {
+      "lat": 40417077,
+      "lng": -3685452,
+      "coordinates": "40.417077, -3.685452"
+    }
+  },
+  {
+    "ID": "loc57",
+    "orgName": "OBSERVATORIO DE DERECHOS HUMANOS SAMBA MARTINE",
+    "orgEmail": "observatorioddhh@dominicos.org",
+    "address": "CALLE CAÑIZARES, 3",
+    "postalCode": 28012,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Jueves 17h a 20h",
+      "EN": "Thursday 17h to 20h",
+      "FR": "Le jeudi de 17h à 20h"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a familias.",
+      "EN": "LGTBIQ+, women, and families assistance, Religion, Support for people in detention centres for foreigners, Human trafficking, Racist and xenophobic attacks",
+      "FR": "Formations en cuisine et ménage. Information disponible sur www.sendadecuidados.org"
+    },
+    "fullAddress": "CALLE CAÑIZARES, 3, 28012, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc58",
+    "orgName": "REFUGIADOS BIENVENIDOS (REFUGEES WELCOME ESPAÑA)",
+    "orgEmail": "atencion.social@refugees-welcome.es",
+    "orgWeb": "www.refugees-welcome.es",
+    "district": "Sin presencia física",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Sin atención presencial",
+      "EN": "In-person assistance not available",
+      "FR": "Pas de permanence sur place"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "web"
+    ],
+    "languages": [
+      "ES",
+      "EN",
+      "FR"
+    ],
+    "additionalInfo": {
+      "ES": "Servicio exclusivo para solicitantes de asilo y refugiadxs. A través de la web, Hay que crearse un perfil/registrarse en nuestra página web dándole al botón \"Busco Habitación\" y rellenando los diferentes campos de información.\nUna vez que te hayas registr",
+      "EN": "You need to create a profile in our website by clicking on \"Busco Habitación\" and filling in the form.\nOnce you have signed up in our website, our social services team will evaluate your profile. If there are available houses that match what you are looki",
+      "FR": "Services exclusifs pour les personnes réfugiées et pour les demandeurs d'asile. Vous devez créer un profil sur notre site Web en cliquant sur \"Busco Habitación\" et en remplissant le formulaire.\nUne fois que vous vous êtes inscrit, notre équipe de services"
+    },
+    "geocode": {
+      "lat": 40415484,
+      "lng": -3687448,
+      "coordinates": "40.415484, -3.687448"
+    }
+  },
+  {
+    "ID": "loc59",
+    "orgName": "FUNDACIÓN TRIÁNGULO MADRID",
+    "orgPhone": 915930540,
+    "orgEmail": "madrid@fundaciontriangulo.es",
+    "orgWeb": "www.fundaciontriangulo.org/sedes/sede-madrid",
+    "address": "CALLE MELENDEZ VALDÉS, 52. 1ºD.",
+    "postalCode": 28015,
+    "district": "Chamberí",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes",
+      "EN": "Every morning, Every afternoon/evening",
+      "FR": "Toute la journée"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Servicio de acompañamiento para vincular al sistema sanitario si la persona esta diagnosticada de VIH+. Con total independencia de su sexualidad,situación administrativa o su origen.No negamos a nadie el acceso a nuestro servicio de prueba rápida para el",
+      "EN": "We don't deny the quick HIV test to anyone.\nLGTBIQ+ and women assistance, Gender violence, distribution of HIV and sexually transmitted infections items (condoms and lubs).\nSupport to access the health system for for people who live with HIV.",
+      "FR": "Service d'accompagnement pour les personnes diagnostiquées du VIH, et ce, quelle que soit l'origine, l'orientation sexuelle ou la situation administrative. Test du VIH. Matériel préventif ITS/VIH (préservatifs et lubrifiants). Assistance pour faire le lie"
+    },
+    "fullAddress": "CALLE MELENDEZ VALDÉS, 52. 1ºD., 28015, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc60",
+    "orgName": "ASOCIACIÓN TRIÁNGULO JUVENTUD",
+    "orgPhone": 634126582,
+    "orgEmail": "asociacion.triangulo@gmail.com",
+    "orgWeb": "www.facebook.comAsociaciontriangulojuventud/",
+    "address": "CALLE MELENDEZ VALDÉS, 52. 1ºD.",
+    "postalCode": 28015,
+    "district": "Chamberí",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes",
+      "EN": "Every morning, Every afternoon/evening",
+      "FR": "Toute la journée"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email",
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Servicio de acompañamiento para vincular al sistema sanitario si la persona esta diagnosticada de VIH+. Con total independencia de su sexualidad,situación administrativa o su origen.Todo enfocado a población LGBTI, pero no negamos a nadie el acceso al ser",
+      "EN": "We don't deny the quick HIV test to anyone.\nLGTBIQ+ and women assistance, Gender violence, distribution of HIV and sexually transmitted infections items (condoms and lubes).",
+      "FR": "Service d'accompagnement pour les personnes diagnostiquées du VIH, et ce, quelle que soit l'origine, l'orientation sexuelle ou la situation administrative. Test du VIH. Matériel préventif ITS/VIH (préservatifs et lubrifiants). Assistance pour faire le lie"
+    },
+    "fullAddress": "CALLE MELENDEZ VALDÉS, 52. 1ºD., 28015, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc61",
+    "orgName": "RED INTERLAVAPIES",
+    "orgPhone": 675443787,
+    "orgEmail": "redinterlavapies@gmail.com",
+    "address": "CALLE DUQUE DE ALBA,13 LOCAL INTERIOR",
+    "postalCode": 28012,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Sin atención presencial",
+      "EN": "In-person assistance not available",
+      "FR": "Pas de permanence sur place"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "web"
+    ],
+    "languages": [
+      "ES",
+      "BD",
+      "WO"
+    ],
+    "additionalInfo": {
+      "ES": "Acompañamiento Sanitario.Talleres de Derechos.Atención a la mujer.",
+      "EN": "Job orientation, legal assistance, women assistance, Support for people in detention centres for foreigners, Health support, Rights workshops",
+      "FR": "Accompagnement santé. Ateliers de droit. Services d'attention pour les femmes."
+    },
+    "fullAddress": "CALLE DUQUE DE ALBA,13 LOCAL INTERIOR , 28012, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc62",
+    "orgName": "COLECTIVO TERRITORIO DOMÉSTICO",
+    "orgPhone": 634143839,
+    "orgEmail": "colectivoterritoriodomestico@gmail.com",
+    "orgWeb": "www.facebook.comterritoriodomestico/",
+    "address": "CALLE EMBAJADORES, 52",
+    "postalCode": 28012,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Segundo domingo de mes a las 17h asamblea mensual en Eskalera Karakola",
+      "EN": "Weekends, Second Sunday of every month at 17h, monthly assembly at Eskalera Karakola",
+      "FR": "Le week-end. Et assemblée mensuelle chaque deuxième dimanche du mois à 17h"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "facebook"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a la mujer, Empleadas de Hogar y de Cuidados",
+      "EN": "Legal assistance, Women assistance, housekeepers and caretakers.",
+      "FR": "Services d'attention pour les femmes. Services d'attention pour les employées de maison et d'aide à domicile"
+    },
+    "fullAddress": "CALLE EMBAJADORES, 52, 28012, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc63",
+    "orgName": "ASOCIACIÓN SENDA DE CUIDADOS",
+    "orgPhone": 6277005011,
+    "orgEmail": "sendadecuidados@gmail.com",
+    "orgWeb": "www.sendadecuidados.org/",
+    "address": "CALLE DUQUE DE ALBA, 13",
+    "postalCode": 28012,
+    "district": "Centro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes",
+      "EN": "Every morning, Every afternoon/evening",
+      "FR": "Toute le journée"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Asociacion para la búsqueda de personas cuidadoras.\nCuidado a Personas Mayores o Dependientes en domicilio.",
+      "EN": "Association to find caretakers.\nCare of elderly people or homecare.",
+      "FR": "Association pour la recherche de personnes d'aide à domicile.\nSoins aux personnes âgées ou à charge à domicile"
+    },
+    "fullAddress": "CALLE DUQUE DE ALBA, 13 , 28012, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc64",
+    "orgName": "ASOCIACIÓN HORUELO",
+    "orgPhone": 915222921,
+    "orgEmail": "horuelo@horuelo.org",
+    "orgWeb": "www.horuelo.org",
+    "address": "AVENIDA INSTITUCIÓN LIBRE DE ENSEÑANZA, 41 BIS, 3º",
+    "postalCode": 28037,
+    "district": "San Blas / Canillejas",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes",
+      "EN": "Every morning, Every afternoon/evening",
+      "FR": "Toute le journée"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "email"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Atención a las familias e infancia de 6 a 12 años",
+      "EN": "Families assistance.",
+      "FR": "Services à la famille et à l'enfance (de 6 à 12 ans)"
+    },
+    "fullAddress": "AVENIDA INSTITUCIÓN LIBRE DE ENSEÑANZA, 41 BIS, 28037, MADRID",
+    "geocode": {}
+  },
+  {
+    "ID": "loc65",
+    "orgName": "APOYO POSITIVO",
+    "orgPhone": 913581444,
+    "orgEmail": "info@apoyopositivo.org",
+    "orgWeb": "www.apoyopositivo.org",
+    "address": "AVENIDA LLANO CASTELLANO, 26",
+    "postalCode": 28034,
+    "district": "Fuencarral / El Pardo",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Con cita previa según horario disponible.",
+      "EN": "Prior appointment according to availability",
+      "FR": "Sur rendez-vous et selon les horaires disponibles."
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      "email"
+    ],
+    "additionalInfo": {},
+    "fullAddress": "AVENIDA LLANO CASTELLANO, 26, 28034, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc66",
+    "orgName": "ASILIM",
+    "orgPhone": 622397863,
+    "orgEmail": "asilim@asilim.org",
+    "orgWeb": "www.asilim.org",
+    "address": "CALLE ARQUITECTURA, 15, BAJO",
+    "postalCode": 28005,
+    "district": "Arganzuela",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Todas las tardes de lunes a jueves",
+      "EN": "Every afternoon/evening",
+      "FR": "Tous les après-midi"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {
+      "ES": "Las clases son por la tarde, de lunes a jueves. Los viernes no abrimos",
+      "EN": "Lessons: Monday to Thursday afternoons. \nFriday closed.",
+      "FR": "Les cours ont lieu l'après-midi du lundi au jeudi. Centre fermé le vendredi."
+    },
+    "fullAddress": "CALLE ARQUITECTURA, 15, BAJO, 28005, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc67",
+    "orgName": "MEDIALAB PRADO",
+    "orgPhone": 912191157,
+    "orgEmail": "info.m@medialab-prado.es",
+    "orgWeb": "www.medialab-prado.es",
+    "address": "PLAZA DE LAS LETRAS. CALLE ALAMEDA, 15",
+    "postalCode": 28014,
+    "district": "Retiro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Lunes de 16h a 21h\nMartes,miércoles,jueves,viernes de 10h a 21h\nSábados de 11h a 21h",
+      "EN": "Mon:16-21\nTue,Wed,Thur,Fri:10-21\nSat:11-21",
+      "FR": "Mardi, mercredi, jeudi, vendredi de 10h à 21h"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      "EN"
+    ],
+    "additionalInfo": {
+      "ES": "Espacio para trabajar y compartir conocimientos de acceso libre y gratuito. Muchos grupos de trabajo abiertos a los que poder sumarte y aprender.",
+      "EN": "Free and open space to work and share knowledge with others. Many working-groups to join and learn.",
+      "FR": "Espace de travail et de partage libre et gratuit. De nombreux groupes de travail sont disponibles."
+    },
+    "fullAddress": "PLAZA DE LAS LETRAS. CALLE ALAMEDA, 15, 28014, MADRID",
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "ID": "loc68",
+    "orgName": "MUNDO EN MOVIMIENTO",
+    "orgEmail": "info@mundoenmovimiento.org",
+    "orgWeb": "www.mundoenmovimiento.org",
+    "address": "PLAZA DE LAS LETRAS. CALLE ALAMEDA, 15",
+    "postalCode": 28014,
+    "district": "Retiro",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Sin atención presencial",
+      "EN": "In-person assistance not available",
+      "FR": "Pas de permanence sur place"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "web",
+      "email"
+    ],
+    "languages": [
+      "ES",
+      "EN",
+      "FR"
+    ],
+    "additionalInfo": {
+      "ES": "Otros servicios:\nMadridForAll: Mapeo de recursos gratuitos para migrantes en Madrid. Si tu acudes a algún recurso que podría interesarnos y no aparece en el mapa, no dudes en escribirnos un email. ¡Este mundo lo construimos entre todas!\n",
+      "EN": "Other services:\n\nMadridForAll: Mapping free resources for migrants in Madrid. If you find an interesting resource that doesn't appear in the map, please send us an email. We are building this world all together!\n",
+      "FR": "Autres services : Projet MadridForAll. Il s'agit d'un plan de Madrid qui permet aux personnes migrantes de visualiser tous les services gratuits et disponibles de la ville. Au cas où tu accèderais à un service qui n'est pas disponible sur notre plan, n'hé"
+    },
+    "fullAddress": "PLAZA DE LAS LETRAS. CALLE ALAMEDA, 15, 28014, MADRID",
+    "geocode": {
+      "lat": 40410499,
+      "lng": -3693619,
+      "coordinates": "40.410499, -3.693619"
+    }
+  },
+  {
+    "ID": "loc69",
+    "orgName": "Nombre-Prueba",
+    "orgPhone": 917005800,
+    "orgEmail": "gerardo.arribas@gmail.com",
+    "orgWeb": "http://prueba.prueba.com",
+    "address": " Plazuela Campo de las Naciones, 25 3º izq",
+    "postalCode": 28010,
+    "district": "Chamberí",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Todas las mañanas,"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {},
+    "fullAddress": " Plazuela Campo de las Naciones, 25 3º izq, 28010, Madrid",
+    "geocode": {}
+  },
+  {
+    "ID": "loc70",
+    "orgName": "O",
+    "orgPhone": 1,
+    "orgEmail": "a@a.com",
+    "orgWeb": "http://p.com",
+    "address": "Avenida Via, 56454 2",
+    "postalCode": 28010,
+    "district": "Latina",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Todas las mañanas, OH"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "additionalInfo": {},
+    "fullAddress": "Avenida Via, 56454 2, 28010, Madrid",
+    "geocode": {}
+  }
+]
