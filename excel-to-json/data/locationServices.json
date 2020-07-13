@@ -1008,44 +1008,243 @@
     ]
   },
   {
+    "locationID": "loc72",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc85",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc94",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc91",
+    "c4s2": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN"
+    ]
+  },
+  {
     "locationID": "loc69",
-    "c1s1": [
+    "c4s2": [
       "OPEN"
     ],
-    "c2s1": [
+    "c4s3": [
       "OPEN"
-    ],
-    "c3s1": [
+    ]
+  },
+  {
+    "locationID": "loc88",
+    "c4s2": [
       "OPEN"
-    ],
-    "c3s6": [
-      "OF"
-    ],
-    "c4s1": [
+    ]
+  },
+  {
+    "locationID": "loc76",
+    "c4s2": [
       "OPEN"
-    ],
-    "c5s1": [
+    ]
+  },
+  {
+    "locationID": "loc89",
+    "c4s2": [
       "OPEN"
     ]
   },
   {
     "locationID": "loc70",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc71",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc77",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc82",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc92",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc93",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc74",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc78",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc79",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc80",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc95",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc75",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc90",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc86",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc81",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc83",
     "c1s1": [
+      "LGTBIQ"
+    ],
+    "c1s7": [
+      "WOMEN"
+    ],
+    "c2s2": [
       "OPEN"
     ],
-    "c2s1": [
-      "OPEN"
+    "c2s4": [
+      "LGTBIQ"
     ],
-    "c3s1": [
-      "OPEN"
+    "c2s11": [
+      "LGTBIQ"
+    ],
+    "c3s5": [
+      "LGTBIQ"
     ],
     "c3s6": [
-      "OF"
+      "Derechos LGTBI+, empleabilidad, Salud Sexual,Consumo de sustancias, Igualdad, Diversidad, Chemsex"
     ],
-    "c4s1": [
-      "OPEN"
+    "c4s2": [
+      "LGTBIQ"
+    ],
+    "c4s3": [
+      "LGTBIQ"
+    ],
+    "c4s4": [
+      "LGTBIQ"
     ],
     "c5s1": [
+      "LGTBIQ"
+    ],
+    "c5s4": [
+      "LGTBIQ"
+    ],
+    "c6s0": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ],
+    "c10s0": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc84",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc73",
+    "c4s2": [
+      "OPEN"
+    ]
+  },
+  {
+    "locationID": "loc87",
+    "c3s3": [
+      "OPEN"
+    ],
+    "c3s4": [
+      "CHILD"
+    ],
+    "c3s5": [
+      "OPEN"
+    ],
+    "c4s3": [
+      "OPEN",
+      " CHILD"
+    ],
+    "c5s1": [
+      "OPEN"
+    ],
+    "c5s5": [
+      "WOMEN"
+    ],
+    "c6s0": [
+      "OPEN"
+    ],
+    "c7s0": [
+      "OPEN"
+    ],
+    "c8s0": [
+      "OPEN"
+    ],
+    "c9s0": [
+      "OPEN"
+    ],
+    "c10s0": [
       "OPEN"
     ]
   }

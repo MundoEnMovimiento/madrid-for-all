@@ -1,0 +1,177 @@
+[
+    {
+        "code": "no-result-found",
+        "ES": "No se ha encontrado ningún resultado",
+        "EN": "No results found",
+        "FR": "Aucun résultat trouvé",
+        "AR": "-"
+    },
+    {
+        "code": "result-found",
+        "ES": " resultado(s) encontrados",
+        "EN": " result(s) found",
+        "FR": " résultat(s) trouvé(s)",
+        "AR": "-"
+    },
+    {
+        "code": "click-for-more-details",
+        "ES": "Pincha aquí para más detalles",
+        "EN": "Click here for more details",
+        "FR": "Clique ici pour plus de détails",
+        "AR": "-"
+    },
+    {
+        "code": "more-info",
+        "ES": "Más información",
+        "EN": "More info",
+        "FR": "Plus d'info",
+        "AR": "-"
+    },
+	{
+        "code": "target-children",
+        "ES": "Exclusivo Niños / Jóvenes",
+        "EN": "Children Only",
+        "FR": "Exclusif Enfants",
+        "AR": "ar"
+    },
+	{
+        "code": "target-women",
+        "ES": "Exclusivo Mujeres",
+        "EN": "Women Only",
+        "FR": "Exclusif Femmes",
+        "AR": "ar"
+    },
+	{
+        "code": "target-origin",
+        "ES": "Exclusivo Origen Determinado",
+        "EN": "From a Particular Origin",
+        "FR": "D'un Origine Particulière",
+        "AR": "ar"
+    },
+	{
+        "code": "target-lgtbi",
+        "ES": "Exclusivo LGTBI+",
+        "EN": "LGTBI+ Only",
+        "FR": "Exclusif LGTBI+",
+        "AR": "ar"
+    },
+	{
+        "code": "clean-filters",
+        "ES": "Limpiar Filtros",
+        "EN": "Clean Filters",
+        "FR": "Éffacer Filtres",
+        "AR": "ar"
+    },
+	{
+        "code": "intro-text",
+        "ES": "En este mapa podrás encontrar recursos gratuitos para personas migrantes en Madrid.<br>Selecciona el servicio que necesitas en el menú y los recursos aparecerán en el mapa. Haz click encima para obtener más información.<br>Si quieres saber si hay recursos exclusivos para infancia, LGTBIQ+, mujeres o por origen, pulsa el filtro que encontrarás bajo el mapa",
+        "EN": "In this map you can find free resources for migrant people in Madrid. Select the service that you need in the menu, and the resources will show up on the map. Click on them to get more information. To find exclusive resources for children, LGBTIQ+, women or a specific origin, click on the filters below the map.",
+        "FR": "Notre plan de Madrid vous permet d’accéder à de très nombreux services gratuits et disponibles pour les personnes migrantes. Depuis le menu, il suffit de sélectionner un service qui sera ensuite automatiquement localisé sur le plan grâce à un marqueur rouge. Afin d’obtenir de plus amples informations, rien de plus simple, en cliquant de nouveau sur le marqueur. Si vous êtes intéressé par un service exclusif en lien avec l’enfance, la communauté LGTBIQ+, les femmes ou avec une origine spécifique, vous pouvez aussi sélectionner les filtres situés juste en dessous du plan.",
+        "AR": "ar"
+    },
+	{
+        "code": "footer-text",
+        "ES": "<h4>Si quieres que tus servicios aparezcan en Madrid For All, <b><a href=\"https://forms.gle/fGuAZG7fTX7KZazg9\" style=\"color:#F2323E\">rellena este formulario</a></b></h4><p>Puedes contactar con nosotros a través del correo <a href=\"mailto:info@mundoenmovimiento.org\">info@mundoenmovimiento.org</a> o a través del formulario de contacto de nuestra web <a href=\"https://www.mundoenmovimiento.org\">www.mundoenmovimiento.org</a></p><p>Sabes programar y quieres colaborar con nosotros? Pues haz fork de <a href=\"https://github.com/MundoEnMovimiento/madrid-for-all\">nuestro proyecto en GitHub!</a></p>",
+        "EN": "<h4>If you want that your services are listed in Madrid For All, <b><a href=\"https://forms.gle/fGuAZG7fTX7KZazg9\" style=\"color:#F2323E\">please fill in this form</a></b></h4><p>You can contact us either by an email to <a href=\"mailto:info@mundoenmovimiento.org\">info@mundoenmovimiento.org</a> a by the contact form in our web <a href=\"https://www.mundoenmovimiento.org\">www.mundoenmovimiento.org</a></p><p>Do you know how to code and want to collaborate with us? Then fork <a href=\"https://github.com/MundoEnMovimiento/madrid-for-all\">our project in GitHub!</a></p>",
+        "FR": "<h4>Si vous voules que vos services s'affichent sur Madrid For All, <b><a href=\"https://forms.gle/fGuAZG7fTX7KZazg9\" style=\"color:#F2323E\">merci de remplir ce formulaire</a></b></h4><p>Vous pouvez nous contacter en écrivant un émail à <a href=\"mailto:info@mundoenmovimiento.org\">info@mundoenmovimiento.org</a> ou par la formulaire de contact dans notre web <a href=\"https://www.mundoenmovimiento.org\">www.mundoenmovimiento.org</a></p><p>Vous savez programmer et vous aimeriez collaborer avec nous? Alors faites fork de <a href=\"https://github.com/MundoEnMovimiento/madrid-for-all\">notre projet chez-GitHub!</a></p>",
+        "AR": "ar"
+    },
+	{
+        "code": "close-menu",
+        "ES": "Cerrar menú",
+        "EN": "Close menu",
+        "FR": "Fermer menú",
+        "AR": "ar"
+    },
+	{
+        "code": "district",
+        "ES": "Distrito",
+        "EN": "District",
+        "FR": "Quartier",
+        "AR": "ar"
+    },
+	{
+        "code": "address",
+        "ES": "Dirección",
+        "EN": "Address",
+        "FR": "Adresse",
+        "AR": "ar"
+    },
+	{
+        "code": "phone",
+        "ES": "Teléfono",
+        "EN": "Phone",
+        "FR": "Téléphone",
+        "AR": "ar"
+    },
+	{
+        "code": "email",
+        "ES": "Email",
+        "EN": "Email",
+        "FR": "Émail",
+        "AR": "ar"
+    },
+	{
+        "code": "prefered-contacts",
+        "ES": "Medio(s) de contacto preferido(s)",
+        "EN": "Prefered way(s) of contact",
+        "FR": "Moyen(s) de contact préféré(s)",
+        "AR": "ar"
+    },
+	{
+        "code": "timetable",
+        "ES": "Horario",
+        "EN": "Time table",
+        "FR": "Horaires",
+        "AR": "ar"
+    },
+	{
+        "code": "web-page",
+        "ES": "Página web",
+        "EN": "Web page",
+        "FR": "Page web",
+        "AR": "ar"
+    },
+    {
+        "code": "show-in-map",
+        "ES": "Mostrar en el mapa",
+        "EN": "Show on map",
+        "FR": "Montrer sur le plan",
+        "AR": "ar"
+    },
+	{
+        "code": "services",
+        "ES": "Servicios",
+        "EN": "Services",
+        "FR": "Services",
+        "AR": "ar"
+    },
+	{
+        "code": "contact-and-timetable",
+        "ES": "Contacto y Horarios",
+        "EN": "Contact and Time Table",
+        "FR": "Contact et Horaires",
+        "AR": "ar"
+    },
+	{
+        "code": "additional-info",
+        "ES": "Información Adicional",
+        "EN": "Additional Info",
+        "FR": "Information Additionnelle",
+        "AR": "ar"
+    },
+	{
+        "code": "xxx",
+        "ES": "es",
+        "EN": "en",
+        "FR": "fr",
+        "AR": "ar"
+    },
+	{
+        "code": "xxx",
+        "ES": "es",
+        "EN": "en",
+        "FR": "fr",
+        "AR": "ar"
+    }
+]

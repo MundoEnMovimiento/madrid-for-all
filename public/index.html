@@ -173,50 +173,53 @@
           <div id="resultCounter">
             {{message}}
           </div>
-          <table id="resultTable" class="w3-table w3-responsive w3-striped w3-bordered" style="display: table;">
+          <table id="resultTable" class="w3-table w3-mobile w3-striped w3-bordered">
             <tr v-for="loc in locations">
               <td>
-                <button v-bind:id="loc.ID + '-row'" class="w3-row w3-block w3-button loc-row">
+                <button v-bind:id="loc.ID + '-row'" class="w3-button loc-row">
                   <div v-bind:id="loc.ID + '-btn'" v-on:click="onLocationClick('' + loc.ID)"
                     class="w3-col s10 m10 l10 w3-left w3-medium w3-left-align">{{loc.orgName}}</div>
-                  <a href="javascript:void(0)" class="w3-col s2 m2 l2 w3-padding w3-right-align"
-                    v-on:click="showLocationMarker('loc-marker-' + loc.ID)">{{printLabel("show-in-map")}}</a>
+                  <a href="javascript:void(0)" class="w3-right-align"
+                    v-on:click="showLocationMarker('loc-marker-' + loc.ID)">
+                      <div class="w3-hide-medium w3-hide-small">{{printLabel("show-in-map")}}</div>
+                      <div class="w3-hide-large">(+)</div>
+                  </a>
                   <!--a href="javascript:void(0)" class="w3-col s1 w3-right-align"
                     v-on:click="showLocationMarker('loc-marker-' + loc.ID)">+</a-->
                 </button>
-                <div v-bind:id="loc.ID + '-details'" class="w3-row w3-hide loc-details">
+                <div v-bind:id="loc.ID + '-details'" class="w3-hide loc-details w3-mobile">
                   <a href="javascript:void(0)" v-on:click="openInfoTab(loc.ID + '-general-info');">
                     <div v-bind:id="loc.ID + '-general-info-tablink'"
-                      class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">
+                      class="tablink w3-mobile">
                       {{printLabel("services")}}</div>
                   </a>
                   <a href="javascript:void(0)" v-on:click="openInfoTab(loc.ID + '-contact-info');">
                     <div v-bind:id="loc.ID + '-contact-info-tablink'"
-                      class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">
+                      class="tablink w3-mobile">
                       {{printLabel("contact-and-timetable")}}</div>
                   </a>
                   <a href="javascript:void(0)" v-on:click="openInfoTab(loc.ID + '-extra-info');">
                     <div v-bind:id="loc.ID + '-extra-info-tablink'"
-                      class="w3-col s12 m4 l4 tablink w3-bottombar w3-padding">
+                      class="tablink w3-mobile">
                       {{printLabel("additional-info")}}</div>
                   </a>
                 </div>
-                <div class="w3-row">
-                  <div v-bind:id="loc.ID + '-general-info'" class="w3-col s12 m4 l4 infoTab"
-                    style="display:none; width:100%">
+                <div class="w3-mobile">
+                  <div v-bind:id="loc.ID + '-general-info'" class="w3-mobile infoTab"
+                    style="display:none;">
                     <p>{{printServices(loc.ID)}}</p>
                     </p>
                   </div>
-                  <div v-bind:id="loc.ID + '-contact-info'" class="w3-col s12 m4 l4 infoTab"
-                    style="display:none; width:100%">
+                  <div v-bind:id="loc.ID + '-contact-info'" class="w3-mobile infoTab"
+                    style="display:none;">
                     <p>{{printLabel("district")}} {{loc.district}} &nbsp; {{printLabel("address")}} {{loc.fullAddress}}</p>
                     <p>{{printLabel("phone")}} {{loc.orgPhone}} &nbsp; {{printLabel("email")}} {{loc.orgEmail}}</p>
                     <p>{{printLabel("prefered-contacts")}} {{printWaysOfContact(loc.waysOfContact)}}</p>
                     <p>{{printLabel("timetable")}} {{printTimetable(loc.timeTable)}}</p>
                     <p>{{printLabel("web-page")}} <a v-bind:href="'//' + loc.orgWeb" target='_blank'>{{loc.orgWeb}}</a></p>
                   </div>
-                  <div v-bind:id="loc.ID + '-extra-info'" class="w3-col s12 m4 l4 infoTab"
-                    style="display:none; width:100%">
+                  <div v-bind:id="loc.ID + '-extra-info'" class="w3-mobile infoTab"
+                    style="display:none;">
                     <p>{{printAdditionalInfo(loc.additionalInfo)}}</p>
                   </div>
                 </div>

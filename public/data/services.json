@@ -5,7 +5,7 @@
     "icon": "servicios_basicos.png",
     "ES": "Servicios básicos",
     "EN": "Basic services",
-    "FR": "Services de première nécessité ",
+    "FR": "Services de première nécessité",
     "AR": "الخدمات الأساسية"
   },
   {
@@ -28,9 +28,9 @@
     "key": "c1s3",
     "category": "c1",
     "ES": "Comida y cesta de la compra",
-    "EN": "Food ",
+    "EN": "Food",
     "FR": "Distribution de paniers repas",
-    "AR": " الطعام وسلة شراء\n"
+    "AR": "الطعام وسلة شراء"
   },
   {
     "key": "c1s4",
@@ -70,7 +70,7 @@
     "icon": "salud.png",
     "ES": "Salud",
     "EN": "Health",
-    "FR": "Santé ",
+    "FR": "Santé",
     "AR": "الصحة"
   },
   {
@@ -95,7 +95,7 @@
     "ES": "Chagas",
     "EN": "Chagas",
     "FR": "Chagas",
-    "AR": "Chagas"
+    "AR": "Arab"
   },
   {
     "key": "c2s4",
@@ -157,7 +157,7 @@
     "key": "c2s11",
     "category": "c2",
     "ES": "Atención Psicológica",
-    "EN": "Psychological care ",
+    "EN": "Psychological care",
     "FR": "Attention psychologique",
     "AR": "الاهتمام النفسي"
   },
@@ -175,7 +175,7 @@
     "icon": "educacion.png",
     "ES": "Educacion",
     "EN": "Education",
-    "FR": "Éducation ",
+    "FR": "Éducation",
     "AR": "تعليم"
   },
   {
@@ -215,7 +215,7 @@
     "category": "c3",
     "ES": "Formación profesional",
     "EN": "Professional training",
-    "FR": "Formation professionnelle ",
+    "FR": "Formation professionnelle",
     "AR": "التدريب المهني"
   },
   {
@@ -223,7 +223,7 @@
     "category": "c3",
     "ES": "Otras formaciones",
     "EN": "Other trainings",
-    "FR": "Autres formations ",
+    "FR": "Autres formations",
     "AR": "تدريب مهني آخر"
   },
   {
@@ -232,7 +232,7 @@
     "icon": "ocio.png",
     "ES": "Ocio",
     "EN": "Leisure",
-    "FR": "Loisirs ",
+    "FR": "Loisirs",
     "AR": "وقت ممتع"
   },
   {
@@ -273,7 +273,7 @@
     "icon": "recursos_violencia.png",
     "ES": "Recursos contra la violencia",
     "EN": "Resources against violence",
-    "FR": "Recours contre la violence ",
+    "FR": "Recours contre la violence",
     "AR": "الموارد ضد العنف"
   },
   {
@@ -295,7 +295,7 @@
   {
     "key": "c5s3",
     "category": "c5",
-    "ES": "Trata ",
+    "ES": "Trata",
     "EN": "Human trafficking",
     "FR": "Traite des personnes",
     "AR": "الاتجار بالأشخاص"
@@ -336,17 +336,17 @@
     "key": "c6s0",
     "category": "c6",
     "icon": "legal.png",
-    "ES": "Info. legal y asistencia jurídica",
-    "EN": "Legal info and assistance",
-    "FR": "Assistance juridique ",
+    "ES": "Información legal y asistencia jurídica",
+    "EN": "Legal information and assistance",
+    "FR": "Assistance juridique",
     "AR": "المساعدة القانونية"
   },
   {
     "key": "c7s0",
     "category": "c7",
     "icon": "laboral.png",
-    "ES": "Info y orientación laboral",
-    "EN": "Job training and labour guidance",
+    "ES": "Información y orientación laboral",
+    "EN": "Job training and Labour guidance",
     "FR": "Orientation professionnelle",
     "AR": "معلومات والتوجه العمل"
   },
@@ -354,10 +354,10 @@
     "key": "c8s0",
     "category": "c8",
     "icon": "traduccion.png",
-    "ES": "Traducción y mediación cultural",
-    "EN": "Translation & cultural mediation",
-    "FR": "Traduction / médiation culturelle ",
-    "AR": " ترجمة والوساطة الثقافية"
+    "ES": "Traducción y Mediación cultural",
+    "EN": "Translation and Cultural mediation",
+    "FR": "Traduction / Médiation culturelle",
+    "AR": "ترجمة والوساطة الثقافية"
   },
   {
     "key": "c9s0",
@@ -365,7 +365,7 @@
     "icon": "retorno.png",
     "ES": "Retorno Voluntario",
     "EN": "Voluntary return",
-    "FR": "Retour volontaire ",
+    "FR": "Retour volontaire",
     "AR": "العودة الطوعية"
   },
   {

@@ -25,9 +25,9 @@
     "additionalInfo": {},
     "fullAddress": "CALLE JOSÉ LUIS DE ARRESE 66 LOCAL, 28017, MADRID",
     "geocode": {
-      "lat": 40.4236238,
-      "lng": -3.6508187,
-      "coordinates": "40.4236238, -3.6508187"
+      "lat": 40.42477,
+      "lng": -3.64957,
+      "coordinates": "40.4247700, -3.6495700"
     }
   },
   {
@@ -55,15 +55,14 @@
       "EN"
     ],
     "additionalInfo": {
-      "ES": "También ofrecemos material escolar, productos de higiene, muebles y menaje del hogar. ",
+      "ES": "También ofrecemos material escolar, productos de higiene, muebles y menaje del hogar.",
       "EN": "We also offer school material, hygiene products, furniture and household items. \nWe are open to try new ways of support.",
-      "FR": "Nous proposons également des fournitures scolaires, des produits d’hygiène, des meubles et des articles ménagers. "
+      "FR": "Nous proposons également des fournitures scolaires, des produits d’hygiène, des meubles et des articles ménagers."
     },
-    "fullAddress": " ",
     "geocode": {
-      "lat": 40.419138,
-      "lng": -3.687799,
-      "coordinates": "40.419138, -3.687799"
+      "lat": 40.4152606,
+      "lng": -3.6844995,
+      "coordinates": "40.4152606, -3.6844995"
     }
   },
   {
@@ -79,7 +78,7 @@
     "timeTable": {
       "ES": "Todas las tardes, de lunes a sábado, el domingo cierra",
       "EN": "Every afternoon/evening, from Monday to Friday, Sunday closed.",
-      "FR": "\nL'après-midi, du lundi au samedi. Fermé le dimanche"
+      "FR": "L'après-midi, du lundi au samedi. Fermé le dimanche"
     },
     "priorAppointment": "No",
     "waysOfContact": [
@@ -89,7 +88,7 @@
       "ES"
     ],
     "additionalInfo": {
-      "ES": "Cenas de 19 a 20 horas ",
+      "ES": "Cenas de 19 a 20 horas",
       "EN": "Canteen, dinner 19 to 20h.",
       "FR": "Dîner servi de 19h à 20h"
     },
@@ -113,7 +112,7 @@
     "timeTable": {
       "ES": "Miércoles 10,30h a 11,30h recoger número, lunes siguiente entrega de la ropa",
       "EN": "Wenesday 10:30-11:30 for appointment, Mondays to get the clothes",
-      "FR": "Le mercredi de 10h30 à 11h30 sur rendez-vous. Les vêtements sont délivrés le lundi qui suit\n\n"
+      "FR": "Le mercredi de 10h30 à 11h30 sur rendez-vous. Les vêtements sont délivrés le lundi qui suit"
     },
     "priorAppointment": "Sí",
     "waysOfContact": [
@@ -139,7 +138,6 @@
     "orgName": "ASOCIACIÓN APOYO",
     "orgPhone": 914379815,
     "orgEmail": "apoyo@asociacionapoyo.org",
-    "orgWeb": "-",
     "address": "CALLE DEL CORREGIDOR DIEGO DE VALDERRABANO, 45",
     "postalCode": 28030,
     "district": "Moratalaz",
@@ -158,6 +156,7 @@
     ],
     "additionalInfo": {
       "ES": "Atención a la familia y la infancia",
+      "EN": "Family and childhood support",
       "FR": "Services à la famille et à l'enfance."
     },
     "fullAddress": "CALLE DEL CORREGIDOR DIEGO DE VALDERRABANO, 45, 28030, MADRID",
@@ -173,7 +172,7 @@
     "orgPhone": 644882198,
     "orgEmail": "info@lavillana.org",
     "orgWeb": "www.lavillana.org",
-    "address": "CALLE MONTSENY, 35 ",
+    "address": "CALLE MONTSENY, 35",
     "postalCode": 28038,
     "district": "Puente de Vallecas",
     "locality": "MADRID",
@@ -244,7 +243,6 @@
     "orgName": "ESCUELA POPULAR DE ADULTOS DEL BARRIO DEL PILAR",
     "orgPhone": 635736573,
     "orgEmail": "jsanzlan@ucm.es",
-    "orgWeb": "-",
     "address": "CALLE BETANZOS, 37",
     "postalCode": 28029,
     "district": "Fuencarral / El Pardo",
@@ -252,7 +250,7 @@
     "timeTable": {
       "ES": "Lunes y miércoles (10:30h a 12:00h y 19:30h a 21:00h) y martes (19:30h a 20:30h)",
       "EN": "Monday and Wednesday (10:30-12:00 and 19:30-21:00) and Tuesday (19:30-20:30)",
-      "FR": "Lundi et Mercredi (de 10h30 à 12h et de 19h30 à 21h)\nMardi (de 19h30 à 20h30)\n"
+      "FR": "Lundi et Mercredi (de 10h30 à 12h et de 19h30 à 21h)\nMardi (de 19h30 à 20h30)"
     },
     "priorAppointment": "No",
     "waysOfContact": [
@@ -299,9 +297,9 @@
     },
     "fullAddress": "CALLE CÁCERES, 10 1º DERECHA, 28045, MADRID",
     "geocode": {
-      "lat": 40.398678,
-      "lng": -3.695744,
-      "coordinates": "40.3986780, -3.6957440"
+      "lat": 40.4152606,
+      "lng": -3.6844995,
+      "coordinates": "40.4152606, -3.6844995"
     }
   },
   {
@@ -329,19 +327,19 @@
     ],
     "additionalInfo": {
       "ES": "Atención a jóvenes de 12 a 30 años",
+      "EN": "Young people from 12 to 30 y.o.",
       "FR": "Services pour les jeunes de 12 à 30 ans"
     },
     "fullAddress": "CALLE JAVIER DE MIGUEL, 92 BLOQUE I LOCAL 1, 28018, MADRID",
     "geocode": {
-      "lat": 40.3884884,
-      "lng": -3.7052074,
-      "coordinates": "40.3884884, -3.7052074"
+      "lat": 40.3852155,
+      "lng": -3.6564745,
+      "coordinates": "40.3852155, -3.6564745"
     }
   },
   {
     "ID": "loc11",
     "orgName": "LA INGOBERNABLE",
-    "orgPhone": "-",
     "orgEmail": "bienvenida@ingobernable.net",
     "orgWeb": "www.ingobernable.net",
     "address": "CALLE GOBERNADOR, 39",
@@ -410,7 +408,6 @@
   {
     "ID": "loc13",
     "orgName": "LA ENREDADERA",
-    "orgPhone": "-",
     "orgEmail": "enredadera@riseup.net",
     "orgWeb": "laenredaderadetetuan.wordpress.com",
     "address": "CALLE ANASTASIO HERRERO, 10",
@@ -439,7 +436,7 @@
   },
   {
     "ID": "loc14",
-    "orgName": "TERAPIA SIN FRONTERAS",
+    "orgName": "ASOCIACIÓN DE PSICOTERAPIA SISTÉMICA TRANSCULTURAL. TERAPIAS SIN FRONTERAS",
     "orgPhone": 914299756,
     "orgEmail": "info@terapiasinfronteras.com",
     "orgWeb": "www.terapiasinfronteras.com",
@@ -466,6 +463,7 @@
     ],
     "additionalInfo": {
       "ES": "Atención a las familias",
+      "EN": "Family support",
       "FR": "Services à la famille"
     },
     "fullAddress": "CALLE SAN AGUSTIN, 7. 1RA, EXT IZDA, 28014, MADRID",
@@ -502,9 +500,9 @@
     "additionalInfo": {},
     "fullAddress": "CALLE RAFAEL FERNANDEZ HIJICOS, 2, 28038, MADRID",
     "geocode": {
-      "lat": 40.3924062,
-      "lng": -3.6368758,
-      "coordinates": "40.3924062, -3.6368758"
+      "lat": 40.3919441,
+      "lng": -3.637001,
+      "coordinates": "40.3919441, -3.6370010"
     }
   },
   {
@@ -536,15 +534,14 @@
     },
     "fullAddress": "CALLE ARQUITECTURA 15 DUPLICADO, 28005, MADRID",
     "geocode": {
-      "lat": 40.3991868,
-      "lng": -3.701998,
-      "coordinates": "40.3991868, -3.7019980"
+      "lat": 40.3990613,
+      "lng": -3.7019199,
+      "coordinates": "40.3990613, -3.7019199"
     }
   },
   {
     "ID": "loc17",
     "orgName": "AFROAID",
-    "orgPhone": "-",
     "orgEmail": "afroaidmail@gmail.com",
     "orgWeb": "www.afroaid.net",
     "address": "CALLE DE MATILDE LANDA, 30",
@@ -566,6 +563,7 @@
     ],
     "additionalInfo": {
       "ES": "Atención a jóvenes a partir de 18 años",
+      "EN": "Young people 18 y.o. and older",
       "FR": "Services à la jeunesse (à partir de 18 ans)"
     },
     "fullAddress": "CALLE MATILDE LANDA 30, 28029 MADRID",
@@ -580,7 +578,6 @@
     "orgName": "ASOCIACIÓN CEPA-PUENTE DE VALLECAS",
     "orgPhone": 917779661,
     "orgEmail": "cepaongcolectivo@gmail.com",
-    "orgWeb": "-",
     "address": "CALLE DE RAMÓN PÉREZ DE AYALA, 26 LOCAL POSTERIOR",
     "postalCode": 28038,
     "district": "Puente de Vallecas",
@@ -614,7 +611,6 @@
     "orgName": "ASOCIACIÓN CEPA-PUENTE DE VALLECAS",
     "orgPhone": 917779661,
     "orgEmail": "cepa.infancia@gmail.com",
-    "orgWeb": "-",
     "address": "CALLE MARISMAS, 37",
     "postalCode": 28038,
     "district": "Puente de Vallecas",
@@ -646,7 +642,6 @@
   {
     "ID": "loc20",
     "orgName": "ORBITA DIVERSA",
-    "orgPhone": "-",
     "orgEmail": "info@orbitadiversa.org",
     "orgWeb": "orbitadiversa.wordpress.com",
     "address": "CALLE RIBERA DE CURTIDORES, 2",
@@ -725,7 +720,7 @@
     "locality": "MADRID",
     "timeTable": {
       "ES": "Martes y jueves de 19:30 a 21 horas",
-      "EN": "Tuesday and Thursday from 19:30 to 21 ",
+      "EN": "Tuesday and Thursday from 19:30 to 21",
       "FR": "Mardi et jeudi de 19h30 à 21h"
     },
     "priorAppointment": "Sí",
@@ -739,6 +734,7 @@
     ],
     "additionalInfo": {
       "ES": "Atención a las familias",
+      "EN": "Family support",
       "FR": "Services à la famille"
     },
     "fullAddress": "CALLE AGUILAR DE CAMPOO, 13 POSTERIOR, 28039, MADRID",
@@ -754,7 +750,7 @@
     "orgPhone": 911684483,
     "orgEmail": "valponasca@valponasca.org",
     "orgWeb": "www.valponasca.org",
-    "address": "CALLE SAN AQUILINO, 27 ",
+    "address": "CALLE SAN AQUILINO, 27",
     "postalCode": 28029,
     "district": "Tetuan",
     "locality": "MADRID",
@@ -865,7 +861,7 @@
     "timeTable": {
       "ES": "Todas las mañanas, Todas las tardes",
       "EN": "Every morning, Every afternoon/evening",
-      "FR": "\nToute la journée"
+      "FR": "Toute la journée"
     },
     "priorAppointment": "Sí",
     "waysOfContact": [
@@ -884,18 +880,16 @@
     },
     "fullAddress": "CALLE ESPARTEROS, 1, 3º, 5ª, 28012, MADRID",
     "geocode": {
-      "lat": 40.4163611,
-      "lng": -3.7049219,
-      "coordinates": "40.4163611, -3.7049219"
+      "lat": 40.4152606,
+      "lng": -3.6844995,
+      "coordinates": "40.4152606, -3.6844995"
     }
   },
   {
     "ID": "loc27",
     "orgName": "AJIVA",
-    "orgPhone": "-",
     "orgEmail": "ajiva1993@gmail.com",
     "orgWeb": "ajiva.org",
-    "address": "-",
     "district": "Sin presencia física",
     "locality": "MADRID",
     "timeTable": {
@@ -918,8 +912,8 @@
       "FR": "Camps d'été. Services à l'enfance (de 6 à 18 ans)"
     },
     "geocode": {
-      "lat": 40.417061,
-      "lng": -3.68792,
+      "lat": 40417061,
+      "lng": -3687920,
       "coordinates": "40.417061, -3.687920"
     }
   },
@@ -936,7 +930,7 @@
     "timeTable": {
       "ES": "Todas las mañanas, Todas las tardes",
       "EN": "Every morning, Every afternoon/evening",
-      "FR": "\nToute la journée"
+      "FR": "Toute la journée"
     },
     "priorAppointment": "No",
     "waysOfContact": [
@@ -951,7 +945,7 @@
     "additionalInfo": {
       "ES": "Acompañamiento social y juridico de situaciones de lgtbifobia, también para personas heterosexuales que se vean afectadas.",
       "EN": "LGTBIQ+ assistance",
-      "FR": "Accompagnement social et juridique pour les personnes LGTBIQ+. "
+      "FR": "Accompagnement social et juridique pour les personnes LGTBIQ+."
     },
     "fullAddress": "CALLE MONTERA, 24, 2 O, 28013, MADRID",
     "geocode": {
@@ -966,7 +960,7 @@
     "orgPhone": 917975354,
     "orgEmail": "espanol.grupolabor@gmail.com",
     "orgWeb": "www.grupolabor.org/",
-    "address": "CALLE ROMERAL, 12 ",
+    "address": "CALLE ROMERAL, 12",
     "postalCode": 28021,
     "district": "Villaverde",
     "locality": "MADRID",
@@ -985,7 +979,7 @@
       "ES"
     ],
     "additionalInfo": {
-      "ES": "Atención a mujeres reclusas y exreclusas (Trabajadora social miércoles de 9.30h a 12.30h /Psicóloga martes de 9.30 a 12.30h)  Actividades de participación ciudadana.                                                                                                                                                                                                                                    Clases de desarrollo personal y empoderamiento femenino.\nOfrecemos Cursos Gratis de: cocina, limpieza y moda.\nCursos de ayuda a domicilio (no gratis)\n",
+      "ES": "Atención a mujeres reclusas y exreclusas (Trabajadora social miércoles de 9.30h a 12.30h /Psicóloga martes de 9.30 a 12.30h)  Actividades de participación ciudadana.",
       "EN": "Personal development and female empowerment lessons.\nWe offer free courses:cooking, cleaning and fashion lessons.\nHome assistance courses (not for free).",
       "FR": "Cours de développement personnel et autonomisation des femmes.\nNous offrons des cours gratuits de cuisine, nettoyage et mode.\nCours d'aide à domicile (pas gratuit)"
     },
@@ -1001,7 +995,6 @@
     "orgName": "APLEC INCLUSIÓN + IGUALDAD",
     "orgPhone": 639902518,
     "orgEmail": "laura_gg@aplec-i.org",
-    "orgWeb": "-",
     "address": "CALLE MAYOR 21, 1º IZQ",
     "postalCode": 28013,
     "district": "Centro",
@@ -1009,7 +1002,7 @@
     "timeTable": {
       "ES": "Todas las mañanas, Todas las tardes",
       "EN": "Every morning, Every afternoon/evening",
-      "FR": "\nToute la journée"
+      "FR": "Toute la journée"
     },
     "priorAppointment": "Sí",
     "waysOfContact": [
@@ -1028,9 +1021,9 @@
     },
     "fullAddress": "CALLE MAYOR 21, 1º IZQ, 28013, MADRID",
     "geocode": {
-      "lat": 40.416228,
-      "lng": -3.706615,
-      "coordinates": "40.4162280, -3.7066150"
+      "lat": 40.4152606,
+      "lng": -3.6844995,
+      "coordinates": "40.4152606, -3.6844995"
     }
   },
   {
@@ -1046,7 +1039,7 @@
     "timeTable": {
       "ES": "Todas las mañanas",
       "EN": "Every morning",
-      "FR": "\nTous les matins"
+      "FR": "Tous les matins"
     },
     "priorAppointment": "Sí",
     "waysOfContact": [
@@ -1065,9 +1058,9 @@
     },
     "fullAddress": "CALLE SAN BERNARDO, 120 1º IZQ C, 28015, MADRID",
     "geocode": {
-      "lat": 40.4323053,
-      "lng": -3.7046772,
-      "coordinates": "40.4323053, -3.7046772"
+      "lat": 40.4152606,
+      "lng": -3.6844995,
+      "coordinates": "40.4152606, -3.6844995"
     }
   },
   {
@@ -1118,7 +1111,7 @@
     "timeTable": {
       "ES": "Todas las mañanas, Todas las tardes",
       "EN": "Every morning, Every afternoon/evening",
-      "FR": "\nToute la journée"
+      "FR": "Toute la journée"
     },
     "priorAppointment": "Sí",
     "waysOfContact": [
@@ -1156,7 +1149,7 @@
     "timeTable": {
       "ES": "Todas las mañanas",
       "EN": "Every morning",
-      "FR": "\nTous les matins"
+      "FR": "Tous les matins"
     },
     "priorAppointment": "Sí",
     "languages": [
@@ -1179,7 +1172,7 @@
     "orgName": "ASOCIACIÓN ÁNGELES URBANOS",
     "orgPhone": 626274495,
     "orgEmail": "angelesurbanos4@gmail.com",
-    "orgWeb": "-",
+    "orgWeb": "angelesurbanos4@gmail.com",
     "address": "CALLE SILVANO, 150",
     "postalCode": 28043,
     "district": "Hortaleza",
@@ -1187,7 +1180,7 @@
     "timeTable": {
       "ES": "Todas las mañanas",
       "EN": "Every morning",
-      "FR": "\nTous les matins"
+      "FR": "Tous les matins"
     },
     "priorAppointment": "Sí",
     "waysOfContact": [
@@ -1222,7 +1215,7 @@
     "timeTable": {
       "ES": "Todas las mañanas",
       "EN": "Every morning",
-      "FR": "\nTous les matins"
+      "FR": "Tous les matins"
     },
     "priorAppointment": "No",
     "waysOfContact": [
@@ -1291,7 +1284,7 @@
     "timeTable": {
       "ES": "Lunes y jueves en las mañanas,todas las tardes de lunes a jueves excepto martes",
       "EN": "Monday and Thursday mornings and every afternoon but Tuesday",
-      "FR": "Le lundi et jeudi matin\nMercredi et vendredi après-midi\n\n"
+      "FR": "Le lundi et jeudi matin\nMercredi et vendredi après-midi"
     },
     "priorAppointment": "Sí",
     "waysOfContact": [
@@ -1319,7 +1312,6 @@
     "orgName": "ASOCIACIÓN VALIENTE BANGLA",
     "orgPhone": 671054528,
     "orgEmail": "fazle_elahi786@yahoo.com",
-    "orgWeb": "-",
     "address": "CALLE PROVISIONES, 14 LOCAL",
     "postalCode": 28012,
     "district": "Centro",
@@ -1339,15 +1331,15 @@
       "BD"
     ],
     "additionalInfo": {
-      "ES": "\nActivades lunes y miércoles: clases de español (exclusivas para mujeres) y apoyo escolar.                                                                                                                             Martes: por la mañana clases de español.                                                                                                                                                                                                                   Martes y jueves por la tardes clases de español para todos\n\nActividades culturales: apoyando fiesta de fin de ramadan, preparando el día de la lengua e involucración en varios festivales conectados con la cultura e historia de Bangladesh\n",
-      "EN": "24h Activities: \nMonday and Wednesday: Spanish lessons (just for women) and school support.\nTuesday morning: Spanish lessons.\nTuesday and Thursday afternoon: Spanish lessons for all.\nCultural activities: Celebration of the end of Ramadan, conmemoration of the Day of Language, participation in many festivals conncted to the history and culture of Bangladesh.",
-      "FR": "Lundi et mercredi: cours d'espagnol (réservé aux femmes) et soutien scolaire.\nMardi : cours d'espagnol le matin.\nMardi et jeudi après-midi : cours d'espagnol pour tous\n\nActivités culturelles: soutenir la fin du Ramadan, préparer la journée de la langue et participer à plusieurs festivals liés à la culture et à l'histoire du Bangladesh"
+      "ES": "Activades lunes y miércoles: clases de español (exclusivas para mujeres) y apoyo escolar.                                                                                                                             Martes: por la mañana clases de español.",
+      "EN": "24h Activities: \nMonday and Wednesday: Spanish lessons (just for women) and school support.\nTuesday morning: Spanish lessons.\nTuesday and Thursday afternoon: Spanish lessons for all.\nCultural activities: Celebration of the end of Ramadan, conmemoration of",
+      "FR": "Lundi et mercredi: cours d'espagnol (réservé aux femmes) et soutien scolaire.\nMardi : cours d'espagnol le matin.\nMardi et jeudi après-midi : cours d'espagnol pour tous\n\nActivités culturelles: soutenir la fin du Ramadan, préparer la journée de la langue et"
     },
     "fullAddress": "CALLE PROVISIONES, 14 LOCAL, 28012, MADRID",
     "geocode": {
-      "lat": 40.406986,
-      "lng": -3.7029017,
-      "coordinates": "40.4069860, -3.7029017"
+      "lat": 40.404318,
+      "lng": -3.700233,
+      "coordinates": "40.4043180, -3.7002330"
     }
   },
   {
@@ -1380,9 +1372,9 @@
     },
     "fullAddress": "CALLE EMBAJADORES, 37 POSTERIOR, LOCAL., 28012, MADRID",
     "geocode": {
-      "lat": 40.3961566,
-      "lng": -3.6498509,
-      "coordinates": "40.3961566, -3.6498509"
+      "lat": 40.4122464,
+      "lng": -3.7054574,
+      "coordinates": "40.4122464, -3.7054574"
     }
   },
   {
@@ -1398,7 +1390,7 @@
     "timeTable": {
       "ES": "Todas las mañanas, Todas las tardes",
       "EN": "Every morning, Every afternoon/evening",
-      "FR": "\nToute la journée"
+      "FR": "Toute la journée"
     },
     "priorAppointment": "No",
     "languages": [
@@ -1427,8 +1419,8 @@
     "district": "Carabanchel",
     "locality": "MADRID",
     "timeTable": {
-      "ES": "Todas las mañanas, De lunes a jueves de 9 a 18H y viernes de 9 a 15h ",
-      "EN": "Monday to Thursday, from 9 to 18, and Friday, from 9 to 15h ",
+      "ES": "Todas las mañanas, De lunes a jueves de 9 a 18H y viernes de 9 a 15h",
+      "EN": "Monday to Thursday, from 9 to 18, and Friday, from 9 to 15h",
       "FR": "Toute la journée du lundi au jeudi, de 9h à 18h, et le vendredi de 9h à 15h"
     },
     "priorAppointment": "Sí",
@@ -1439,9 +1431,9 @@
       "ES"
     ],
     "additionalInfo": {
-      "ES": "Para una primera atención sin cita,se puede acudir los martes pares de cada mes de 9 a 13h. A partir de esta visita se valorarán necesidades y se hará socio si procede y así podrán pedir cita telefónica. Atención a la mujer\nEnlace a nuestro blog de extranjería: blogextranjeriaprogestion.org/ ",
+      "ES": "Para una primera atención sin cita,se puede acudir los martes pares de cada mes de 9 a 13h. A partir de esta visita se valorarán necesidades y se hará socio si procede y así podrán pedir cita telefónica. Atención a la mujer\nEnlace a nuestro blog de extran",
       "EN": "Women assistance, gender violence.\nLink to our blog on foreigners: blogextranjeriaprogestion.org/",
-      "FR": "La première visite ne demande pas de rendez-vous. Il suffit de venir chaque mardi pair du mois de 9h à 13h. Cette visite permet d'évaluer les nécessités pour les prochains rendez-vous qui se programmeront, dès lors, par téléphone. Nous disposons aussi de services spécifiques pour les femmes. Notre blog concernant l'immigration est disponible sur ce lien : blogextranjeriaprogestion.org/ "
+      "FR": "La première visite ne demande pas de rendez-vous. Il suffit de venir chaque mardi pair du mois de 9h à 13h. Cette visite permet d'évaluer les nécessités pour les prochains rendez-vous qui se programmeront, dès lors, par téléphone. Nous disposons aussi de"
     },
     "fullAddress": "CALLE MANUEL FERNANDEZ CABALLERO, 4, 28019, MADRID",
     "geocode": {
@@ -1479,9 +1471,9 @@
     "additionalInfo": {},
     "fullAddress": "CALLE GANDÍA, N.1 - LOCAL 9A, 28007, MADRID",
     "geocode": {
-      "lat": 40.449294,
-      "lng": -3.6601051,
-      "coordinates": "40.4492940, -3.6601051"
+      "lat": 40.3986255,
+      "lng": -3.6718117,
+      "coordinates": "40.3986255, -3.6718117"
     }
   },
   {
@@ -1489,7 +1481,6 @@
     "orgName": "ASOCIACIÓN SOCIAL Y CULTURAL CASA DE PAZ",
     "orgPhone": 913802721,
     "orgEmail": "casadepaz01@yahoo.es",
-    "orgWeb": "-",
     "address": "CALLE ANDALUCES, 22 POST.",
     "postalCode": 28038,
     "district": "Puente de Vallecas",
@@ -1497,7 +1488,7 @@
     "timeTable": {
       "ES": "24 horas",
       "EN": "24 hours",
-      "FR": "Permanence 24/24h\n\n"
+      "FR": "Permanence 24/24h"
     },
     "priorAppointment": "No",
     "waysOfContact": [
@@ -1534,7 +1525,7 @@
     "timeTable": {
       "ES": "Lunes a sábado de 17h a 19h (cena)",
       "EN": "Dinner Monday to Saturday, from 17h to 19h",
-      "FR": "Goûter et dîner du lundi au samedi de 17h à 19h  "
+      "FR": "Goûter et dîner du lundi au samedi de 17h à 19h"
     },
     "priorAppointment": "No",
     "waysOfContact": [
@@ -1579,6 +1570,7 @@
     ],
     "additionalInfo": {
       "ES": "Desayunos cada domingos por la mañana de las 8.30 a las 11h",
+      "EN": "Breakfast every Sunday morning from 8:30 am to 11:00 am",
       "FR": "Petit-déjeuner proposé à la cantine chaque dimanche entre 8h30 et 11h"
     },
     "fullAddress": "PASEO DE NTRA. SRA. DE LAS DELICIAS, 61, 28045, MADRID",
@@ -1629,7 +1621,7 @@
     "orgPhone": 917087074,
     "orgEmail": "info@ordendemalta.es",
     "orgWeb": "www.ordendemalta.es",
-    "address": "CALLE MORANDO, 18 ",
+    "address": "CALLE MORANDO, 18",
     "postalCode": 28029,
     "district": "Tetuan",
     "locality": "MADRID",
@@ -1647,9 +1639,9 @@
       "ES"
     ],
     "additionalInfo": {
-      "ES": "Se pedirá información básica a las personas que utilicen los servicios para hacerles una ficha.\nProductos de higiene, Atención médica general, Asesoría legal (Miercoles 16h-19h) \n- Médico (Lunes y Miercoles 16h-19h) \n- Duchas Hombres y Mujeres (Domingo 8h30-10h30 + Primer y Tercer Miércoles del mes 17h-18h30) \n- Las personas que utilicen las duchas pueden dejar su ropa para lavar -> Se recoge de lunes a jueves (15h-19h) \n- Ropero: Petición de cita por teléfono o yendo (martes y miercoles de las 16H-19H) y recoger la ropa los sábados (10h30-12h30)",
-      "EN": "Basic information will be requested before accessing the services to build a personal profile.\nPublic showers, Clothing, Hygiene products, General Medical Care, Legal assistance (Wednesday 16h-19h)\nDoctor (Monday and Wednesday 16h-19h)\nShowers for men and women (Sunday 8:30-10:30 + First and third Wednesday of the month 17:00-18:30)\nUsers of the showers may use the laundry service --> Clothes can are collected from Monday to Thursday (15h-19h) \nClothing: Prior appointment by phone or visit (Tuesday and Wednesday 16H-19H) and pick up the laundry on Saturday (10h30-12h30)\n",
-      "FR": "Des informations d'identité sont requises afin d'accéder aux services.\nDouches publiques, Vêtements, Produits d'hygiène, Soins médicaux généraux, Assistance juridique (mercredi 16h-19h)\nDocteur (lundi et mercredi 16h-19h)\nDouches pour hommes et femmes (dimanche de 8h30 à 10h30 + le premier et le troisième mercredi du mois de 17h00 à 18h30)\nLes utilisateurs des douches peuvent utiliser le service de blanchisserie -> Les vêtements peuvent être ramassés du lundi au jeudi (de 15h à 19h)\nVêtements: Rendez-vous préalable par téléphone ou visite (mardi et mercredi de 16h à 19h) et aller chercher le linge le samedi (10h30-12h30)"
+      "ES": "Se pedirá información básica a las personas que utilicen los servicios para hacerles una ficha.\nProductos de higiene, Atención médica general, Asesoría legal (Miercoles 16h-19h) \n- Médico (Lunes y Miercoles 16h-19h) \n- Duchas Hombres y Mujeres (Domingo 8h",
+      "EN": "Basic information will be requested before accessing the services to build a personal profile.\nPublic showers, Clothing, Hygiene products, General Medical Care, Legal assistance (Wednesday 16h-19h)\nDoctor (Monday and Wednesday 16h-19h)\nShowers for men and",
+      "FR": "Des informations d'identité sont requises afin d'accéder aux services.\nDouches publiques, Vêtements, Produits d'hygiène, Soins médicaux généraux, Assistance juridique (mercredi 16h-19h)\nDocteur (lundi et mercredi 16h-19h)\nDouches pour hommes et femmes (di"
     },
     "fullAddress": "CALLE MORANDO, 18 , 28029, MADRID",
     "geocode": {
@@ -1662,7 +1654,6 @@
     "ID": "loc49",
     "orgName": "COMUNIDAD DE SANT'EGIDIO",
     "orgPhone": 910115565,
-    "orgEmail": "-",
     "orgWeb": "www.santegidiomadrid.org",
     "address": "CALLE OLIVAR, 1 (BIS) LOCALES",
     "postalCode": 28012,
@@ -1682,15 +1673,15 @@
       "ES"
     ],
     "additionalInfo": {
-      "ES": "Servicio de atención todos los miércoles, jueves y viernes\nde 17:00 a 19:30 horas.\n• Reparto de cena caliente, bocadillos, fruta, café\nbollería, servicio de duchas y lavandería.\n• El reparto de la cena se realiza en 12 puntos\ndistintos de Madrid.\n• Más información: Iglesia de Ntra. Sra. de las Maravillas.\nCalleDos de Mayo, 11. Metro Tribunal (L1). Lunes y\nmartes 10:00 - 13:00 horas. Miércoles a sábado: 18:30\n-20:00 horas.",
-      "EN": "Open to public every Wednesday, Thursday, and fridays from 17:00 to 19:30.\n• Hot dinner delivery, sandwiches, fruit, coffee, bakery, showers and laundry.\n• Dinner is delivered in 12 locations around Madrid. \n• More info: Iglesia de Ntra. Sra. de las Maravillas.\nCalleDos de Mayo, 11. Metro Tribunal (L1). Monday and Tuesday 10:00 - 13:00. Wednesday to Saturday: 18:30-20:00.",
-      "FR": "Service d'attention générale le mercredi, jeudi et vendredi de 17h à 19h \n"
+      "ES": "Servicio de atención todos los miércoles, jueves y viernes\nde 17:00 a 19:30 horas.\n• Reparto de cena caliente, bocadillos, fruta, café\nbollería, servicio de duchas y lavandería.\n• El reparto de la cena se realiza en 12 puntos\ndistintos de Madrid.\n• Más in",
+      "EN": "Open to public every Wednesday, Thursday, and fridays from 17:00 to 19:30.\n• Hot dinner delivery, sandwiches, fruit, coffee, bakery, showers and laundry.\n• Dinner is delivered in 12 locations around Madrid. \n• More info: Iglesia de Ntra. Sra. de las Marav",
+      "FR": "Service d'attention générale le mercredi, jeudi et vendredi de 17h à 19h"
     },
     "fullAddress": "CALLE OLIVAR, 1 (BIS) LOCALES, 28012, MADRID",
     "geocode": {
-      "lat": 40.4078118,
-      "lng": -3.7007321,
-      "coordinates": "40.4078118, -3.7007321"
+      "lat": 40.3961923,
+      "lng": -3.6705544,
+      "coordinates": "40.3961923, -3.6705544"
     }
   },
   {
@@ -1716,9 +1707,9 @@
       "ES"
     ],
     "additionalInfo": {
-      "ES": "• Comida diaria de 12:45 a 14:00 horas. Desayuno y merienda.\n• De 17:00 a 19:00 horas, de lunes a sábado. Merienda-cena.\n• Forma de acceso al comedor: De Lunes a Viernes a las 09:00 se entregan 5 TARJETAS en la puerta (a nuevos usuarios que luego ya serán válidas para el resto de los días). ",
-      "EN": "\"• Social, psichologic and educational assistance.\n• Laundry and lockers.\n• Daily meals from 12:45 to 14:00. Breakfast and mid-afternoon snack.\n• From 17:00 to 19:00, from Monday to Saturday. Dinner.\n• Way to access the canteen: from Monday to Friday at 9:00 5 CARDS ARE ISSUED by the door (these are cards for new users, who will use them in the future days). ",
-      "FR": "- Attention sociale, psychologique et éducative - Buanderie et casiers - Service de repas proposé chaque jour entre 12h45 et 14h (Déjeuner et goûter) et lundi au samedi, de 17h à 19h (Goûter et dîner) - L'accès à la cantine se fera grâce à une carte. 5 cartes sont données aux nouveaux arrivants du lundi au vendredi à 9h."
+      "ES": "• Comida diaria de 12:45 a 14:00 horas. Desayuno y merienda.\n• De 17:00 a 19:00 horas, de lunes a sábado. Merienda-cena.\n• Forma de acceso al comedor: De Lunes a Viernes a las 09:00 se entregan 5 TARJETAS en la puerta (a nuevos usuarios que luego ya serán",
+      "EN": "\"• Social, psichologic and educational assistance.\n• Laundry and lockers.\n• Daily meals from 12:45 to 14:00. Breakfast and mid-afternoon snack.\n• From 17:00 to 19:00, from Monday to Saturday. Dinner.\n• Way to access the canteen: from Monday to Friday at 9",
+      "FR": "- Attention sociale, psychologique et éducative - Buanderie et casiers - Service de repas proposé chaque jour entre 12h45 et 14h (Déjeuner et goûter) et lundi au samedi, de 17h à 19h (Goûter et dîner) - L'accès à la cantine se fera grâce à une carte. 5 ca"
     },
     "fullAddress": "CALLE JOSÉ MARAÑÓN, 15-E, 28010, MADRID",
     "geocode": {
@@ -1796,9 +1787,9 @@
     },
     "fullAddress": "CALLE SAN FELIPE NERI, 4 BAJO DCHA, 28013, MADRID",
     "geocode": {
-      "lat": 40.4164559,
-      "lng": -3.7082778,
-      "coordinates": "40.4164559, -3.7082778"
+      "lat": 40.4164983,
+      "lng": -3.7080934,
+      "coordinates": "40.4164983, -3.7080934"
     }
   },
   {
@@ -1836,9 +1827,9 @@
     },
     "fullAddress": "CARRETERA DE COLMENAR KM 9,100, 28034, MADRID",
     "geocode": {
-      "lat": 40.4876812,
-      "lng": -3.694557,
-      "coordinates": "40.4876812, -3.6945570"
+      "lat": 40.5003691,
+      "lng": -3.6971025,
+      "coordinates": "40.5003691, -3.6971025"
     }
   },
   {
@@ -1907,19 +1898,16 @@
     },
     "fullAddress": "CALLE RIBERA DE CURTIDORES, 3 LOCAL 8, 28005, MADRID",
     "geocode": {
-      "lat": 40.4088215,
-      "lng": -3.707453,
-      "coordinates": "40.4088215, -3.7074530"
+      "lat": 40.4082021,
+      "lng": -3.7072981,
+      "coordinates": "40.4082021, -3.7072981"
     }
   },
   {
     "ID": "loc56",
     "orgName": "RED SOLIDARIA DE ACOGIDA. RSA",
-    "orgPhone": "-",
     "orgEmail": "bienvenidarefugiadxs@gmail.com",
     "orgWeb": "www.redsolidariadeacogida.es",
-    "address": "-",
-    "postalCode": "-",
     "district": "Sin presencia física",
     "locality": "MADRID",
     "timeTable": {
@@ -1943,26 +1931,23 @@
       "EN": "General social support and advocacy.",
       "FR": "Accompagnement et incidences politiques/sociales"
     },
-    "fullAddress": "-",
     "geocode": {
-      "lat": 40.417077,
-      "lng": -3.685452,
+      "lat": 40417077,
+      "lng": -3685452,
       "coordinates": "40.417077, -3.685452"
     }
   },
   {
     "ID": "loc57",
     "orgName": "OBSERVATORIO DE DERECHOS HUMANOS SAMBA MARTINE",
-    "orgPhone": "-",
     "orgEmail": "observatorioddhh@dominicos.org",
-    "orgWeb": "-",
     "address": "CALLE CAÑIZARES, 3",
     "postalCode": 28012,
     "district": "Centro",
     "locality": "MADRID",
     "timeTable": {
-      "ES": "Jueves 17h a 20h ",
-      "EN": "Thursday 17h to 20h ",
+      "ES": "Jueves 17h a 20h",
+      "EN": "Thursday 17h to 20h",
       "FR": "Le jeudi de 17h à 20h"
     },
     "priorAppointment": "Sí",
@@ -1975,7 +1960,7 @@
       "ES"
     ],
     "additionalInfo": {
-      "ES": "Atención a familias.                                                                                                                                                                                                                                                          Algunos miércoles se ofrecen cursos de cocina y cursos  de limpieza, impartidos por  www.sendadecuidados.org",
+      "ES": "Atención a familias.",
       "EN": "LGTBIQ+, women, and families assistance, Religion, Support for people in detention centres for foreigners, Human trafficking, Racist and xenophobic attacks",
       "FR": "Formations en cuisine et ménage. Information disponible sur www.sendadecuidados.org"
     },
@@ -1989,11 +1974,8 @@
   {
     "ID": "loc58",
     "orgName": "REFUGIADOS BIENVENIDOS (REFUGEES WELCOME ESPAÑA)",
-    "orgPhone": "-",
-    "orgEmail": "atencion.social@refugees-welcome.es ",
+    "orgEmail": "atencion.social@refugees-welcome.es",
     "orgWeb": "www.refugees-welcome.es",
-    "address": "-",
-    "postalCode": "-",
     "district": "Sin presencia física",
     "locality": "MADRID",
     "timeTable": {
@@ -2011,14 +1993,13 @@
       "FR"
     ],
     "additionalInfo": {
-      "ES": "Servicio exclusivo para solicitantes de asilo y refugiadxs. A través de la web, Hay que crearse un perfil/registrarse en nuestra página web dándole al botón \"Busco Habitación\" y rellenando los diferentes campos de información.\nUna vez que te hayas registrado en nuestra página web, el Equipo de Atención Social valorará tu perfil. Si hay disponibilidad de casas y encajan con lo que estás buscando, nos pondremos en contacto contigo para citarte y conocerte mejor. ",
-      "EN": "You need to create a profile in our website by clicking on \"Busco Habitación\" and filling in the form.\nOnce you have signed up in our website, our social services team will evaluate your profile. If there are available houses that match what you are looking for, we will contact you to arrange an appointment and meet you better. ",
-      "FR": "Services exclusifs pour les personnes réfugiées et pour les demandeurs d'asile. Vous devez créer un profil sur notre site Web en cliquant sur \"Busco Habitación\" et en remplissant le formulaire.\nUne fois que vous vous êtes inscrit, notre équipe de services sociaux évaluera votre profil. S'il y a des maisons disponibles qui correspondent à ce que vous recherchez, nous vous contacterons pour prendre rendez-vous et mieux vous connaître."
+      "ES": "Servicio exclusivo para solicitantes de asilo y refugiadxs. A través de la web, Hay que crearse un perfil/registrarse en nuestra página web dándole al botón \"Busco Habitación\" y rellenando los diferentes campos de información.\nUna vez que te hayas registr",
+      "EN": "You need to create a profile in our website by clicking on \"Busco Habitación\" and filling in the form.\nOnce you have signed up in our website, our social services team will evaluate your profile. If there are available houses that match what you are looki",
+      "FR": "Services exclusifs pour les personnes réfugiées et pour les demandeurs d'asile. Vous devez créer un profil sur notre site Web en cliquant sur \"Busco Habitación\" et en remplissant le formulaire.\nUne fois que vous vous êtes inscrit, notre équipe de services"
     },
-    "fullAddress": "-",
     "geocode": {
-      "lat": 40.415484,
-      "lng": -3.687448,
+      "lat": 40415484,
+      "lng": -3687448,
       "coordinates": "40.415484, -3.687448"
     }
   },
@@ -2026,7 +2007,7 @@
     "ID": "loc59",
     "orgName": "FUNDACIÓN TRIÁNGULO MADRID",
     "orgPhone": 915930540,
-    "orgEmail": "madrid@fundaciontriangulo.es ",
+    "orgEmail": "madrid@fundaciontriangulo.es",
     "orgWeb": "www.fundaciontriangulo.org/sedes/sede-madrid",
     "address": "CALLE MELENDEZ VALDÉS, 52. 1ºD.",
     "postalCode": 28015,
@@ -2047,22 +2028,22 @@
       "ES"
     ],
     "additionalInfo": {
-      "ES": "Servicio de acompañamiento para vincular al sistema sanitario si la persona esta diagnosticada de VIH+. Con total independencia de su sexualidad,situación administrativa o su origen.No negamos a nadie el acceso a nuestro servicio de prueba rápida para el VIH.\nReparto material preventivo ITS/VIH (condones y lubricantes)\nAcompañamientos a vinculación al sistema sanitario de personas que viven con el VIH.",
+      "ES": "Servicio de acompañamiento para vincular al sistema sanitario si la persona esta diagnosticada de VIH+. Con total independencia de su sexualidad,situación administrativa o su origen.No negamos a nadie el acceso a nuestro servicio de prueba rápida para el",
       "EN": "We don't deny the quick HIV test to anyone.\nLGTBIQ+ and women assistance, Gender violence, distribution of HIV and sexually transmitted infections items (condoms and lubs).\nSupport to access the health system for for people who live with HIV.",
-      "FR": "Service d'accompagnement pour les personnes diagnostiquées du VIH, et ce, quelle que soit l'origine, l'orientation sexuelle ou la situation administrative. Test du VIH. Matériel préventif ITS/VIH (préservatifs et lubrifiants). Assistance pour faire le lien avec le système de santé public. "
+      "FR": "Service d'accompagnement pour les personnes diagnostiquées du VIH, et ce, quelle que soit l'origine, l'orientation sexuelle ou la situation administrative. Test du VIH. Matériel préventif ITS/VIH (préservatifs et lubrifiants). Assistance pour faire le lie"
     },
     "fullAddress": "CALLE MELENDEZ VALDÉS, 52. 1ºD., 28015, MADRID",
     "geocode": {
-      "lat": 40.4330995,
-      "lng": -3.7148813,
-      "coordinates": "40.4330995, -3.7148813"
+      "lat": 40.4152606,
+      "lng": -3.6844995,
+      "coordinates": "40.4152606, -3.6844995"
     }
   },
   {
     "ID": "loc60",
     "orgName": "ASOCIACIÓN TRIÁNGULO JUVENTUD",
     "orgPhone": 634126582,
-    "orgEmail": "asociacion.triangulo@gmail.com ",
+    "orgEmail": "asociacion.triangulo@gmail.com",
     "orgWeb": "www.facebook.comAsociaciontriangulojuventud/",
     "address": "CALLE MELENDEZ VALDÉS, 52. 1ºD.",
     "postalCode": 28015,
@@ -2083,15 +2064,15 @@
       "ES"
     ],
     "additionalInfo": {
-      "ES": "Servicio de acompañamiento para vincular al sistema sanitario si la persona esta diagnosticada de VIH+. Con total independencia de su sexualidad,situación administrativa o su origen.Todo enfocado a población LGBTI, pero no negamos a nadie el acceso al servicio de prueba rápida para el VIH.\nReparto material preventivo ITS/VIH (condones y lubricantes)",
+      "ES": "Servicio de acompañamiento para vincular al sistema sanitario si la persona esta diagnosticada de VIH+. Con total independencia de su sexualidad,situación administrativa o su origen.Todo enfocado a población LGBTI, pero no negamos a nadie el acceso al ser",
       "EN": "We don't deny the quick HIV test to anyone.\nLGTBIQ+ and women assistance, Gender violence, distribution of HIV and sexually transmitted infections items (condoms and lubes).",
-      "FR": "Service d'accompagnement pour les personnes diagnostiquées du VIH, et ce, quelle que soit l'origine, l'orientation sexuelle ou la situation administrative. Test du VIH. Matériel préventif ITS/VIH (préservatifs et lubrifiants). Assistance pour faire le lien avec le système de santé public. "
+      "FR": "Service d'accompagnement pour les personnes diagnostiquées du VIH, et ce, quelle que soit l'origine, l'orientation sexuelle ou la situation administrative. Test du VIH. Matériel préventif ITS/VIH (préservatifs et lubrifiants). Assistance pour faire le lie"
     },
     "fullAddress": "CALLE MELENDEZ VALDÉS, 52. 1ºD., 28015, MADRID",
     "geocode": {
-      "lat": 40.4330995,
-      "lng": -3.7148813,
-      "coordinates": "40.4330995, -3.7148813"
+      "lat": 40.4152606,
+      "lng": -3.6844995,
+      "coordinates": "40.4152606, -3.6844995"
     }
   },
   {
@@ -2099,8 +2080,7 @@
     "orgName": "RED INTERLAVAPIES",
     "orgPhone": 675443787,
     "orgEmail": "redinterlavapies@gmail.com",
-    "orgWeb": "-",
-    "address": "CALLE DUQUE DE ALBA,13 LOCAL INTERIOR ",
+    "address": "CALLE DUQUE DE ALBA,13 LOCAL INTERIOR",
     "postalCode": 28012,
     "district": "Centro",
     "locality": "MADRID",
@@ -2125,9 +2105,9 @@
     },
     "fullAddress": "CALLE DUQUE DE ALBA,13 LOCAL INTERIOR , 28012, MADRID",
     "geocode": {
-      "lat": 40.4260192,
-      "lng": -3.6757971,
-      "coordinates": "40.4260192, -3.6757971"
+      "lat": 40.4114901,
+      "lng": -3.7046059,
+      "coordinates": "40.4114901, -3.7046059"
     }
   },
   {
@@ -2170,7 +2150,7 @@
     "orgPhone": 6277005011,
     "orgEmail": "sendadecuidados@gmail.com",
     "orgWeb": "www.sendadecuidados.org/",
-    "address": "CALLE DUQUE DE ALBA, 13 ",
+    "address": "CALLE DUQUE DE ALBA, 13",
     "postalCode": 28012,
     "district": "Centro",
     "locality": "MADRID",
@@ -2325,15 +2305,14 @@
     },
     "fullAddress": "PLAZA DE LAS LETRAS. CALLE ALAMEDA, 15, 28014, MADRID",
     "geocode": {
-      "lat": 40.4105268,
-      "lng": -3.6937908,
-      "coordinates": "40.4105268, -3.6937908"
+      "lat": 40.4105013,
+      "lng": -3.6936642,
+      "coordinates": "40.4105013, -3.6936642"
     }
   },
   {
     "ID": "loc68",
     "orgName": "MUNDO EN MOVIMIENTO",
-    "orgPhone": "-",
     "orgEmail": "info@mundoenmovimiento.org",
     "orgWeb": "www.mundoenmovimiento.org",
     "address": "PLAZA DE LAS LETRAS. CALLE ALAMEDA, 15",
@@ -2356,15 +2335,1077 @@
       "FR"
     ],
     "additionalInfo": {
-      "ES": "Otros servicios:\nMadridForAll: Mapeo de recursos gratuitos para migrantes en Madrid. Si tu acudes a algún recurso que podría interesarnos y no aparece en el mapa, no dudes en escribirnos un email. ¡Este mundo lo construimos entre todas!\n",
-      "EN": "Other services:\n\nMadridForAll: Mapping free resources for migrants in Madrid. If you find an interesting resource that doesn't appear in the map, please send us an email. We are building this world all together!\n",
-      "FR": "Autres services : Projet MadridForAll. Il s'agit d'un plan de Madrid qui permet aux personnes migrantes de visualiser tous les services gratuits et disponibles de la ville. Au cas où tu accèderais à un service qui n'est pas disponible sur notre plan, n'hésite pas à nous écrire pour nous en faire part !"
+      "ES": "Otros servicios:\nMadridForAll: Mapeo de recursos gratuitos para migrantes en Madrid. Si tu acudes a algún recurso que podría interesarnos y no aparece en el mapa, no dudes en escribirnos un email. ¡Este mundo lo construimos entre todas!",
+      "EN": "Other services:\n\nMadridForAll: Mapping free resources for migrants in Madrid. If you find an interesting resource that doesn't appear in the map, please send us an email. We are building this world all together!",
+      "FR": "Autres services : Projet MadridForAll. Il s'agit d'un plan de Madrid qui permet aux personnes migrantes de visualiser tous les services gratuits et disponibles de la ville. Au cas où tu accèderais à un service qui n'est pas disponible sur notre plan, n'hé"
     },
     "fullAddress": "PLAZA DE LAS LETRAS. CALLE ALAMEDA, 15, 28014, MADRID",
     "geocode": {
-      "lat": 40.4105269,
-      "lng": -3.6937909,
-      "coordinates": "40.4105269, -3.6937909"
+      "lat": 40.4105013,
+      "lng": -3.6936642,
+      "coordinates": "40.4105013, -3.6936642"
+    }
+  },
+  {
+    "ID": "loc72",
+    "orgName": "MUSEO ERMITA DE SAN ANTONIO DE LA FLORIDA",
+    "orgPhone": 915420722,
+    "orgEmail": "sanantonio@Madrid.es",
+    "orgFacebook": "https://www.facebook.com/pages/Ermita%20de%20San%20Antonio%20de%20la%20Florida/164410883574106/",
+    "sedeFisica": "Sí",
+    "address": "GLORIETA SAN ANTONIO DE LA FLORIDA, 5",
+    "postalCode": 28008,
+    "district": "Moncloa-Aravaca",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes, Fines de semana, Cerrado el lunes"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {
+      "ES": "Último paso de visita: 20 minutos antes del cierre",
+      "EN": "Last visit: 20 minutes before closing",
+      "FR": "La dernière visite a lieu 20 minutes avant la fermeture"
+    },
+    "fullAddress": "GLORIETA SAN ANTONIO DE LA FLORIDA, 5 , 28008, MADRID",
+    "geocode": {
+      "lat": 40.4152606,
+      "lng": -3.6844995,
+      "coordinates": "40.4152606, -3.6844995"
+    },
+    "TT_Monday": "10:00 - 19:00",
+    "TT_Tuesday": "10:00 - 19:00",
+    "TT_Thursday": "10:00 - 19:00",
+    "TT_Wednesday": "10:00 - 19:00",
+    "TT_Friday": "10:00 - 19:00",
+    "TT_Saturday": "10:00 - 19:00",
+    "TT_Sunday": "10:00 - 19:00"
+  },
+  {
+    "ID": "loc85",
+    "orgName": "MUSEO DE LA BIBLIOTECA NACIONAL",
+    "orgPhone": 915168967,
+    "orgEmail": "museo@bne.es",
+    "orgWeb": "www.bne.es/es/MuseoBibliotecaNacional/",
+    "orgFacebook": "https://www.facebook.com/bne",
+    "orgTwitter": "https://twitter.com/BNE_biblioteca",
+    "orgInstagram": "https://www.instagram.com/bne_biblioteca/?hl=es",
+    "sedeFisica": "Sí",
+    "address": "PASEO RECOLETOS, 20",
+    "postalCode": 28071,
+    "district": "Centro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes, Fines de semana, Domingos y festivos de 10.00 a 14.00 h"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {},
+    "fullAddress": "PASEO RECOLETOS, 20 , 28071, MADRID",
+    "geocode": {
+      "lat": 40.4234912,
+      "lng": -3.6893974,
+      "coordinates": "40.4234912, -3.6893974"
+    },
+    "TT_Monday": "10:00 - 20:00",
+    "TT_Tuesday": "10:00 - 20:00",
+    "TT_Thursday": "10:00 - 20:00",
+    "TT_Wednesday": "10:00 - 20:00",
+    "TT_Friday": "10:00 - 20:00",
+    "TT_Saturday": "10:00 - 20:00",
+    "TT_Sunday": "10:00 - 20:00"
+  },
+  {
+    "ID": "loc94",
+    "orgName": "MUSEO DE HOSTORIA DE MADRID",
+    "orgPhone": 917011863,
+    "orgEmail": "mapeomundoenmovimiento@gmail.com",
+    "orgWeb": "museomadrid.com/museo-de-historia/",
+    "orgFacebook": "https://www.facebook.com/pages/Museo%20de%20Historia%20de%20Madrid/123525754367889/",
+    "orgInstagram": "https://www.instagram.com/mhm_madrid/?hl=es",
+    "sedeFisica": "Sí",
+    "address": "CALLE FUENCARRAL, 78",
+    "postalCode": 28004,
+    "district": "Centro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes, Fines de semana, Cerrado el lunes."
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {
+      "ES": "Abierto festivos salvo 1 de enero, 1 de mayo y 25 de diciembre",
+      "EN": "Open on public holidays except January 1st, May 1st, and December 25th",
+      "FR": "Le musée est aussi ouvert les jours fériés sauf le 1er janvier, le 1er mai et le 25 décembre"
+    },
+    "fullAddress": "CALLE FUENCARRAL, 78 , 28004, MADRID",
+    "geocode": {
+      "lat": 40.4257773,
+      "lng": -3.7008315,
+      "coordinates": "40.4257773, -3.7008315"
+    },
+    "TT_Tuesday": "10:00 - 20:00",
+    "TT_Thursday": "10:00 - 20:00",
+    "TT_Wednesday": "10:00 - 20:00",
+    "TT_Friday": "10:00 - 20:00",
+    "TT_Saturday": "10:00 - 20:00",
+    "TT_Sunday": "10:00 - 20:00"
+  },
+  {
+    "ID": "loc91",
+    "orgName": "MUSEO DE ARTE PÚBLICO",
+    "orgEmail": "mapeo@mundoenmovimiento.org",
+    "orgWeb": "www.miradormadrid.com/museo-de-escultura-al-aire-libre/",
+    "sedeFisica": "Sí",
+    "address": "PASEO CASTELLANA, 40",
+    "postalCode": 28046,
+    "district": "Salamanca",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "24 Horas, Sin atención presencial, Museo al aire libre"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "Ningún idioma"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {
+      "ES": "Museo de escultura al aire libre que pretende integrar elementos de la ciudad y arte",
+      "EN": "Open air sculpture museum which intends to integrate items from the city and art",
+      "FR": "À travers ce musée de sculpture à l'air libre, nous voulons intégrer des éléments artistiques dans un milieu urbain"
+    },
+    "fullAddress": "PASEO CASTELLANA, 40 , 28046, MADRID",
+    "geocode": {
+      "lat": 40.4332398,
+      "lng": -3.6876128,
+      "coordinates": "40.4332398, -3.6876128"
+    }
+  },
+  {
+    "ID": "loc69",
+    "orgName": "MUSEO DEL AIRE",
+    "orgPhone": 915091690,
+    "orgEmail": "museodelaire@ea.mde.es",
+    "orgWeb": "http://www.ejercitodelaire.mde.es/museodelaire",
+    "orgFacebook": "https://www.facebook.com/pages/Museo%20del%20Aire/352246435177152/",
+    "sedeFisica": "Sí",
+    "address": "AUTOVÍA A-5, KILÓMETRO 10.700,",
+    "postalCode": 28024,
+    "district": "Carabanchel",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios, Cerrado el lunes"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {},
+    "fullAddress": "AUTOVÍA A-5, KILÓMETRO 10.700,  , 28024, MADRID",
+    "geocode": {
+      "lat": 40.4152606,
+      "lng": -3.6844995,
+      "coordinates": "40.4152606, -3.6844995"
+    },
+    "TT_Tuesday": "10:00 - 14:00",
+    "TT_Thursday": "10:00 - 14:00",
+    "TT_Wednesday": "10:00 - 14:00",
+    "TT_Friday": "10:00 - 14:00",
+    "TT_Saturday": "10:00 - 14:00",
+    "TT_Sunday": "10:00 - 14:00"
+  },
+  {
+    "ID": "loc88",
+    "orgName": "MUSEO ABC DE DIBUJO E ILUSTRACIÓN",
+    "orgPhone": 917588379,
+    "orgEmail": "info_museo@abc.es",
+    "orgWeb": "museo.abc.es/",
+    "orgFacebook": "https://www.facebook.com/museoabc",
+    "orgTwitter": "https://twitter.com/MuseoABC",
+    "orgInstagram": "https://www.instagram.com/museoabc/",
+    "sedeFisica": "Sí",
+    "address": "CALLE AMANIEL, 29",
+    "postalCode": 28015,
+    "district": "Chamberí",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios, Lunes cerrado"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {},
+    "fullAddress": "CALLE AMANIEL, 29 , 28015, MADRID",
+    "geocode": {
+      "lat": 40.4274134,
+      "lng": -3.709538,
+      "coordinates": "40.4274134, -3.7095380"
+    },
+    "TT_Tuesday": "12:00 - 20:00",
+    "TT_Thursday": "12:00 - 20:00",
+    "TT_Wednesday": "12:00 - 20:00",
+    "TT_Friday": "12:00 - 20:00",
+    "TT_Saturday": "12:00 - 20:00",
+    "TT_Sunday": "10:00 - 20:00"
+  },
+  {
+    "ID": "loc76",
+    "orgName": "MUSEO DE ARTE CONTEMPORÁNEO",
+    "orgPhone": 915885921,
+    "orgEmail": "mapeo@mundoenmovimiento.org",
+    "orgWeb": "www.madrid.es/portales/munimadrid/es/Inicio/museoartecontemporaneo/?vgnextoid=d6b0744554b6b010VgnVCM100000d90ca8c0RCRD&vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&fbclid=IwAR0ThyocazSUAaqD8kmO9N-e-hmFYve2Qgyj9ZTyfb0UkT0WReWLm0_3kdE",
+    "orgFacebook": "https://www.facebook.com/pages/Museo%20de%20Arte%20Contempor%C3%A1neo%20(Madrid)/694150177358694/",
+    "sedeFisica": "Sí",
+    "address": "CALLE DEL CONDE DUQUE, 9",
+    "postalCode": 28015,
+    "district": "Centro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios, Domingo y Lunes, no se hacen visitas gratis"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {
+      "ES": "El horario de tarde empieza a las 17:30",
+      "EN": "Evening visits start at 17:30",
+      "FR": "L'après-midi, les visites commencent à 17:30"
+    },
+    "fullAddress": "CALLE DEL CONDE DUQUE, 9 , 28015, MADRID",
+    "geocode": {
+      "lat": 40.4272558,
+      "lng": -3.7107181,
+      "coordinates": "40.4272558, -3.7107181"
+    },
+    "TT_Tuesday": "10:00 - 14:00  18:00 - 21:00",
+    "TT_Thursday": "10:00 - 14:00  18:00 - 21:00",
+    "TT_Wednesday": "10:00 - 14:00  18:00 - 21:00",
+    "TT_Friday": "10:00 - 14:00  18:00 - 21:00",
+    "TT_Saturday": "10:00 - 14:00  18:00 - 21:00"
+  },
+  {
+    "ID": "loc89",
+    "orgName": "MUSEO CASA DE LA MONEDA",
+    "orgPhone": 915666544,
+    "orgEmail": "museo@fnmt.es",
+    "orgWeb": "www.museocasadelamoneda.es/",
+    "orgFacebook": "https://www.facebook.com/MuseoCasaMoneda",
+    "sedeFisica": "Sí",
+    "address": "CALLE DEL DOCTOR ESQUERDO, 36",
+    "postalCode": 28009,
+    "district": "Salamanca",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios, Lunes cerrado"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {
+      "ES": "Se requiere presentar DNI o Pasaporte a la entrada",
+      "EN": "ID or Passport are requested at the entrance gate",
+      "FR": "Il est nécessaire de présenter une carte d'identité ou un passeport à l'entrée"
+    },
+    "fullAddress": "CALLE DEL DOCTOR ESQUERDO, 36 , 28009, MADRID",
+    "geocode": {
+      "lat": 40.4226001,
+      "lng": -3.6691398,
+      "coordinates": "40.4226001, -3.6691398"
+    },
+    "TT_Tuesday": "10:00 - 20:00",
+    "TT_Thursday": "10:00 - 20:00",
+    "TT_Wednesday": "10:00 - 20:00",
+    "TT_Friday": "10:00 - 20:00",
+    "TT_Saturday": "10:00 - 20:00",
+    "TT_Sunday": "10:00 - 20:00"
+  },
+  {
+    "ID": "loc70",
+    "orgName": "MUSEO DE SAN ISIDRO",
+    "orgPhone": 913667415,
+    "orgEmail": "museosanisidro@madrid.es",
+    "orgWeb": "www.madrid.es/museosanisidro",
+    "orgFacebook": "https://www.facebook.com/MuseoSanIsidroMadrid",
+    "sedeFisica": "Sí",
+    "address": "PLAZA SAN ANDRÉS, 1",
+    "postalCode": 28005,
+    "district": "Centro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios, Lunes cerrado"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {
+      "ES": "El horario de visita de mañana empieza a las 9:30",
+      "EN": "Morning visits start at 9:30 am",
+      "FR": "Les horaires de visite débutent à 9:30"
+    },
+    "fullAddress": "PLAZA SAN ANDRÉS, 1 , 28005, MADRID",
+    "geocode": {
+      "lat": 40.4120936,
+      "lng": -3.7109557,
+      "coordinates": "40.4120936, -3.7109557"
+    },
+    "TT_Tuesday": "10:00 - 20:00",
+    "TT_Thursday": "10:00 - 20:00",
+    "TT_Wednesday": "10:00 - 20:00",
+    "TT_Friday": "10:00 - 20:00",
+    "TT_Saturday": "10:00 - 20:00",
+    "TT_Sunday": "10:00 - 20:00"
+  },
+  {
+    "ID": "loc71",
+    "orgName": "MUSEO ICO",
+    "orgPhone": 914201242,
+    "orgEmail": "museoico@ico.es",
+    "orgWeb": "www.fundacionico.es/arte/",
+    "orgFacebook": "https://www.facebook.com/museoICO/",
+    "orgTwitter": "https://twitter.com/fundacionico",
+    "sedeFisica": "Sí",
+    "address": "CALLE ZORILLA , 3",
+    "postalCode": 28014,
+    "district": "Centro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios, Lunes cerrado"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {},
+    "fullAddress": "CALLE ZORILLA , 3 , 28014, MADRID",
+    "geocode": {
+      "lat": 40.4168032,
+      "lng": -3.6976216,
+      "coordinates": "40.4168032, -3.6976216"
+    },
+    "TT_Tuesday": "11:00 - 20:00",
+    "TT_Thursday": "11:00 - 20:00",
+    "TT_Wednesday": "11:00 - 20:00",
+    "TT_Friday": "11:00 - 20:00",
+    "TT_Saturday": "11:00 - 20:00",
+    "TT_Sunday": "10:00 - 20:00"
+  },
+  {
+    "ID": "loc77",
+    "orgName": "CASA MUSEO LOPE DE VEGA",
+    "orgPhone": 914299216,
+    "orgEmail": "casamuseolopedevega@madrid.org",
+    "orgWeb": "casamuseolopedevega.org/es/",
+    "orgFacebook": "https://www.facebook.com/pages/Casa-Museo%20de%20Lope%20de%20Vega/152035278167444/",
+    "sedeFisica": "Sí",
+    "address": "CALLE DE CERVANTES, 11",
+    "postalCode": 28014,
+    "district": "Centro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios, Lunes cerrado"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {},
+    "fullAddress": "CALLE DE CERVANTES, 11 , 28014, MADRID",
+    "geocode": {
+      "lat": 40.4144329,
+      "lng": -3.6974498,
+      "coordinates": "40.4144329, -3.6974498"
+    },
+    "TT_Tuesday": "10:00 - 18:00",
+    "TT_Thursday": "10:00 - 18:00",
+    "TT_Wednesday": "10:00 - 18:00",
+    "TT_Friday": "10:00 - 18:00",
+    "TT_Saturday": "10:00 - 18:00",
+    "TT_Sunday": "10:00 - 18:00"
+  },
+  {
+    "ID": "loc82",
+    "orgName": "MUSEO CERRALBO",
+    "orgPhone": 915473646,
+    "orgEmail": "museo.cerralbo@cultura.gob.es",
+    "orgWeb": "www.culturaydeporte.gob.es/mcerralbo/home.html",
+    "orgFacebook": "https://www.facebook.com/museocerralbo/",
+    "orgTwitter": "https://twitter.com/museocerralbo?lang=es",
+    "sedeFisica": "Sí",
+    "address": "CALLE VENTURA RODRÍGUEZ, 17",
+    "postalCode": 28008,
+    "district": "Moncloa-Aravaca",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios,"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {},
+    "fullAddress": "CALLE VENTURA RODRÍGUEZ, 17 , 28008, MADRID",
+    "geocode": {
+      "lat": 40.4237666,
+      "lng": -3.7145164,
+      "coordinates": "40.4237666, -3.7145164"
+    },
+    "TT_Thursday": "17:00 - 20:00",
+    "TT_Sunday": "10:00 - 15:00"
+  },
+  {
+    "ID": "loc92",
+    "orgName": "MUSEO REINA SOFIA",
+    "orgPhone": 917741000,
+    "orgEmail": "info@museoreinasofia.es",
+    "orgWeb": "www.museoreinasofia.es/",
+    "orgFacebook": "https://www.facebook.com/museoreinasofia",
+    "orgTwitter": "https://twitter.com/museoreinasofia",
+    "orgInstagram": "https://www.instagram.com/museoreinasofia/",
+    "sedeFisica": "Sí",
+    "address": "CALLE SANTA ISABEL, 52",
+    "postalCode": 28012,
+    "district": "Centro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios,"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {},
+    "fullAddress": "CALLE SANTA ISABEL, 52 , 28012, MADRID",
+    "geocode": {
+      "lat": 40.4079189,
+      "lng": -3.6945566,
+      "coordinates": "40.4079189, -3.6945566"
+    },
+    "TT_Monday": "19:00 - 21:00",
+    "TT_Thursday": "19:00 - 21:00",
+    "TT_Wednesday": "19:00 - 21:00",
+    "TT_Friday": "19:00 - 21:00",
+    "TT_Saturday": "19:00 - 21:00",
+    "TT_Sunday": "14:00 - 21:00"
+  },
+  {
+    "ID": "loc93",
+    "orgName": "MUSEO NACIONAL DE ANTROPOLOGÍA",
+    "orgPhone": 915306418,
+    "orgEmail": "antropologico@mecd.es",
+    "orgWeb": "www.culturaydeporte.gob.es/mnantropologia/portada.html",
+    "orgFacebook": "https://www.facebook.com/mantropologia/",
+    "orgInstagram": "https://www.instagram.com/museo_nacional_antropologia/",
+    "sedeFisica": "Sí",
+    "address": "CALLE ALFONSO XII, 68",
+    "postalCode": 28014,
+    "district": "Retiro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios,"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {
+      "ES": "Entrada gratis, también, el 18 de abril, el 12 de octubre, el 6 de diciembre",
+      "EN": "Free entrance also on April 18th, October 12th, and December 6th",
+      "FR": "Le 18 avril, le 12 octobre et le 6 décembre, l'entrée est aussi gratuite"
+    },
+    "fullAddress": "CALLE ALFONSO XII, 68 , 28014, MADRID",
+    "geocode": {
+      "lat": 40.407872,
+      "lng": -3.688798,
+      "coordinates": "40.4078720, -3.6887980"
+    },
+    "TT_Saturday": "14:00 - 20:00",
+    "TT_Sunday": "10:00 - 20:00"
+  },
+  {
+    "ID": "loc74",
+    "orgName": "MUSEO DE AMÉRICA",
+    "orgPhone": 915439437,
+    "orgEmail": "museo.america@mecd.es",
+    "orgWeb": "museodeamerica.mcu.es/",
+    "orgFacebook": "https://www.facebook.com/MuseodeAmerica",
+    "sedeFisica": "Sí",
+    "address": "AVENIDA REYES CATÓLICOS, 6",
+    "postalCode": 28040,
+    "district": "Moncloa-Aravaca",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios,"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {
+      "ES": "Entrada gratis también el 12 de octubre y el 6 de diciembre",
+      "EN": "Free entrance also on October 12th and December 6th",
+      "FR": "L'entrée est aussi gratuite les 12 octobre et 6 décembre"
+    },
+    "fullAddress": "AVENIDA REYES CATÓLICOS, 6 , 28040, MADRID",
+    "geocode": {
+      "lat": 40.4381398,
+      "lng": -3.7220622,
+      "coordinates": "40.4381398, -3.7220622"
+    },
+    "TT_Sunday": "10:00 - 15:00"
+  },
+  {
+    "ID": "loc78",
+    "orgName": "MUSEO NACIONAL DE ARTES DECORATIVAS",
+    "orgPhone": 915326499,
+    "orgEmail": "mnad@cultura.gob.es",
+    "orgWeb": "www.culturaydeporte.gob.es/mnartesdecorativas/portada.html",
+    "orgFacebook": "https://www.facebook.com/MuseoNacionalArtesDecorativas/",
+    "sedeFisica": "Sí",
+    "address": "CALLE MONTALBAN, 12",
+    "postalCode": 28014,
+    "district": "Retiro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios,"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {
+      "ES": "Entrada gratis de verano (del 1 de julio al 31 de agosto)",
+      "EN": "Free entrance in summer (from July 1st to August 31st)",
+      "FR": "L'été (du 1er juillet au 31 août), l'entrée est aussi gratuite"
+    },
+    "fullAddress": "CALLE MONTALBAN, 12 , 28014, MADRID",
+    "geocode": {
+      "lat": 40.417876,
+      "lng": -3.6897232,
+      "coordinates": "40.4178760, -3.6897232"
+    },
+    "TT_Saturday": "14:00 - 15:00",
+    "TT_Sunday": "10:00 - 15:00"
+  },
+  {
+    "ID": "loc79",
+    "orgName": "REAL ACADEMIA DE BELLAS ARTES DE SAN FERNANDO",
+    "orgPhone": 915240864,
+    "orgEmail": "museo@rabasf.org",
+    "orgWeb": "realacademiabellasartessanfernando.com/es",
+    "orgFacebook": "https://www.facebook.com/RealAcademiadeBellasArtesdeSanFernando/",
+    "orgTwitter": "https://twitter.com/rabasf",
+    "sedeFisica": "Sí",
+    "address": "CALLE ALCALÁ, 13",
+    "postalCode": 28014,
+    "district": "Centro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios,"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {},
+    "fullAddress": "CALLE ALCALÁ, 13 , 28014, MADRID",
+    "geocode": {
+      "lat": 40.4179651,
+      "lng": -3.7007596,
+      "coordinates": "40.4179651, -3.7007596"
+    },
+    "TT_Tuesday": "10:00 - 15:00",
+    "TT_Sunday": "10:00 - 15:00"
+  },
+  {
+    "ID": "loc80",
+    "orgName": "MUSEO DEL ROMANTICISMO",
+    "orgPhone": 914481045,
+    "orgEmail": "informacion.romanticismo@mecd.es",
+    "orgWeb": "http://museoromanticismo.mcu.es/",
+    "orgFacebook": "https://www.facebook.com/MRomanticismo/",
+    "orgTwitter": "https://twitter.com/MRomanticismo",
+    "orgInstagram": "https://www.instagram.com/museodelromanticismo/?hl=es",
+    "sedeFisica": "Sí",
+    "address": "CALLE SAN MATEO, 13",
+    "postalCode": 28004,
+    "district": "Centro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios,"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {
+      "ES": "En verano, el museo cierra a las 20:30",
+      "EN": "In summer, the museum closes at 20:30",
+      "FR": "Durant l'été, le musée ferme à 20:30"
+    },
+    "fullAddress": "CALLE SAN MATEO, 13 , 28004, MADRID",
+    "geocode": {
+      "lat": 40.4258619,
+      "lng": -3.698768,
+      "coordinates": "40.4258619, -3.6987680"
+    },
+    "TT_Saturday": "14:00 - 18:00",
+    "TT_Sunday": "10:00 - 18:00"
+  },
+  {
+    "ID": "loc95",
+    "orgName": "MUSEO LÁZARO GALDIANO",
+    "orgPhone": 915616084,
+    "orgEmail": "info@museolazarogaldiano.es",
+    "orgWeb": "www.flg.es/",
+    "orgFacebook": "https://www.facebook.com/MuseoLazaroGaldiano",
+    "orgTwitter": "https://twitter.com/Museo_Lazaro",
+    "orgInstagram": "https://www.instagram.com/museolazarogaldiano/",
+    "sedeFisica": "Sí",
+    "address": "CALLE SERRANO, 122",
+    "postalCode": 28006,
+    "district": "Salamanca",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios,"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {},
+    "fullAddress": "CALLE SERRANO, 122 , 28006, MADRID",
+    "geocode": {
+      "lat": 40.4369278,
+      "lng": -3.6857385,
+      "coordinates": "40.4369278, -3.6857385"
+    },
+    "TT_Monday": "15:00 - 16:00",
+    "TT_Tuesday": "15:00 - 16:00",
+    "TT_Thursday": "15:00 - 16:00",
+    "TT_Wednesday": "15:00 - 16:00",
+    "TT_Friday": "15:00 - 16:00",
+    "TT_Saturday": "15:00 - 16:00",
+    "TT_Sunday": "14:00 - 16:00"
+  },
+  {
+    "ID": "loc75",
+    "orgName": "MUSEO NACIONAL THYSSEN BORNEMISZA",
+    "orgPhone": 917911370,
+    "orgEmail": "cav@museothyssen.org",
+    "orgWeb": "www.museothyssen.org/",
+    "orgFacebook": "https://www.facebook.com/MuseoThyssen/",
+    "orgTwitter": "https://twitter.com/museothyssen",
+    "orgInstagram": "https://www.instagram.com/museothyssen/",
+    "sedeFisica": "Sí",
+    "address": "PASEO PRADO, 8",
+    "postalCode": 28014,
+    "district": "Centro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios,"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {},
+    "fullAddress": "PASEO PRADO, 8 , 28014, MADRID",
+    "geocode": {
+      "lat": 40.4160397,
+      "lng": -3.6949425,
+      "coordinates": "40.4160397, -3.6949425"
+    },
+    "TT_Monday": "12:00 - 16:00"
+  },
+  {
+    "ID": "loc90",
+    "orgName": "MUSEO SOROLLA",
+    "orgPhone": 913101584,
+    "orgEmail": "museo.sorolla@cultura.gob.es",
+    "orgWeb": "www.culturaydeporte.gob.es/msorolla/inicio.html",
+    "orgFacebook": "https://www.facebook.com/museosorolla/",
+    "orgTwitter": "https://twitter.com/MuseoSorolla",
+    "orgInstagram": "https://www.instagram.com/museo_sorolla/",
+    "sedeFisica": "Sí",
+    "address": "PASEO GENERAL MARTINEZ CAMPOS, 37",
+    "postalCode": 28010,
+    "district": "Chamberí",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios,"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {},
+    "fullAddress": "PASEO GENERAL MARTINEZ CAMPOS, 37 , 28010, MADRID",
+    "geocode": {
+      "lat": 40.4354363,
+      "lng": -3.6925173,
+      "coordinates": "40.4354363, -3.6925173"
+    },
+    "TT_Saturday": "14:00 - 20:00",
+    "TT_Sunday": "10:00 - 20:00"
+  },
+  {
+    "ID": "loc86",
+    "orgName": "MUSEO DEL PRADO",
+    "orgPhone": 913302800,
+    "orgEmail": "museo.nacional@museodelprado.es",
+    "orgWeb": "www.museodelprado.es/",
+    "orgFacebook": "https://www.facebook.com/museonacionaldelprado",
+    "orgTwitter": "https://twitter.com/museodelprado",
+    "orgInstagram": "https://www.instagram.com/museoprado/?hl=es",
+    "sedeFisica": "Sí",
+    "address": "CALLE RUIZ DE ALARCÓN, 23",
+    "postalCode": 28014,
+    "district": "Retiro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios,"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {},
+    "fullAddress": "CALLE RUIZ DE ALARCÓN, 23 , 28014, MADRID",
+    "geocode": {
+      "lat": 40.413782,
+      "lng": -3.6921358,
+      "coordinates": "40.4137820, -3.6921358"
+    },
+    "TT_Monday": "18:00 - 20:00",
+    "TT_Tuesday": "18:00 - 20:00",
+    "TT_Thursday": "18:00 - 20:00",
+    "TT_Wednesday": "18:00 - 20:00",
+    "TT_Friday": "18:00 - 20:00",
+    "TT_Saturday": "18:00 - 20:00",
+    "TT_Sunday": "17:00 - 20:00"
+  },
+  {
+    "ID": "loc81",
+    "orgName": "MUSEO ARQUEOLÓGICO NACIONAL",
+    "orgPhone": 915777912,
+    "orgEmail": "sugerencias.man@cultura.gob.es",
+    "orgWeb": "www.man.es/man/home.html",
+    "orgFacebook": "https://www.facebook.com/MANArqueologico",
+    "orgTwitter": "https://twitter.com/MANArqueologico",
+    "orgInstagram": "https://www.instagram.com/manarqueologico/?hl=es",
+    "sedeFisica": "Sí",
+    "address": "CALLE SERRANO, 13",
+    "postalCode": 28001,
+    "district": "Salamanca",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios,"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {},
+    "fullAddress": "CALLE SERRANO, 13 , 28001, MADRID",
+    "geocode": {
+      "lat": 40.4232788,
+      "lng": -3.6888541,
+      "coordinates": "40.4232788, -3.6888541"
+    },
+    "TT_Saturday": "14:00 - 20:00",
+    "TT_Sunday": "10:00 - 20:00"
+  },
+  {
+    "ID": "loc83",
+    "orgName": "IMAGINA MAS",
+    "orgPhone": 910321199,
+    "orgEmail": "info@imaginamas.org",
+    "orgWeb": "www.imaginamas.org/inicio/",
+    "orgFacebook": "https://facebook.com/ongimaginamas/",
+    "orgTwitter": "https://twitter.com/imaginamas",
+    "orgInstagram": "https://www.instagram.com/imaginamasong/",
+    "sedeFisica": "Sí",
+    "address": "CALLE ROSARIO , 17 BAJO",
+    "postalCode": 28005,
+    "district": "Centro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Todas las mañanas, Todas las tardes,"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      " visit",
+      " email",
+      " facebook/contáctanos en  nuestras redes sociales"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {
+      "ES": "servicio de prueba rápida de VIH  - Otros Servicios de Salud: acompañamiento acceso sistema   - Otros formaciones: Derechos LGTBI+, empleabilidad, Salud Sexual,Consumo de sustancias, Igualdad, Diversidad, Chemsex",
+      "EN": "rapid HIV test service - Other Health Services: support to access the system - Other trainings: LGTBI + Rights, employability, Sexual Health, Chemical substance use, Equality, Diversity, Chemsex",
+      "FR": "Autres services de santé : Tests rapides de dépistage du VIH, accompagnement au système de santé - Nous proposons aussi des formations sur les thématiques suivantes: Droits LGTBI+, Consommation de drogues, Emploi, Égalité, Diversité, Chemsex,"
+    },
+    "fullAddress": "CALLE ROSARIO , 17 BAJO, 28005, MADRID",
+    "geocode": {
+      "lat": 40.4092949,
+      "lng": -3.7145164,
+      "coordinates": "40.4092949, -3.7145164"
+    },
+    "TT_Monday": "09:00 - 20:00",
+    "TT_Tuesday": "09:00 - 20:00",
+    "TT_Thursday": "09:00 - 20:00",
+    "TT_Wednesday": "09:00 - 20:00",
+    "TT_Friday": "09:00 - 20:00",
+    "TT_Saturday": "09:00 - 20:00",
+    "TT_Sunday": "09:00 - 20:00"
+  },
+  {
+    "ID": "loc84",
+    "orgName": "MUSEO TIFLOLÓGICO",
+    "orgPhone": 915894219,
+    "orgEmail": "museo@once.es",
+    "orgWeb": "museo.once.es/",
+    "orgFacebook": "https://www.facebook.com/pages/Museo%20Tiflol%C3%B3gico%20de%20la%20Once/124567447607420/",
+    "orgTwitter": "https://twitter.com/tiflologico",
+    "sedeFisica": "Sí",
+    "address": "CALLE LA CORUÑA, 18",
+    "postalCode": 28020,
+    "district": "Tetuán",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios, Lunes, domingos y festivos: cerrado"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {
+      "ES": "Queremos ofrecer a las personas ciegas la posibilidad de acceder a un museo de forma normalizada",
+      "EN": "We want to offer blind people the possibility to access a museum in a regular way",
+      "FR": "Nous voulons donner la possibilité aux personnes aveugles d'accéder à un musée en toute normalité"
+    },
+    "fullAddress": "CALLE LA CORUÑA, 18 , 28020, MADRID",
+    "geocode": {
+      "lat": 40.455229,
+      "lng": -3.699998,
+      "coordinates": "40.4552290, -3.6999980"
+    },
+    "TT_Tuesday": "10:00 - 19:00",
+    "TT_Thursday": "10:00 - 19:00",
+    "TT_Wednesday": "10:00 - 19:00",
+    "TT_Friday": "10:00 - 19:00",
+    "TT_Saturday": "10:00 - 19:00"
+  },
+  {
+    "ID": "loc73",
+    "orgName": "MUSEO NAVAL",
+    "orgPhone": 915238516,
+    "orgEmail": "fundacionmuseonaval@gmail.com",
+    "orgWeb": "www.fundacionmuseonaval.com/museonavalmadrid.html",
+    "orgFacebook": "facebook.com/FundacionMuseoNaval",
+    "orgTwitter": "https://twitter.com/Museo_Naval",
+    "orgInstagram": "https://www.instagram.com/museo_naval/",
+    "sedeFisica": "Sí",
+    "address": "PASEO DEL PRADO, 5",
+    "postalCode": 28014,
+    "district": "Retiro",
+    "locality": "Madrid",
+    "timeTable": {
+      "ES": "Otros Horarios,"
+    },
+    "priorAppointment": "No",
+    "waysOfContact": [
+      "visit"
+    ],
+    "languages": [
+      "ES",
+      " EN"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {
+      "ES": "En agosto, el museo cierra a las 15:00",
+      "EN": "In August, the museum closes at 15:00",
+      "FR": "En août, le musée ferme à 15:00"
+    },
+    "fullAddress": "PASEO DEL PRADO, 5 , 28014, MADRID",
+    "geocode": {
+      "lat": 40.4174765,
+      "lng": -3.6923964,
+      "coordinates": "40.4174765, -3.6923964"
+    },
+    "TT_Tuesday": "10:00 - 19:00",
+    "TT_Thursday": "10:00 - 19:00",
+    "TT_Wednesday": "10:00 - 19:00",
+    "TT_Friday": "10:00 - 19:00",
+    "TT_Saturday": "10:00 - 19:00",
+    "TT_Sunday": "10:00 - 19:00"
+  },
+  {
+    "ID": "loc87",
+    "orgName": "ASOCIACIÓN RUMIÑAHUI",
+    "orgPhone": 915301535,
+    "orgEmail": "ruminahui@ruminahui.org",
+    "orgWeb": "www.ruminahui.org",
+    "orgFacebook": "Asociación Rumiñahui",
+    "orgTwitter": "@AsoRuminahui",
+    "orgInstagram": "asociacionruminahui",
+    "sedeFisica": "Sí",
+    "address": "CALLE CAROLINA CORONADO, 28 BAJO",
+    "postalCode": 28017,
+    "district": "Ciudad Lineal",
+    "locality": "MADRID",
+    "timeTable": {
+      "ES": "Otros Horarios, DE LUNES A VIERNES DE 10H00 A 18H30"
+    },
+    "priorAppointment": "Sí",
+    "waysOfContact": [
+      "phone",
+      " visit",
+      " email",
+      " facebook/contáctanos en  nuestras redes sociales",
+      " web"
+    ],
+    "languages": [
+      "ES"
+    ],
+    "legalStatus": "Indiferente",
+    "additionalInfo": {},
+    "fullAddress": "CALLE CAROLINA CORONADO, 28 BAJO, 28017, MADRID",
+    "geocode": {
+      "lat": 40.4304357,
+      "lng": -3.6440475,
+      "coordinates": "40.4304357, -3.6440475"
     }
   }
 ]
