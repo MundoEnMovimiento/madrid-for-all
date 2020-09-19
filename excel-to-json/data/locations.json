@@ -3258,9 +3258,9 @@
     "priorAppointment": "Sí",
     "waysOfContact": [
       "phone",
-      " visit",
-      " email",
-      " facebook/contáctanos en  nuestras redes sociales"
+      "visit",
+      "email",
+      "facebook"
     ],
     "languages": [
       "ES"

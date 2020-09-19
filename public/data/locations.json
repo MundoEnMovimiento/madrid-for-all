@@ -2366,7 +2366,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {
@@ -2411,7 +2411,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {},
@@ -2451,7 +2451,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {
@@ -2526,7 +2526,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {},
@@ -2566,7 +2566,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {},
@@ -2604,7 +2604,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {
@@ -2645,7 +2645,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {
@@ -2687,7 +2687,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {
@@ -2730,7 +2730,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {},
@@ -2768,7 +2768,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {},
@@ -2807,7 +2807,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {},
@@ -2843,7 +2843,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {},
@@ -2882,7 +2882,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {
@@ -2920,7 +2920,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {
@@ -2957,7 +2957,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {
@@ -2996,7 +2996,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {},
@@ -3032,7 +3032,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {
@@ -3072,7 +3072,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {},
@@ -3113,7 +3113,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {},
@@ -3148,7 +3148,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {},
@@ -3184,7 +3184,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {},
@@ -3225,7 +3225,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {},
@@ -3258,9 +3258,9 @@
     "priorAppointment": "Sí",
     "waysOfContact": [
       "phone",
-      " visit",
-      " email",
-      " facebook/contáctanos en  nuestras redes sociales"
+      "visit",
+      "email",
+      "facebook"
     ],
     "languages": [
       "ES"
@@ -3307,7 +3307,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {
@@ -3350,7 +3350,7 @@
     ],
     "languages": [
       "ES",
-      " EN"
+      "EN"
     ],
     "legalStatus": "Indiferente",
     "additionalInfo": {
@@ -3391,10 +3391,10 @@
     "priorAppointment": "Sí",
     "waysOfContact": [
       "phone",
-      " visit",
-      " email",
-      " facebook/contáctanos en  nuestras redes sociales",
-      " web"
+      "visit",
+      "email",
+      "facebook",
+      "web"
     ],
     "languages": [
       "ES"

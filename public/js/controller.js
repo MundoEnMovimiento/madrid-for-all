@@ -90,7 +90,7 @@ var vueResultTable = new Vue({
     },
     printWaysOfContact: function (waysOfContact) {
       var output = [];
-      // console.log("printWaysOfContact: " + waysOfContact);
+      console.log("printWaysOfContact: " + waysOfContact);
       if (waysOfContact != null) {
         waysOfContact.forEach(function (curWoC) {
           output.push(originalWaysOfContact.find(function (element) {
